@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Champion Meta — GM+Challenger RU</title>
+<style>
+  :root {
+    --bg: #0a0d14;
+    --panel: #12151f;
+    --panel-alt: #171b28;
+    --border: #262b3a;
+    --gold: #c9a15c;
+    --gold-dim: #8a7448;
+    --text: #e7e9ee;
+    --text-dim: #838ba0;
+    --pick: #5da9e0;
+    --win: #4fbf82;
+    --ban: #e0605a;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Inter, Roboto, sans-serif;
+    padding: 40px 20px 80px;
+  }
+
+  .page {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+
+  .eyebrow .dot {
+    width: 5px;
+    height: 5px;
+    background: var(--gold);
+    transform: rotate(45deg);
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 650;
+    margin: 0 0 4px;
+    letter-spacing: -0.01em;
+  }
+
+  .subtitle {
+    color: var(--text-dim);
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .rule {
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold-dim), transparent);
+    margin-bottom: 28px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead th {
+    text-align: left;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    padding: 0 12px 12px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  thead th:hover { color: var(--gold); }
+
+  thead th.active { color: var(--gold); }
+
+  thead th .arrow {
+    font-size: 9px;
+    margin-left: 3px;
+    opacity: 0.6;
+  }
+
+  th.col-rank, th.col-champion { cursor: default; }
+  th.col-rank:hover, th.col-champion:hover { color: var(--text-dim); }
+
+  tbody tr {
+    background: var(--panel);
+    border-radius: 8px;
+  }
+
+  tbody tr:nth-child(even) {
+    background: var(--panel-alt);
+  }
+
+  td {
+    padding: 10px 12px;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  td.col-rank {
+    color: var(--text-dim);
+    font-size: 13px;
+    width: 32px;
+  }
+
+  .champion-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .champion-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    object-fit: cover;
+    background: var(--panel-alt);
+  }
+
+  .champion-name {
+    font-weight: 550;
+    font-size: 14px;
+  }
+
+  .stat-cell {
+    min-width: 140px;
+  }
+
+  .stat-value {
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 4px;
+    color: var(--text);
+  }
+
+  .bar-track {
+    height: 5px;
+    background: #1e2230;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 3px;
+  }
+
+  .bar-fill.pick { background: var(--pick); }
+  .bar-fill.win { background: var(--win); }
+  .bar-fill.ban { background: var(--ban); }
+
+  .loading, .error {
+    color: var(--text-dim);
+    font-size: 14px;
+    padding: 20px 0;
+  }
+
+  .footer-note {
+    margin-top: 24px;
+    font-size: 12px;
+    color: var(--text-dim);
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="eyebrow"><span class="dot"></span> RU SERVER &middot; PATCH 26.14 &middot; GRANDMASTER + CHALLENGER</div>
+  <h1>Champion Meta Report</h1>
+  <div class="subtitle" id="subtitle">Загрузка данных...</div>
+  <div class="rule"></div>
+
+  <div id="content">
+    <div class="loading">Загружаю статистику...</div>
+  </div>
+
+  <div class="footer-note" id="footerNote"></div>
+</div>
+
+<script>
+  const DDRAGON_FALLBACK_VERSION = "14.14.1";
+  let currentSort = { key: "pickrate", direction: "desc" };
+  let championData = [];
+
+  async function getDdragonVersion() {
+    try {
+      const res = await fetch("https://ddragon.leagueoflegends.com/api/versions.json");
+      const versions = await res.json();
+      return versions[0];
+    } catch (err) {
+      return DDRAGON_FALLBACK_VERSION;
+    }
+  }
+
+  function championIconUrl(championName, version) {
+    return `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${championName}.png`;
+  }
+
+  function maxOf(arr, key) {
+    return Math.max(...arr.map(row => row[key]));
+  }
+
+  function renderTable(data, version) {
+    const maxPick = maxOf(data, "pickrate");
+    const maxWin = maxOf(data, "winrate");
+    const maxBan = maxOf(data, "banrate");
+
+    const sorted = [...data].sort((a, b) => {
+      const dir = currentSort.direction === "desc" ? -1 : 1;
+      return (a[currentSort.key] - b[currentSort.key]) * dir;
+    });
+
+    let rows = "";
+    sorted.forEach((row, index) => {
+      rows += `
+        <tr>
+          <td class="col-rank">${index + 1}</td>
+          <td>
+            <div class="champion-cell">
+              <img class="champion-icon" src="${championIconUrl(row.champion, version)}" alt="${row.champion}" loading="lazy">
+              <span class="champion-name">${row.champion}</span>
+            </div>
+          </td>
+          <td class="stat-cell">
+            <div class="stat-value">${row.pickrate.toFixed(2)}%</div>
+            <div class="bar-track"><div class="bar-fill pick" style="width:${(row.pickrate / maxPick * 100).toFixed(1)}%"></div></div>
+          </td>
+          <td class="stat-cell">
+            <div class="stat-value">${row.winrate.toFixed(2)}%</div>
+            <div class="bar-track"><div class="bar-fill win" style="width:${(row.winrate / maxWin * 100).toFixed(1)}%"></div></div>
+          </td>
+          <td class="stat-cell">
+            <div class="stat-value">${row.banrate.toFixed(2)}%</div>
+            <div class="bar-track"><div class="bar-fill ban" style="width:${(row.banrate / maxBan * 100).toFixed(1)}%"></div></div>
+          </td>
+        </tr>
+      `;
+    });
+
+    const arrow = currentSort.direction === "desc" ? "&#9660;" : "&#9650;";
+    const arrowFor = (key) => currentSort.key === key ? `<span class="arrow">${arrow}</span>` : "";
+    const activeClass = (key) => currentSort.key === key ? "active" : "";
+
+    document.getElementById("content").innerHTML = `
+      <table>
+        <thead>
+          <tr>
+            <th class="col-rank">#</th>
+            <th class="col-champion">Чемпион</th>
+            <th class="${activeClass('pickrate')}" data-sort="pickrate">Пикрейт ${arrowFor('pickrate')}</th>
+            <th class="${activeClass('winrate')}" data-sort="winrate">Винрейт ${arrowFor('winrate')}</th>
+            <th class="${activeClass('banrate')}" data-sort="banrate">Банрейт ${arrowFor('banrate')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows}
+        </tbody>
+      </table>
+    `;
+
+    document.querySelectorAll("th[data-sort]").forEach(th => {
+      th.addEventListener("click", () => {
+        const key = th.getAttribute("data-sort");
+        if (currentSort.key === key) {
+          currentSort.direction = currentSort.direction === "desc" ? "asc" : "desc";
+        } else {
+          currentSort = { key, direction: "desc" };
+        }
+        renderTable(championData, version);
+      });
+    });
+  }
+
+  async function init() {
+    try {
+      const [version, res] = await Promise.all([
+        getDdragonVersion(),
+        fetch("champion_final_stats.json")
+      ]);
+
+      if (!res.ok) throw new Error("Не удалось загрузить champion_final_stats.json");
+
+      championData = await res.json();
+      document.getElementById("subtitle").textContent = `${championData.length} чемпионов`;
+      document.getElementById("footerNote").textContent = "Источник: Riot Match-V5 API. Пикрейт/винрейт/банрейт считаются по матчам, где присутствовал хотя бы один игрок GM или Challenger.";
+      renderTable(championData, version);
+    } catch (err) {
+      document.getElementById("content").innerHTML = `<div class="error">Ошибка загрузки: ${err.message}. Убедись, что champion_final_stats.json лежит в той же папке и страница открыта через локальный сервер (не двойным кликом по файлу).</div>`;
+    }
+  }
+
+  init();
+</script>
+
+</body>
+</html>
