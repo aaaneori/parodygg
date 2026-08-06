@@ -1,1559 +1,1565 @@
-[
-  {
-    "champion": "Aatrox",
-    "games": 273,
-    "wins": 149,
-    "winrate": 54.58,
-    "pickrate": 10.12,
-    "bans": 298,
-    "banrate": 5.52
-  },
-  {
-    "champion": "Ahri",
-    "games": 278,
-    "wins": 126,
-    "winrate": 45.32,
-    "pickrate": 10.3,
-    "bans": 120,
-    "banrate": 2.22
-  },
-  {
-    "champion": "Akali",
-    "games": 218,
-    "wins": 108,
-    "winrate": 49.54,
-    "pickrate": 8.08,
-    "bans": 420,
-    "banrate": 7.78
-  },
-  {
-    "champion": "Akshan",
-    "games": 158,
-    "wins": 80,
-    "winrate": 50.63,
-    "pickrate": 5.86,
-    "bans": 85,
-    "banrate": 1.58
-  },
-  {
-    "champion": "Alistar",
-    "games": 58,
-    "wins": 20,
-    "winrate": 34.48,
-    "pickrate": 2.15,
-    "bans": 27,
-    "banrate": 0.5
-  },
-  {
-    "champion": "Ambessa",
-    "games": 190,
-    "wins": 89,
-    "winrate": 46.84,
-    "pickrate": 7.04,
-    "bans": 182,
-    "banrate": 3.37
-  },
-  {
-    "champion": "Amumu",
-    "games": 94,
-    "wins": 52,
-    "winrate": 55.32,
-    "pickrate": 3.48,
-    "bans": 8,
-    "banrate": 0.15
-  },
-  {
-    "champion": "Anivia",
-    "games": 82,
-    "wins": 44,
-    "winrate": 53.66,
-    "pickrate": 3.04,
-    "bans": 36,
-    "banrate": 0.67
-  },
-  {
-    "champion": "Annie",
-    "games": 51,
-    "wins": 28,
-    "winrate": 54.9,
-    "pickrate": 1.89,
-    "bans": 9,
-    "banrate": 0.17
-  },
-  {
-    "champion": "Aphelios",
-    "games": 207,
-    "wins": 107,
-    "winrate": 51.69,
-    "pickrate": 7.67,
-    "bans": 70,
-    "banrate": 1.3
-  },
-  {
-    "champion": "Ashe",
-    "games": 161,
-    "wins": 72,
-    "winrate": 44.72,
-    "pickrate": 5.97,
-    "bans": 25,
-    "banrate": 0.46
-  },
-  {
-    "champion": "AurelionSol",
-    "games": 81,
-    "wins": 41,
-    "winrate": 50.62,
-    "pickrate": 3.0,
-    "bans": 18,
-    "banrate": 0.33
-  },
-  {
-    "champion": "Aurora",
-    "games": 103,
-    "wins": 57,
-    "winrate": 55.34,
-    "pickrate": 3.82,
-    "bans": 28,
-    "banrate": 0.52
-  },
-  {
-    "champion": "Azir",
-    "games": 103,
-    "wins": 49,
-    "winrate": 47.57,
-    "pickrate": 3.82,
-    "bans": 21,
-    "banrate": 0.39
-  },
-  {
-    "champion": "Bard",
-    "games": 140,
-    "wins": 75,
-    "winrate": 53.57,
-    "pickrate": 5.19,
-    "bans": 69,
-    "banrate": 1.28
-  },
-  {
-    "champion": "Belveth",
-    "games": 104,
-    "wins": 60,
-    "winrate": 57.69,
-    "pickrate": 3.85,
-    "bans": 142,
-    "banrate": 2.63
-  },
-  {
-    "champion": "Blitzcrank",
-    "games": 174,
-    "wins": 101,
-    "winrate": 58.05,
-    "pickrate": 6.45,
-    "bans": 236,
-    "banrate": 4.37
-  },
-  {
-    "champion": "Brand",
-    "games": 126,
-    "wins": 69,
-    "winrate": 54.76,
-    "pickrate": 4.67,
-    "bans": 25,
-    "banrate": 0.46
-  },
-  {
-    "champion": "Braum",
-    "games": 88,
-    "wins": 44,
-    "winrate": 50.0,
-    "pickrate": 3.26,
-    "bans": 230,
-    "banrate": 4.26
-  },
-  {
-    "champion": "Briar",
-    "games": 149,
-    "wins": 83,
-    "winrate": 55.7,
-    "pickrate": 5.52,
-    "bans": 168,
-    "banrate": 3.11
-  },
-  {
-    "champion": "Caitlyn",
-    "games": 280,
-    "wins": 137,
-    "winrate": 48.93,
-    "pickrate": 10.38,
-    "bans": 513,
-    "banrate": 9.51
-  },
-  {
-    "champion": "Camille",
-    "games": 273,
-    "wins": 135,
-    "winrate": 49.45,
-    "pickrate": 10.12,
-    "bans": 74,
-    "banrate": 1.37
-  },
-  {
-    "champion": "Cassiopeia",
-    "games": 44,
-    "wins": 16,
-    "winrate": 36.36,
-    "pickrate": 1.63,
-    "bans": 25,
-    "banrate": 0.46
-  },
-  {
-    "champion": "Chogath",
-    "games": 52,
-    "wins": 20,
-    "winrate": 38.46,
-    "pickrate": 1.93,
-    "bans": 5,
-    "banrate": 0.09
-  },
-  {
-    "champion": "Corki",
-    "games": 111,
-    "wins": 60,
-    "winrate": 54.05,
-    "pickrate": 4.11,
-    "bans": 12,
-    "banrate": 0.22
-  },
-  {
-    "champion": "Darius",
-    "games": 182,
-    "wins": 96,
-    "winrate": 52.75,
-    "pickrate": 6.75,
-    "bans": 218,
-    "banrate": 4.04
-  },
-  {
-    "champion": "Diana",
-    "games": 235,
-    "wins": 116,
-    "winrate": 49.36,
-    "pickrate": 8.71,
-    "bans": 165,
-    "banrate": 3.06
-  },
-  {
-    "champion": "DrMundo",
-    "games": 141,
-    "wins": 69,
-    "winrate": 48.94,
-    "pickrate": 5.23,
-    "bans": 87,
-    "banrate": 1.61
-  },
-  {
-    "champion": "Draven",
-    "games": 333,
-    "wins": 166,
-    "winrate": 49.85,
-    "pickrate": 12.34,
-    "bans": 931,
-    "banrate": 17.25
-  },
-  {
-    "champion": "Ekko",
-    "games": 203,
-    "wins": 103,
-    "winrate": 50.74,
-    "pickrate": 7.52,
-    "bans": 26,
-    "banrate": 0.48
-  },
-  {
-    "champion": "Elise",
-    "games": 137,
-    "wins": 67,
-    "winrate": 48.91,
-    "pickrate": 5.08,
-    "bans": 127,
-    "banrate": 2.35
-  },
-  {
-    "champion": "Evelynn",
-    "games": 109,
-    "wins": 49,
-    "winrate": 44.95,
-    "pickrate": 4.04,
-    "bans": 40,
-    "banrate": 0.74
-  },
-  {
-    "champion": "Ezreal",
-    "games": 236,
-    "wins": 108,
-    "winrate": 45.76,
-    "pickrate": 8.75,
-    "bans": 62,
-    "banrate": 1.15
-  },
-  {
-    "champion": "Fiddlesticks",
-    "games": 66,
-    "wins": 31,
-    "winrate": 46.97,
-    "pickrate": 2.45,
-    "bans": 19,
-    "banrate": 0.35
-  },
-  {
-    "champion": "Fiora",
-    "games": 126,
-    "wins": 63,
-    "winrate": 50.0,
-    "pickrate": 4.67,
-    "bans": 336,
-    "banrate": 6.23
-  },
-  {
-    "champion": "Fizz",
-    "games": 95,
-    "wins": 49,
-    "winrate": 51.58,
-    "pickrate": 3.52,
-    "bans": 83,
-    "banrate": 1.54
-  },
-  {
-    "champion": "Galio",
-    "games": 75,
-    "wins": 36,
-    "winrate": 48.0,
-    "pickrate": 2.78,
-    "bans": 26,
-    "banrate": 0.48
-  },
-  {
-    "champion": "Gangplank",
-    "games": 100,
-    "wins": 50,
-    "winrate": 50.0,
-    "pickrate": 3.71,
-    "bans": 60,
-    "banrate": 1.11
-  },
-  {
-    "champion": "Garen",
-    "games": 117,
-    "wins": 53,
-    "winrate": 45.3,
-    "pickrate": 4.34,
-    "bans": 57,
-    "banrate": 1.06
-  },
-  {
-    "champion": "Gnar",
-    "games": 77,
-    "wins": 41,
-    "winrate": 53.25,
-    "pickrate": 2.85,
-    "bans": 14,
-    "banrate": 0.26
-  },
-  {
-    "champion": "Gragas",
-    "games": 105,
-    "wins": 49,
-    "winrate": 46.67,
-    "pickrate": 3.89,
-    "bans": 31,
-    "banrate": 0.57
-  },
-  {
-    "champion": "Graves",
-    "games": 176,
-    "wins": 96,
-    "winrate": 54.55,
-    "pickrate": 6.52,
-    "bans": 252,
-    "banrate": 4.67
-  },
-  {
-    "champion": "Gwen",
-    "games": 72,
-    "wins": 36,
-    "winrate": 50.0,
-    "pickrate": 2.67,
-    "bans": 36,
-    "banrate": 0.67
-  },
-  {
-    "champion": "Hecarim",
-    "games": 142,
-    "wins": 72,
-    "winrate": 50.7,
-    "pickrate": 5.26,
-    "bans": 117,
-    "banrate": 2.17
-  },
-  {
-    "champion": "Heimerdinger",
-    "games": 50,
-    "wins": 27,
-    "winrate": 54.0,
-    "pickrate": 1.85,
-    "bans": 20,
-    "banrate": 0.37
-  },
-  {
-    "champion": "Hwei",
-    "games": 160,
-    "wins": 82,
-    "winrate": 51.25,
-    "pickrate": 5.93,
-    "bans": 44,
-    "banrate": 0.82
-  },
-  {
-    "champion": "Illaoi",
-    "games": 67,
-    "wins": 25,
-    "winrate": 37.31,
-    "pickrate": 2.48,
-    "bans": 89,
-    "banrate": 1.65
-  },
-  {
-    "champion": "Irelia",
-    "games": 191,
-    "wins": 103,
-    "winrate": 53.93,
-    "pickrate": 7.08,
-    "bans": 321,
-    "banrate": 5.95
-  },
-  {
-    "champion": "Ivern",
-    "games": 32,
-    "wins": 16,
-    "winrate": 50.0,
-    "pickrate": 1.19,
-    "bans": 5,
-    "banrate": 0.09
-  },
-  {
-    "champion": "Janna",
-    "games": 244,
-    "wins": 123,
-    "winrate": 50.41,
-    "pickrate": 9.04,
-    "bans": 63,
-    "banrate": 1.17
-  },
-  {
-    "champion": "JarvanIV",
-    "games": 206,
-    "wins": 98,
-    "winrate": 47.57,
-    "pickrate": 7.64,
-    "bans": 35,
-    "banrate": 0.65
-  },
-  {
-    "champion": "Jax",
-    "games": 203,
-    "wins": 98,
-    "winrate": 48.28,
-    "pickrate": 7.52,
-    "bans": 296,
-    "banrate": 5.49
-  },
-  {
-    "champion": "Jayce",
-    "games": 118,
-    "wins": 64,
-    "winrate": 54.24,
-    "pickrate": 4.37,
-    "bans": 70,
-    "banrate": 1.3
-  },
-  {
-    "champion": "Jhin",
-    "games": 334,
-    "wins": 158,
-    "winrate": 47.31,
-    "pickrate": 12.38,
-    "bans": 40,
-    "banrate": 0.74
-  },
-  {
-    "champion": "Jinx",
-    "games": 247,
-    "wins": 135,
-    "winrate": 54.66,
-    "pickrate": 9.15,
-    "bans": 56,
-    "banrate": 1.04
-  },
-  {
-    "champion": "KSante",
-    "games": 101,
-    "wins": 51,
-    "winrate": 50.5,
-    "pickrate": 3.74,
-    "bans": 134,
-    "banrate": 2.48
-  },
-  {
-    "champion": "Kaisa",
-    "games": 279,
-    "wins": 129,
-    "winrate": 46.24,
-    "pickrate": 10.34,
-    "bans": 13,
-    "banrate": 0.24
-  },
-  {
-    "champion": "Kalista",
-    "games": 112,
-    "wins": 65,
-    "winrate": 58.04,
-    "pickrate": 4.15,
-    "bans": 35,
-    "banrate": 0.65
-  },
-  {
-    "champion": "Karma",
-    "games": 211,
-    "wins": 105,
-    "winrate": 49.76,
-    "pickrate": 7.82,
-    "bans": 81,
-    "banrate": 1.5
-  },
-  {
-    "champion": "Karthus",
-    "games": 49,
-    "wins": 24,
-    "winrate": 48.98,
-    "pickrate": 1.82,
-    "bans": 15,
-    "banrate": 0.28
-  },
-  {
-    "champion": "Kassadin",
-    "games": 263,
-    "wins": 140,
-    "winrate": 53.23,
-    "pickrate": 9.75,
-    "bans": 404,
-    "banrate": 7.49
-  },
-  {
-    "champion": "Katarina",
-    "games": 370,
-    "wins": 177,
-    "winrate": 47.84,
-    "pickrate": 13.71,
-    "bans": 496,
-    "banrate": 9.19
-  },
-  {
-    "champion": "Kayle",
-    "games": 128,
-    "wins": 64,
-    "winrate": 50.0,
-    "pickrate": 4.74,
-    "bans": 63,
-    "banrate": 1.17
-  },
-  {
-    "champion": "Kayn",
-    "games": 115,
-    "wins": 56,
-    "winrate": 48.7,
-    "pickrate": 4.26,
-    "bans": 56,
-    "banrate": 1.04
-  },
-  {
-    "champion": "Kennen",
-    "games": 66,
-    "wins": 35,
-    "winrate": 53.03,
-    "pickrate": 2.45,
-    "bans": 22,
-    "banrate": 0.41
-  },
-  {
-    "champion": "Khazix",
-    "games": 144,
-    "wins": 76,
-    "winrate": 52.78,
-    "pickrate": 5.34,
-    "bans": 170,
-    "banrate": 3.15
-  },
-  {
-    "champion": "Kindred",
-    "games": 59,
-    "wins": 29,
-    "winrate": 49.15,
-    "pickrate": 2.19,
-    "bans": 11,
-    "banrate": 0.2
-  },
-  {
-    "champion": "Kled",
-    "games": 19,
-    "wins": 8,
-    "winrate": 42.11,
-    "pickrate": 0.7,
-    "bans": 24,
-    "banrate": 0.44
-  },
-  {
-    "champion": "KogMaw",
-    "games": 61,
-    "wins": 29,
-    "winrate": 47.54,
-    "pickrate": 2.26,
-    "bans": 7,
-    "banrate": 0.13
-  },
-  {
-    "champion": "Leblanc",
-    "games": 134,
-    "wins": 67,
-    "winrate": 50.0,
-    "pickrate": 4.97,
-    "bans": 175,
-    "banrate": 3.24
-  },
-  {
-    "champion": "LeeSin",
-    "games": 271,
-    "wins": 136,
-    "winrate": 50.18,
-    "pickrate": 10.04,
-    "bans": 151,
-    "banrate": 2.8
-  },
-  {
-    "champion": "Leona",
-    "games": 192,
-    "wins": 93,
-    "winrate": 48.44,
-    "pickrate": 7.12,
-    "bans": 198,
-    "banrate": 3.67
-  },
-  {
-    "champion": "Lillia",
-    "games": 39,
-    "wins": 22,
-    "winrate": 56.41,
-    "pickrate": 1.45,
-    "bans": 21,
-    "banrate": 0.39
-  },
-  {
-    "champion": "Lissandra",
-    "games": 139,
-    "wins": 81,
-    "winrate": 58.27,
-    "pickrate": 5.15,
-    "bans": 92,
-    "banrate": 1.7
-  },
-  {
-    "champion": "Locke",
-    "games": 355,
-    "wins": 172,
-    "winrate": 48.45,
-    "pickrate": 13.16,
-    "bans": 2741,
-    "banrate": 50.8
-  },
-  {
-    "champion": "Lucian",
-    "games": 137,
-    "wins": 69,
-    "winrate": 50.36,
-    "pickrate": 5.08,
-    "bans": 18,
-    "banrate": 0.33
-  },
-  {
-    "champion": "Lulu",
-    "games": 421,
-    "wins": 216,
-    "winrate": 51.31,
-    "pickrate": 15.6,
-    "bans": 317,
-    "banrate": 5.87
-  },
-  {
-    "champion": "Lux",
-    "games": 302,
-    "wins": 150,
-    "winrate": 49.67,
-    "pickrate": 11.19,
-    "bans": 32,
-    "banrate": 0.59
-  },
-  {
-    "champion": "Malphite",
-    "games": 263,
-    "wins": 130,
-    "winrate": 49.43,
-    "pickrate": 9.75,
-    "bans": 610,
-    "banrate": 11.3
-  },
-  {
-    "champion": "Malzahar",
-    "games": 163,
-    "wins": 88,
-    "winrate": 53.99,
-    "pickrate": 6.04,
-    "bans": 210,
-    "banrate": 3.89
-  },
-  {
-    "champion": "Maokai",
-    "games": 55,
-    "wins": 24,
-    "winrate": 43.64,
-    "pickrate": 2.04,
-    "bans": 1,
-    "banrate": 0.02
-  },
-  {
-    "champion": "MasterYi",
-    "games": 195,
-    "wins": 99,
-    "winrate": 50.77,
-    "pickrate": 7.23,
-    "bans": 474,
-    "banrate": 8.78
-  },
-  {
-    "champion": "Mel",
-    "games": 190,
-    "wins": 77,
-    "winrate": 40.53,
-    "pickrate": 7.04,
-    "bans": 916,
-    "banrate": 16.98
-  },
-  {
-    "champion": "Milio",
-    "games": 221,
-    "wins": 107,
-    "winrate": 48.42,
-    "pickrate": 8.19,
-    "bans": 145,
-    "banrate": 2.69
-  },
-  {
-    "champion": "MissFortune",
-    "games": 347,
-    "wins": 167,
-    "winrate": 48.13,
-    "pickrate": 12.86,
-    "bans": 13,
-    "banrate": 0.24
-  },
-  {
-    "champion": "MonkeyKing",
-    "games": 169,
-    "wins": 88,
-    "winrate": 52.07,
-    "pickrate": 6.26,
-    "bans": 67,
-    "banrate": 1.24
-  },
-  {
-    "champion": "Mordekaiser",
-    "games": 362,
-    "wins": 201,
-    "winrate": 55.52,
-    "pickrate": 13.42,
-    "bans": 363,
-    "banrate": 6.73
-  },
-  {
-    "champion": "Morgana",
-    "games": 80,
-    "wins": 40,
-    "winrate": 50.0,
-    "pickrate": 2.97,
-    "bans": 198,
-    "banrate": 3.67
-  },
-  {
-    "champion": "Naafiri",
-    "games": 221,
-    "wins": 116,
-    "winrate": 52.49,
-    "pickrate": 8.19,
-    "bans": 409,
-    "banrate": 7.58
-  },
-  {
-    "champion": "Nami",
-    "games": 510,
-    "wins": 265,
-    "winrate": 51.96,
-    "pickrate": 18.9,
-    "bans": 40,
-    "banrate": 0.74
-  },
-  {
-    "champion": "Nasus",
-    "games": 179,
-    "wins": 96,
-    "winrate": 53.63,
-    "pickrate": 6.63,
-    "bans": 164,
-    "banrate": 3.04
-  },
-  {
-    "champion": "Nautilus",
-    "games": 213,
-    "wins": 96,
-    "winrate": 45.07,
-    "pickrate": 7.89,
-    "bans": 333,
-    "banrate": 6.17
-  },
-  {
-    "champion": "Neeko",
-    "games": 54,
-    "wins": 26,
-    "winrate": 48.15,
-    "pickrate": 2.0,
-    "bans": 38,
-    "banrate": 0.7
-  },
-  {
-    "champion": "Nidalee",
-    "games": 60,
-    "wins": 34,
-    "winrate": 56.67,
-    "pickrate": 2.22,
-    "bans": 27,
-    "banrate": 0.5
-  },
-  {
-    "champion": "Nilah",
-    "games": 26,
-    "wins": 13,
-    "winrate": 50.0,
-    "pickrate": 0.96,
-    "bans": 30,
-    "banrate": 0.56
-  },
-  {
-    "champion": "Nocturne",
-    "games": 108,
-    "wins": 62,
-    "winrate": 57.41,
-    "pickrate": 4.0,
-    "bans": 180,
-    "banrate": 3.34
-  },
-  {
-    "champion": "Nunu",
-    "games": 29,
-    "wins": 15,
-    "winrate": 51.72,
-    "pickrate": 1.07,
-    "bans": 1,
-    "banrate": 0.02
-  },
-  {
-    "champion": "Olaf",
-    "games": 105,
-    "wins": 46,
-    "winrate": 43.81,
-    "pickrate": 3.89,
-    "bans": 130,
-    "banrate": 2.41
-  },
-  {
-    "champion": "Orianna",
-    "games": 62,
-    "wins": 25,
-    "winrate": 40.32,
-    "pickrate": 2.3,
-    "bans": 50,
-    "banrate": 0.93
-  },
-  {
-    "champion": "Ornn",
-    "games": 78,
-    "wins": 35,
-    "winrate": 44.87,
-    "pickrate": 2.89,
-    "bans": 10,
-    "banrate": 0.19
-  },
-  {
-    "champion": "Pantheon",
-    "games": 144,
-    "wins": 69,
-    "winrate": 47.92,
-    "pickrate": 5.34,
-    "bans": 23,
-    "banrate": 0.43
-  },
-  {
-    "champion": "Poppy",
-    "games": 96,
-    "wins": 45,
-    "winrate": 46.88,
-    "pickrate": 3.56,
-    "bans": 65,
-    "banrate": 1.2
-  },
-  {
-    "champion": "Pyke",
-    "games": 112,
-    "wins": 47,
-    "winrate": 41.96,
-    "pickrate": 4.15,
-    "bans": 629,
-    "banrate": 11.66
-  },
-  {
-    "champion": "Qiyana",
-    "games": 165,
-    "wins": 89,
-    "winrate": 53.94,
-    "pickrate": 6.12,
-    "bans": 51,
-    "banrate": 0.95
-  },
-  {
-    "champion": "Quinn",
-    "games": 45,
-    "wins": 22,
-    "winrate": 48.89,
-    "pickrate": 1.67,
-    "bans": 2,
-    "banrate": 0.04
-  },
-  {
-    "champion": "Rakan",
-    "games": 49,
-    "wins": 26,
-    "winrate": 53.06,
-    "pickrate": 1.82,
-    "bans": 7,
-    "banrate": 0.13
-  },
-  {
-    "champion": "Rammus",
-    "games": 81,
-    "wins": 42,
-    "winrate": 51.85,
-    "pickrate": 3.0,
-    "bans": 57,
-    "banrate": 1.06
-  },
-  {
-    "champion": "RekSai",
-    "games": 34,
-    "wins": 16,
-    "winrate": 47.06,
-    "pickrate": 1.26,
-    "bans": 6,
-    "banrate": 0.11
-  },
-  {
-    "champion": "Rell",
-    "games": 87,
-    "wins": 45,
-    "winrate": 51.72,
-    "pickrate": 3.22,
-    "bans": 15,
-    "banrate": 0.28
-  },
-  {
-    "champion": "Renata",
-    "games": 20,
-    "wins": 12,
-    "winrate": 60.0,
-    "pickrate": 0.74,
-    "bans": 2,
-    "banrate": 0.04
-  },
-  {
-    "champion": "Renekton",
-    "games": 153,
-    "wins": 69,
-    "winrate": 45.1,
-    "pickrate": 5.67,
-    "bans": 127,
-    "banrate": 2.35
-  },
-  {
-    "champion": "Rengar",
-    "games": 239,
-    "wins": 118,
-    "winrate": 49.37,
-    "pickrate": 8.86,
-    "bans": 569,
-    "banrate": 10.54
-  },
-  {
-    "champion": "Riven",
-    "games": 163,
-    "wins": 84,
-    "winrate": 51.53,
-    "pickrate": 6.04,
-    "bans": 198,
-    "banrate": 3.67
-  },
-  {
-    "champion": "Rumble",
-    "games": 27,
-    "wins": 11,
-    "winrate": 40.74,
-    "pickrate": 1.0,
-    "bans": 5,
-    "banrate": 0.09
-  },
-  {
-    "champion": "Ryze",
-    "games": 56,
-    "wins": 23,
-    "winrate": 41.07,
-    "pickrate": 2.08,
-    "bans": 5,
-    "banrate": 0.09
-  },
-  {
-    "champion": "Samira",
-    "games": 153,
-    "wins": 74,
-    "winrate": 48.37,
-    "pickrate": 5.67,
-    "bans": 215,
-    "banrate": 3.98
-  },
-  {
-    "champion": "Sejuani",
-    "games": 47,
-    "wins": 21,
-    "winrate": 44.68,
-    "pickrate": 1.74,
-    "bans": 3,
-    "banrate": 0.06
-  },
-  {
-    "champion": "Senna",
-    "games": 209,
-    "wins": 105,
-    "winrate": 50.24,
-    "pickrate": 7.75,
-    "bans": 176,
-    "banrate": 3.26
-  },
-  {
-    "champion": "Seraphine",
-    "games": 570,
-    "wins": 279,
-    "winrate": 48.95,
-    "pickrate": 21.13,
-    "bans": 317,
-    "banrate": 5.87
-  },
-  {
-    "champion": "Sett",
-    "games": 136,
-    "wins": 60,
-    "winrate": 44.12,
-    "pickrate": 5.04,
-    "bans": 72,
-    "banrate": 1.33
-  },
-  {
-    "champion": "Shaco",
-    "games": 150,
-    "wins": 78,
-    "winrate": 52.0,
-    "pickrate": 5.56,
-    "bans": 329,
-    "banrate": 6.1
-  },
-  {
-    "champion": "Shen",
-    "games": 177,
-    "wins": 91,
-    "winrate": 51.41,
-    "pickrate": 6.56,
-    "bans": 31,
-    "banrate": 0.57
-  },
-  {
-    "champion": "Shyvana",
-    "games": 132,
-    "wins": 58,
-    "winrate": 43.94,
-    "pickrate": 4.89,
-    "bans": 83,
-    "banrate": 1.54
-  },
-  {
-    "champion": "Singed",
-    "games": 101,
-    "wins": 47,
-    "winrate": 46.53,
-    "pickrate": 3.74,
-    "bans": 15,
-    "banrate": 0.28
-  },
-  {
-    "champion": "Sion",
-    "games": 170,
-    "wins": 90,
-    "winrate": 52.94,
-    "pickrate": 6.3,
-    "bans": 58,
-    "banrate": 1.07
-  },
-  {
-    "champion": "Sivir",
-    "games": 75,
-    "wins": 30,
-    "winrate": 40.0,
-    "pickrate": 2.78,
-    "bans": 31,
-    "banrate": 0.57
-  },
-  {
-    "champion": "Skarner",
-    "games": 40,
-    "wins": 13,
-    "winrate": 32.5,
-    "pickrate": 1.48,
-    "bans": 0,
-    "banrate": 0.0
-  },
-  {
-    "champion": "Smolder",
-    "games": 135,
-    "wins": 61,
-    "winrate": 45.19,
-    "pickrate": 5.0,
-    "bans": 61,
-    "banrate": 1.13
-  },
-  {
-    "champion": "Sona",
-    "games": 219,
-    "wins": 128,
-    "winrate": 58.45,
-    "pickrate": 8.12,
-    "bans": 12,
-    "banrate": 0.22
-  },
-  {
-    "champion": "Soraka",
-    "games": 212,
-    "wins": 100,
-    "winrate": 47.17,
-    "pickrate": 7.86,
-    "bans": 207,
-    "banrate": 3.84
-  },
-  {
-    "champion": "Swain",
-    "games": 69,
-    "wins": 38,
-    "winrate": 55.07,
-    "pickrate": 2.56,
-    "bans": 5,
-    "banrate": 0.09
-  },
-  {
-    "champion": "Sylas",
-    "games": 471,
-    "wins": 255,
-    "winrate": 54.14,
-    "pickrate": 17.46,
-    "bans": 375,
-    "banrate": 6.95
-  },
-  {
-    "champion": "Syndra",
-    "games": 276,
-    "wins": 148,
-    "winrate": 53.62,
-    "pickrate": 10.23,
-    "bans": 141,
-    "banrate": 2.61
-  },
-  {
-    "champion": "TahmKench",
-    "games": 49,
-    "wins": 23,
-    "winrate": 46.94,
-    "pickrate": 1.82,
-    "bans": 14,
-    "banrate": 0.26
-  },
-  {
-    "champion": "Taliyah",
-    "games": 47,
-    "wins": 24,
-    "winrate": 51.06,
-    "pickrate": 1.74,
-    "bans": 5,
-    "banrate": 0.09
-  },
-  {
-    "champion": "Talon",
-    "games": 225,
-    "wins": 105,
-    "winrate": 46.67,
-    "pickrate": 8.34,
-    "bans": 662,
-    "banrate": 12.27
-  },
-  {
-    "champion": "Taric",
-    "games": 17,
-    "wins": 12,
-    "winrate": 70.59,
-    "pickrate": 0.63,
-    "bans": 1,
-    "banrate": 0.02
-  },
-  {
-    "champion": "Teemo",
-    "games": 104,
-    "wins": 53,
-    "winrate": 50.96,
-    "pickrate": 3.85,
-    "bans": 93,
-    "banrate": 1.72
-  },
-  {
-    "champion": "Thresh",
-    "games": 204,
-    "wins": 105,
-    "winrate": 51.47,
-    "pickrate": 7.56,
-    "bans": 158,
-    "banrate": 2.93
-  },
-  {
-    "champion": "Tristana",
-    "games": 216,
-    "wins": 104,
-    "winrate": 48.15,
-    "pickrate": 8.01,
-    "bans": 73,
-    "banrate": 1.35
-  },
-  {
-    "champion": "Trundle",
-    "games": 33,
-    "wins": 11,
-    "winrate": 33.33,
-    "pickrate": 1.22,
-    "bans": 1,
-    "banrate": 0.02
-  },
-  {
-    "champion": "Tryndamere",
-    "games": 85,
-    "wins": 40,
-    "winrate": 47.06,
-    "pickrate": 3.15,
-    "bans": 49,
-    "banrate": 0.91
-  },
-  {
-    "champion": "TwistedFate",
-    "games": 105,
-    "wins": 52,
-    "winrate": 49.52,
-    "pickrate": 3.89,
-    "bans": 10,
-    "banrate": 0.19
-  },
-  {
-    "champion": "Twitch",
-    "games": 268,
-    "wins": 135,
-    "winrate": 50.37,
-    "pickrate": 9.93,
-    "bans": 385,
-    "banrate": 7.13
-  },
-  {
-    "champion": "Udyr",
-    "games": 57,
-    "wins": 23,
-    "winrate": 40.35,
-    "pickrate": 2.11,
-    "bans": 33,
-    "banrate": 0.61
-  },
-  {
-    "champion": "Urgot",
-    "games": 188,
-    "wins": 100,
-    "winrate": 53.19,
-    "pickrate": 6.97,
-    "bans": 28,
-    "banrate": 0.52
-  },
-  {
-    "champion": "Varus",
-    "games": 145,
-    "wins": 72,
-    "winrate": 49.66,
-    "pickrate": 5.37,
-    "bans": 21,
-    "banrate": 0.39
-  },
-  {
-    "champion": "Vayne",
-    "games": 258,
-    "wins": 118,
-    "winrate": 45.74,
-    "pickrate": 9.56,
-    "bans": 391,
-    "banrate": 7.25
-  },
-  {
-    "champion": "Veigar",
-    "games": 92,
-    "wins": 45,
-    "winrate": 48.91,
-    "pickrate": 3.41,
-    "bans": 18,
-    "banrate": 0.33
-  },
-  {
-    "champion": "Velkoz",
-    "games": 112,
-    "wins": 58,
-    "winrate": 51.79,
-    "pickrate": 4.15,
-    "bans": 37,
-    "banrate": 0.69
-  },
-  {
-    "champion": "Vex",
-    "games": 87,
-    "wins": 37,
-    "winrate": 42.53,
-    "pickrate": 3.22,
-    "bans": 55,
-    "banrate": 1.02
-  },
-  {
-    "champion": "Vi",
-    "games": 127,
-    "wins": 52,
-    "winrate": 40.94,
-    "pickrate": 4.71,
-    "bans": 56,
-    "banrate": 1.04
-  },
-  {
-    "champion": "Viego",
-    "games": 255,
-    "wins": 113,
-    "winrate": 44.31,
-    "pickrate": 9.45,
-    "bans": 199,
-    "banrate": 3.69
-  },
-  {
-    "champion": "Viktor",
-    "games": 183,
-    "wins": 101,
-    "winrate": 55.19,
-    "pickrate": 6.78,
-    "bans": 66,
-    "banrate": 1.22
-  },
-  {
-    "champion": "Vladimir",
-    "games": 290,
-    "wins": 141,
-    "winrate": 48.62,
-    "pickrate": 10.75,
-    "bans": 408,
-    "banrate": 7.56
-  },
-  {
-    "champion": "Volibear",
-    "games": 84,
-    "wins": 43,
-    "winrate": 51.19,
-    "pickrate": 3.11,
-    "bans": 46,
-    "banrate": 0.85
-  },
-  {
-    "champion": "Warwick",
-    "games": 232,
-    "wins": 127,
-    "winrate": 54.74,
-    "pickrate": 8.6,
-    "bans": 94,
-    "banrate": 1.74
-  },
-  {
-    "champion": "Xayah",
-    "games": 107,
-    "wins": 44,
-    "winrate": 41.12,
-    "pickrate": 3.97,
-    "bans": 7,
-    "banrate": 0.13
-  },
-  {
-    "champion": "Xerath",
-    "games": 198,
-    "wins": 104,
-    "winrate": 52.53,
-    "pickrate": 7.34,
-    "bans": 76,
-    "banrate": 1.41
-  },
-  {
-    "champion": "XinZhao",
-    "games": 74,
-    "wins": 35,
-    "winrate": 47.3,
-    "pickrate": 2.74,
-    "bans": 18,
-    "banrate": 0.33
-  },
-  {
-    "champion": "Yasuo",
-    "games": 398,
-    "wins": 191,
-    "winrate": 47.99,
-    "pickrate": 14.75,
-    "bans": 643,
-    "banrate": 11.92
-  },
-  {
-    "champion": "Yone",
-    "games": 333,
-    "wins": 177,
-    "winrate": 53.15,
-    "pickrate": 12.34,
-    "bans": 436,
-    "banrate": 8.08
-  },
-  {
-    "champion": "Yorick",
-    "games": 51,
-    "wins": 22,
-    "winrate": 43.14,
-    "pickrate": 1.89,
-    "bans": 53,
-    "banrate": 0.98
-  },
-  {
-    "champion": "Yunara",
-    "games": 261,
-    "wins": 156,
-    "winrate": 59.77,
-    "pickrate": 9.67,
-    "bans": 12,
-    "banrate": 0.22
-  },
-  {
-    "champion": "Yuumi",
-    "games": 341,
-    "wins": 161,
-    "winrate": 47.21,
-    "pickrate": 12.64,
-    "bans": 787,
-    "banrate": 14.58
-  },
-  {
-    "champion": "Zaahen",
-    "games": 159,
-    "wins": 72,
-    "winrate": 45.28,
-    "pickrate": 5.89,
-    "bans": 25,
-    "banrate": 0.46
-  },
-  {
-    "champion": "Zac",
-    "games": 144,
-    "wins": 86,
-    "winrate": 59.72,
-    "pickrate": 5.34,
-    "bans": 33,
-    "banrate": 0.61
-  },
-  {
-    "champion": "Zed",
-    "games": 221,
-    "wins": 102,
-    "winrate": 46.15,
-    "pickrate": 8.19,
-    "bans": 604,
-    "banrate": 11.19
-  },
-  {
-    "champion": "Zeri",
-    "games": 199,
-    "wins": 109,
-    "winrate": 54.77,
-    "pickrate": 7.38,
-    "bans": 60,
-    "banrate": 1.11
-  },
-  {
-    "champion": "Ziggs",
-    "games": 80,
-    "wins": 38,
-    "winrate": 47.5,
-    "pickrate": 2.97,
-    "bans": 7,
-    "banrate": 0.13
-  },
-  {
-    "champion": "Zilean",
-    "games": 85,
-    "wins": 41,
-    "winrate": 48.24,
-    "pickrate": 3.15,
-    "bans": 94,
-    "banrate": 1.74
-  },
-  {
-    "champion": "Zoe",
-    "games": 100,
-    "wins": 54,
-    "winrate": 54.0,
-    "pickrate": 3.71,
-    "bans": 61,
-    "banrate": 1.13
-  },
-  {
-    "champion": "Zyra",
-    "games": 119,
-    "wins": 65,
-    "winrate": 54.62,
-    "pickrate": 4.41,
-    "bans": 95,
-    "banrate": 1.76
-  }
-]
+{
+  "region": "EUW1",
+  "patch": "16.15",
+  "last_updated": "2026-08-06",
+  "total_matches": 866,
+  "champions": [
+    {
+      "champion": "Aatrox",
+      "games": 94,
+      "wins": 43,
+      "winrate": 45.74,
+      "pickrate": 10.85,
+      "bans": 26,
+      "banrate": 1.5
+    },
+    {
+      "champion": "Ahri",
+      "games": 140,
+      "wins": 75,
+      "winrate": 53.57,
+      "pickrate": 16.17,
+      "bans": 28,
+      "banrate": 1.62
+    },
+    {
+      "champion": "Akali",
+      "games": 100,
+      "wins": 47,
+      "winrate": 47.0,
+      "pickrate": 11.55,
+      "bans": 188,
+      "banrate": 10.85
+    },
+    {
+      "champion": "Akshan",
+      "games": 44,
+      "wins": 19,
+      "winrate": 43.18,
+      "pickrate": 5.08,
+      "bans": 100,
+      "banrate": 5.77
+    },
+    {
+      "champion": "Alistar",
+      "games": 45,
+      "wins": 26,
+      "winrate": 57.78,
+      "pickrate": 5.2,
+      "bans": 21,
+      "banrate": 1.21
+    },
+    {
+      "champion": "Ambessa",
+      "games": 132,
+      "wins": 64,
+      "winrate": 48.48,
+      "pickrate": 15.24,
+      "bans": 84,
+      "banrate": 4.85
+    },
+    {
+      "champion": "Amumu",
+      "games": 9,
+      "wins": 4,
+      "winrate": 44.44,
+      "pickrate": 1.04,
+      "bans": 1,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Anivia",
+      "games": 80,
+      "wins": 42,
+      "winrate": 52.5,
+      "pickrate": 9.24,
+      "bans": 60,
+      "banrate": 3.46
+    },
+    {
+      "champion": "Annie",
+      "games": 26,
+      "wins": 14,
+      "winrate": 53.85,
+      "pickrate": 3.0,
+      "bans": 5,
+      "banrate": 0.29
+    },
+    {
+      "champion": "Aphelios",
+      "games": 22,
+      "wins": 10,
+      "winrate": 45.45,
+      "pickrate": 2.54,
+      "bans": 1,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Ashe",
+      "games": 21,
+      "wins": 14,
+      "winrate": 66.67,
+      "pickrate": 2.42,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "AurelionSol",
+      "games": 59,
+      "wins": 28,
+      "winrate": 47.46,
+      "pickrate": 6.81,
+      "bans": 12,
+      "banrate": 0.69
+    },
+    {
+      "champion": "Aurora",
+      "games": 24,
+      "wins": 9,
+      "winrate": 37.5,
+      "pickrate": 2.77,
+      "bans": 10,
+      "banrate": 0.58
+    },
+    {
+      "champion": "Azir",
+      "games": 14,
+      "wins": 6,
+      "winrate": 42.86,
+      "pickrate": 1.62,
+      "bans": 2,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Bard",
+      "games": 90,
+      "wins": 38,
+      "winrate": 42.22,
+      "pickrate": 10.39,
+      "bans": 183,
+      "banrate": 10.57
+    },
+    {
+      "champion": "Belveth",
+      "games": 38,
+      "wins": 13,
+      "winrate": 34.21,
+      "pickrate": 4.39,
+      "bans": 167,
+      "banrate": 9.64
+    },
+    {
+      "champion": "Blitzcrank",
+      "games": 28,
+      "wins": 8,
+      "winrate": 28.57,
+      "pickrate": 3.23,
+      "bans": 21,
+      "banrate": 1.21
+    },
+    {
+      "champion": "Brand",
+      "games": 9,
+      "wins": 5,
+      "winrate": 55.56,
+      "pickrate": 1.04,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Braum",
+      "games": 32,
+      "wins": 21,
+      "winrate": 65.62,
+      "pickrate": 3.7,
+      "bans": 25,
+      "banrate": 1.44
+    },
+    {
+      "champion": "Briar",
+      "games": 19,
+      "wins": 7,
+      "winrate": 36.84,
+      "pickrate": 2.19,
+      "bans": 8,
+      "banrate": 0.46
+    },
+    {
+      "champion": "Caitlyn",
+      "games": 64,
+      "wins": 35,
+      "winrate": 54.69,
+      "pickrate": 7.39,
+      "bans": 40,
+      "banrate": 2.31
+    },
+    {
+      "champion": "Camille",
+      "games": 122,
+      "wins": 67,
+      "winrate": 54.92,
+      "pickrate": 14.09,
+      "bans": 565,
+      "banrate": 32.62
+    },
+    {
+      "champion": "Cassiopeia",
+      "games": 67,
+      "wins": 31,
+      "winrate": 46.27,
+      "pickrate": 7.74,
+      "bans": 77,
+      "banrate": 4.45
+    },
+    {
+      "champion": "Chogath",
+      "games": 45,
+      "wins": 23,
+      "winrate": 51.11,
+      "pickrate": 5.2,
+      "bans": 1,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Corki",
+      "games": 55,
+      "wins": 23,
+      "winrate": 41.82,
+      "pickrate": 6.35,
+      "bans": 3,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Darius",
+      "games": 58,
+      "wins": 31,
+      "winrate": 53.45,
+      "pickrate": 6.7,
+      "bans": 79,
+      "banrate": 4.56
+    },
+    {
+      "champion": "Diana",
+      "games": 23,
+      "wins": 7,
+      "winrate": 30.43,
+      "pickrate": 2.66,
+      "bans": 3,
+      "banrate": 0.17
+    },
+    {
+      "champion": "DrMundo",
+      "games": 54,
+      "wins": 25,
+      "winrate": 46.3,
+      "pickrate": 6.24,
+      "bans": 16,
+      "banrate": 0.92
+    },
+    {
+      "champion": "Draven",
+      "games": 27,
+      "wins": 12,
+      "winrate": 44.44,
+      "pickrate": 3.12,
+      "bans": 287,
+      "banrate": 16.57
+    },
+    {
+      "champion": "Ekko",
+      "games": 87,
+      "wins": 41,
+      "winrate": 47.13,
+      "pickrate": 10.05,
+      "bans": 51,
+      "banrate": 2.94
+    },
+    {
+      "champion": "Elise",
+      "games": 60,
+      "wins": 30,
+      "winrate": 50.0,
+      "pickrate": 6.93,
+      "bans": 15,
+      "banrate": 0.87
+    },
+    {
+      "champion": "Evelynn",
+      "games": 5,
+      "wins": 3,
+      "winrate": 60.0,
+      "pickrate": 0.58,
+      "bans": 5,
+      "banrate": 0.29
+    },
+    {
+      "champion": "Ezreal",
+      "games": 137,
+      "wins": 55,
+      "winrate": 40.15,
+      "pickrate": 15.82,
+      "bans": 57,
+      "banrate": 3.29
+    },
+    {
+      "champion": "Fiddlesticks",
+      "games": 28,
+      "wins": 13,
+      "winrate": 46.43,
+      "pickrate": 3.23,
+      "bans": 15,
+      "banrate": 0.87
+    },
+    {
+      "champion": "Fiora",
+      "games": 23,
+      "wins": 6,
+      "winrate": 26.09,
+      "pickrate": 2.66,
+      "bans": 89,
+      "banrate": 5.14
+    },
+    {
+      "champion": "Fizz",
+      "games": 46,
+      "wins": 21,
+      "winrate": 45.65,
+      "pickrate": 5.31,
+      "bans": 15,
+      "banrate": 0.87
+    },
+    {
+      "champion": "Galio",
+      "games": 73,
+      "wins": 47,
+      "winrate": 64.38,
+      "pickrate": 8.43,
+      "bans": 22,
+      "banrate": 1.27
+    },
+    {
+      "champion": "Gangplank",
+      "games": 27,
+      "wins": 13,
+      "winrate": 48.15,
+      "pickrate": 3.12,
+      "bans": 5,
+      "banrate": 0.29
+    },
+    {
+      "champion": "Garen",
+      "games": 39,
+      "wins": 14,
+      "winrate": 35.9,
+      "pickrate": 4.5,
+      "bans": 2,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Gnar",
+      "games": 52,
+      "wins": 27,
+      "winrate": 51.92,
+      "pickrate": 6.0,
+      "bans": 9,
+      "banrate": 0.52
+    },
+    {
+      "champion": "Gragas",
+      "games": 34,
+      "wins": 21,
+      "winrate": 61.76,
+      "pickrate": 3.93,
+      "bans": 3,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Graves",
+      "games": 95,
+      "wins": 38,
+      "winrate": 40.0,
+      "pickrate": 10.97,
+      "bans": 120,
+      "banrate": 6.93
+    },
+    {
+      "champion": "Gwen",
+      "games": 29,
+      "wins": 19,
+      "winrate": 65.52,
+      "pickrate": 3.35,
+      "bans": 26,
+      "banrate": 1.5
+    },
+    {
+      "champion": "Hecarim",
+      "games": 74,
+      "wins": 44,
+      "winrate": 59.46,
+      "pickrate": 8.55,
+      "bans": 113,
+      "banrate": 6.52
+    },
+    {
+      "champion": "Heimerdinger",
+      "games": 14,
+      "wins": 9,
+      "winrate": 64.29,
+      "pickrate": 1.62,
+      "bans": 3,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Hwei",
+      "games": 70,
+      "wins": 30,
+      "winrate": 42.86,
+      "pickrate": 8.08,
+      "bans": 9,
+      "banrate": 0.52
+    },
+    {
+      "champion": "Illaoi",
+      "games": 17,
+      "wins": 7,
+      "winrate": 41.18,
+      "pickrate": 1.96,
+      "bans": 1,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Irelia",
+      "games": 58,
+      "wins": 27,
+      "winrate": 46.55,
+      "pickrate": 6.7,
+      "bans": 96,
+      "banrate": 5.54
+    },
+    {
+      "champion": "Ivern",
+      "games": 25,
+      "wins": 12,
+      "winrate": 48.0,
+      "pickrate": 2.89,
+      "bans": 5,
+      "banrate": 0.29
+    },
+    {
+      "champion": "Janna",
+      "games": 101,
+      "wins": 48,
+      "winrate": 47.52,
+      "pickrate": 11.66,
+      "bans": 24,
+      "banrate": 1.39
+    },
+    {
+      "champion": "JarvanIV",
+      "games": 95,
+      "wins": 43,
+      "winrate": 45.26,
+      "pickrate": 10.97,
+      "bans": 12,
+      "banrate": 0.69
+    },
+    {
+      "champion": "Jax",
+      "games": 44,
+      "wins": 22,
+      "winrate": 50.0,
+      "pickrate": 5.08,
+      "bans": 107,
+      "banrate": 6.18
+    },
+    {
+      "champion": "Jayce",
+      "games": 162,
+      "wins": 86,
+      "winrate": 53.09,
+      "pickrate": 18.71,
+      "bans": 220,
+      "banrate": 12.7
+    },
+    {
+      "champion": "Jhin",
+      "games": 77,
+      "wins": 32,
+      "winrate": 41.56,
+      "pickrate": 8.89,
+      "bans": 2,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Jinx",
+      "games": 29,
+      "wins": 21,
+      "winrate": 72.41,
+      "pickrate": 3.35,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "KSante",
+      "games": 60,
+      "wins": 25,
+      "winrate": 41.67,
+      "pickrate": 6.93,
+      "bans": 28,
+      "banrate": 1.62
+    },
+    {
+      "champion": "Kaisa",
+      "games": 125,
+      "wins": 58,
+      "winrate": 46.4,
+      "pickrate": 14.43,
+      "bans": 6,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Kalista",
+      "games": 48,
+      "wins": 31,
+      "winrate": 64.58,
+      "pickrate": 5.54,
+      "bans": 12,
+      "banrate": 0.69
+    },
+    {
+      "champion": "Karma",
+      "games": 67,
+      "wins": 30,
+      "winrate": 44.78,
+      "pickrate": 7.74,
+      "bans": 30,
+      "banrate": 1.73
+    },
+    {
+      "champion": "Karthus",
+      "games": 50,
+      "wins": 32,
+      "winrate": 64.0,
+      "pickrate": 5.77,
+      "bans": 7,
+      "banrate": 0.4
+    },
+    {
+      "champion": "Kassadin",
+      "games": 29,
+      "wins": 17,
+      "winrate": 58.62,
+      "pickrate": 3.35,
+      "bans": 26,
+      "banrate": 1.5
+    },
+    {
+      "champion": "Katarina",
+      "games": 52,
+      "wins": 23,
+      "winrate": 44.23,
+      "pickrate": 6.0,
+      "bans": 213,
+      "banrate": 12.3
+    },
+    {
+      "champion": "Kayle",
+      "games": 24,
+      "wins": 17,
+      "winrate": 70.83,
+      "pickrate": 2.77,
+      "bans": 6,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Kayn",
+      "games": 16,
+      "wins": 8,
+      "winrate": 50.0,
+      "pickrate": 1.85,
+      "bans": 7,
+      "banrate": 0.4
+    },
+    {
+      "champion": "Kennen",
+      "games": 19,
+      "wins": 11,
+      "winrate": 57.89,
+      "pickrate": 2.19,
+      "bans": 19,
+      "banrate": 1.1
+    },
+    {
+      "champion": "Khazix",
+      "games": 60,
+      "wins": 35,
+      "winrate": 58.33,
+      "pickrate": 6.93,
+      "bans": 73,
+      "banrate": 4.21
+    },
+    {
+      "champion": "Kindred",
+      "games": 31,
+      "wins": 19,
+      "winrate": 61.29,
+      "pickrate": 3.58,
+      "bans": 7,
+      "banrate": 0.4
+    },
+    {
+      "champion": "Kled",
+      "games": 18,
+      "wins": 9,
+      "winrate": 50.0,
+      "pickrate": 2.08,
+      "bans": 2,
+      "banrate": 0.12
+    },
+    {
+      "champion": "KogMaw",
+      "games": 32,
+      "wins": 11,
+      "winrate": 34.38,
+      "pickrate": 3.7,
+      "bans": 2,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Leblanc",
+      "games": 51,
+      "wins": 24,
+      "winrate": 47.06,
+      "pickrate": 5.89,
+      "bans": 163,
+      "banrate": 9.41
+    },
+    {
+      "champion": "LeeSin",
+      "games": 128,
+      "wins": 62,
+      "winrate": 48.44,
+      "pickrate": 14.78,
+      "bans": 76,
+      "banrate": 4.39
+    },
+    {
+      "champion": "Leona",
+      "games": 84,
+      "wins": 45,
+      "winrate": 53.57,
+      "pickrate": 9.7,
+      "bans": 24,
+      "banrate": 1.39
+    },
+    {
+      "champion": "Lillia",
+      "games": 16,
+      "wins": 5,
+      "winrate": 31.25,
+      "pickrate": 1.85,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Lissandra",
+      "games": 18,
+      "wins": 11,
+      "winrate": 61.11,
+      "pickrate": 2.08,
+      "bans": 3,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Locke",
+      "games": 127,
+      "wins": 67,
+      "winrate": 52.76,
+      "pickrate": 14.67,
+      "bans": 717,
+      "banrate": 41.4
+    },
+    {
+      "champion": "Lucian",
+      "games": 54,
+      "wins": 23,
+      "winrate": 42.59,
+      "pickrate": 6.24,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Lulu",
+      "games": 57,
+      "wins": 34,
+      "winrate": 59.65,
+      "pickrate": 6.58,
+      "bans": 23,
+      "banrate": 1.33
+    },
+    {
+      "champion": "Lux",
+      "games": 43,
+      "wins": 27,
+      "winrate": 62.79,
+      "pickrate": 4.97,
+      "bans": 2,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Malphite",
+      "games": 54,
+      "wins": 21,
+      "winrate": 38.89,
+      "pickrate": 6.24,
+      "bans": 97,
+      "banrate": 5.6
+    },
+    {
+      "champion": "Malzahar",
+      "games": 9,
+      "wins": 3,
+      "winrate": 33.33,
+      "pickrate": 1.04,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Maokai",
+      "games": 20,
+      "wins": 9,
+      "winrate": 45.0,
+      "pickrate": 2.31,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "MasterYi",
+      "games": 30,
+      "wins": 16,
+      "winrate": 53.33,
+      "pickrate": 3.46,
+      "bans": 14,
+      "banrate": 0.81
+    },
+    {
+      "champion": "Mel",
+      "games": 41,
+      "wins": 15,
+      "winrate": 36.59,
+      "pickrate": 4.73,
+      "bans": 144,
+      "banrate": 8.31
+    },
+    {
+      "champion": "Milio",
+      "games": 19,
+      "wins": 10,
+      "winrate": 52.63,
+      "pickrate": 2.19,
+      "bans": 5,
+      "banrate": 0.29
+    },
+    {
+      "champion": "MissFortune",
+      "games": 12,
+      "wins": 7,
+      "winrate": 58.33,
+      "pickrate": 1.39,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "MonkeyKing",
+      "games": 62,
+      "wins": 42,
+      "winrate": 67.74,
+      "pickrate": 7.16,
+      "bans": 23,
+      "banrate": 1.33
+    },
+    {
+      "champion": "Mordekaiser",
+      "games": 25,
+      "wins": 11,
+      "winrate": 44.0,
+      "pickrate": 2.89,
+      "bans": 3,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Morgana",
+      "games": 11,
+      "wins": 4,
+      "winrate": 36.36,
+      "pickrate": 1.27,
+      "bans": 4,
+      "banrate": 0.23
+    },
+    {
+      "champion": "Naafiri",
+      "games": 52,
+      "wins": 20,
+      "winrate": 38.46,
+      "pickrate": 6.0,
+      "bans": 113,
+      "banrate": 6.52
+    },
+    {
+      "champion": "Nami",
+      "games": 43,
+      "wins": 24,
+      "winrate": 55.81,
+      "pickrate": 4.97,
+      "bans": 1,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Nasus",
+      "games": 16,
+      "wins": 9,
+      "winrate": 56.25,
+      "pickrate": 1.85,
+      "bans": 16,
+      "banrate": 0.92
+    },
+    {
+      "champion": "Nautilus",
+      "games": 143,
+      "wins": 68,
+      "winrate": 47.55,
+      "pickrate": 16.51,
+      "bans": 65,
+      "banrate": 3.75
+    },
+    {
+      "champion": "Neeko",
+      "games": 14,
+      "wins": 8,
+      "winrate": 57.14,
+      "pickrate": 1.62,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Nidalee",
+      "games": 46,
+      "wins": 18,
+      "winrate": 39.13,
+      "pickrate": 5.31,
+      "bans": 7,
+      "banrate": 0.4
+    },
+    {
+      "champion": "Nilah",
+      "games": 7,
+      "wins": 3,
+      "winrate": 42.86,
+      "pickrate": 0.81,
+      "bans": 11,
+      "banrate": 0.64
+    },
+    {
+      "champion": "Nocturne",
+      "games": 48,
+      "wins": 23,
+      "winrate": 47.92,
+      "pickrate": 5.54,
+      "bans": 18,
+      "banrate": 1.04
+    },
+    {
+      "champion": "Nunu",
+      "games": 33,
+      "wins": 21,
+      "winrate": 63.64,
+      "pickrate": 3.81,
+      "bans": 7,
+      "banrate": 0.4
+    },
+    {
+      "champion": "Olaf",
+      "games": 61,
+      "wins": 27,
+      "winrate": 44.26,
+      "pickrate": 7.04,
+      "bans": 18,
+      "banrate": 1.04
+    },
+    {
+      "champion": "Orianna",
+      "games": 33,
+      "wins": 19,
+      "winrate": 57.58,
+      "pickrate": 3.81,
+      "bans": 17,
+      "banrate": 0.98
+    },
+    {
+      "champion": "Ornn",
+      "games": 30,
+      "wins": 14,
+      "winrate": 46.67,
+      "pickrate": 3.46,
+      "bans": 2,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Pantheon",
+      "games": 80,
+      "wins": 35,
+      "winrate": 43.75,
+      "pickrate": 9.24,
+      "bans": 11,
+      "banrate": 0.64
+    },
+    {
+      "champion": "Poppy",
+      "games": 52,
+      "wins": 25,
+      "winrate": 48.08,
+      "pickrate": 6.0,
+      "bans": 112,
+      "banrate": 6.47
+    },
+    {
+      "champion": "Pyke",
+      "games": 95,
+      "wins": 42,
+      "winrate": 44.21,
+      "pickrate": 10.97,
+      "bans": 343,
+      "banrate": 19.8
+    },
+    {
+      "champion": "Qiyana",
+      "games": 101,
+      "wins": 60,
+      "winrate": 59.41,
+      "pickrate": 11.66,
+      "bans": 96,
+      "banrate": 5.54
+    },
+    {
+      "champion": "Quinn",
+      "games": 45,
+      "wins": 22,
+      "winrate": 48.89,
+      "pickrate": 5.2,
+      "bans": 12,
+      "banrate": 0.69
+    },
+    {
+      "champion": "Rakan",
+      "games": 48,
+      "wins": 23,
+      "winrate": 47.92,
+      "pickrate": 5.54,
+      "bans": 5,
+      "banrate": 0.29
+    },
+    {
+      "champion": "Rammus",
+      "games": 3,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.35,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "RekSai",
+      "games": 24,
+      "wins": 12,
+      "winrate": 50.0,
+      "pickrate": 2.77,
+      "bans": 2,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Rell",
+      "games": 82,
+      "wins": 36,
+      "winrate": 43.9,
+      "pickrate": 9.47,
+      "bans": 11,
+      "banrate": 0.64
+    },
+    {
+      "champion": "Renata",
+      "games": 9,
+      "wins": 5,
+      "winrate": 55.56,
+      "pickrate": 1.04,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Renekton",
+      "games": 53,
+      "wins": 21,
+      "winrate": 39.62,
+      "pickrate": 6.12,
+      "bans": 25,
+      "banrate": 1.44
+    },
+    {
+      "champion": "Rengar",
+      "games": 38,
+      "wins": 24,
+      "winrate": 63.16,
+      "pickrate": 4.39,
+      "bans": 234,
+      "banrate": 13.51
+    },
+    {
+      "champion": "Riven",
+      "games": 44,
+      "wins": 24,
+      "winrate": 54.55,
+      "pickrate": 5.08,
+      "bans": 106,
+      "banrate": 6.12
+    },
+    {
+      "champion": "Rumble",
+      "games": 40,
+      "wins": 21,
+      "winrate": 52.5,
+      "pickrate": 4.62,
+      "bans": 17,
+      "banrate": 0.98
+    },
+    {
+      "champion": "Ryze",
+      "games": 46,
+      "wins": 26,
+      "winrate": 56.52,
+      "pickrate": 5.31,
+      "bans": 5,
+      "banrate": 0.29
+    },
+    {
+      "champion": "Samira",
+      "games": 17,
+      "wins": 8,
+      "winrate": 47.06,
+      "pickrate": 1.96,
+      "bans": 2,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Sejuani",
+      "games": 5,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.58,
+      "bans": 1,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Senna",
+      "games": 57,
+      "wins": 30,
+      "winrate": 52.63,
+      "pickrate": 6.58,
+      "bans": 21,
+      "banrate": 1.21
+    },
+    {
+      "champion": "Seraphine",
+      "games": 34,
+      "wins": 16,
+      "winrate": 47.06,
+      "pickrate": 3.93,
+      "bans": 11,
+      "banrate": 0.64
+    },
+    {
+      "champion": "Sett",
+      "games": 24,
+      "wins": 14,
+      "winrate": 58.33,
+      "pickrate": 2.77,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Shaco",
+      "games": 55,
+      "wins": 35,
+      "winrate": 63.64,
+      "pickrate": 6.35,
+      "bans": 202,
+      "banrate": 11.66
+    },
+    {
+      "champion": "Shen",
+      "games": 81,
+      "wins": 40,
+      "winrate": 49.38,
+      "pickrate": 9.35,
+      "bans": 17,
+      "banrate": 0.98
+    },
+    {
+      "champion": "Shyvana",
+      "games": 24,
+      "wins": 11,
+      "winrate": 45.83,
+      "pickrate": 2.77,
+      "bans": 14,
+      "banrate": 0.81
+    },
+    {
+      "champion": "Singed",
+      "games": 36,
+      "wins": 18,
+      "winrate": 50.0,
+      "pickrate": 4.16,
+      "bans": 98,
+      "banrate": 5.66
+    },
+    {
+      "champion": "Sion",
+      "games": 50,
+      "wins": 19,
+      "winrate": 38.0,
+      "pickrate": 5.77,
+      "bans": 8,
+      "banrate": 0.46
+    },
+    {
+      "champion": "Sivir",
+      "games": 37,
+      "wins": 27,
+      "winrate": 72.97,
+      "pickrate": 4.27,
+      "bans": 12,
+      "banrate": 0.69
+    },
+    {
+      "champion": "Skarner",
+      "games": 43,
+      "wins": 24,
+      "winrate": 55.81,
+      "pickrate": 4.97,
+      "bans": 7,
+      "banrate": 0.4
+    },
+    {
+      "champion": "Smolder",
+      "games": 7,
+      "wins": 4,
+      "winrate": 57.14,
+      "pickrate": 0.81,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Sona",
+      "games": 55,
+      "wins": 29,
+      "winrate": 52.73,
+      "pickrate": 6.35,
+      "bans": 1,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Soraka",
+      "games": 20,
+      "wins": 8,
+      "winrate": 40.0,
+      "pickrate": 2.31,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Swain",
+      "games": 21,
+      "wins": 12,
+      "winrate": 57.14,
+      "pickrate": 2.42,
+      "bans": 1,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Sylas",
+      "games": 140,
+      "wins": 77,
+      "winrate": 55.0,
+      "pickrate": 16.17,
+      "bans": 210,
+      "banrate": 12.12
+    },
+    {
+      "champion": "Syndra",
+      "games": 186,
+      "wins": 92,
+      "winrate": 49.46,
+      "pickrate": 21.48,
+      "bans": 385,
+      "banrate": 22.23
+    },
+    {
+      "champion": "TahmKench",
+      "games": 10,
+      "wins": 5,
+      "winrate": 50.0,
+      "pickrate": 1.15,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Taliyah",
+      "games": 62,
+      "wins": 28,
+      "winrate": 45.16,
+      "pickrate": 7.16,
+      "bans": 3,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Talon",
+      "games": 60,
+      "wins": 36,
+      "winrate": 60.0,
+      "pickrate": 6.93,
+      "bans": 348,
+      "banrate": 20.09
+    },
+    {
+      "champion": "Taric",
+      "games": 37,
+      "wins": 21,
+      "winrate": 56.76,
+      "pickrate": 4.27,
+      "bans": 8,
+      "banrate": 0.46
+    },
+    {
+      "champion": "Teemo",
+      "games": 22,
+      "wins": 14,
+      "winrate": 63.64,
+      "pickrate": 2.54,
+      "bans": 10,
+      "banrate": 0.58
+    },
+    {
+      "champion": "Thresh",
+      "games": 81,
+      "wins": 42,
+      "winrate": 51.85,
+      "pickrate": 9.35,
+      "bans": 60,
+      "banrate": 3.46
+    },
+    {
+      "champion": "Tristana",
+      "games": 81,
+      "wins": 46,
+      "winrate": 56.79,
+      "pickrate": 9.35,
+      "bans": 29,
+      "banrate": 1.67
+    },
+    {
+      "champion": "Trundle",
+      "games": 31,
+      "wins": 11,
+      "winrate": 35.48,
+      "pickrate": 3.58,
+      "bans": 6,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Tryndamere",
+      "games": 23,
+      "wins": 11,
+      "winrate": 47.83,
+      "pickrate": 2.66,
+      "bans": 7,
+      "banrate": 0.4
+    },
+    {
+      "champion": "TwistedFate",
+      "games": 52,
+      "wins": 30,
+      "winrate": 57.69,
+      "pickrate": 6.0,
+      "bans": 6,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Twitch",
+      "games": 18,
+      "wins": 10,
+      "winrate": 55.56,
+      "pickrate": 2.08,
+      "bans": 12,
+      "banrate": 0.69
+    },
+    {
+      "champion": "Udyr",
+      "games": 19,
+      "wins": 11,
+      "winrate": 57.89,
+      "pickrate": 2.19,
+      "bans": 3,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Urgot",
+      "games": 32,
+      "wins": 18,
+      "winrate": 56.25,
+      "pickrate": 3.7,
+      "bans": 3,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Varus",
+      "games": 35,
+      "wins": 19,
+      "winrate": 54.29,
+      "pickrate": 4.04,
+      "bans": 23,
+      "banrate": 1.33
+    },
+    {
+      "champion": "Vayne",
+      "games": 79,
+      "wins": 41,
+      "winrate": 51.9,
+      "pickrate": 9.12,
+      "bans": 157,
+      "banrate": 9.06
+    },
+    {
+      "champion": "Veigar",
+      "games": 44,
+      "wins": 18,
+      "winrate": 40.91,
+      "pickrate": 5.08,
+      "bans": 1,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Velkoz",
+      "games": 56,
+      "wins": 32,
+      "winrate": 57.14,
+      "pickrate": 6.47,
+      "bans": 12,
+      "banrate": 0.69
+    },
+    {
+      "champion": "Vex",
+      "games": 14,
+      "wins": 6,
+      "winrate": 42.86,
+      "pickrate": 1.62,
+      "bans": 7,
+      "banrate": 0.4
+    },
+    {
+      "champion": "Vi",
+      "games": 54,
+      "wins": 30,
+      "winrate": 55.56,
+      "pickrate": 6.24,
+      "bans": 8,
+      "banrate": 0.46
+    },
+    {
+      "champion": "Viego",
+      "games": 76,
+      "wins": 34,
+      "winrate": 44.74,
+      "pickrate": 8.78,
+      "bans": 11,
+      "banrate": 0.64
+    },
+    {
+      "champion": "Viktor",
+      "games": 178,
+      "wins": 84,
+      "winrate": 47.19,
+      "pickrate": 20.55,
+      "bans": 130,
+      "banrate": 7.51
+    },
+    {
+      "champion": "Vladimir",
+      "games": 80,
+      "wins": 41,
+      "winrate": 51.25,
+      "pickrate": 9.24,
+      "bans": 50,
+      "banrate": 2.89
+    },
+    {
+      "champion": "Volibear",
+      "games": 8,
+      "wins": 4,
+      "winrate": 50.0,
+      "pickrate": 0.92,
+      "bans": 1,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Warwick",
+      "games": 21,
+      "wins": 10,
+      "winrate": 47.62,
+      "pickrate": 2.42,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Xayah",
+      "games": 19,
+      "wins": 9,
+      "winrate": 47.37,
+      "pickrate": 2.19,
+      "bans": 1,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Xerath",
+      "games": 77,
+      "wins": 31,
+      "winrate": 40.26,
+      "pickrate": 8.89,
+      "bans": 8,
+      "banrate": 0.46
+    },
+    {
+      "champion": "XinZhao",
+      "games": 31,
+      "wins": 9,
+      "winrate": 29.03,
+      "pickrate": 3.58,
+      "bans": 0,
+      "banrate": 0.0
+    },
+    {
+      "champion": "Yasuo",
+      "games": 102,
+      "wins": 53,
+      "winrate": 51.96,
+      "pickrate": 11.78,
+      "bans": 116,
+      "banrate": 6.7
+    },
+    {
+      "champion": "Yone",
+      "games": 120,
+      "wins": 64,
+      "winrate": 53.33,
+      "pickrate": 13.86,
+      "bans": 29,
+      "banrate": 1.67
+    },
+    {
+      "champion": "Yorick",
+      "games": 16,
+      "wins": 8,
+      "winrate": 50.0,
+      "pickrate": 1.85,
+      "bans": 37,
+      "banrate": 2.14
+    },
+    {
+      "champion": "Yunara",
+      "games": 74,
+      "wins": 37,
+      "winrate": 50.0,
+      "pickrate": 8.55,
+      "bans": 3,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Yuumi",
+      "games": 10,
+      "wins": 3,
+      "winrate": 30.0,
+      "pickrate": 1.15,
+      "bans": 6,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Zaahen",
+      "games": 41,
+      "wins": 25,
+      "winrate": 60.98,
+      "pickrate": 4.73,
+      "bans": 3,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Zac",
+      "games": 10,
+      "wins": 3,
+      "winrate": 30.0,
+      "pickrate": 1.15,
+      "bans": 10,
+      "banrate": 0.58
+    },
+    {
+      "champion": "Zed",
+      "games": 44,
+      "wins": 27,
+      "winrate": 61.36,
+      "pickrate": 5.08,
+      "bans": 147,
+      "banrate": 8.49
+    },
+    {
+      "champion": "Zeri",
+      "games": 63,
+      "wins": 39,
+      "winrate": 61.9,
+      "pickrate": 7.27,
+      "bans": 2,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Ziggs",
+      "games": 63,
+      "wins": 34,
+      "winrate": 53.97,
+      "pickrate": 7.27,
+      "bans": 30,
+      "banrate": 1.73
+    },
+    {
+      "champion": "Zilean",
+      "games": 46,
+      "wins": 24,
+      "winrate": 52.17,
+      "pickrate": 5.31,
+      "bans": 26,
+      "banrate": 1.5
+    },
+    {
+      "champion": "Zoe",
+      "games": 40,
+      "wins": 20,
+      "winrate": 50.0,
+      "pickrate": 4.62,
+      "bans": 16,
+      "banrate": 0.92
+    },
+    {
+      "champion": "Zyra",
+      "games": 19,
+      "wins": 10,
+      "winrate": 52.63,
+      "pickrate": 2.19,
+      "bans": 1,
+      "banrate": 0.06
+    }
+  ]
+}
