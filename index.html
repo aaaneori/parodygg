@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Champion Meta — GM+Challenger RU</title>
+<title>Champion Meta Report</title>
 <style>
   :root {
     --bg: #0a0d14;
@@ -26,7 +26,7 @@
     background: var(--bg);
     color: var(--text);
     font-family: -apple-system, "Segoe UI", Inter, Roboto, sans-serif;
-    padding: 40px 20px 80px;
+    padding: 32px 16px 80px;
   }
 
   .page {
@@ -43,6 +43,7 @@
     text-transform: uppercase;
     color: var(--gold);
     margin-bottom: 10px;
+    flex-wrap: wrap;
   }
 
   .eyebrow .dot {
@@ -50,30 +51,66 @@
     height: 5px;
     background: var(--gold);
     transform: rotate(45deg);
+    flex-shrink: 0;
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 650;
     margin: 0 0 4px;
     letter-spacing: -0.01em;
   }
 
+  .meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
   .subtitle {
     color: var(--text-dim);
     font-size: 14px;
-    margin-bottom: 28px;
+  }
+
+  .updated-note {
+    color: var(--text-dim);
+    font-size: 12px;
   }
 
   .rule {
     height: 1px;
     background: linear-gradient(90deg, var(--gold-dim), transparent);
-    margin-bottom: 28px;
+    margin-bottom: 20px;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 280px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 9px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+  }
+
+  .search-box:focus { border-color: var(--gold-dim); }
+  .search-box::placeholder { color: var(--text-dim); }
+
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
   }
 
   table {
     width: 100%;
     border-collapse: collapse;
+    min-width: 560px;
   }
 
   thead th {
@@ -90,7 +127,6 @@
   }
 
   thead th:hover { color: var(--gold); }
-
   thead th.active { color: var(--gold); }
 
   thead th .arrow {
@@ -102,14 +138,8 @@
   th.col-rank, th.col-champion { cursor: default; }
   th.col-rank:hover, th.col-champion:hover { color: var(--text-dim); }
 
-  tbody tr {
-    background: var(--panel);
-    border-radius: 8px;
-  }
-
-  tbody tr:nth-child(even) {
-    background: var(--panel-alt);
-  }
+  tbody tr { background: var(--panel); }
+  tbody tr:nth-child(even) { background: var(--panel-alt); }
 
   td {
     padding: 10px 12px;
@@ -136,16 +166,24 @@
     border: 1px solid var(--border);
     object-fit: cover;
     background: var(--panel-alt);
+    flex-shrink: 0;
+  }
+
+  .champion-icon.icon-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: var(--text-dim);
   }
 
   .champion-name {
     font-weight: 550;
     font-size: 14px;
+    white-space: nowrap;
   }
 
-  .stat-cell {
-    min-width: 140px;
-  }
+  .stat-cell { min-width: 130px; }
 
   .stat-value {
     font-size: 13px;
@@ -161,16 +199,12 @@
     overflow: hidden;
   }
 
-  .bar-fill {
-    height: 100%;
-    border-radius: 3px;
-  }
-
+  .bar-fill { height: 100%; border-radius: 3px; }
   .bar-fill.pick { background: var(--pick); }
   .bar-fill.win { background: var(--win); }
   .bar-fill.ban { background: var(--ban); }
 
-  .loading, .error {
+  .loading, .error, .empty-state {
     color: var(--text-dim);
     font-size: 14px;
     padding: 20px 0;
@@ -180,16 +214,27 @@
     margin-top: 24px;
     font-size: 12px;
     color: var(--text-dim);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 22px; }
+    .search-box { max-width: 100%; }
   }
 </style>
 </head>
 <body>
 
 <div class="page">
-  <div class="eyebrow"><span class="dot"></span> RU SERVER &middot; PATCH 26.14 &middot; GRANDMASTER + CHALLENGER</div>
+  <div class="eyebrow" id="eyebrow"><span class="dot"></span> Загрузка...</div>
   <h1>Champion Meta Report</h1>
-  <div class="subtitle" id="subtitle">Загрузка данных...</div>
+  <div class="meta-row">
+    <div class="subtitle" id="subtitle">Загрузка данных...</div>
+    <div class="updated-note" id="updatedNote"></div>
+  </div>
   <div class="rule"></div>
+
+  <input type="text" class="search-box" id="searchBox" placeholder="Найти чемпиона..." style="display:none">
 
   <div id="content">
     <div class="loading">Загружаю статистику...</div>
@@ -199,9 +244,11 @@
 </div>
 
 <script>
-  const DDRAGON_FALLBACK_VERSION = "14.14.1";
+  const DDRAGON_FALLBACK_VERSION = "14.16.1";
   let currentSort = { key: "pickrate", direction: "desc" };
   let championData = [];
+  let searchQuery = "";
+  let ddragonVersion = DDRAGON_FALLBACK_VERSION;
 
   async function getDdragonVersion() {
     try {
@@ -217,19 +264,41 @@
     return `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${championName}.png`;
   }
 
-  function maxOf(arr, key) {
-    return Math.max(...arr.map(row => row[key]));
+  function championIconHtml(championName, version) {
+    const initials = championName.replace(/[a-z']/g, '').slice(0, 2) || championName.slice(0, 2).toUpperCase();
+    return `<img class="champion-icon" src="${championIconUrl(championName, version)}" alt="${championName}" loading="lazy"
+      onerror="this.outerHTML='<div class=&quot;champion-icon icon-fallback&quot;>${initials}</div>'">`;
   }
 
-  function renderTable(data, version) {
-    const maxPick = maxOf(data, "pickrate");
-    const maxWin = maxOf(data, "winrate");
-    const maxBan = maxOf(data, "banrate");
+  function maxOf(arr, key) {
+    if (arr.length === 0) return 1;
+    return Math.max(...arr.map(row => row[key])) || 1;
+  }
 
-    const sorted = [...data].sort((a, b) => {
+  function formatDate(dateStr) {
+    if (!dateStr) return "";
+    const d = new Date(dateStr + "T00:00:00");
+    return d.toLocaleDateString("ru-RU", { day: "numeric", month: "long", year: "numeric" });
+  }
+
+  function renderTable() {
+    const filtered = searchQuery
+      ? championData.filter(row => row.champion.toLowerCase().includes(searchQuery.toLowerCase()))
+      : championData;
+
+    const maxPick = maxOf(filtered, "pickrate");
+    const maxWin = maxOf(filtered, "winrate");
+    const maxBan = maxOf(filtered, "banrate");
+
+    const sorted = [...filtered].sort((a, b) => {
       const dir = currentSort.direction === "desc" ? -1 : 1;
       return (a[currentSort.key] - b[currentSort.key]) * dir;
     });
+
+    if (sorted.length === 0) {
+      document.getElementById("content").innerHTML = `<div class="empty-state">Ничего не найдено по запросу «${searchQuery}».</div>`;
+      return;
+    }
 
     let rows = "";
     sorted.forEach((row, index) => {
@@ -238,7 +307,7 @@
           <td class="col-rank">${index + 1}</td>
           <td>
             <div class="champion-cell">
-              <img class="champion-icon" src="${championIconUrl(row.champion, version)}" alt="${row.champion}" loading="lazy">
+              ${championIconHtml(row.champion, ddragonVersion)}
               <span class="champion-name">${row.champion}</span>
             </div>
           </td>
@@ -263,20 +332,22 @@
     const activeClass = (key) => currentSort.key === key ? "active" : "";
 
     document.getElementById("content").innerHTML = `
-      <table>
-        <thead>
-          <tr>
-            <th class="col-rank">#</th>
-            <th class="col-champion">Чемпион</th>
-            <th class="${activeClass('pickrate')}" data-sort="pickrate">Пикрейт ${arrowFor('pickrate')}</th>
-            <th class="${activeClass('winrate')}" data-sort="winrate">Винрейт ${arrowFor('winrate')}</th>
-            <th class="${activeClass('banrate')}" data-sort="banrate">Банрейт ${arrowFor('banrate')}</th>
-          </tr>
-        </thead>
-        <tbody>
-          ${rows}
-        </tbody>
-      </table>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th class="col-rank">#</th>
+              <th class="col-champion">Чемпион</th>
+              <th class="${activeClass('pickrate')}" data-sort="pickrate">Пикрейт ${arrowFor('pickrate')}</th>
+              <th class="${activeClass('winrate')}" data-sort="winrate">Винрейт ${arrowFor('winrate')}</th>
+              <th class="${activeClass('banrate')}" data-sort="banrate">Банрейт ${arrowFor('banrate')}</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows}
+          </tbody>
+        </table>
+      </div>
     `;
 
     document.querySelectorAll("th[data-sort]").forEach(th => {
@@ -287,7 +358,7 @@
         } else {
           currentSort = { key, direction: "desc" };
         }
-        renderTable(championData, version);
+        renderTable();
       });
     });
   }
@@ -301,12 +372,34 @@
 
       if (!res.ok) throw new Error("Не удалось загрузить champion_final_stats.json");
 
-      championData = await res.json();
-      document.getElementById("subtitle").textContent = `${championData.length} чемпионов`;
-      document.getElementById("footerNote").textContent = "Источник: Riot Match-V5 API. Пикрейт/винрейт/банрейт считаются по матчам, где присутствовал хотя бы один игрок GM или Challenger.";
-      renderTable(championData, version);
+      ddragonVersion = version;
+      const data = await res.json();
+
+      championData = data.champions || [];
+      const region = data.region || "";
+      const patch = data.patch || "";
+      const lastUpdated = data.last_updated || "";
+      const totalMatches = data.total_matches || 0;
+
+      document.getElementById("eyebrow").innerHTML =
+        `<span class="dot"></span> ${region} SERVER &middot; PATCH ${patch} &middot; GRANDMASTER + CHALLENGER`;
+      document.getElementById("subtitle").textContent =
+        `${championData.length} чемпионов &middot; ${totalMatches} матчей`.replace('&middot;', '·');
+      document.getElementById("updatedNote").textContent = lastUpdated ? `Обновлено: ${formatDate(lastUpdated)}` : "";
+      document.getElementById("footerNote").textContent =
+        "Источник: Riot Match-V5 API. Пикрейт/винрейт/банрейт считаются по всем матчам, где присутствовал хотя бы один игрок ранга Grandmaster или Challenger — включая остальных участников этих матчей независимо от их ранга. Статистика накапливается с первого дня патча.";
+
+      const searchBox = document.getElementById("searchBox");
+      searchBox.style.display = "block";
+      searchBox.addEventListener("input", (e) => {
+        searchQuery = e.target.value.trim();
+        renderTable();
+      });
+
+      renderTable();
     } catch (err) {
-      document.getElementById("content").innerHTML = `<div class="error">Ошибка загрузки: ${err.message}. Убедись, что champion_final_stats.json лежит в той же папке и страница открыта через локальный сервер (не двойным кликом по файлу).</div>`;
+      document.getElementById("content").innerHTML =
+        `<div class="error">Ошибка загрузки: ${err.message}. Убедись, что champion_final_stats.json лежит в той же папке и страница открыта через локальный сервер (не двойным кликом по файлу).</div>`;
     }
   }
 
