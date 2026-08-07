@@ -102,6 +102,38 @@
   .search-box:focus { border-color: var(--gold-dim); }
   .search-box::placeholder { color: var(--text-dim); }
 
+  .controls-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .controls-row .search-box {
+    margin-bottom: 0;
+  }
+
+  .patch-select {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 9px 32px 9px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23838ba0'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+
+  .patch-select:focus { border-color: var(--gold-dim); }
+  .patch-select:hover { border-color: var(--gold-dim); }
+
   .table-scroll {
     width: 100%;
     overflow-x: auto;
@@ -234,7 +266,10 @@
   </div>
   <div class="rule"></div>
 
-  <input type="text" class="search-box" id="searchBox" placeholder="Search champion..." style="display:none">
+  <div class="controls-row">
+    <select class="patch-select" id="patchSelect" style="display:none"></select>
+    <input type="text" class="search-box" id="searchBox" placeholder="Search champion..." style="display:none">
+  </div>
 
   <div id="content">
     <div class="loading">Loading statistics...</div>
@@ -245,11 +280,15 @@
 
 <script>
   const DDRAGON_FALLBACK_VERSION = "14.16.1";
+  const LATEST_STATS_FILENAME = "champion_stats_latest.json";
   let currentSort = { key: "champion", direction: "asc" };
   let championData = [];
   let searchQuery = "";
   let ddragonVersion = DDRAGON_FALLBACK_VERSION;
   let championKeyToDisplayName = {};
+  let availablePatches = [];
+  let latestPatch = "";
+  let selectedPatch = "";
 
   async function getDdragonVersion() {
     try {
@@ -298,6 +337,45 @@
 
   function displayNameOf(row) {
     return championKeyToDisplayName[row.champion] || row.champion;
+  }
+
+  function statsFilenameFor(patchVersion) {
+    return patchVersion === latestPatch ? LATEST_STATS_FILENAME : `champion_stats_${patchVersion}.json`;
+  }
+
+  async function loadPatchData(patchVersion) {
+    const res = await fetch(statsFilenameFor(patchVersion));
+    if (!res.ok) throw new Error(`Failed to load data for patch ${patchVersion}`);
+    return res.json();
+  }
+
+  function applyPatchData(data) {
+    championData = data.champions || [];
+    const region = data.region || "";
+    const patch = data.patch || "";
+    const lastUpdated = data.last_updated || "";
+    const totalMatches = data.total_matches || 0;
+
+    document.getElementById("eyebrow").innerHTML =
+      `<span class="dot"></span> ${region} SERVER &middot; PATCH ${patch} &middot; GRANDMASTER + CHALLENGER`;
+    document.getElementById("subtitle").textContent =
+      `${championData.length} champions · ${totalMatches} matches`;
+    document.getElementById("updatedNote").textContent = lastUpdated ? `Updated: ${formatDate(lastUpdated)}` : "";
+    document.getElementById("footerNote").textContent =
+      "Source: Riot Match-V5 API. Pick rate / win rate / ban rate are calculated across all matches that included at least one Grandmaster or Challenger player, including every other participant in those matches regardless of their own rank. Statistics accumulate from the first day of the patch.";
+
+    renderTable();
+  }
+
+  function populatePatchSelect() {
+    const select = document.getElementById("patchSelect");
+    const sortedPatches = [...availablePatches].sort().reverse();
+
+    select.innerHTML = sortedPatches
+      .map(p => `<option value="${p}">Ver: ${p}</option>`)
+      .join("");
+    select.value = selectedPatch;
+    select.style.display = "block";
   }
 
   function renderTable() {
@@ -393,28 +471,23 @@
       ddragonVersion = version;
 
       const [res, nameMap] = await Promise.all([
-        fetch("champion_final_stats.json"),
+        fetch(LATEST_STATS_FILENAME),
         getChampionKeyToDisplayNameMap(version)
       ]);
 
-      if (!res.ok) throw new Error("Failed to load champion_final_stats.json");
+      if (!res.ok) throw new Error(`Failed to load ${LATEST_STATS_FILENAME}`);
 
       championKeyToDisplayName = nameMap;
       const data = await res.json();
 
-      championData = data.champions || [];
-      const region = data.region || "";
-      const patch = data.patch || "";
-      const lastUpdated = data.last_updated || "";
-      const totalMatches = data.total_matches || 0;
+      latestPatch = data.patch || "";
+      availablePatches = data.available_patches && data.available_patches.length
+        ? data.available_patches
+        : [latestPatch];
+      selectedPatch = latestPatch;
 
-      document.getElementById("eyebrow").innerHTML =
-        `<span class="dot"></span> ${region} SERVER &middot; PATCH ${patch} &middot; GRANDMASTER + CHALLENGER`;
-      document.getElementById("subtitle").textContent =
-        `${championData.length} champions · ${totalMatches} matches`;
-      document.getElementById("updatedNote").textContent = lastUpdated ? `Updated: ${formatDate(lastUpdated)}` : "";
-      document.getElementById("footerNote").textContent =
-        "Source: Riot Match-V5 API. Pick rate / win rate / ban rate are calculated across all matches that included at least one Grandmaster or Challenger player, including every other participant in those matches regardless of their own rank. Statistics accumulate from the first day of the patch.";
+      applyPatchData(data);
+      populatePatchSelect();
 
       const searchBox = document.getElementById("searchBox");
       searchBox.style.display = "block";
@@ -423,10 +496,24 @@
         renderTable();
       });
 
-      renderTable();
+      const patchSelect = document.getElementById("patchSelect");
+      patchSelect.addEventListener("change", async (e) => {
+        const chosenPatch = e.target.value;
+        try {
+          document.getElementById("content").innerHTML = `<div class="loading">Loading statistics...</div>`;
+          const patchData = await loadPatchData(chosenPatch);
+          selectedPatch = chosenPatch;
+          searchQuery = "";
+          searchBox.value = "";
+          applyPatchData(patchData);
+        } catch (err) {
+          document.getElementById("content").innerHTML =
+            `<div class="error">Loading error: ${err.message}.</div>`;
+        }
+      });
     } catch (err) {
       document.getElementById("content").innerHTML =
-        `<div class="error">Loading error: ${err.message}. Make sure champion_final_stats.json is in the same folder and the page is served through a local server (not opened by double-clicking the file).</div>`;
+        `<div class="error">Loading error: ${err.message}. Make sure ${LATEST_STATS_FILENAME} is in the same folder and the page is served through a local server (not opened by double-clicking the file).</div>`;
     }
   }
 
