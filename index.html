@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -226,18 +226,18 @@
 <body>
 
 <div class="page">
-  <div class="eyebrow" id="eyebrow"><span class="dot"></span> Загрузка...</div>
+  <div class="eyebrow" id="eyebrow"><span class="dot"></span> Loading...</div>
   <h1>Champion Meta Report</h1>
   <div class="meta-row">
-    <div class="subtitle" id="subtitle">Загрузка данных...</div>
+    <div class="subtitle" id="subtitle">Loading data...</div>
     <div class="updated-note" id="updatedNote"></div>
   </div>
   <div class="rule"></div>
 
-  <input type="text" class="search-box" id="searchBox" placeholder="Найти чемпиона..." style="display:none">
+  <input type="text" class="search-box" id="searchBox" placeholder="Search champion..." style="display:none">
 
   <div id="content">
-    <div class="loading">Загружаю статистику...</div>
+    <div class="loading">Loading statistics...</div>
   </div>
 
   <div class="footer-note" id="footerNote"></div>
@@ -249,6 +249,7 @@
   let championData = [];
   let searchQuery = "";
   let ddragonVersion = DDRAGON_FALLBACK_VERSION;
+  let championKeyToDisplayName = {};
 
   async function getDdragonVersion() {
     try {
@@ -257,6 +258,20 @@
       return versions[0];
     } catch (err) {
       return DDRAGON_FALLBACK_VERSION;
+    }
+  }
+
+  async function getChampionKeyToDisplayNameMap(version) {
+    try {
+      const res = await fetch(`https://ddragon.leagueoflegends.com/cdn/${version}/data/en_US/champion.json`);
+      const data = await res.json();
+      const map = {};
+      for (const champKey in data.data) {
+        map[champKey] = data.data[champKey].name;
+      }
+      return map;
+    } catch (err) {
+      return {};
     }
   }
 
@@ -278,12 +293,16 @@
   function formatDate(dateStr) {
     if (!dateStr) return "";
     const d = new Date(dateStr + "T00:00:00");
-    return d.toLocaleDateString("ru-RU", { day: "numeric", month: "long", year: "numeric" });
+    return d.toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" });
+  }
+
+  function displayNameOf(row) {
+    return championKeyToDisplayName[row.champion] || row.champion;
   }
 
   function renderTable() {
     const filtered = searchQuery
-      ? championData.filter(row => row.champion.toLowerCase().includes(searchQuery.toLowerCase()))
+      ? championData.filter(row => displayNameOf(row).toLowerCase().includes(searchQuery.toLowerCase()))
       : championData;
 
     const maxPick = maxOf(filtered, "pickrate");
@@ -294,14 +313,14 @@
       const dir = currentSort.direction === "desc" ? -1 : 1;
 
       if (currentSort.key === "champion") {
-        return a.champion.localeCompare(b.champion) * dir;
+        return displayNameOf(a).localeCompare(displayNameOf(b)) * dir;
       }
 
       return (a[currentSort.key] - b[currentSort.key]) * dir;
     });
 
     if (sorted.length === 0) {
-      document.getElementById("content").innerHTML = `<div class="empty-state">Ничего не найдено по запросу «${searchQuery}».</div>`;
+      document.getElementById("content").innerHTML = `<div class="empty-state">No champions found for "${searchQuery}".</div>`;
       return;
     }
 
@@ -313,7 +332,7 @@
           <td>
             <div class="champion-cell">
               ${championIconHtml(row.champion, ddragonVersion)}
-              <span class="champion-name">${row.champion}</span>
+              <span class="champion-name">${displayNameOf(row)}</span>
             </div>
           </td>
           <td class="stat-cell">
@@ -342,10 +361,10 @@
           <thead>
             <tr>
               <th class="col-rank">#</th>
-              <th class="${activeClass('champion')}" data-sort="champion">Чемпион ${arrowFor('champion')}</th>
-              <th class="${activeClass('pickrate')}" data-sort="pickrate">Пикрейт ${arrowFor('pickrate')}</th>
-              <th class="${activeClass('winrate')}" data-sort="winrate">Винрейт ${arrowFor('winrate')}</th>
-              <th class="${activeClass('banrate')}" data-sort="banrate">Банрейт ${arrowFor('banrate')}</th>
+              <th class="${activeClass('champion')}" data-sort="champion">Champion ${arrowFor('champion')}</th>
+              <th class="${activeClass('pickrate')}" data-sort="pickrate">Pick Rate ${arrowFor('pickrate')}</th>
+              <th class="${activeClass('winrate')}" data-sort="winrate">Win Rate ${arrowFor('winrate')}</th>
+              <th class="${activeClass('banrate')}" data-sort="banrate">Ban Rate ${arrowFor('banrate')}</th>
             </tr>
           </thead>
           <tbody>
@@ -370,14 +389,17 @@
 
   async function init() {
     try {
-      const [version, res] = await Promise.all([
-        getDdragonVersion(),
-        fetch("champion_final_stats.json")
+      const version = await getDdragonVersion();
+      ddragonVersion = version;
+
+      const [res, nameMap] = await Promise.all([
+        fetch("champion_final_stats.json"),
+        getChampionKeyToDisplayNameMap(version)
       ]);
 
-      if (!res.ok) throw new Error("Не удалось загрузить champion_final_stats.json");
+      if (!res.ok) throw new Error("Failed to load champion_final_stats.json");
 
-      ddragonVersion = version;
+      championKeyToDisplayName = nameMap;
       const data = await res.json();
 
       championData = data.champions || [];
@@ -389,10 +411,10 @@
       document.getElementById("eyebrow").innerHTML =
         `<span class="dot"></span> ${region} SERVER &middot; PATCH ${patch} &middot; GRANDMASTER + CHALLENGER`;
       document.getElementById("subtitle").textContent =
-        `${championData.length} чемпионов &middot; ${totalMatches} матчей`.replace('&middot;', '·');
-      document.getElementById("updatedNote").textContent = lastUpdated ? `Обновлено: ${formatDate(lastUpdated)}` : "";
+        `${championData.length} champions · ${totalMatches} matches`;
+      document.getElementById("updatedNote").textContent = lastUpdated ? `Updated: ${formatDate(lastUpdated)}` : "";
       document.getElementById("footerNote").textContent =
-        "Источник: Riot Match-V5 API. Пикрейт/винрейт/банрейт считаются по всем матчам, где присутствовал хотя бы один игрок ранга Grandmaster или Challenger — включая остальных участников этих матчей независимо от их ранга. Статистика накапливается с первого дня патча.";
+        "Source: Riot Match-V5 API. Pick rate / win rate / ban rate are calculated across all matches that included at least one Grandmaster or Challenger player, including every other participant in those matches regardless of their own rank. Statistics accumulate from the first day of the patch.";
 
       const searchBox = document.getElementById("searchBox");
       searchBox.style.display = "block";
@@ -404,7 +426,7 @@
       renderTable();
     } catch (err) {
       document.getElementById("content").innerHTML =
-        `<div class="error">Ошибка загрузки: ${err.message}. Убедись, что champion_final_stats.json лежит в той же папке и страница открыта через локальный сервер (не двойным кликом по файлу).</div>`;
+        `<div class="error">Loading error: ${err.message}. Make sure champion_final_stats.json is in the same folder and the page is served through a local server (not opened by double-clicking the file).</div>`;
     }
   }
 
