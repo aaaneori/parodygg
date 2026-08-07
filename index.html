@@ -245,7 +245,7 @@
 
 <script>
   const DDRAGON_FALLBACK_VERSION = "14.16.1";
-  let currentSort = { key: "pickrate", direction: "desc" };
+  let currentSort = { key: "champion", direction: "asc" };
   let championData = [];
   let searchQuery = "";
   let ddragonVersion = DDRAGON_FALLBACK_VERSION;
@@ -292,6 +292,11 @@
 
     const sorted = [...filtered].sort((a, b) => {
       const dir = currentSort.direction === "desc" ? -1 : 1;
+
+      if (currentSort.key === "champion") {
+        return a.champion.localeCompare(b.champion) * dir;
+      }
+
       return (a[currentSort.key] - b[currentSort.key]) * dir;
     });
 
@@ -337,7 +342,7 @@
           <thead>
             <tr>
               <th class="col-rank">#</th>
-              <th class="col-champion">Чемпион</th>
+              <th class="${activeClass('champion')}" data-sort="champion">Чемпион ${arrowFor('champion')}</th>
               <th class="${activeClass('pickrate')}" data-sort="pickrate">Пикрейт ${arrowFor('pickrate')}</th>
               <th class="${activeClass('winrate')}" data-sort="winrate">Винрейт ${arrowFor('winrate')}</th>
               <th class="${activeClass('banrate')}" data-sort="banrate">Банрейт ${arrowFor('banrate')}</th>
@@ -356,7 +361,7 @@
         if (currentSort.key === key) {
           currentSort.direction = currentSort.direction === "desc" ? "asc" : "desc";
         } else {
-          currentSort = { key, direction: "desc" };
+          currentSort = { key, direction: key === "champion" ? "asc" : "desc" };
         }
         renderTable();
       });
