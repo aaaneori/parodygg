@@ -134,6 +134,42 @@
   .patch-select:focus { border-color: var(--gold-dim); }
   .patch-select:hover { border-color: var(--gold-dim); }
 
+  .view-toggle {
+    display: flex;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 3px;
+    gap: 2px;
+  }
+
+  .view-toggle button {
+    background: transparent;
+    border: none;
+    color: var(--text-dim);
+    font-size: 13px;
+    font-weight: 550;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+  }
+
+  .view-toggle button:hover { color: var(--text); }
+
+  .view-toggle button.active {
+    background: var(--panel-alt);
+    color: var(--gold);
+  }
+
+  .controls-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
   .table-scroll {
     width: 100%;
     overflow-x: auto;
@@ -280,7 +316,13 @@
   <div class="rule"></div>
 
   <div class="controls-row">
-    <select class="patch-select" id="patchSelect" style="display:none"></select>
+    <div class="controls-left">
+      <div class="view-toggle" id="viewToggle" style="display:none">
+        <button type="button" data-view="no-roles">No Roles</button>
+        <button type="button" data-view="roles">By Role</button>
+      </div>
+      <select class="patch-select" id="patchSelect" style="display:none"></select>
+    </div>
     <input type="text" class="search-box" id="searchBox" placeholder="Search champion..." style="display:none">
   </div>
 
@@ -294,7 +336,7 @@
 <script>
   const DDRAGON_FALLBACK_VERSION = "14.16.1";
   const LATEST_STATS_FILENAME = "champion_stats_latest.json";
-  const MIN_GAMES_FOR_ROLE = 3;
+  const MIN_PICKRATE_FOR_ROLE = 1;
   const ROLE_LABELS = {
     TOP: "Top",
     JUNGLE: "Jungle",
@@ -304,7 +346,9 @@
   };
   let currentSort = { key: "champion", direction: "asc" };
   let championData = [];
+  let currentTotalMatches = 0;
   let searchQuery = "";
+  let viewMode = "roles";
   let ddragonVersion = DDRAGON_FALLBACK_VERSION;
   let championKeyToDisplayName = {};
   let availablePatches = [];
@@ -364,6 +408,41 @@
     return ROLE_LABELS[row.role] || row.role;
   }
 
+  function aggregateWithoutRoles(data, totalMatches) {
+    // Схлопывает данные по чемпиону, суммируя games/wins по всем его
+    // ролям (включая UNPICKED - там games всегда 0, на сумму не влияет,
+    // но banы у него нужно посчитать, если чемпиона вообще не пикали).
+    // banrate/bans берём один раз на чемпиона - они и так одинаковы во
+    // всех его строках (баны не привязаны к роли), суммировать их по
+    // ролям было бы задвоением. winrate/pickrate пересчитываются из
+    // просуммированных сырых games/wins - не усредняются по ролям.
+    const byChampion = {};
+
+    data.forEach(row => {
+      if (!byChampion[row.champion]) {
+        byChampion[row.champion] = {
+          champion: row.champion,
+          games: 0,
+          wins: 0,
+          bans: row.bans,
+          banrate: row.banrate
+        };
+      }
+      byChampion[row.champion].games += row.games;
+      byChampion[row.champion].wins += row.wins;
+    });
+
+    return Object.values(byChampion).map(c => ({
+      ...c,
+      winrate: c.games > 0 ? round2(c.wins / c.games * 100) : 0,
+      pickrate: totalMatches > 0 ? round2(c.games / totalMatches * 100) : 0
+    }));
+  }
+
+  function round2(num) {
+    return Math.round(num * 100) / 100;
+  }
+
   function statsFilenameFor(patchVersion) {
     return patchVersion === latestPatch ? LATEST_STATS_FILENAME : `champion_stats_${patchVersion}.json`;
   }
@@ -380,6 +459,7 @@
     const patch = data.patch || "";
     const lastUpdated = data.last_updated || "";
     const totalMatches = data.total_matches || 0;
+    currentTotalMatches = totalMatches;
 
     document.getElementById("eyebrow").innerHTML =
       `<span class="dot"></span> ${region} SERVER &middot; PATCH ${patch} &middot; GRANDMASTER + CHALLENGER`;
@@ -403,31 +483,67 @@
     select.style.display = "block";
   }
 
+  function setupViewToggle() {
+    const toggle = document.getElementById("viewToggle");
+    toggle.style.display = "flex";
+
+    const buttons = toggle.querySelectorAll("button");
+    const syncActiveButton = () => {
+      buttons.forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.view === viewMode);
+      });
+    };
+    syncActiveButton();
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (btn.dataset.view === viewMode) return;
+        viewMode = btn.dataset.view;
+        syncActiveButton();
+        renderTable();
+      });
+    });
+  }
+
   function renderTable() {
-    // Чемпионы, забаненные, но ни разу не пикнутые в этом патче, получают
-    // от воркера служебную роль UNPICKED - её не показываем в основной
-    // таблице, это не реальная роль.
-    const pickedData = championData.filter(row => row.role !== "UNPICKED");
+    let visibleData;
 
-    // Для каждого чемпиона находим его главную роль (больше всего игр
-    // среди всех ролей этого чемпиона) - её показываем всегда, даже если
-    // игр набралось мало (например, чемпиона вообще редко пикают в этом
-    // патче). Остальные, не главные роли того же чемпиона отсекаются
-    // порогом MIN_GAMES_FOR_ROLE, чтобы не показывать случайные офф-роли
-    // на 1-2 играх. Данные по скрытым строкам никуда не пропадают, они
-    // просто не рендерятся здесь.
-    const mainRoleGamesByChampion = {};
-    pickedData.forEach(row => {
-      const current = mainRoleGamesByChampion[row.champion];
-      if (current === undefined || row.games > current) {
-        mainRoleGamesByChampion[row.champion] = row.games;
-      }
-    });
+    if (viewMode === "no-roles") {
+      // Режим "без ролей" - агрегируем ВЕСЬ championData (включая
+      // редкие офф-роли, которые в режиме "по ролям" скрыты) - иначе
+      // пикрейт/винрейт в этом режиме были бы занижены относительно
+      // реальных сырых данных. Чемпионов с games=0 (только забанены,
+      // ни разу не пикнуты) скрываем - так же, как UNPICKED скрыт в
+      // режиме "по ролям", для консистентности между режимами.
+      visibleData = aggregateWithoutRoles(championData, currentTotalMatches)
+        .filter(row => row.games > 0);
+    } else {
+      // Чемпионы, забаненные, но ни разу не пикнутые в этом патче, получают
+      // от воркера служебную роль UNPICKED - её не показываем в основной
+      // таблице, это не реальная роль.
+      const pickedData = championData.filter(row => row.role !== "UNPICKED");
 
-    const visibleData = pickedData.filter(row => {
-      const isMainRole = row.games === mainRoleGamesByChampion[row.champion];
-      return isMainRole || row.games > MIN_GAMES_FOR_ROLE;
-    });
+      // Для каждого чемпиона находим его главную роль (больше всего игр
+      // среди всех ролей этого чемпиона) - её показываем всегда, даже если
+      // игр набралось мало (например, чемпиона вообще редко пикают в этом
+      // патче). Остальные, не главные роли того же чемпиона отсекаются
+      // порогом MIN_PICKRATE_FOR_ROLE - показываем только если пикрейт
+      // чемпиона именно на этой роли больше 1%, чтобы не показывать
+      // случайные офф-роли на паре игр. Данные по скрытым строкам никуда
+      // не пропадают, они просто не рендерятся здесь.
+      const mainRoleGamesByChampion = {};
+      pickedData.forEach(row => {
+        const current = mainRoleGamesByChampion[row.champion];
+        if (current === undefined || row.games > current) {
+          mainRoleGamesByChampion[row.champion] = row.games;
+        }
+      });
+
+      visibleData = pickedData.filter(row => {
+        const isMainRole = row.games === mainRoleGamesByChampion[row.champion];
+        return isMainRole || row.pickrate > MIN_PICKRATE_FOR_ROLE;
+      });
+    }
 
     const filtered = searchQuery
       ? visibleData.filter(row => displayNameOf(row).toLowerCase().includes(searchQuery.toLowerCase()))
@@ -454,6 +570,7 @@
 
     let rows = "";
     sorted.forEach((row, index) => {
+      const roleBadge = row.role ? `<span class="role-badge">${roleLabelOf(row)}</span>` : "";
       rows += `
         <tr>
           <td class="col-rank">${index + 1}</td>
@@ -461,7 +578,7 @@
             <div class="champion-cell">
               ${championIconHtml(row.champion, ddragonVersion)}
               <span class="champion-name">${displayNameOf(row)}</span>
-              <span class="role-badge">${roleLabelOf(row)}</span>
+              ${roleBadge}
             </div>
           </td>
           <td class="stat-cell">
@@ -539,6 +656,7 @@
 
       applyPatchData(data);
       populatePatchSelect();
+      setupViewToggle();
 
       const searchBox = document.getElementById("searchBox");
       searchBox.style.display = "block";
