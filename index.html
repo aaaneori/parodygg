@@ -215,6 +215,19 @@
     white-space: nowrap;
   }
 
+  .role-badge {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    background: var(--panel-alt);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 6px;
+    white-space: nowrap;
+  }
+
   .stat-cell { min-width: 130px; }
 
   .stat-value {
@@ -281,6 +294,14 @@
 <script>
   const DDRAGON_FALLBACK_VERSION = "14.16.1";
   const LATEST_STATS_FILENAME = "champion_stats_latest.json";
+  const MIN_GAMES_FOR_ROLE = 3;
+  const ROLE_LABELS = {
+    TOP: "Top",
+    JUNGLE: "Jungle",
+    MIDDLE: "Mid",
+    BOTTOM: "ADC",
+    UTILITY: "Support"
+  };
   let currentSort = { key: "champion", direction: "asc" };
   let championData = [];
   let searchQuery = "";
@@ -339,6 +360,10 @@
     return championKeyToDisplayName[row.champion] || row.champion;
   }
 
+  function roleLabelOf(row) {
+    return ROLE_LABELS[row.role] || row.role;
+  }
+
   function statsFilenameFor(patchVersion) {
     return patchVersion === latestPatch ? LATEST_STATS_FILENAME : `champion_stats_${patchVersion}.json`;
   }
@@ -379,9 +404,34 @@
   }
 
   function renderTable() {
+    // Чемпионы, забаненные, но ни разу не пикнутые в этом патче, получают
+    // от воркера служебную роль UNPICKED - её не показываем в основной
+    // таблице, это не реальная роль.
+    const pickedData = championData.filter(row => row.role !== "UNPICKED");
+
+    // Для каждого чемпиона находим его главную роль (больше всего игр
+    // среди всех ролей этого чемпиона) - её показываем всегда, даже если
+    // игр набралось мало (например, чемпиона вообще редко пикают в этом
+    // патче). Остальные, не главные роли того же чемпиона отсекаются
+    // порогом MIN_GAMES_FOR_ROLE, чтобы не показывать случайные офф-роли
+    // на 1-2 играх. Данные по скрытым строкам никуда не пропадают, они
+    // просто не рендерятся здесь.
+    const mainRoleGamesByChampion = {};
+    pickedData.forEach(row => {
+      const current = mainRoleGamesByChampion[row.champion];
+      if (current === undefined || row.games > current) {
+        mainRoleGamesByChampion[row.champion] = row.games;
+      }
+    });
+
+    const visibleData = pickedData.filter(row => {
+      const isMainRole = row.games === mainRoleGamesByChampion[row.champion];
+      return isMainRole || row.games > MIN_GAMES_FOR_ROLE;
+    });
+
     const filtered = searchQuery
-      ? championData.filter(row => displayNameOf(row).toLowerCase().includes(searchQuery.toLowerCase()))
-      : championData;
+      ? visibleData.filter(row => displayNameOf(row).toLowerCase().includes(searchQuery.toLowerCase()))
+      : visibleData;
 
     const maxPick = maxOf(filtered, "pickrate");
     const maxWin = maxOf(filtered, "winrate");
@@ -411,6 +461,7 @@
             <div class="champion-cell">
               ${championIconHtml(row.champion, ddragonVersion)}
               <span class="champion-name">${displayNameOf(row)}</span>
+              <span class="role-badge">${roleLabelOf(row)}</span>
             </div>
           </td>
           <td class="stat-cell">
