@@ -323,30 +323,33 @@
     return entries.reduce((total, entry) => total + entry[field], 0);
   }
 
-  function computeRolePickrates(history, totalMatches) {
-    // Суммарный пикрейт чемпиона на каждой роли за ВЕСЬ патч (не за
-    // выбранный период группировки графика) - используется только для
-    // решения, какие роли показать в переключателе сверху. games каждой
-    // роли суммируется по всем дням истории.
+  function computeRolePickrates(history) {
+    // Пикрейт роли ОТНОСИТЕЛЬНО СУММЫ ИГР САМОГО ЧЕМПИОНА (не всего
+    // патча) - используется только для решения, какие роли показать в
+    // переключателе сверху. Пример: если у чемпиона 60% его собственных
+    // игр пришлось на лес и 40% на топ, обе роли пройдут порог 5%, даже
+    // если в масштабе всего патча у чемпиона в сумме мало пиков. games
+    // каждой роли суммируется по всем дням истории.
     const gamesByRole = {};
     history.forEach(entry => {
       gamesByRole[entry.role] = (gamesByRole[entry.role] || 0) + entry.games;
     });
 
+    const totalChampionGames = Object.values(gamesByRole).reduce((sum, g) => sum + g, 0);
+
     const pickrates = {};
     Object.keys(gamesByRole).forEach(role => {
-      pickrates[role] = totalMatches > 0 ? (gamesByRole[role] / totalMatches * 100) : 0;
+      pickrates[role] = totalChampionGames > 0 ? (gamesByRole[role] / totalChampionGames * 100) : 0;
     });
     return pickrates;
   }
 
-  function getVisibleRoles(history, totalMatches) {
-    // "All" всегда первый. Остальные роли - только если пикрейт именно
-    // на этой роли (относительно всего патча) больше 5% - тот же принцип
-    // плавающего списка, что и в основной таблице сайта, но с другим
-    // порогом и другим назначением (тут это переключатель графика, не
-    // фильтр видимости строки).
-    const pickrates = computeRolePickrates(history, totalMatches);
+  function getVisibleRoles(history) {
+    // "All" всегда первый. Остальные роли - только если их доля среди
+    // ИГР САМОГО ЧЕМПИОНА больше 5% - тот же принцип плавающего списка,
+    // что и в основной таблице сайта, но с другой базой расчёта (там -
+    // % от всего патча, здесь - % от игр этого конкретного чемпиона).
+    const pickrates = computeRolePickrates(history);
     const roles = Object.keys(pickrates)
       .filter(role => pickrates[role] > MIN_PICKRATE_FOR_ROLE_SWITCH)
       .sort((a, b) => pickrates[b] - pickrates[a]);
@@ -430,6 +433,13 @@
     return Math.round(num * 100) / 100;
   }
 
+  function formatPercent(num) {
+    // 1 знак после запятой, но без него, если дробная часть нулевая -
+    // 51 вместо 51.0, но 51.4 остаётся 51.4.
+    const rounded = Math.round(num * 10) / 10;
+    return rounded % 1 === 0 ? rounded.toFixed(0) : rounded.toFixed(1);
+  }
+
   function championIconHtml(championName, version) {
     const initials = championName.replace(/[a-z']/g, '').slice(0, 2) || championName.slice(0, 2).toUpperCase();
     return `<img id="championIconLarge" class="champion-icon-large" src="${championIconUrl(championName, version)}" alt="${championName}" loading="lazy"
@@ -477,7 +487,7 @@
           legend: { display: false },
           tooltip: {
             callbacks: {
-              label: (context) => `${label}: ${context.parsed.y}%`
+              label: (context) => `${label}: ${formatPercent(context.parsed.y)}%`
             }
           }
         },
@@ -488,7 +498,7 @@
           },
           y: {
             grid: { color: border },
-            ticks: { color: textDim, font: { size: 11 }, callback: (value) => value + "%" }
+            ticks: { color: textDim, font: { size: 11 }, callback: (value) => formatPercent(value) + "%" }
           }
         }
       }
@@ -513,11 +523,11 @@
   }
 
   function setupRoleToggle() {
-    const roles = getVisibleRoles(historyData.history, historyData.total_matches);
+    const roles = getVisibleRoles(historyData.history);
     const toggle = document.getElementById("roleToggle");
 
     toggle.innerHTML = roles.map(r => {
-      const label = r.role === "ALL" ? "All" : `${roleLabelOf(r.role)} (${round2(r.pickrate)}%)`;
+      const label = r.role === "ALL" ? "All" : `${roleLabelOf(r.role)} (${formatPercent(r.pickrate)}%)`;
       const icon = r.role === "ALL" ? "" : roleIconHtml(r.role);
       return `<button type="button" data-role="${r.role}">${icon}${label}</button>`;
     }).join("");
