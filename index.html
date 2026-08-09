@@ -467,7 +467,7 @@
 
   function applyPatchData(data) {
     championData = data.champions || [];
-    const region = data.region || "";
+    const region = (data.region || "").replace(/1$/, "");
     const patch = data.patch || "";
     const lastUpdated = data.last_updated || "";
     const totalMatches = data.total_matches || 0;
@@ -555,12 +555,7 @@
       });
     }
 
-    // Число уникальных чемпионов (не строк!) - один чемпион в режиме
-    // "по ролям" может занимать несколько строк, считать championData.length
-    // напрямую посчитало бы его несколько раз.
-    const uniqueChampionCount = new Set(visibleData.map(row => row.champion)).size;
-    document.getElementById("subtitle").textContent =
-      `${uniqueChampionCount} champions · ${currentTotalMatches} matches`;
+    document.getElementById("subtitle").textContent = `${currentTotalMatches} matches`;
 
     const filtered = searchQuery
       ? visibleData.filter(row => displayNameOf(row).toLowerCase().includes(searchQuery.toLowerCase()))
