@@ -227,6 +227,18 @@
     gap: 10px;
   }
 
+  .champion-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .champion-link:hover .champion-name {
+    color: var(--gold);
+  }
+
   .champion-icon {
     width: 32px;
     height: 32px;
@@ -463,8 +475,6 @@
 
     document.getElementById("eyebrow").innerHTML =
       `<span class="dot"></span> ${region} SERVER &middot; PATCH ${patch} &middot; GRANDMASTER + CHALLENGER`;
-    document.getElementById("subtitle").textContent =
-      `${championData.length} champions · ${totalMatches} matches`;
     document.getElementById("updatedNote").textContent = lastUpdated ? `Updated: ${formatDate(lastUpdated)}` : "";
     document.getElementById("footerNote").textContent =
       "Source: Riot Match-V5 API. Pick rate / win rate / ban rate are calculated across all matches that included at least one Grandmaster or Challenger player, including every other participant in those matches regardless of their own rank. Statistics accumulate from the first day of the patch.";
@@ -545,6 +555,13 @@
       });
     }
 
+    // Число уникальных чемпионов (не строк!) - один чемпион в режиме
+    // "по ролям" может занимать несколько строк, считать championData.length
+    // напрямую посчитало бы его несколько раз.
+    const uniqueChampionCount = new Set(visibleData.map(row => row.champion)).size;
+    document.getElementById("subtitle").textContent =
+      `${uniqueChampionCount} champions · ${currentTotalMatches} matches`;
+
     const filtered = searchQuery
       ? visibleData.filter(row => displayNameOf(row).toLowerCase().includes(searchQuery.toLowerCase()))
       : visibleData;
@@ -576,8 +593,10 @@
           <td class="col-rank">${index + 1}</td>
           <td>
             <div class="champion-cell">
-              ${championIconHtml(row.champion, ddragonVersion)}
-              <span class="champion-name">${displayNameOf(row)}</span>
+              <a class="champion-link" href="champion.html?name=${encodeURIComponent(row.champion)}">
+                ${championIconHtml(row.champion, ddragonVersion)}
+                <span class="champion-name">${displayNameOf(row)}</span>
+              </a>
               ${roleBadge}
             </div>
           </td>

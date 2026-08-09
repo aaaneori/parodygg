@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Champion Detail</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0a0d14;
+    --panel: #12151f;
+    --panel-alt: #171b28;
+    --border: #262b3a;
+    --gold: #c9a15c;
+    --gold-dim: #8a7448;
+    --text: #e7e9ee;
+    --text-dim: #838ba0;
+    --pick: #5da9e0;
+    --win: #4fbf82;
+    --ban: #e0605a;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Inter, Roboto, sans-serif;
+    padding: 32px 16px 80px;
+  }
+
+  .page {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .back-link:hover { color: var(--gold); }
+
+  .header-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+
+  .champion-icon-large {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    object-fit: cover;
+    background: var(--panel-alt);
+    flex-shrink: 0;
+  }
+
+  .champion-icon-large.icon-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--text-dim);
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 650;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+
+  .eyebrow {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+
+  .eyebrow .dot {
+    width: 5px;
+    height: 5px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+
+  .rule {
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold-dim), transparent);
+    margin-bottom: 24px;
+  }
+
+  .toggle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+
+  .segmented-toggle {
+    display: flex;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3px;
+    gap: 2px;
+    flex-wrap: wrap;
+  }
+
+  .segmented-toggle button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    color: var(--text-dim);
+    font-size: 13px;
+    font-weight: 550;
+    padding: 7px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+  }
+
+  .segmented-toggle button:hover { color: var(--text); }
+
+  .segmented-toggle button.active {
+    background: var(--panel-alt);
+    color: var(--gold);
+  }
+
+  .role-icon {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    flex-shrink: 0;
+    opacity: 0.65;
+  }
+
+  .segmented-toggle button.active .role-icon { opacity: 1; }
+
+  .view-toggle {
+    display: flex;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 3px;
+    gap: 2px;
+  }
+
+  .view-toggle button {
+    background: transparent;
+    border: none;
+    color: var(--text-dim);
+    font-size: 13px;
+    font-weight: 550;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: inherit;
+  }
+
+  .view-toggle button:hover { color: var(--text); }
+
+  .view-toggle button.active {
+    background: var(--panel-alt);
+    color: var(--gold);
+  }
+
+  .chart-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .chart-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  .chart-canvas-wrap {
+    position: relative;
+    height: 220px;
+  }
+
+  .loading, .error, .empty-state {
+    color: var(--text-dim);
+    font-size: 14px;
+    padding: 20px 0;
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 22px; }
+    .champion-icon-large { width: 48px; height: 48px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <a href="index.html" class="back-link">&larr; Back to champion list</a>
+
+  <div class="header-row">
+    <span id="header-icon-slot"></span>
+    <h1 id="championName">Loading...</h1>
+  </div>
+  <div class="eyebrow" id="eyebrow"><span class="dot"></span> Loading...</div>
+  <div class="rule"></div>
+
+  <div id="content">
+    <div class="loading">Loading champion data...</div>
+  </div>
+</div>
+
+<script>
+  const DDRAGON_FALLBACK_VERSION = "14.16.1";
+  const MIN_PICKRATE_FOR_ROLE_SWITCH = 5;
+  const ROLE_LABELS = {
+    TOP: "Top",
+    JUNGLE: "Jungle",
+    MIDDLE: "Mid",
+    BOTTOM: "ADC",
+    UTILITY: "Support"
+  };
+  const ROLE_ICON_KEYS = {
+    TOP: "top",
+    JUNGLE: "jungle",
+    MIDDLE: "middle",
+    BOTTOM: "bottom",
+    UTILITY: "utility"
+  };
+  const GROUP_BY_OPTIONS = [
+    { key: "day", label: "Day", days: 1 },
+    { key: "3day", label: "3 Days", days: 3 },
+    { key: "week", label: "Week", days: 7 },
+    { key: "patch", label: "Patch", days: null }
+  ];
+
+  let ddragonVersion = DDRAGON_FALLBACK_VERSION;
+  let historyData = null;
+  let selectedRole = "ALL";
+  let groupBy = "day";
+  let charts = { winrate: null, pickrate: null, banrate: null };
+
+  function getChampionNameFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("name") || "";
+  }
+
+  async function getDdragonVersion() {
+    try {
+      const res = await fetch("https://ddragon.leagueoflegends.com/api/versions.json");
+      const versions = await res.json();
+      return versions[0];
+    } catch (err) {
+      return DDRAGON_FALLBACK_VERSION;
+    }
+  }
+
+  async function getChampionKeyToDisplayNameMap(version) {
+    try {
+      const res = await fetch(`https://ddragon.leagueoflegends.com/cdn/${version}/data/en_US/champion.json`);
+      const data = await res.json();
+      const map = {};
+      for (const champKey in data.data) {
+        map[champKey] = data.data[champKey].name;
+      }
+      return map;
+    } catch (err) {
+      return {};
+    }
+  }
+
+  function championIconUrl(championName, version) {
+    return `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${championName}.png`;
+  }
+
+  function roleIconUrl(role) {
+    const key = ROLE_ICON_KEYS[role];
+    if (!key) return null;
+    return `https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-clash/global/default/assets/images/position-selector/positions/icon-position-${key}.png`;
+  }
+
+  function roleIconHtml(role) {
+    // Community Dragon - неофициальный, community-run сервис, без гарантии
+    // аптайма (в отличие от официального ddragon.leagueoflegends.com,
+    // используемого для иконок чемпионов). Поэтому обязателен fallback -
+    // если картинка не грузится, показываем просто буквенный лейбл роли
+    // без иконки, ничего не ломая.
+    const url = roleIconUrl(role);
+    if (!url) return "";
+    return `<img class="role-icon" src="${url}" alt="" loading="lazy" onerror="this.style.display='none'">`;
+  }
+
+  function roleLabelOf(role) {
+    return ROLE_LABELS[role] || role;
+  }
+
+  function sumField(entries, field) {
+    return entries.reduce((total, entry) => total + entry[field], 0);
+  }
+
+  function computeRolePickrates(history, totalMatches) {
+    // Суммарный пикрейт чемпиона на каждой роли за ВЕСЬ патч (не за
+    // выбранный период группировки графика) - используется только для
+    // решения, какие роли показать в переключателе сверху. games каждой
+    // роли суммируется по всем дням истории.
+    const gamesByRole = {};
+    history.forEach(entry => {
+      gamesByRole[entry.role] = (gamesByRole[entry.role] || 0) + entry.games;
+    });
+
+    const pickrates = {};
+    Object.keys(gamesByRole).forEach(role => {
+      pickrates[role] = totalMatches > 0 ? (gamesByRole[role] / totalMatches * 100) : 0;
+    });
+    return pickrates;
+  }
+
+  function getVisibleRoles(history, totalMatches) {
+    // "All" всегда первый. Остальные роли - только если пикрейт именно
+    // на этой роли (относительно всего патча) больше 5% - тот же принцип
+    // плавающего списка, что и в основной таблице сайта, но с другим
+    // порогом и другим назначением (тут это переключатель графика, не
+    // фильтр видимости строки).
+    const pickrates = computeRolePickrates(history, totalMatches);
+    const roles = Object.keys(pickrates)
+      .filter(role => pickrates[role] > MIN_PICKRATE_FOR_ROLE_SWITCH)
+      .sort((a, b) => pickrates[b] - pickrates[a]);
+
+    return [{ role: "ALL", pickrate: null }, ...roles.map(role => ({ role, pickrate: pickrates[role] }))];
+  }
+
+  function filterHistoryByRole(history, role) {
+    if (role === "ALL") return history;
+    return history.filter(entry => entry.role === role);
+  }
+
+  function groupHistoryByPeriod(history, groupByKey) {
+    // Схлопывает записи истории (уже отфильтрованные по роли) в точки
+    // графика по выбранному периоду - суммирует сырые games/wins/bans/
+    // matches_processed внутри периода, проценты считаются из этих сумм
+    // ПОСЛЕ группировки, не усредняются по дням внутри периода (тот же
+    // принцип, что и во всём остальном проекте).
+    //
+    // Если чемпион встречается в нескольких ролях в один день (режим
+    // "All"), несколько записей с одной датой сначала схлопываются в
+    // одну дневную точку (games/wins суммируются, matches_processed
+    // берётся один раз через Set по датам, чтобы не задвоить).
+
+    const byDate = {};
+    history.forEach(entry => {
+      if (!byDate[entry.date]) {
+        byDate[entry.date] = { date: entry.date, games: 0, wins: 0, bans: entry.bans, matches_processed: entry.matches_processed };
+      }
+      byDate[entry.date].games += entry.games;
+      byDate[entry.date].wins += entry.wins;
+      // bans - это баны ИМЕННО ЗА ЭТОТ ДЕНЬ (не накопительно, worker.py
+      // считает их заново на каждое окно сбора). Внутри одного дня баны
+      // одинаковы у всех ролей чемпиона (не привязаны к роли) - поэтому
+      // не прибавляем повторно на каждую роль, просто фиксируем значение
+      // один раз при создании записи для этой даты (выше). Но МЕЖДУ
+      // разными днями баны суммируются как обычный дневной счётчик -
+      // это происходит ниже, при суммировании dailyPoints через sumField.
+    });
+
+    const dailyPoints = Object.values(byDate).sort((a, b) => a.date.localeCompare(b.date));
+
+    const option = GROUP_BY_OPTIONS.find(o => o.key === groupByKey);
+    if (!option || option.days === null) {
+      // "Patch" - один накопительный период на весь патч целиком.
+      if (dailyPoints.length === 0) return [];
+      return [{
+        label: "Full patch",
+        games: sumField(dailyPoints, "games"),
+        wins: sumField(dailyPoints, "wins"),
+        bans: sumField(dailyPoints, "bans"),
+        matches_processed: sumField(dailyPoints, "matches_processed")
+      }];
+    }
+
+    const chunkSize = option.days;
+    const grouped = [];
+    for (let i = 0; i < dailyPoints.length; i += chunkSize) {
+      const chunk = dailyPoints.slice(i, i + chunkSize);
+      grouped.push({
+        label: chunk.length === 1 ? chunk[0].date : `${chunk[0].date} – ${chunk[chunk.length - 1].date}`,
+        games: sumField(chunk, "games"),
+        wins: sumField(chunk, "wins"),
+        bans: sumField(chunk, "bans"),
+        matches_processed: sumField(chunk, "matches_processed")
+      });
+    }
+    return grouped;
+  }
+
+  function toChartPoints(groupedPeriods) {
+    return groupedPeriods.map(period => ({
+      label: period.label,
+      winrate: period.games > 0 ? round2(period.wins / period.games * 100) : 0,
+      pickrate: period.matches_processed > 0 ? round2(period.games / period.matches_processed * 100) : 0,
+      banrate: period.matches_processed > 0 ? round2(period.bans / (period.matches_processed * 2) * 100) : 0
+    }));
+  }
+
+  function round2(num) {
+    return Math.round(num * 100) / 100;
+  }
+
+  function championIconHtml(championName, version) {
+    const initials = championName.replace(/[a-z']/g, '').slice(0, 2) || championName.slice(0, 2).toUpperCase();
+    return `<img id="championIconLarge" class="champion-icon-large" src="${championIconUrl(championName, version)}" alt="${championName}" loading="lazy"
+      onerror="this.outerHTML='<div id=&quot;championIconLarge&quot; class=&quot;champion-icon-large icon-fallback&quot;>${initials}</div>'">`;
+  }
+
+  function buildChart(canvasId, points, valueKey, colorVar, label) {
+    const canvas = document.getElementById(canvasId);
+    const ctx = canvas.getContext("2d");
+
+    const rootStyles = getComputedStyle(document.documentElement);
+    const color = rootStyles.getPropertyValue(colorVar).trim();
+    const textDim = rootStyles.getPropertyValue("--text-dim").trim();
+    const border = rootStyles.getPropertyValue("--border").trim();
+
+    const gradient = ctx.createLinearGradient(0, 0, 0, 220);
+    gradient.addColorStop(0, color + "55");
+    gradient.addColorStop(1, color + "05");
+
+    if (charts[canvasId]) {
+      charts[canvasId].destroy();
+    }
+
+    charts[canvasId] = new Chart(ctx, {
+      type: "line",
+      data: {
+        labels: points.map(p => p.label),
+        datasets: [{
+          label: label,
+          data: points.map(p => p[valueKey]),
+          borderColor: color,
+          backgroundColor: gradient,
+          fill: true,
+          tension: 0.35,
+          pointRadius: points.length > 40 ? 0 : 2,
+          pointHoverRadius: 5,
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: { mode: "index", intersect: false },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (context) => `${label}: ${context.parsed.y}%`
+            }
+          }
+        },
+        scales: {
+          x: {
+            grid: { color: border },
+            ticks: { color: textDim, maxTicksLimit: 8, font: { size: 11 } }
+          },
+          y: {
+            grid: { color: border },
+            ticks: { color: textDim, font: { size: 11 }, callback: (value) => value + "%" }
+          }
+        }
+      }
+    });
+  }
+
+  function renderCharts() {
+    if (!historyData) return;
+
+    const roleFiltered = filterHistoryByRole(historyData.history, selectedRole);
+    const grouped = groupHistoryByPeriod(roleFiltered, groupBy);
+    const points = toChartPoints(grouped);
+
+    if (points.length === 0) {
+      document.getElementById("content").innerHTML = `<div class="empty-state">No data for this role yet.</div>`;
+      return;
+    }
+
+    buildChart("winrate", points, "winrate", "--win", "Win Rate");
+    buildChart("pickrate", points, "pickrate", "--pick", "Pick Rate");
+    buildChart("banrate", points, "banrate", "--ban", "Ban Rate");
+  }
+
+  function setupRoleToggle() {
+    const roles = getVisibleRoles(historyData.history, historyData.total_matches);
+    const toggle = document.getElementById("roleToggle");
+
+    toggle.innerHTML = roles.map(r => {
+      const label = r.role === "ALL" ? "All" : `${roleLabelOf(r.role)} (${round2(r.pickrate)}%)`;
+      const icon = r.role === "ALL" ? "" : roleIconHtml(r.role);
+      return `<button type="button" data-role="${r.role}">${icon}${label}</button>`;
+    }).join("");
+
+    const buttons = toggle.querySelectorAll("button");
+    const syncActive = () => {
+      buttons.forEach(btn => btn.classList.toggle("active", btn.dataset.role === selectedRole));
+    };
+    syncActive();
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (btn.dataset.role === selectedRole) return;
+        selectedRole = btn.dataset.role;
+        syncActive();
+        renderCharts();
+      });
+    });
+  }
+
+  function setupGroupByToggle() {
+    const toggle = document.getElementById("groupByToggle");
+    toggle.innerHTML = GROUP_BY_OPTIONS.map(o =>
+      `<button type="button" data-group="${o.key}">${o.label}</button>`
+    ).join("");
+
+    const buttons = toggle.querySelectorAll("button");
+    const syncActive = () => {
+      buttons.forEach(btn => btn.classList.toggle("active", btn.dataset.group === groupBy));
+    };
+    syncActive();
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        if (btn.dataset.group === groupBy) return;
+        groupBy = btn.dataset.group;
+        syncActive();
+        renderCharts();
+      });
+    });
+  }
+
+  async function init() {
+    const championName = getChampionNameFromUrl();
+    if (!championName) {
+      document.getElementById("content").innerHTML = `<div class="error">No champion specified. Go back and click a champion name.</div>`;
+      return;
+    }
+
+    try {
+      const version = await getDdragonVersion();
+      ddragonVersion = version;
+
+      const [historyRes, nameMap] = await Promise.all([
+        fetch(`history/${championName}.json`),
+        getChampionKeyToDisplayNameMap(version)
+      ]);
+
+      if (!historyRes.ok) throw new Error(`No history data found for ${championName}`);
+
+      historyData = await historyRes.json();
+
+      const displayName = nameMap[championName] || championName;
+      document.title = `${displayName} - Champion Detail`;
+      document.getElementById("championName").textContent = displayName;
+      document.getElementById("header-icon-slot").outerHTML = championIconHtml(championName, version);
+      document.getElementById("eyebrow").innerHTML =
+        `<span class="dot"></span> PATCH ${historyData.patch} &middot; GRANDMASTER + CHALLENGER`;
+
+      document.getElementById("content").innerHTML = `
+        <div class="toggle-row">
+          <div class="segmented-toggle" id="roleToggle"></div>
+          <div class="view-toggle" id="groupByToggle"></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Win Rate</div>
+          <div class="chart-canvas-wrap"><canvas id="winrate"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Pick Rate</div>
+          <div class="chart-canvas-wrap"><canvas id="pickrate"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <div class="chart-title">Ban Rate</div>
+          <div class="chart-canvas-wrap"><canvas id="banrate"></canvas></div>
+        </div>
+      `;
+
+      setupRoleToggle();
+      setupGroupByToggle();
+      renderCharts();
+    } catch (err) {
+      document.getElementById("content").innerHTML =
+        `<div class="error">Loading error: ${err.message}.</div>`;
+    }
+  }
+
+  init();
+</script>
+</body>
+</html>
