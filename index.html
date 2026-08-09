@@ -476,8 +476,6 @@
     document.getElementById("eyebrow").innerHTML =
       `<span class="dot"></span> ${region} SERVER &middot; PATCH ${patch} &middot; GRANDMASTER + CHALLENGER`;
     document.getElementById("updatedNote").textContent = lastUpdated ? `Updated: ${formatDate(lastUpdated)}` : "";
-    document.getElementById("footerNote").textContent =
-      "Source: Riot Match-V5 API. Pick rate / win rate / ban rate are calculated across all matches that included at least one Grandmaster or Challenger player, including every other participant in those matches regardless of their own rank. Statistics accumulate from the first day of the patch.";
 
     renderTable();
   }
