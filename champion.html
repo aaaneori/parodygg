@@ -497,6 +497,7 @@
             ticks: { color: textDim, maxTicksLimit: 8, font: { size: 11 } }
           },
           y: {
+            min: 0,
             grid: { color: border },
             ticks: { color: textDim, font: { size: 11 }, callback: (value) => formatPercent(value) + "%" }
           }
