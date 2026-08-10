@@ -1,7 +1,7 @@
 {
   "champion": "Sejuani",
   "patch": "16.15",
-  "total_matches": 3394,
+  "total_matches": 4293,
   "history": [
     {
       "date": "2026-08-06",
@@ -98,6 +98,30 @@
       "wins": 0,
       "bans": 1,
       "matches_processed": 820
+    },
+    {
+      "date": "2026-08-10",
+      "role": "JUNGLE",
+      "games": 10,
+      "wins": 6,
+      "bans": 0,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "TOP",
+      "games": 3,
+      "wins": 2,
+      "bans": 0,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "bans": 0,
+      "matches_processed": 899
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "champion": "LeeSin",
   "patch": "16.15",
-  "total_matches": 3394,
+  "total_matches": 4293,
   "history": [
     {
       "date": "2026-08-06",
@@ -114,6 +114,22 @@
       "wins": 1,
       "bans": 102,
       "matches_processed": 820
+    },
+    {
+      "date": "2026-08-10",
+      "role": "JUNGLE",
+      "games": 114,
+      "wins": 60,
+      "bans": 108,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 0,
+      "bans": 108,
+      "matches_processed": 899
     }
   ]
 }

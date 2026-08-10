@@ -1,7 +1,7 @@
 {
   "champion": "Gangplank",
   "patch": "16.15",
-  "total_matches": 3394,
+  "total_matches": 4293,
   "history": [
     {
       "date": "2026-08-06",
@@ -82,6 +82,22 @@
       "wins": 22,
       "bans": 7,
       "matches_processed": 820
+    },
+    {
+      "date": "2026-08-10",
+      "role": "MIDDLE",
+      "games": 6,
+      "wins": 3,
+      "bans": 10,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "TOP",
+      "games": 28,
+      "wins": 13,
+      "bans": 10,
+      "matches_processed": 899
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "champion": "Riven",
   "patch": "16.15",
-  "total_matches": 3394,
+  "total_matches": 4293,
   "history": [
     {
       "date": "2026-08-06",
@@ -138,6 +138,38 @@
       "wins": 4,
       "bans": 94,
       "matches_processed": 820
+    },
+    {
+      "date": "2026-08-10",
+      "role": "BOTTOM",
+      "games": 5,
+      "wins": 2,
+      "bans": 105,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 0,
+      "bans": 105,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "MIDDLE",
+      "games": 33,
+      "wins": 18,
+      "bans": 105,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "TOP",
+      "games": 25,
+      "wins": 10,
+      "bans": 105,
+      "matches_processed": 899
     }
   ]
 }

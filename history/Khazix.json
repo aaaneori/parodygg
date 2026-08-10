@@ -1,7 +1,7 @@
 {
   "champion": "Khazix",
   "patch": "16.15",
-  "total_matches": 3394,
+  "total_matches": 4293,
   "history": [
     {
       "date": "2026-08-06",
@@ -42,6 +42,14 @@
       "wins": 0,
       "bans": 40,
       "matches_processed": 820
+    },
+    {
+      "date": "2026-08-10",
+      "role": "JUNGLE",
+      "games": 64,
+      "wins": 35,
+      "bans": 80,
+      "matches_processed": 899
     }
   ]
 }

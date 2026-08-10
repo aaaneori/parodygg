@@ -1,7 +1,7 @@
 {
   "champion": "Darius",
   "patch": "16.15",
-  "total_matches": 3394,
+  "total_matches": 4293,
   "history": [
     {
       "date": "2026-08-06",
@@ -130,6 +130,38 @@
       "wins": 28,
       "bans": 43,
       "matches_processed": 820
+    },
+    {
+      "date": "2026-08-10",
+      "role": "BOTTOM",
+      "games": 2,
+      "wins": 1,
+      "bans": 55,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "JUNGLE",
+      "games": 8,
+      "wins": 3,
+      "bans": 55,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "MIDDLE",
+      "games": 7,
+      "wins": 4,
+      "bans": 55,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "TOP",
+      "games": 65,
+      "wins": 37,
+      "bans": 55,
+      "matches_processed": 899
     }
   ]
 }

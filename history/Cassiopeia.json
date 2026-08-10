@@ -1,7 +1,7 @@
 {
   "champion": "Cassiopeia",
   "patch": "16.15",
-  "total_matches": 3394,
+  "total_matches": 4293,
   "history": [
     {
       "date": "2026-08-06",
@@ -106,6 +106,30 @@
       "wins": 5,
       "bans": 81,
       "matches_processed": 820
+    },
+    {
+      "date": "2026-08-10",
+      "role": "BOTTOM",
+      "games": 17,
+      "wins": 9,
+      "bans": 91,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "MIDDLE",
+      "games": 52,
+      "wins": 24,
+      "bans": 91,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "TOP",
+      "games": 20,
+      "wins": 8,
+      "bans": 91,
+      "matches_processed": 899
     }
   ]
 }

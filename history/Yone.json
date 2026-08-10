@@ -1,7 +1,7 @@
 {
   "champion": "Yone",
   "patch": "16.15",
-  "total_matches": 3394,
+  "total_matches": 4293,
   "history": [
     {
       "date": "2026-08-06",
@@ -114,6 +114,30 @@
       "wins": 13,
       "bans": 36,
       "matches_processed": 820
+    },
+    {
+      "date": "2026-08-10",
+      "role": "BOTTOM",
+      "games": 3,
+      "wins": 0,
+      "bans": 30,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "MIDDLE",
+      "games": 59,
+      "wins": 31,
+      "bans": 30,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "role": "TOP",
+      "games": 60,
+      "wins": 27,
+      "bans": 30,
+      "matches_processed": 899
     }
   ]
 }

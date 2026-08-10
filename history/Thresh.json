@@ -1,7 +1,7 @@
 {
   "champion": "Thresh",
   "patch": "16.15",
-  "total_matches": 3394,
+  "total_matches": 4293,
   "history": [
     {
       "date": "2026-08-06",
@@ -34,6 +34,14 @@
       "wins": 40,
       "bans": 40,
       "matches_processed": 820
+    },
+    {
+      "date": "2026-08-10",
+      "role": "UTILITY",
+      "games": 88,
+      "wins": 43,
+      "bans": 53,
+      "matches_processed": 899
     }
   ]
 }
