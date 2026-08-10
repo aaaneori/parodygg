@@ -1,7 +1,7 @@
 {
   "champion": "Shyvana",
   "patch": "16.15",
-  "total_matches": 2574,
+  "total_matches": 3394,
   "history": [
     {
       "date": "2026-08-06",
@@ -34,6 +34,22 @@
       "wins": 3,
       "bans": 13,
       "matches_processed": 854
+    },
+    {
+      "date": "2026-08-09",
+      "role": "JUNGLE",
+      "games": 16,
+      "wins": 8,
+      "bans": 10,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "TOP",
+      "games": 5,
+      "wins": 2,
+      "bans": 10,
+      "matches_processed": 820
     }
   ]
 }

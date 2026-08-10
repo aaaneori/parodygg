@@ -1,7 +1,7 @@
 {
   "champion": "Kayn",
   "patch": "16.15",
-  "total_matches": 2574,
+  "total_matches": 3394,
   "history": [
     {
       "date": "2026-08-06",
@@ -50,6 +50,14 @@
       "wins": 1,
       "bans": 1,
       "matches_processed": 854
+    },
+    {
+      "date": "2026-08-09",
+      "role": "JUNGLE",
+      "games": 18,
+      "wins": 9,
+      "bans": 4,
+      "matches_processed": 820
     }
   ]
 }

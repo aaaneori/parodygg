@@ -1,7 +1,7 @@
 {
   "champion": "Vayne",
   "patch": "16.15",
-  "total_matches": 2574,
+  "total_matches": 3394,
   "history": [
     {
       "date": "2026-08-06",
@@ -98,6 +98,38 @@
       "wins": 24,
       "bans": 162,
       "matches_processed": 854
+    },
+    {
+      "date": "2026-08-09",
+      "role": "BOTTOM",
+      "games": 13,
+      "wins": 5,
+      "bans": 164,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 0,
+      "bans": 164,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "MIDDLE",
+      "games": 4,
+      "wins": 1,
+      "bans": 164,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "TOP",
+      "games": 68,
+      "wins": 36,
+      "bans": 164,
+      "matches_processed": 820
     }
   ]
 }

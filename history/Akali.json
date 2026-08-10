@@ -1,7 +1,7 @@
 {
   "champion": "Akali",
   "patch": "16.15",
-  "total_matches": 2574,
+  "total_matches": 3394,
   "history": [
     {
       "date": "2026-08-06",
@@ -66,6 +66,30 @@
       "wins": 8,
       "bans": 167,
       "matches_processed": 854
+    },
+    {
+      "date": "2026-08-09",
+      "role": "BOTTOM",
+      "games": 8,
+      "wins": 4,
+      "bans": 167,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "MIDDLE",
+      "games": 47,
+      "wins": 24,
+      "bans": 167,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "TOP",
+      "games": 20,
+      "wins": 9,
+      "bans": 167,
+      "matches_processed": 820
     }
   ]
 }

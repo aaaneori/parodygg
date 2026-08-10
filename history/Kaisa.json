@@ -1,7 +1,7 @@
 {
   "champion": "Kaisa",
   "patch": "16.15",
-  "total_matches": 2574,
+  "total_matches": 3394,
   "history": [
     {
       "date": "2026-08-06",
@@ -66,6 +66,30 @@
       "wins": 1,
       "bans": 11,
       "matches_processed": 854
+    },
+    {
+      "date": "2026-08-09",
+      "role": "BOTTOM",
+      "games": 106,
+      "wins": 56,
+      "bans": 12,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 1,
+      "bans": 12,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "TOP",
+      "games": 4,
+      "wins": 3,
+      "bans": 12,
+      "matches_processed": 820
     }
   ]
 }

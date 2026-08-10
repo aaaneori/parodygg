@@ -1,7 +1,7 @@
 {
   "champion": "Trundle",
   "patch": "16.15",
-  "total_matches": 2574,
+  "total_matches": 3394,
   "history": [
     {
       "date": "2026-08-06",
@@ -106,6 +106,30 @@
       "wins": 3,
       "bans": 2,
       "matches_processed": 854
+    },
+    {
+      "date": "2026-08-09",
+      "role": "JUNGLE",
+      "games": 3,
+      "wins": 1,
+      "bans": 4,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "TOP",
+      "games": 17,
+      "wins": 9,
+      "bans": 4,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "UTILITY",
+      "games": 5,
+      "wins": 3,
+      "bans": 4,
+      "matches_processed": 820
     }
   ]
 }

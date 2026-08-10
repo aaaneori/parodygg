@@ -1,7 +1,7 @@
 {
   "champion": "Viktor",
   "patch": "16.15",
-  "total_matches": 2574,
+  "total_matches": 3394,
   "history": [
     {
       "date": "2026-08-06",
@@ -74,6 +74,30 @@
       "wins": 3,
       "bans": 136,
       "matches_processed": 854
+    },
+    {
+      "date": "2026-08-09",
+      "role": "BOTTOM",
+      "games": 98,
+      "wins": 52,
+      "bans": 125,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "MIDDLE",
+      "games": 54,
+      "wins": 31,
+      "bans": 125,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "TOP",
+      "games": 6,
+      "wins": 3,
+      "bans": 125,
+      "matches_processed": 820
     }
   ]
 }

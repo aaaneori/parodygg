@@ -1,7 +1,7 @@
 {
   "champion": "Seraphine",
   "patch": "16.15",
-  "total_matches": 2574,
+  "total_matches": 3394,
   "history": [
     {
       "date": "2026-08-06",
@@ -74,6 +74,22 @@
       "wins": 17,
       "bans": 13,
       "matches_processed": 854
+    },
+    {
+      "date": "2026-08-09",
+      "role": "BOTTOM",
+      "games": 25,
+      "wins": 13,
+      "bans": 8,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "role": "UTILITY",
+      "games": 15,
+      "wins": 7,
+      "bans": 8,
+      "matches_processed": 820
     }
   ]
 }
