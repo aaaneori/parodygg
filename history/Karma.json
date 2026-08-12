@@ -1,7 +1,7 @@
 {
   "champion": "Karma",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -130,6 +130,30 @@
       "wins": 23,
       "bans": 45,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 2,
+      "wins": 1,
+      "bans": 40,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 2,
+      "wins": 1,
+      "bans": 40,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "UTILITY",
+      "games": 69,
+      "wins": 34,
+      "bans": 40,
+      "matches_processed": 883
     }
   ]
 }

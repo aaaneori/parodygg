@@ -1,7 +1,7 @@
 {
   "champion": "Jhin",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -154,6 +154,38 @@
       "wins": 0,
       "bans": 8,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "BOTTOM",
+      "games": 77,
+      "wins": 30,
+      "bans": 3,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "JUNGLE",
+      "games": 2,
+      "wins": 1,
+      "bans": 3,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 3,
+      "wins": 2,
+      "bans": 3,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 3,
+      "wins": 1,
+      "bans": 3,
+      "matches_processed": 883
     }
   ]
 }

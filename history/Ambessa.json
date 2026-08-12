@@ -1,7 +1,7 @@
 {
   "champion": "Ambessa",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -162,6 +162,38 @@
       "wins": 52,
       "bans": 88,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 1,
+      "bans": 98,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "JUNGLE",
+      "games": 15,
+      "wins": 7,
+      "bans": 98,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 14,
+      "wins": 5,
+      "bans": 98,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 83,
+      "wins": 39,
+      "bans": 98,
+      "matches_processed": 883
     }
   ]
 }

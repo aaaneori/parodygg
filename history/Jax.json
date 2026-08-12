@@ -1,7 +1,7 @@
 {
   "champion": "Jax",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -194,6 +194,46 @@
       "wins": 5,
       "bans": 117,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "BOTTOM",
+      "games": 6,
+      "wins": 5,
+      "bans": 131,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "JUNGLE",
+      "games": 5,
+      "wins": 4,
+      "bans": 131,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 2,
+      "wins": 2,
+      "bans": 131,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 73,
+      "wins": 38,
+      "bans": 131,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 1,
+      "bans": 131,
+      "matches_processed": 883
     }
   ]
 }

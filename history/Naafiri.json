@@ -1,7 +1,7 @@
 {
   "champion": "Naafiri",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -130,6 +130,38 @@
       "wins": 1,
       "bans": 104,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 1,
+      "bans": 94,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "JUNGLE",
+      "games": 37,
+      "wins": 18,
+      "bans": 94,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 6,
+      "wins": 3,
+      "bans": 94,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 6,
+      "wins": 2,
+      "bans": 94,
+      "matches_processed": 883
     }
   ]
 }

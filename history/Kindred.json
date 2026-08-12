@@ -1,7 +1,7 @@
 {
   "champion": "Kindred",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -50,6 +50,14 @@
       "wins": 15,
       "bans": 14,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "JUNGLE",
+      "games": 30,
+      "wins": 14,
+      "bans": 2,
+      "matches_processed": 883
     }
   ]
 }

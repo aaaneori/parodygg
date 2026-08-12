@@ -1,7 +1,7 @@
 {
   "champion": "Vladimir",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -122,6 +122,30 @@
       "wins": 15,
       "bans": 67,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "BOTTOM",
+      "games": 12,
+      "wins": 8,
+      "bans": 61,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 18,
+      "wins": 6,
+      "bans": 61,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 19,
+      "wins": 7,
+      "bans": 61,
+      "matches_processed": 883
     }
   ]
 }

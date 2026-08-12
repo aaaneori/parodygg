@@ -1,7 +1,7 @@
 {
   "champion": "Senna",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -90,6 +90,22 @@
       "wins": 28,
       "bans": 11,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "BOTTOM",
+      "games": 14,
+      "wins": 6,
+      "bans": 1,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "UTILITY",
+      "games": 48,
+      "wins": 23,
+      "bans": 1,
+      "matches_processed": 883
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "champion": "Yasuo",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -138,6 +138,30 @@
       "wins": 15,
       "bans": 118,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "BOTTOM",
+      "games": 37,
+      "wins": 16,
+      "bans": 124,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 50,
+      "wins": 29,
+      "bans": 124,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 23,
+      "wins": 14,
+      "bans": 124,
+      "matches_processed": 883
     }
   ]
 }

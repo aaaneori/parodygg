@@ -1,7 +1,7 @@
 {
   "champion": "Xayah",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -66,6 +66,22 @@
       "wins": 6,
       "bans": 0,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "BOTTOM",
+      "games": 24,
+      "wins": 14,
+      "bans": 6,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 1,
+      "wins": 1,
+      "bans": 6,
+      "matches_processed": 883
     }
   ]
 }

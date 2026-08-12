@@ -1,7 +1,7 @@
 {
   "champion": "Yorick",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -50,6 +50,22 @@
       "wins": 0,
       "bans": 46,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 1,
+      "bans": 47,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 17,
+      "wins": 9,
+      "bans": 47,
+      "matches_processed": 883
     }
   ]
 }

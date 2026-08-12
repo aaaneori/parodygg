@@ -1,7 +1,7 @@
 {
   "champion": "Orianna",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -114,6 +114,30 @@
       "wins": 1,
       "bans": 12,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 1,
+      "bans": 19,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 39,
+      "wins": 17,
+      "bans": 19,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 3,
+      "wins": 0,
+      "bans": 19,
+      "matches_processed": 883
     }
   ]
 }

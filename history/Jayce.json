@@ -1,7 +1,7 @@
 {
   "champion": "Jayce",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -162,6 +162,38 @@
       "wins": 45,
       "bans": 259,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "BOTTOM",
+      "games": 2,
+      "wins": 1,
+      "bans": 295,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "JUNGLE",
+      "games": 12,
+      "wins": 8,
+      "bans": 295,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 28,
+      "wins": 15,
+      "bans": 295,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 103,
+      "wins": 40,
+      "bans": 295,
+      "matches_processed": 883
     }
   ]
 }

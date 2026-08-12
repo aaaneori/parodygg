@@ -1,7 +1,7 @@
 {
   "champion": "Malzahar",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -98,6 +98,30 @@
       "wins": 2,
       "bans": 5,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "BOTTOM",
+      "games": 2,
+      "wins": 2,
+      "bans": 4,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 13,
+      "wins": 5,
+      "bans": 4,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 1,
+      "wins": 1,
+      "bans": 4,
+      "matches_processed": 883
     }
   ]
 }

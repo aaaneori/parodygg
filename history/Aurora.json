@@ -1,7 +1,7 @@
 {
   "champion": "Aurora",
   "patch": "16.15",
-  "total_matches": 4293,
+  "total_matches": 5176,
   "history": [
     {
       "date": "2026-08-06",
@@ -106,6 +106,22 @@
       "wins": 9,
       "bans": 8,
       "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "role": "MIDDLE",
+      "games": 28,
+      "wins": 10,
+      "bans": 10,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "role": "TOP",
+      "games": 11,
+      "wins": 7,
+      "bans": 10,
+      "matches_processed": 883
     }
   ]
 }
