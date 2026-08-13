@@ -31,8 +31,21 @@
   }
 
   .page {
-    max-width: 920px;
+    max-width: 1180px;
     margin: 0 auto;
+  }
+
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 24px;
+    align-items: start;
+  }
+
+  @media (max-width: 860px) {
+    .layout {
+      grid-template-columns: 1fr;
+    }
   }
 
   .back-link {
@@ -212,6 +225,53 @@
     padding: 20px 0;
   }
 
+  .stats-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .stats-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .stats-card-subtitle {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-bottom: 16px;
+  }
+
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .stat-row:last-child {
+    border-bottom: none;
+  }
+
+  .stat-row-label {
+    font-size: 13px;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+
+  .stat-row-value {
+    font-size: 13px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
   @media (max-width: 480px) {
     h1 { font-size: 22px; }
     .champion-icon-large { width: 48px; height: 48px; }
@@ -230,13 +290,17 @@
   <div class="eyebrow" id="eyebrow"><span class="dot"></span> Loading...</div>
   <div class="rule"></div>
 
-  <div id="content">
-    <div class="loading">Loading champion data...</div>
+  <div class="layout">
+    <div id="content">
+      <div class="loading">Loading champion data...</div>
+    </div>
+    <div id="statsSidebar"></div>
   </div>
 </div>
 
 <script>
   const DDRAGON_FALLBACK_VERSION = "14.16.1";
+  const EXTENDED_STATS_FOLDER_NAME = "extended_stats";
   const MIN_PICKRATE_FOR_ROLE_SWITCH = 5;
   const ROLE_LABELS = {
     TOP: "Top",
@@ -257,8 +321,31 @@
     { key: "patch", label: "Patch" }
   ];
 
+  // Порядок и подписи полей в правой колонке Champion Stats. key должен
+  // совпадать с ключом, который отдаёт get_champion_extended_stats() на
+  // бэкенде (см. database.py). suffix добавляется к отформатированному
+  // числу (обычно "%"), decimals - число знаков после запятой.
+  const EXTENDED_STAT_FIELDS = [
+    { key: "kills", label: "Kills", decimals: 1 },
+    { key: "deaths", label: "Deaths", decimals: 1 },
+    { key: "assists", label: "Assists", decimals: 1 },
+    { key: "solo_kills", label: "Solo Kills", decimals: 1 },
+    { key: "kill_participation_pct", label: "KP", decimals: 0, suffix: "%" },
+    { key: "first_blood_pct", label: "First Blood", decimals: 1, suffix: "%" },
+    { key: "physical_dmg", label: "Physical DMG", decimals: 0, thousands: true },
+    { key: "magic_dmg", label: "Magic DMG", decimals: 0, thousands: true },
+    { key: "dmg_taken", label: "DMG Taken", decimals: 0, thousands: true },
+    { key: "team_dmg_pct", label: "Team DMG %", decimals: 0, suffix: "%" },
+    { key: "dmg_per_min", label: "DMG/min", decimals: 0 },
+    { key: "cs_per_min", label: "CS/min", decimals: 1 },
+    { key: "gold_per_min", label: "Gold/min", decimals: 0 },
+    { key: "vision_per_min", label: "Vision/min", decimals: 2 },
+    { key: "control_wards", label: "Control Wards", decimals: 1 }
+  ];
+
   let ddragonVersion = DDRAGON_FALLBACK_VERSION;
   let historyData = null;
+  let extendedStatsData = null;
   let selectedRole = "ALL";
   let groupBy = "day";
   let charts = { winrate: null, pickrate: null, banrate: null };
@@ -527,6 +614,64 @@
     buildChart("winrate", points, "winrate", "--win", "Win Rate");
     buildChart("pickrate", points, "pickrate", "--pick", "Pick Rate");
     buildChart("banrate", points, "banrate", "--ban", "Ban Rate");
+
+    renderStatsSidebar();
+  }
+
+  function formatStatValue(rawValue, field) {
+    const rounded = field.decimals > 0
+      ? rawValue.toFixed(field.decimals)
+      : Math.round(rawValue).toString();
+
+    const withThousands = field.thousands
+      ? Number(rounded).toLocaleString("en-US")
+      : rounded;
+
+    return withThousands + (field.suffix || "");
+  }
+
+  function renderStatsSidebar() {
+    const sidebar = document.getElementById("statsSidebar");
+
+    // Расширенной статы может не быть вообще (файл ещё не экспортирован
+    // воркером, или чемпион ни разу не пикался в текущем патче) - тогда
+    // просто ничего не показываем в колонке, без ошибки.
+    if (!extendedStatsData || !extendedStatsData.stats_by_role) {
+      sidebar.innerHTML = "";
+      return;
+    }
+
+    // Синхронизируем колонку с уже выбранной ролью в roleToggle выше по
+    // странице. Если для этой конкретной роли статов ещё нет (например,
+    // роль видна в графиках, потому что есть pickrate/winrate история, но
+    // расширенная стата по ней ещё не набралась) - сайдбар просто прячется,
+    // без пустых нулевых строк.
+    const stats = extendedStatsData.stats_by_role[selectedRole];
+    if (!stats) {
+      sidebar.innerHTML = "";
+      return;
+    }
+
+    const roleLabel = selectedRole === "ALL" ? "All roles" : roleLabelOf(selectedRole);
+
+    const rowsHtml = EXTENDED_STAT_FIELDS.map(field => {
+      const rawValue = stats[field.key];
+      if (rawValue === undefined) return "";
+      return `
+        <div class="stat-row">
+          <span class="stat-row-label">${field.label}</span>
+          <span class="stat-row-value">${formatStatValue(rawValue, field)}</span>
+        </div>
+      `;
+    }).join("");
+
+    sidebar.innerHTML = `
+      <div class="stats-card">
+        <div class="stats-card-title">Champion Stats</div>
+        <div class="stats-card-subtitle">${roleLabel} &middot; Patch ${extendedStatsData.patch} &middot; ${stats.games} games</div>
+        ${rowsHtml}
+      </div>
+    `;
   }
 
   function setupRoleToggle() {
@@ -588,14 +733,25 @@
       const version = await getDdragonVersion();
       ddragonVersion = version;
 
-      const [historyRes, nameMap] = await Promise.all([
+      const [historyRes, extendedStatsRes, nameMap] = await Promise.all([
         fetch(`history/${championName}.json`),
+        // Расширенная стата - необязательный файл (его может не быть,
+        // если чемпион не пикался в текущем патче, или воркер ещё не
+        // экспортировал extended_stats/ после обновления) - поэтому 404
+        // здесь не бросает ошибку всей страницы, просто скрывает колонку.
+        fetch(`${EXTENDED_STATS_FOLDER_NAME}/${championName}.json`).catch(() => null),
         getChampionKeyToDisplayNameMap(version)
       ]);
 
       if (!historyRes.ok) throw new Error(`No history data found for ${championName}`);
 
       historyData = await historyRes.json();
+
+      if (extendedStatsRes && extendedStatsRes.ok) {
+        extendedStatsData = await extendedStatsRes.json();
+      } else {
+        extendedStatsData = null;
+      }
 
       const displayName = nameMap[championName] || championName;
       document.title = `${displayName} - Champion Detail`;
