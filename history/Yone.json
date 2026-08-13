@@ -1,10 +1,189 @@
 {
   "champion": "Yone",
-  "patch": "16.16",
-  "total_matches": 701,
   "history": [
     {
+      "date": "2026-08-06",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 3,
+      "wins": 2,
+      "bans": 29,
+      "matches_processed": 867
+    },
+    {
+      "date": "2026-08-06",
+      "patch": "16.15",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 1,
+      "bans": 29,
+      "matches_processed": 867
+    },
+    {
+      "date": "2026-08-06",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 71,
+      "wins": 38,
+      "bans": 29,
+      "matches_processed": 867
+    },
+    {
+      "date": "2026-08-06",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 45,
+      "wins": 23,
+      "bans": 29,
+      "matches_processed": 867
+    },
+    {
+      "date": "2026-08-07",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 5,
+      "wins": 1,
+      "bans": 38,
+      "matches_processed": 853
+    },
+    {
+      "date": "2026-08-07",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 60,
+      "wins": 29,
+      "bans": 38,
+      "matches_processed": 853
+    },
+    {
+      "date": "2026-08-07",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 47,
+      "wins": 20,
+      "bans": 38,
+      "matches_processed": 853
+    },
+    {
+      "date": "2026-08-08",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 4,
+      "wins": 3,
+      "bans": 49,
+      "matches_processed": 854
+    },
+    {
+      "date": "2026-08-08",
+      "patch": "16.15",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 1,
+      "bans": 49,
+      "matches_processed": 854
+    },
+    {
+      "date": "2026-08-08",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 50,
+      "wins": 24,
+      "bans": 49,
+      "matches_processed": 854
+    },
+    {
+      "date": "2026-08-08",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 51,
+      "wins": 24,
+      "bans": 49,
+      "matches_processed": 854
+    },
+    {
+      "date": "2026-08-09",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 5,
+      "wins": 3,
+      "bans": 36,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 44,
+      "wins": 19,
+      "bans": 36,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 36,
+      "wins": 13,
+      "bans": 36,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-10",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 3,
+      "wins": 0,
+      "bans": 30,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 59,
+      "wins": 31,
+      "bans": 30,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 60,
+      "wins": 27,
+      "bans": 30,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 4,
+      "wins": 2,
+      "bans": 20,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 56,
+      "wins": 28,
+      "bans": 20,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 72,
+      "wins": 36,
+      "bans": 20,
+      "matches_processed": 883
+    },
+    {
       "date": "2026-08-12",
+      "patch": "16.16",
       "role": "BOTTOM",
       "games": 8,
       "wins": 4,
@@ -13,6 +192,7 @@
     },
     {
       "date": "2026-08-12",
+      "patch": "16.16",
       "role": "MIDDLE",
       "games": 46,
       "wins": 25,
@@ -21,6 +201,7 @@
     },
     {
       "date": "2026-08-12",
+      "patch": "16.16",
       "role": "TOP",
       "games": 44,
       "wins": 27,

@@ -1,10 +1,216 @@
 {
   "champion": "Hwei",
-  "patch": "16.16",
-  "total_matches": 701,
   "history": [
     {
+      "date": "2026-08-06",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 32,
+      "wins": 13,
+      "bans": 9,
+      "matches_processed": 867
+    },
+    {
+      "date": "2026-08-06",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 35,
+      "wins": 16,
+      "bans": 9,
+      "matches_processed": 867
+    },
+    {
+      "date": "2026-08-06",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 2,
+      "wins": 1,
+      "bans": 9,
+      "matches_processed": 867
+    },
+    {
+      "date": "2026-08-06",
+      "patch": "16.15",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "bans": 9,
+      "matches_processed": 867
+    },
+    {
+      "date": "2026-08-07",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 22,
+      "wins": 11,
+      "bans": 23,
+      "matches_processed": 853
+    },
+    {
+      "date": "2026-08-07",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 38,
+      "wins": 21,
+      "bans": 23,
+      "matches_processed": 853
+    },
+    {
+      "date": "2026-08-07",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 1,
+      "wins": 0,
+      "bans": 23,
+      "matches_processed": 853
+    },
+    {
+      "date": "2026-08-08",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 22,
+      "wins": 5,
+      "bans": 6,
+      "matches_processed": 854
+    },
+    {
+      "date": "2026-08-08",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 32,
+      "wins": 16,
+      "bans": 6,
+      "matches_processed": 854
+    },
+    {
+      "date": "2026-08-08",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 2,
+      "wins": 1,
+      "bans": 6,
+      "matches_processed": 854
+    },
+    {
+      "date": "2026-08-08",
+      "patch": "16.15",
+      "role": "UTILITY",
+      "games": 3,
+      "wins": 0,
+      "bans": 6,
+      "matches_processed": 854
+    },
+    {
+      "date": "2026-08-09",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 20,
+      "wins": 10,
+      "bans": 10,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 30,
+      "wins": 16,
+      "bans": 10,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 3,
+      "wins": 2,
+      "bans": 10,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-09",
+      "patch": "16.15",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "bans": 10,
+      "matches_processed": 820
+    },
+    {
+      "date": "2026-08-10",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 26,
+      "wins": 12,
+      "bans": 15,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 25,
+      "wins": 10,
+      "bans": 15,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 5,
+      "wins": 4,
+      "bans": 15,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-10",
+      "patch": "16.15",
+      "role": "UTILITY",
+      "games": 3,
+      "wins": 2,
+      "bans": 15,
+      "matches_processed": 899
+    },
+    {
+      "date": "2026-08-11",
+      "patch": "16.15",
+      "role": "BOTTOM",
+      "games": 19,
+      "wins": 13,
+      "bans": 19,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "patch": "16.15",
+      "role": "MIDDLE",
+      "games": 25,
+      "wins": 8,
+      "bans": 19,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "patch": "16.15",
+      "role": "TOP",
+      "games": 2,
+      "wins": 0,
+      "bans": 19,
+      "matches_processed": 883
+    },
+    {
+      "date": "2026-08-11",
+      "patch": "16.15",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "bans": 19,
+      "matches_processed": 883
+    },
+    {
       "date": "2026-08-12",
+      "patch": "16.16",
       "role": "BOTTOM",
       "games": 28,
       "wins": 13,
@@ -13,6 +219,7 @@
     },
     {
       "date": "2026-08-12",
+      "patch": "16.16",
       "role": "MIDDLE",
       "games": 29,
       "wins": 15,
@@ -21,6 +228,7 @@
     },
     {
       "date": "2026-08-12",
+      "patch": "16.16",
       "role": "TOP",
       "games": 1,
       "wins": 1,
@@ -29,6 +237,7 @@
     },
     {
       "date": "2026-08-12",
+      "patch": "16.16",
       "role": "UTILITY",
       "games": 2,
       "wins": 1,
