@@ -253,10 +253,8 @@
     UTILITY: "utility"
   };
   const GROUP_BY_OPTIONS = [
-    { key: "day", label: "Day", days: 1 },
-    { key: "3day", label: "3 Days", days: 3 },
-    { key: "week", label: "Week", days: 7 },
-    { key: "patch", label: "Patch", days: null }
+    { key: "day", label: "Day" },
+    { key: "patch", label: "Patch" }
   ];
 
   let ddragonVersion = DDRAGON_FALLBACK_VERSION;
@@ -377,7 +375,7 @@
     const byDate = {};
     history.forEach(entry => {
       if (!byDate[entry.date]) {
-        byDate[entry.date] = { date: entry.date, games: 0, wins: 0, bans: entry.bans, matches_processed: entry.matches_processed };
+        byDate[entry.date] = { date: entry.date, patch: entry.patch, games: 0, wins: 0, bans: entry.bans, matches_processed: entry.matches_processed };
       }
       byDate[entry.date].games += entry.games;
       byDate[entry.date].wins += entry.wins;
@@ -387,37 +385,45 @@
       // не прибавляем повторно на каждую роль, просто фиксируем значение
       // один раз при создании записи для этой даты (выше). Но МЕЖДУ
       // разными днями баны суммируются как обычный дневной счётчик -
-      // это происходит ниже, при суммировании dailyPoints через sumField.
+      // это происходит ниже, при суммировании через sumField.
     });
 
     const dailyPoints = Object.values(byDate).sort((a, b) => a.date.localeCompare(b.date));
 
-    const option = GROUP_BY_OPTIONS.find(o => o.key === groupByKey);
-    if (!option || option.days === null) {
-      // "Patch" - один накопительный период на весь патч целиком.
-      if (dailyPoints.length === 0) return [];
-      return [{
-        label: "Full patch",
-        games: sumField(dailyPoints, "games"),
-        wins: sumField(dailyPoints, "wins"),
-        bans: sumField(dailyPoints, "bans"),
-        matches_processed: sumField(dailyPoints, "matches_processed")
-      }];
-    }
+    if (groupByKey === "patch") {
+      // Одна точка НА КАЖДЫЙ патч (не одна точка на всю историю) - для
+      // каждого патча суммируем games/wins/bans/matches_processed по всем
+      // его дням, подписываем номером патча. Текущий (ещё не закрытый)
+      // патч тоже попадает сюда - просто с суммой по тем дням, что уже
+      // успели собраться на сегодня.
+      const byPatch = {};
+      dailyPoints.forEach(point => {
+        if (!byPatch[point.patch]) {
+          byPatch[point.patch] = [];
+        }
+        byPatch[point.patch].push(point);
+      });
 
-    const chunkSize = option.days;
-    const grouped = [];
-    for (let i = 0; i < dailyPoints.length; i += chunkSize) {
-      const chunk = dailyPoints.slice(i, i + chunkSize);
-      grouped.push({
-        label: chunk.length === 1 ? chunk[0].date : `${chunk[0].date} – ${chunk[chunk.length - 1].date}`,
-        games: sumField(chunk, "games"),
-        wins: sumField(chunk, "wins"),
-        bans: sumField(chunk, "bans"),
-        matches_processed: sumField(chunk, "matches_processed")
+      return Object.keys(byPatch).sort().map(patch => {
+        const points = byPatch[patch];
+        return {
+          label: `Patch ${patch}`,
+          games: sumField(points, "games"),
+          wins: sumField(points, "wins"),
+          bans: sumField(points, "bans"),
+          matches_processed: sumField(points, "matches_processed")
+        };
       });
     }
-    return grouped;
+
+    // "Day" - точка на каждый день, без группировки.
+    return dailyPoints.map(point => ({
+      label: point.date,
+      games: point.games,
+      wins: point.wins,
+      bans: point.bans,
+      matches_processed: point.matches_processed
+    }));
   }
 
   function toChartPoints(groupedPeriods) {
@@ -596,7 +602,7 @@
       document.getElementById("championName").textContent = displayName;
       document.getElementById("header-icon-slot").outerHTML = championIconHtml(championName, version);
       document.getElementById("eyebrow").innerHTML =
-        `<span class="dot"></span> PATCH ${historyData.patch} &middot; GRANDMASTER + CHALLENGER`;
+        `<span class="dot"></span> GRANDMASTER + CHALLENGER`;
 
       document.getElementById("content").innerHTML = `
         <div class="toggle-row">
