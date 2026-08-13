@@ -1,63 +1,15 @@
 {
   "champion": "Khazix",
-  "patch": "16.15",
-  "total_matches": 5176,
+  "patch": "16.16",
+  "total_matches": 701,
   "history": [
     {
-      "date": "2026-08-06",
+      "date": "2026-08-12",
       "role": "JUNGLE",
-      "games": 60,
-      "wins": 35,
-      "bans": 74,
-      "matches_processed": 867
-    },
-    {
-      "date": "2026-08-07",
-      "role": "JUNGLE",
-      "games": 50,
-      "wins": 27,
-      "bans": 55,
-      "matches_processed": 853
-    },
-    {
-      "date": "2026-08-08",
-      "role": "JUNGLE",
-      "games": 50,
-      "wins": 32,
-      "bans": 71,
-      "matches_processed": 854
-    },
-    {
-      "date": "2026-08-09",
-      "role": "JUNGLE",
-      "games": 75,
-      "wins": 38,
-      "bans": 40,
-      "matches_processed": 820
-    },
-    {
-      "date": "2026-08-09",
-      "role": "MIDDLE",
-      "games": 1,
-      "wins": 0,
-      "bans": 40,
-      "matches_processed": 820
-    },
-    {
-      "date": "2026-08-10",
-      "role": "JUNGLE",
-      "games": 64,
-      "wins": 35,
-      "bans": 80,
-      "matches_processed": 899
-    },
-    {
-      "date": "2026-08-11",
-      "role": "JUNGLE",
-      "games": 85,
-      "wins": 32,
-      "bans": 59,
-      "matches_processed": 883
+      "games": 61,
+      "wins": 31,
+      "bans": 53,
+      "matches_processed": 701
     }
   ]
 }

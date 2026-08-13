@@ -1,143 +1,39 @@
 {
   "champion": "Talon",
-  "patch": "16.15",
-  "total_matches": 5176,
+  "patch": "16.16",
+  "total_matches": 701,
   "history": [
     {
-      "date": "2026-08-06",
-      "role": "JUNGLE",
-      "games": 57,
-      "wins": 34,
-      "bans": 348,
-      "matches_processed": 867
-    },
-    {
-      "date": "2026-08-06",
-      "role": "MIDDLE",
-      "games": 3,
-      "wins": 2,
-      "bans": 348,
-      "matches_processed": 867
-    },
-    {
-      "date": "2026-08-07",
-      "role": "JUNGLE",
-      "games": 70,
-      "wins": 36,
-      "bans": 333,
-      "matches_processed": 853
-    },
-    {
-      "date": "2026-08-07",
-      "role": "MIDDLE",
-      "games": 2,
-      "wins": 2,
-      "bans": 333,
-      "matches_processed": 853
-    },
-    {
-      "date": "2026-08-07",
-      "role": "TOP",
-      "games": 3,
-      "wins": 2,
-      "bans": 333,
-      "matches_processed": 853
-    },
-    {
-      "date": "2026-08-08",
-      "role": "JUNGLE",
-      "games": 58,
-      "wins": 30,
-      "bans": 298,
-      "matches_processed": 854
-    },
-    {
-      "date": "2026-08-08",
-      "role": "MIDDLE",
-      "games": 10,
-      "wins": 8,
-      "bans": 298,
-      "matches_processed": 854
-    },
-    {
-      "date": "2026-08-08",
-      "role": "TOP",
-      "games": 2,
-      "wins": 1,
-      "bans": 298,
-      "matches_processed": 854
-    },
-    {
-      "date": "2026-08-09",
+      "date": "2026-08-12",
       "role": "BOTTOM",
       "games": 1,
-      "wins": 1,
-      "bans": 286,
-      "matches_processed": 820
-    },
-    {
-      "date": "2026-08-09",
-      "role": "JUNGLE",
-      "games": 78,
-      "wins": 44,
-      "bans": 286,
-      "matches_processed": 820
-    },
-    {
-      "date": "2026-08-09",
-      "role": "MIDDLE",
-      "games": 7,
-      "wins": 5,
-      "bans": 286,
-      "matches_processed": 820
-    },
-    {
-      "date": "2026-08-09",
-      "role": "TOP",
-      "games": 1,
       "wins": 0,
-      "bans": 286,
-      "matches_processed": 820
+      "bans": 283,
+      "matches_processed": 701
     },
     {
-      "date": "2026-08-10",
+      "date": "2026-08-12",
       "role": "JUNGLE",
       "games": 76,
-      "wins": 38,
-      "bans": 374,
-      "matches_processed": 899
+      "wins": 37,
+      "bans": 283,
+      "matches_processed": 701
     },
     {
-      "date": "2026-08-10",
+      "date": "2026-08-12",
       "role": "MIDDLE",
-      "games": 11,
-      "wins": 5,
-      "bans": 374,
-      "matches_processed": 899
+      "games": 6,
+      "wins": 2,
+      "bans": 283,
+      "matches_processed": 701
     },
     {
-      "date": "2026-08-11",
-      "role": "JUNGLE",
-      "games": 70,
-      "wins": 31,
-      "bans": 374,
-      "matches_processed": 883
-    },
-    {
-      "date": "2026-08-11",
-      "role": "MIDDLE",
-      "games": 14,
-      "wins": 6,
-      "bans": 374,
-      "matches_processed": 883
-    },
-    {
-      "date": "2026-08-11",
+      "date": "2026-08-12",
       "role": "TOP",
-      "games": 4,
-      "wins": 4,
-      "bans": 374,
-      "matches_processed": 883
+      "games": 1,
+      "wins": 1,
+      "bans": 283,
+      "matches_processed": 701
     }
   ]
 }

@@ -1,199 +1,31 @@
 {
   "champion": "TwistedFate",
-  "patch": "16.15",
-  "total_matches": 5176,
+  "patch": "16.16",
+  "total_matches": 701,
   "history": [
     {
-      "date": "2026-08-06",
-      "role": "BOTTOM",
-      "games": 5,
-      "wins": 1,
-      "bans": 6,
-      "matches_processed": 867
-    },
-    {
-      "date": "2026-08-06",
+      "date": "2026-08-12",
       "role": "MIDDLE",
-      "games": 36,
-      "wins": 23,
-      "bans": 6,
-      "matches_processed": 867
-    },
-    {
-      "date": "2026-08-06",
-      "role": "TOP",
-      "games": 10,
-      "wins": 6,
-      "bans": 6,
-      "matches_processed": 867
-    },
-    {
-      "date": "2026-08-06",
-      "role": "UTILITY",
-      "games": 1,
-      "wins": 0,
-      "bans": 6,
-      "matches_processed": 867
-    },
-    {
-      "date": "2026-08-07",
-      "role": "BOTTOM",
-      "games": 4,
-      "wins": 2,
-      "bans": 2,
-      "matches_processed": 853
-    },
-    {
-      "date": "2026-08-07",
-      "role": "MIDDLE",
-      "games": 34,
+      "games": 23,
       "wins": 15,
-      "bans": 2,
-      "matches_processed": 853
+      "bans": 1,
+      "matches_processed": 701
     },
     {
-      "date": "2026-08-07",
+      "date": "2026-08-12",
       "role": "TOP",
-      "games": 6,
-      "wins": 3,
-      "bans": 2,
-      "matches_processed": 853
+      "games": 14,
+      "wins": 6,
+      "bans": 1,
+      "matches_processed": 701
     },
     {
-      "date": "2026-08-07",
+      "date": "2026-08-12",
       "role": "UTILITY",
       "games": 2,
-      "wins": 2,
-      "bans": 2,
-      "matches_processed": 853
-    },
-    {
-      "date": "2026-08-08",
-      "role": "BOTTOM",
-      "games": 7,
-      "wins": 5,
-      "bans": 3,
-      "matches_processed": 854
-    },
-    {
-      "date": "2026-08-08",
-      "role": "MIDDLE",
-      "games": 46,
-      "wins": 24,
-      "bans": 3,
-      "matches_processed": 854
-    },
-    {
-      "date": "2026-08-08",
-      "role": "TOP",
-      "games": 8,
-      "wins": 4,
-      "bans": 3,
-      "matches_processed": 854
-    },
-    {
-      "date": "2026-08-08",
-      "role": "UTILITY",
-      "games": 1,
-      "wins": 0,
-      "bans": 3,
-      "matches_processed": 854
-    },
-    {
-      "date": "2026-08-09",
-      "role": "BOTTOM",
-      "games": 2,
-      "wins": 0,
-      "bans": 3,
-      "matches_processed": 820
-    },
-    {
-      "date": "2026-08-09",
-      "role": "MIDDLE",
-      "games": 35,
-      "wins": 22,
-      "bans": 3,
-      "matches_processed": 820
-    },
-    {
-      "date": "2026-08-09",
-      "role": "TOP",
-      "games": 10,
-      "wins": 7,
-      "bans": 3,
-      "matches_processed": 820
-    },
-    {
-      "date": "2026-08-09",
-      "role": "UTILITY",
-      "games": 5,
-      "wins": 3,
-      "bans": 3,
-      "matches_processed": 820
-    },
-    {
-      "date": "2026-08-10",
-      "role": "BOTTOM",
-      "games": 3,
-      "wins": 0,
-      "bans": 5,
-      "matches_processed": 899
-    },
-    {
-      "date": "2026-08-10",
-      "role": "MIDDLE",
-      "games": 32,
-      "wins": 21,
-      "bans": 5,
-      "matches_processed": 899
-    },
-    {
-      "date": "2026-08-10",
-      "role": "TOP",
-      "games": 18,
-      "wins": 8,
-      "bans": 5,
-      "matches_processed": 899
-    },
-    {
-      "date": "2026-08-10",
-      "role": "UTILITY",
-      "games": 1,
-      "wins": 0,
-      "bans": 5,
-      "matches_processed": 899
-    },
-    {
-      "date": "2026-08-11",
-      "role": "BOTTOM",
-      "games": 6,
-      "wins": 2,
-      "bans": 2,
-      "matches_processed": 883
-    },
-    {
-      "date": "2026-08-11",
-      "role": "MIDDLE",
-      "games": 27,
-      "wins": 12,
-      "bans": 2,
-      "matches_processed": 883
-    },
-    {
-      "date": "2026-08-11",
-      "role": "TOP",
-      "games": 16,
-      "wins": 12,
-      "bans": 2,
-      "matches_processed": 883
-    },
-    {
-      "date": "2026-08-11",
-      "role": "UTILITY",
-      "games": 2,
-      "wins": 0,
-      "bans": 2,
-      "matches_processed": 883
+      "wins": 1,
+      "bans": 1,
+      "matches_processed": 701
     }
   ]
 }

@@ -1,63 +1,23 @@
 {
   "champion": "Kindred",
-  "patch": "16.15",
-  "total_matches": 5176,
+  "patch": "16.16",
+  "total_matches": 701,
   "history": [
     {
-      "date": "2026-08-06",
+      "date": "2026-08-12",
       "role": "JUNGLE",
-      "games": 31,
-      "wins": 19,
-      "bans": 7,
-      "matches_processed": 867
+      "games": 24,
+      "wins": 13,
+      "bans": 2,
+      "matches_processed": 701
     },
     {
-      "date": "2026-08-07",
-      "role": "JUNGLE",
-      "games": 30,
-      "wins": 17,
-      "bans": 10,
-      "matches_processed": 853
-    },
-    {
-      "date": "2026-08-08",
-      "role": "JUNGLE",
-      "games": 35,
-      "wins": 20,
-      "bans": 6,
-      "matches_processed": 854
-    },
-    {
-      "date": "2026-08-08",
-      "role": "TOP",
+      "date": "2026-08-12",
+      "role": "MIDDLE",
       "games": 1,
       "wins": 0,
-      "bans": 6,
-      "matches_processed": 854
-    },
-    {
-      "date": "2026-08-09",
-      "role": "JUNGLE",
-      "games": 14,
-      "wins": 8,
-      "bans": 6,
-      "matches_processed": 820
-    },
-    {
-      "date": "2026-08-10",
-      "role": "JUNGLE",
-      "games": 32,
-      "wins": 15,
-      "bans": 14,
-      "matches_processed": 899
-    },
-    {
-      "date": "2026-08-11",
-      "role": "JUNGLE",
-      "games": 30,
-      "wins": 14,
       "bans": 2,
-      "matches_processed": 883
+      "matches_processed": 701
     }
   ]
 }
