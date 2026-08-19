@@ -103,6 +103,10 @@ and full validation before commit.
   skips that one resource.
 - **Per-match isolation.** One malformed match is skipped and logged; it used to
   take down the entire day's collection.
+- **Patch-release days.** A collection window can span two patches — EUW plays
+  the old one until ranked queues go down, the new one after maintenance. Both
+  are aggregated separately and stored as two runs under the same date, so
+  neither half is lost and each keeps its own denominator.
 - **Backfill.** Up to 3 consecutive missed days are collected individually.
   Longer gaps are refused and logged rather than silently spending hours.
 - **Logging** to a rotating file, so scheduled runs leave a trace.
@@ -113,7 +117,7 @@ and full validation before commit.
 
 ```bash
 cd worker
-python -m pytest        # 72 tests
+python -m pytest        # 76 tests
 ```
 
 Aggregation errors are silent — the numbers stay plausible and are simply
@@ -123,8 +127,7 @@ to percent) plus the edge cases that have actually broken things: malformed
 `gameVersion`, missing `teamPosition`, absent `challenges`, corrupted cache
 entries.
 
-Two tests document known behaviour rather than desired behaviour: matches from
-a second patch are dropped silently on patch-release day, and a match that
+One test documents known behaviour rather than desired behaviour: a match that
 fails mid-parse still counts toward the denominator.
 
 ---
@@ -146,8 +149,6 @@ once a day.
 
 ## Known limitations
 
-- **Patch boundaries.** The first match of a run decides the patch; matches from
-  another one are dropped. On release day this discards part of the data.
 - **Unassigned lanes.** Riot occasionally can't determine a lane (~0.9% of
   matches) and sends an empty `teamPosition`. Those participants are skipped
   rather than guessed at, which slightly understates role-level totals.
@@ -270,6 +271,10 @@ champion_daily_stats (date, patch, champion, role)    -> games, wins, + 15 ме�
   5xx він чекає і пробує ще раз, на 404 просто пропускає цей матч.
 - **Один зіпсований матч не валить усе.** Раніше такий матч обривав збір за цілу
   добу; тепер він пропускається із записом у лог.
+- **День виходу патчу.** Одне вікно збору може охоплювати дві версії: до
+  вимкнення черг грають на старому патчі, після обслуговування — на новому.
+  Обидві половини зводяться окремо і зберігаються як два запуски під однією
+  датою, тож не втрачається жодна, і в кожної свій знаменник.
 - **Заповнення пропусків.** Якщо воркер не працював кілька днів, він добере до
   трьох пропущених діб поспіль, кожну окремо. Довші прогалини свідомо не
   заповнюються — про це пишеться в лог.
@@ -282,7 +287,7 @@ champion_daily_stats (date, patch, champion, role)    -> games, wins, + 15 ме�
 
 ```bash
 cd worker
-python -m pytest        # 72 тести
+python -m pytest        # 76 тестів
 ```
 
 Помилка в підрахунках нічим себе не видає: числа лишаються схожими на правду,
@@ -292,9 +297,8 @@ python -m pytest        # 72 тести
 які вже колись ламали збір: пошкоджений `gameVersion`, порожній `teamPosition`,
 відсутній блок `challenges`, побитий запис у кеші.
 
-Два тести описують не бажану, а фактичну поведінку: у день виходу патчу матчі з
-нової версії мовчки відкидаються, а матч, який впав під час розбору, все одно
-враховується у знаменнику.
+Один тест описує не бажану, а фактичну поведінку: матч, який впав під час
+розбору, все одно враховується у знаменнику.
 
 ---
 
@@ -315,8 +319,6 @@ python worker.py
 
 ## Що поки не враховано
 
-- **День виходу патчу.** Версію визначає перший матч у запуску, решта матчів з
-  іншої версії відкидається. Саме в день релізу через це губиться частина даних.
 - **Невизначена лінія.** Приблизно в 0.9% матчів Riot не може визначити, хто на
   якій лінії грав, і надсилає порожній `teamPosition`. Таких гравців краще
   пропустити, ніж вгадувати, але через це підсумки в розрізі ролей трохи

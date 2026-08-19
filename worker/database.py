@@ -363,11 +363,22 @@ def get_champion_extended_stats(champion, patch, role=None):
     return stats
 
 
+def _patch_sort_key(patch):
+    """
+    '16.9' sorts before '16.10' numerically but after it as a string, and the
+    export picks the newest patch off the end of this list.
+    """
+    try:
+        return tuple(int(part) for part in patch.split('.'))
+    except ValueError:
+        return (0,)
+
+
 def get_tracked_patches():
-    """Every patch we have any data for."""
+    """Every patch we have any data for, oldest first."""
     conn = get_connection()
     result = [row[0] for row in conn.execute(
-        'SELECT DISTINCT patch FROM daily_runs ORDER BY patch'
+        'SELECT DISTINCT patch FROM daily_runs'
     )]
     conn.close()
-    return result
+    return sorted(result, key=_patch_sort_key)

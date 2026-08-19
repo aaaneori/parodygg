@@ -59,11 +59,24 @@ def extract_extended_stats(participant, game_duration_seconds):
     }
 
 
+def _new_patch_bucket():
+    return {"champion_stats": {}, "champion_bans": {}, "matches_processed": 0}
+
+
 def process_matches(unique_match_ids):
-    champion_stats = {}
-    champion_bans = {}
-    total_matches_processed = 0
-    detected_patch = None
+    """
+    Aggregate a set of matches, keeping each patch separate.
+
+    Returns {patch: {champion_stats, champion_bans, matches_processed}}.
+
+    On patch-release day a single collection window legitimately spans two
+    versions: EUW plays the old patch until ranked queues go down (~03:30),
+    then the new one once maintenance ends. An earlier version locked onto
+    whichever patch the first match happened to carry and silently dropped
+    the rest - and since match ids arrive as a set, that could just as easily
+    discard the 17-hour half as the 3-hour one.
+    """
+    by_patch = {}
     skipped_no_position = 0
     skipped_bad_version = 0
     cache_hits = 0
@@ -87,17 +100,16 @@ def process_matches(unique_match_ids):
             patch = get_patch_from_version(game_version)
 
             if patch is None:
-                # Can't tell which patch this is - skip it rather than let it
-                # set detected_patch to None or inflate the match count.
+                # Can't tell which patch this is, and guessing would put the
+                # match in the wrong bucket - skip it.
                 skipped_bad_version += 1
                 continue
 
-            if detected_patch is None:
-                detected_patch = patch
-            elif patch != detected_patch:
-                continue
+            bucket = by_patch.setdefault(patch, _new_patch_bucket())
+            champion_stats = bucket["champion_stats"]
+            champion_bans = bucket["champion_bans"]
+            bucket["matches_processed"] += 1
 
-            total_matches_processed += 1
             game_duration_seconds = detail.get("info", {}).get("gameDuration", 0)
 
             for participant in detail["info"]["participants"]:
@@ -153,7 +165,14 @@ def process_matches(unique_match_ids):
     if skipped_bad_version > 0:
         log.warning("Skipped matches with unusable gameVersion: %s", skipped_bad_version)
 
-    return champion_stats, champion_bans, total_matches_processed, detected_patch
+    if len(by_patch) > 1:
+        # Patch-release day. Worth a line in the log: it's the one day where a
+        # single date produces two rows, and where match counts look odd.
+        log.info("Window spans %s patches: %s", len(by_patch),
+                 ", ".join(f"{p} ({b['matches_processed']} matches)"
+                           for p, b in sorted(by_patch.items())))
+
+    return by_patch
 
 
 def build_rows(champion_stats, champion_bans, id_to_name):
@@ -187,7 +206,9 @@ def collect_for_window(window_start_dt, window_end_dt, target_date):
     """
     One full collection pass over a time window, stored under target_date.
     Used both for the normal daily run and for each day of a backfill.
-    Returns False if nothing could be collected.
+
+    Writes one (date, patch) run per patch seen in the window - normally one,
+    two on patch-release day. Returns False if nothing could be collected.
     """
     window_start = int(window_start_dt.timestamp())
     window_end = int(window_end_dt.timestamp())
@@ -204,19 +225,24 @@ def collect_for_window(window_start_dt, window_end_dt, target_date):
 
     log.info("Unique matchIds for %s: %s", target_date, len(unique_match_ids))
 
-    champion_stats, champion_bans, total_matches_processed, detected_patch = process_matches(unique_match_ids)
+    by_patch = process_matches(unique_match_ids)
 
-    if detected_patch is None or total_matches_processed == 0:
+    if not by_patch:
         log.error("No matches collected for %s, nothing written.", target_date)
         return False
 
-    log.info("Patch %s, matches processed: %s", detected_patch, total_matches_processed)
-
     id_to_name = get_champion_id_to_name_map()
-    stat_rows, ban_rows = build_rows(champion_stats, champion_bans, id_to_name)
+    date_str = target_date.strftime('%Y-%m-%d')
 
-    insert_daily_stats(stat_rows, ban_rows, target_date.strftime('%Y-%m-%d'), detected_patch, total_matches_processed)
-    log.info("Written: %s, patch %s, %s stat rows, %s ban rows",
-             target_date, detected_patch, len(stat_rows), len(ban_rows))
+    for patch, bucket in sorted(by_patch.items()):
+        stat_rows, ban_rows = build_rows(
+            bucket["champion_stats"], bucket["champion_bans"], id_to_name)
+
+        insert_daily_stats(stat_rows, ban_rows, date_str, patch,
+                           bucket["matches_processed"])
+        log.info("Written: %s, patch %s, %s matches, %s stat rows, %s ban rows",
+                 target_date, patch, bucket["matches_processed"],
+                 len(stat_rows), len(ban_rows))
 
     return True
+

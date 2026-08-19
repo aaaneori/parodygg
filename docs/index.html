@@ -338,7 +338,7 @@
 
   function populatePatchSelect() {
     const select = document.getElementById("patchSelect");
-    const sortedPatches = [...availablePatches].sort().reverse();
+    const sortedPatches = [...availablePatches].sort(comparePatches).reverse();
 
     select.innerHTML = sortedPatches
       .map(p => `<option value="${p}">Ver: ${p}</option>`)

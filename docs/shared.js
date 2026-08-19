@@ -25,6 +25,17 @@ function round2(num) {
   return Math.round(num * 100) / 100;
 }
 
+// "16.9" sorts after "16.10" as a string. Compare the parts as numbers.
+function comparePatches(a, b) {
+  const pa = a.split(".").map(Number);
+  const pb = b.split(".").map(Number);
+  for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+    const diff = (pa[i] || 0) - (pb[i] || 0);
+    if (diff) return diff;
+  }
+  return 0;
+}
+
 function championIconUrl(championName, version) {
   return `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${championName}.png`;
 }

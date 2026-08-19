@@ -317,36 +317,44 @@
     // Raw counts are summed first, percentages computed from those sums
     // afterwards - never averaged across days.
     //
-    // In "All" mode a champion can have several rows on one date (one per
-    // role); those collapse into a single daily point first.
+    // Two levels, and the order matters:
+    //
+    // 1. by (date, patch). Within one collection run, bans and
+    //    matches_processed are the same number repeated on every role row,
+    //    so they're recorded once rather than added up.
+    // 2. by date. On patch-release day a date holds two runs, one per patch,
+    //    and those are genuinely separate measurements - so here bans and
+    //    matches_processed do get summed. On any normal day step 2 is a
+    //    no-op, since there's only one run per date.
 
-    const byDate = {};
+    const byRun = {};
     history.forEach(entry => {
-      if (!byDate[entry.date]) {
-        byDate[entry.date] = { date: entry.date, patch: entry.patch, games: 0, wins: 0, bans: entry.bans, matches_processed: entry.matches_processed };
+      const key = `${entry.date}|${entry.patch}`;
+      if (!byRun[key]) {
+        byRun[key] = {
+          date: entry.date, patch: entry.patch,
+          games: 0, wins: 0,
+          bans: entry.bans, matches_processed: entry.matches_processed
+        };
       }
-      byDate[entry.date].games += entry.games;
-      byDate[entry.date].wins += entry.wins;
-      // bans is that day's count, and it's identical across a champion's
-      // roles - so it's recorded once when the date's entry is created
-      // above, not added per role. Across different days it does sum
-      // normally, which happens later in sumField.
+      byRun[key].games += entry.games;
+      byRun[key].wins += entry.wins;
     });
 
-    const dailyPoints = Object.values(byDate).sort((a, b) => a.date.localeCompare(b.date));
+    const runs = Object.values(byRun);
 
     if (groupByKey === "patch") {
-      // One point per patch, summing every day inside it. The current,
+      // One point per patch, summing every run inside it. The current,
       // still-running patch is included with whatever has been collected.
       const byPatch = {};
-      dailyPoints.forEach(point => {
-        if (!byPatch[point.patch]) {
-          byPatch[point.patch] = [];
+      runs.forEach(run => {
+        if (!byPatch[run.patch]) {
+          byPatch[run.patch] = [];
         }
-        byPatch[point.patch].push(point);
+        byPatch[run.patch].push(run);
       });
 
-      return Object.keys(byPatch).sort().map(patch => {
+      return Object.keys(byPatch).sort(comparePatches).map(patch => {
         const points = byPatch[patch];
         return {
           label: `Patch ${patch}`,
@@ -358,14 +366,28 @@
       });
     }
 
-    // "Day": one point per day, no grouping.
-    return dailyPoints.map(point => ({
-      label: point.date,
-      games: point.games,
-      wins: point.wins,
-      bans: point.bans,
-      matches_processed: point.matches_processed
-    }));
+    // "Day": one point per day. Runs from different patches on the same date
+    // are added together, denominator included.
+    const byDate = {};
+    runs.forEach(run => {
+      if (!byDate[run.date]) {
+        byDate[run.date] = { date: run.date, games: 0, wins: 0, bans: 0, matches_processed: 0 };
+      }
+      byDate[run.date].games += run.games;
+      byDate[run.date].wins += run.wins;
+      byDate[run.date].bans += run.bans;
+      byDate[run.date].matches_processed += run.matches_processed;
+    });
+
+    return Object.values(byDate)
+      .sort((a, b) => a.date.localeCompare(b.date))
+      .map(point => ({
+        label: point.date,
+        games: point.games,
+        wins: point.wins,
+        bans: point.bans,
+        matches_processed: point.matches_processed
+      }));
   }
 
   function toChartPoints(groupedPeriods) {

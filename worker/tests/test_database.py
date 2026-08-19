@@ -329,3 +329,50 @@ def test_last_updated_is_the_newest_day_of_the_patch(temp_db):
         )
 
     assert database.get_last_updated_date("26.16") == "2026-08-18"
+
+
+def test_patches_are_ordered_numerically_not_as_strings(temp_db):
+    """
+    '16.9' sorts after '16.10' as a string. The export takes the newest patch
+    off the end of this list, so string order would make it publish 16.9 as
+    current for the whole of 16.10.
+    """
+    for patch in ("16.2", "16.10", "16.9"):
+        database.insert_daily_stats(
+            [stat_row("Ahri", "MIDDLE", games=1, wins=1)], [],
+            "2026-08-16", patch, matches_processed=100,
+        )
+
+    assert database.get_tracked_patches() == ["16.2", "16.9", "16.10"]
+
+
+def test_two_patches_on_one_date_are_stored_separately(temp_db):
+    """
+    Patch-release day: ranked runs on the old patch until maintenance, then
+    on the new one. Both halves belong to the same date but must keep their
+    own match counts, or pickrate is computed against the wrong denominator.
+    """
+    database.insert_daily_stats(
+        [stat_row("Ahri", "MIDDLE", games=20, wins=10)],
+        [{"champion": "Ahri", "bans": 8}],
+        "2026-08-16", "26.16", matches_processed=120,
+    )
+    database.insert_daily_stats(
+        [stat_row("Ahri", "MIDDLE", games=180, wins=95)],
+        [{"champion": "Ahri", "bans": 60}],
+        "2026-08-16", "26.17", matches_processed=900,
+    )
+
+    old_rows, old_total = database.get_patch_summary("26.16")
+    new_rows, new_total = database.get_patch_summary("26.17")
+
+    assert old_total == 120
+    assert new_total == 900
+    assert next(r for r in old_rows if r["champion"] == "Ahri")["games"] == 20
+    assert next(r for r in new_rows if r["champion"] == "Ahri")["games"] == 180
+
+    # history keeps both, so the frontend can add them up per day
+    entries = database.get_all_champions_history()["Ahri"]
+    assert len(entries) == 2
+    assert {e["patch"] for e in entries} == {"26.16", "26.17"}
+    assert sum(e["matches_processed"] for e in entries) == 1020
