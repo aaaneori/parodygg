@@ -367,11 +367,16 @@
     }
 
     // "Day": one point per day. Runs from different patches on the same date
-    // are added together, denominator included.
+    // are added together, denominator included. The patch is carried through
+    // so the chart can mark where a new one starts; on a split date that's
+    // the newer of the two, since that's the one the day ends on.
     const byDate = {};
     runs.forEach(run => {
       if (!byDate[run.date]) {
-        byDate[run.date] = { date: run.date, games: 0, wins: 0, bans: 0, matches_processed: 0 };
+        byDate[run.date] = { date: run.date, patch: run.patch, games: 0, wins: 0, bans: 0, matches_processed: 0 };
+      }
+      if (comparePatches(run.patch, byDate[run.date].patch) > 0) {
+        byDate[run.date].patch = run.patch;
       }
       byDate[run.date].games += run.games;
       byDate[run.date].wins += run.wins;
@@ -383,6 +388,7 @@
       .sort((a, b) => a.date.localeCompare(b.date))
       .map(point => ({
         label: point.date,
+        patch: point.patch,
         games: point.games,
         wins: point.wins,
         bans: point.bans,
@@ -391,12 +397,27 @@
   }
 
   function toChartPoints(groupedPeriods) {
-    return groupedPeriods.map(period => ({
-      label: period.label,
-      winrate: period.games > 0 ? round2(period.wins / period.games * 100) : 0,
-      pickrate: period.matches_processed > 0 ? round2(period.games / period.matches_processed * 100) : 0,
-      banrate: period.matches_processed > 0 ? round2(period.bans / (period.matches_processed * 2) * 100) : 0
-    }));
+    // patchStart marks the first point of a patch, so the day view can show
+    // where a new one took over. Only meaningful when grouping by day - the
+    // patch view has one point per patch anyway, and its points carry no
+    // patch field.
+    let previousPatch = null;
+
+    return groupedPeriods.map((period, index) => {
+      const isNewPatch = period.patch !== undefined
+        && index > 0
+        && period.patch !== previousPatch;
+      previousPatch = period.patch;
+
+      return {
+        label: period.label,
+        patch: period.patch,
+        patchStart: isNewPatch ? period.patch : null,
+        winrate: period.games > 0 ? round2(period.wins / period.games * 100) : 0,
+        pickrate: period.matches_processed > 0 ? round2(period.games / period.matches_processed * 100) : 0,
+        banrate: period.matches_processed > 0 ? round2(period.bans / (period.matches_processed * 2) * 100) : 0
+      };
+    });
   }
 
   function formatPercent(num) {
@@ -404,6 +425,36 @@
     const rounded = Math.round(num * 10) / 10;
     return rounded % 1 === 0 ? rounded.toFixed(0) : rounded.toFixed(1);
   }
+
+  // Draws a small patch number above the points where a new patch begins.
+  // A local plugin rather than chartjs-plugin-annotation: one more CDN
+  // dependency for a label this small isn't worth it.
+  const patchMarkerPlugin = {
+    id: "patchMarker",
+    afterDatasetsDraw(chart, args, opts) {
+      const points = opts.points || [];
+      const meta = chart.getDatasetMeta(0);
+      if (!meta || !meta.data) return;
+
+      const ctx = chart.ctx;
+      ctx.save();
+      ctx.font = "600 10px -apple-system, 'Segoe UI', Inter, Roboto, sans-serif";
+      ctx.fillStyle = opts.color;
+      ctx.textAlign = "center";
+
+      points.forEach((point, index) => {
+        if (!point.patchStart) return;
+        const element = meta.data[index];
+        if (!element) return;
+
+        // Keep the label inside the canvas at both ends of the axis.
+        const x = Math.min(Math.max(element.x, 18), chart.width - 18);
+        ctx.fillText(point.patchStart, x, Math.max(element.y - 12, 10));
+      });
+
+      ctx.restore();
+    }
+  };
 
   function buildChart(canvasId, points, valueKey, colorVar, label) {
     const canvas = document.getElementById(canvasId);
@@ -413,6 +464,7 @@
     const color = rootStyles.getPropertyValue(colorVar).trim();
     const textDim = rootStyles.getPropertyValue("--text-dim").trim();
     const border = rootStyles.getPropertyValue("--border").trim();
+    const gold = rootStyles.getPropertyValue("--gold").trim();
 
     const gradient = ctx.createLinearGradient(0, 0, 0, 220);
     gradient.addColorStop(0, color + "55");
@@ -422,8 +474,13 @@
       charts[canvasId].destroy();
     }
 
+    // Points stay small (or hidden on long ranges), but the first day of a
+    // new patch is always drawn and picked out in gold.
+    const basePointRadius = points.length > 40 ? 0 : 2;
+
     charts[canvasId] = new Chart(ctx, {
       type: "line",
+      plugins: [patchMarkerPlugin],
       data: {
         labels: points.map(p => p.label),
         datasets: [{
@@ -433,7 +490,9 @@
           backgroundColor: gradient,
           fill: true,
           tension: 0.35,
-          pointRadius: points.length > 40 ? 0 : 2,
+          pointRadius: points.map(p => p.patchStart ? 4 : basePointRadius),
+          pointBackgroundColor: points.map(p => p.patchStart ? gold : color),
+          pointBorderColor: points.map(p => p.patchStart ? gold : color),
           pointHoverRadius: 5,
           borderWidth: 2
         }]
@@ -441,12 +500,18 @@
       options: {
         responsive: true,
         maintainAspectRatio: false,
+        layout: { padding: { top: 14 } },
         interaction: { mode: "index", intersect: false },
         plugins: {
           legend: { display: false },
+          patchMarker: { points: points, color: gold },
           tooltip: {
             callbacks: {
-              label: (context) => `${label}: ${formatPercent(context.parsed.y)}%`
+              label: (context) => `${label}: ${formatPercent(context.parsed.y)}%`,
+              afterLabel: (context) => {
+                const point = points[context.dataIndex];
+                return point && point.patchStart ? `Patch ${point.patchStart} starts` : "";
+              }
             }
           }
         },
