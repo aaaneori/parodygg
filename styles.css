@@ -1,0 +1,105 @@
+/* Shared between index.html and champion.html.
+   Page-specific rules stay in each page's own <style>, and a page can
+   override anything here - see .page / .eyebrow / .rule, where the two
+   pages deliberately use different spacing. */
+
+:root {
+  --bg: #0a0d14;
+  --panel: #12151f;
+  --panel-alt: #171b28;
+  --border: #262b3a;
+  --gold: #c9a15c;
+  --gold-dim: #8a7448;
+  --text: #e7e9ee;
+  --text-dim: #838ba0;
+  --pick: #5da9e0;
+  --win: #4fbf82;
+  --ban: #e0605a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Segoe UI", Inter, Roboto, sans-serif;
+  padding: 32px 16px 80px;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 920px;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 650;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+
+.eyebrow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.eyebrow .dot {
+  width: 5px;
+  height: 5px;
+  background: var(--gold);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+.rule {
+  height: 1px;
+  background: linear-gradient(90deg, var(--gold-dim), transparent);
+  margin-bottom: 20px;
+}
+
+.view-toggle {
+  display: flex;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.view-toggle button {
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 13px;
+  font-weight: 550;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.view-toggle button:hover { color: var(--text); }
+
+.view-toggle button.active {
+  background: var(--panel-alt);
+  color: var(--gold);
+}
+
+.loading, .error, .empty-state {
+  color: var(--text-dim);
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 22px; }
+}

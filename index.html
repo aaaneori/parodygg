@@ -4,63 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Champion Meta Report</title>
+<link rel="stylesheet" href="styles.css">
 <style>
-  :root {
-    --bg: #0a0d14;
-    --panel: #12151f;
-    --panel-alt: #171b28;
-    --border: #262b3a;
-    --gold: #c9a15c;
-    --gold-dim: #8a7448;
-    --text: #e7e9ee;
-    --text-dim: #838ba0;
-    --pick: #5da9e0;
-    --win: #4fbf82;
-    --ban: #e0605a;
-  }
-
-  * { box-sizing: border-box; }
-
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, "Segoe UI", Inter, Roboto, sans-serif;
-    padding: 32px 16px 80px;
-  }
-
-  .page {
-    max-width: 920px;
-    margin: 0 auto;
-  }
-
-  .eyebrow {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 12px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 10px;
-    flex-wrap: wrap;
-  }
-
-  .eyebrow .dot {
-    width: 5px;
-    height: 5px;
-    background: var(--gold);
-    transform: rotate(45deg);
-    flex-shrink: 0;
-  }
-
-  h1 {
-    font-size: 26px;
-    font-weight: 650;
-    margin: 0 0 4px;
-    letter-spacing: -0.01em;
-  }
-
+  /* index-specific only; shared theme and base layout live in styles.css */
   .meta-row {
     display: flex;
     justify-content: space-between;
@@ -78,12 +24,6 @@
   .updated-note {
     color: var(--text-dim);
     font-size: 12px;
-  }
-
-  .rule {
-    height: 1px;
-    background: linear-gradient(90deg, var(--gold-dim), transparent);
-    margin-bottom: 20px;
   }
 
   .search-box {
@@ -133,35 +73,6 @@
 
   .patch-select:focus { border-color: var(--gold-dim); }
   .patch-select:hover { border-color: var(--gold-dim); }
-
-  .view-toggle {
-    display: flex;
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 3px;
-    gap: 2px;
-  }
-
-  .view-toggle button {
-    background: transparent;
-    border: none;
-    color: var(--text-dim);
-    font-size: 13px;
-    font-weight: 550;
-    padding: 6px 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    white-space: nowrap;
-    font-family: inherit;
-  }
-
-  .view-toggle button:hover { color: var(--text); }
-
-  .view-toggle button.active {
-    background: var(--panel-alt);
-    color: var(--gold);
-  }
 
   .controls-left {
     display: flex;
@@ -297,12 +208,6 @@
   .bar-fill.win { background: var(--win); }
   .bar-fill.ban { background: var(--ban); }
 
-  .loading, .error, .empty-state {
-    color: var(--text-dim);
-    font-size: 14px;
-    padding: 20px 0;
-  }
-
   .footer-note {
     margin-top: 24px;
     font-size: 12px;
@@ -311,7 +216,6 @@
   }
 
   @media (max-width: 480px) {
-    h1 { font-size: 22px; }
     .search-box { max-width: 100%; }
   }
 </style>
@@ -345,17 +249,10 @@
   <div class="footer-note" id="footerNote"></div>
 </div>
 
+<script src="shared.js"></script>
 <script>
-  const DDRAGON_FALLBACK_VERSION = "14.16.1";
   const LATEST_STATS_FILENAME = "champion_stats_latest.json";
   const MIN_PICKRATE_FOR_ROLE = 1;
-  const ROLE_LABELS = {
-    TOP: "Top",
-    JUNGLE: "Jungle",
-    MIDDLE: "Mid",
-    BOTTOM: "ADC",
-    UTILITY: "Support"
-  };
   let currentSort = { key: "champion", direction: "asc" };
   let championData = [];
   let currentTotalMatches = 0;
@@ -366,40 +263,6 @@
   let availablePatches = [];
   let latestPatch = "";
   let selectedPatch = "";
-
-  async function getDdragonVersion() {
-    try {
-      const res = await fetch("https://ddragon.leagueoflegends.com/api/versions.json");
-      const versions = await res.json();
-      return versions[0];
-    } catch (err) {
-      return DDRAGON_FALLBACK_VERSION;
-    }
-  }
-
-  async function getChampionKeyToDisplayNameMap(version) {
-    try {
-      const res = await fetch(`https://ddragon.leagueoflegends.com/cdn/${version}/data/en_US/champion.json`);
-      const data = await res.json();
-      const map = {};
-      for (const champKey in data.data) {
-        map[champKey] = data.data[champKey].name;
-      }
-      return map;
-    } catch (err) {
-      return {};
-    }
-  }
-
-  function championIconUrl(championName, version) {
-    return `https://ddragon.leagueoflegends.com/cdn/${version}/img/champion/${championName}.png`;
-  }
-
-  function championIconHtml(championName, version) {
-    const initials = championName.replace(/[a-z']/g, '').slice(0, 2) || championName.slice(0, 2).toUpperCase();
-    return `<img class="champion-icon" src="${championIconUrl(championName, version)}" alt="${championName}" loading="lazy"
-      onerror="this.outerHTML='<div class=&quot;champion-icon icon-fallback&quot;>${initials}</div>'">`;
-  }
 
   function maxOf(arr, key) {
     if (arr.length === 0) return 1;
@@ -416,18 +279,15 @@
     return championKeyToDisplayName[row.champion] || row.champion;
   }
 
-  function roleLabelOf(row) {
-    return ROLE_LABELS[row.role] || row.role;
-  }
-
   function aggregateWithoutRoles(data, totalMatches) {
-    // Схлопывает данные по чемпиону, суммируя games/wins по всем его
-    // ролям (включая UNPICKED - там games всегда 0, на сумму не влияет,
-    // но banы у него нужно посчитать, если чемпиона вообще не пикали).
-    // banrate/bans берём один раз на чемпиона - они и так одинаковы во
-    // всех его строках (баны не привязаны к роли), суммировать их по
-    // ролям было бы задвоением. winrate/pickrate пересчитываются из
-    // просуммированных сырых games/wins - не усредняются по ролям.
+    // Collapse a champion's rows into one, summing games/wins across roles.
+    // UNPICKED is harmless here - games is always 0 there - but its bans
+    // still need counting for champions nobody picked.
+    //
+    // Bans are taken once per champion, not summed: every row of a champion
+    // carries the same ban count (bans aren't role-specific), so adding them
+    // up would double-count. winrate/pickrate are recomputed from the summed
+    // raw counts rather than averaged across roles.
     const byChampion = {};
 
     data.forEach(row => {
@@ -449,10 +309,6 @@
       winrate: c.games > 0 ? round2(c.wins / c.games * 100) : 0,
       pickrate: totalMatches > 0 ? round2(c.games / totalMatches * 100) : 0
     }));
-  }
-
-  function round2(num) {
-    return Math.round(num * 100) / 100;
   }
 
   function statsFilenameFor(patchVersion) {
@@ -517,28 +373,21 @@
     let visibleData;
 
     if (viewMode === "no-roles") {
-      // Режим "без ролей" - агрегируем ВЕСЬ championData (включая
-      // редкие офф-роли, которые в режиме "по ролям" скрыты) - иначе
-      // пикрейт/винрейт в этом режиме были бы занижены относительно
-      // реальных сырых данных. Чемпионов с games=0 (только забанены,
-      // ни разу не пикнуты) скрываем - так же, как UNPICKED скрыт в
-      // режиме "по ролям", для консистентности между режимами.
+      // Aggregate the whole dataset, including rare off-roles that the
+      // by-role view hides - otherwise these numbers would come out lower
+      // than the raw data. Champions with games=0 (banned, never picked)
+      // are dropped, matching how the by-role view hides UNPICKED.
       visibleData = aggregateWithoutRoles(championData, currentTotalMatches)
         .filter(row => row.games > 0);
     } else {
-      // Чемпионы, забаненные, но ни разу не пикнутые в этом патче, получают
-      // от воркера служебную роль UNPICKED - её не показываем в основной
-      // таблице, это не реальная роль.
+      // UNPICKED is a placeholder the exporter uses for champions that were
+      // banned but never picked. Not a real role, so not shown here.
       const pickedData = championData.filter(row => row.role !== "UNPICKED");
 
-      // Для каждого чемпиона находим его главную роль (больше всего игр
-      // среди всех ролей этого чемпиона) - её показываем всегда, даже если
-      // игр набралось мало (например, чемпиона вообще редко пикают в этом
-      // патче). Остальные, не главные роли того же чемпиона отсекаются
-      // порогом MIN_PICKRATE_FOR_ROLE - показываем только если пикрейт
-      // чемпиона именно на этой роли больше 1%, чтобы не показывать
-      // случайные офф-роли на паре игр. Данные по скрытым строкам никуда
-      // не пропадают, они просто не рендерятся здесь.
+      // A champion's main role (most games) is always shown, however few
+      // games it has. Secondary roles have to clear MIN_PICKRATE_FOR_ROLE,
+      // which keeps one-off off-role picks out of the table. Hidden rows are
+      // still in the data, just not rendered.
       const mainRoleGamesByChampion = {};
       pickedData.forEach(row => {
         const current = mainRoleGamesByChampion[row.champion];
@@ -580,14 +429,14 @@
 
     let rows = "";
     sorted.forEach((row, index) => {
-      const roleBadge = row.role ? `<span class="role-badge">${roleLabelOf(row)}</span>` : "";
+      const roleBadge = row.role ? `<span class="role-badge">${roleLabelOf(row.role)}</span>` : "";
       rows += `
         <tr>
           <td class="col-rank">${index + 1}</td>
           <td>
             <div class="champion-cell">
               <a class="champion-link" href="champion.html?name=${encodeURIComponent(row.champion)}">
-                ${championIconHtml(row.champion, ddragonVersion)}
+                ${championIconHtml(row.champion, ddragonVersion, "champion-icon")}
                 <span class="champion-name">${displayNameOf(row)}</span>
               </a>
               ${roleBadge}
@@ -647,17 +496,18 @@
 
   async function init() {
     try {
-      const version = await getDdragonVersion();
-      ddragonVersion = version;
-
-      const [res, nameMap] = await Promise.all([
+      // Both in flight at once: ddragon usually resolves from localStorage
+      // instantly, the stats file is the one we actually wait on.
+      const [res, ddragon] = await Promise.all([
         fetch(LATEST_STATS_FILENAME),
-        getChampionKeyToDisplayNameMap(version)
+        loadDdragonData()
       ]);
+
+      ddragonVersion = ddragon.version;
+      championKeyToDisplayName = ddragon.nameMap;
 
       if (!res.ok) throw new Error(`Failed to load ${LATEST_STATS_FILENAME}`);
 
-      championKeyToDisplayName = nameMap;
       const data = await res.json();
 
       latestPatch = data.patch || "";
