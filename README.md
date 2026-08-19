@@ -151,7 +151,10 @@ once a day.
 - **Unassigned lanes.** Riot occasionally can't determine a lane (~0.9% of
   matches) and sends an empty `teamPosition`. Those participants are skipped
   rather than guessed at, which slightly understates role-level totals.
-- **Single region and queue.** EUW ranked solo/duo only.
+- **Single region and queue.** EUW ranked solo/duo only. A personal Riot API key
+  is limited per minute, so collection time scales directly with the sample:
+  every extra region or lower rank adds hours to a run that already takes 30-40
+  minutes. Going wider means a production key with higher limits.
 
 <br>
 
@@ -319,3 +322,7 @@ python worker.py
   пропустити, ніж вгадувати, але через це підсумки в розрізі ролей трохи
   занижені.
 - **Один сервер і одна черга.** Поки що лише EUW, тільки рейтингова соло/дуо.
+  Персональний ключ Riot API обмежений за кількістю запитів на хвилину, тож час
+  збору росте прямо пропорційно до вибірки: кожен додатковий сервер чи нижчий
+  ранг додає години до запуску, який і так триває 30-40 хвилин. Для ширшого
+  покриття потрібен production-ключ із вищими лімітами.
