@@ -184,6 +184,13 @@ def push_to_github(current_patch, patch_changed=False, closed_patch=None):
             closed_filename = f'champion_stats_{closed_patch}.json'
             subprocess.run(['git', 'add', closed_filename], cwd=SITE_FOLDER, check=True)
 
+        # Re-exporting without new data produces byte-identical files, and
+        # git exits non-zero on an empty commit. That's a no-op, not a failure.
+        staged = subprocess.run(['git', 'diff', '--cached', '--quiet'], cwd=SITE_FOLDER)
+        if staged.returncode == 0:
+            log.info("No data changes, nothing to push.")
+            return
+
         subprocess.run(['git', 'commit', '-m', commit_message], cwd=SITE_FOLDER, check=True)
         subprocess.run(['git', 'push'], cwd=SITE_FOLDER, check=True)
         log.info("Pushed to GitHub.")
