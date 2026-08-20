@@ -1,0 +1,60 @@
+{
+  "champion": "Illaoi",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 73,
+      "kills": 5.55,
+      "deaths": 5.97,
+      "assists": 3.96,
+      "solo_kills": 2.67,
+      "kill_participation_pct": 32.44,
+      "first_blood_pct": 8.22,
+      "physical_dmg": 27859.58,
+      "magic_dmg": 978.25,
+      "dmg_taken": 40171.32,
+      "team_dmg_pct": 27.78,
+      "dmg_per_min": 1033.15,
+      "cs_per_min": 8.61,
+      "gold_per_min": 455.92,
+      "vision_per_min": 0.73,
+      "control_wards": 0.23
+    },
+    "MIDDLE": {
+      "games": 10,
+      "kills": 6.6,
+      "deaths": 7.6,
+      "assists": 4.9,
+      "solo_kills": 1.7,
+      "kill_participation_pct": 33.53,
+      "first_blood_pct": 0.0,
+      "physical_dmg": 30490.7,
+      "magic_dmg": 747.8,
+      "dmg_taken": 44573.5,
+      "team_dmg_pct": 24.93,
+      "dmg_per_min": 1056.23,
+      "cs_per_min": 8.18,
+      "gold_per_min": 443.04,
+      "vision_per_min": 0.61,
+      "control_wards": 0.1
+    },
+    "TOP": {
+      "games": 63,
+      "kills": 5.38,
+      "deaths": 5.71,
+      "assists": 3.81,
+      "solo_kills": 2.83,
+      "kill_participation_pct": 32.26,
+      "first_blood_pct": 9.52,
+      "physical_dmg": 27441.94,
+      "magic_dmg": 1014.83,
+      "dmg_taken": 39472.56,
+      "team_dmg_pct": 28.23,
+      "dmg_per_min": 1029.49,
+      "cs_per_min": 8.68,
+      "gold_per_min": 457.96,
+      "vision_per_min": 0.75,
+      "control_wards": 0.25
+    }
+  }
+}

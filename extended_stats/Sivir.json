@@ -1,0 +1,60 @@
+{
+  "champion": "Sivir",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 293,
+      "kills": 5.78,
+      "deaths": 5.73,
+      "assists": 7.52,
+      "solo_kills": 0.61,
+      "kill_participation_pct": 47.59,
+      "first_blood_pct": 19.11,
+      "physical_dmg": 24094.4,
+      "magic_dmg": 169.02,
+      "dmg_taken": 20000.84,
+      "team_dmg_pct": 24.11,
+      "dmg_per_min": 873.42,
+      "cs_per_min": 8.95,
+      "gold_per_min": 516.0,
+      "vision_per_min": 0.69,
+      "control_wards": 0.58
+    },
+    "BOTTOM": {
+      "games": 287,
+      "kills": 5.79,
+      "deaths": 5.76,
+      "assists": 7.54,
+      "solo_kills": 0.61,
+      "kill_participation_pct": 47.6,
+      "first_blood_pct": 19.51,
+      "physical_dmg": 24041.32,
+      "magic_dmg": 165.16,
+      "dmg_taken": 19953.15,
+      "team_dmg_pct": 24.07,
+      "dmg_per_min": 872.68,
+      "cs_per_min": 8.94,
+      "gold_per_min": 516.64,
+      "vision_per_min": 0.69,
+      "control_wards": 0.57
+    },
+    "MIDDLE": {
+      "games": 6,
+      "kills": 5.0,
+      "deaths": 4.67,
+      "assists": 6.5,
+      "solo_kills": 0.33,
+      "kill_participation_pct": 46.99,
+      "first_blood_pct": 0.0,
+      "physical_dmg": 26633.0,
+      "magic_dmg": 353.33,
+      "dmg_taken": 22282.0,
+      "team_dmg_pct": 25.58,
+      "dmg_per_min": 909.04,
+      "cs_per_min": 9.5,
+      "gold_per_min": 485.26,
+      "vision_per_min": 0.72,
+      "control_wards": 1.0
+    }
+  }
+}

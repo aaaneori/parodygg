@@ -1,0 +1,60 @@
+{
+  "champion": "Gnar",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 312,
+      "kills": 4.59,
+      "deaths": 5.69,
+      "assists": 5.51,
+      "solo_kills": 1.79,
+      "kill_participation_pct": 34.65,
+      "first_blood_pct": 8.65,
+      "physical_dmg": 18861.87,
+      "magic_dmg": 3719.87,
+      "dmg_taken": 28739.04,
+      "team_dmg_pct": 22.21,
+      "dmg_per_min": 813.47,
+      "cs_per_min": 7.69,
+      "gold_per_min": 416.06,
+      "vision_per_min": 0.89,
+      "control_wards": 0.94
+    },
+    "JUNGLE": {
+      "games": 5,
+      "kills": 7.6,
+      "deaths": 7.0,
+      "assists": 5.8,
+      "solo_kills": 1.4,
+      "kill_participation_pct": 59.06,
+      "first_blood_pct": 0.0,
+      "physical_dmg": 17208.6,
+      "magic_dmg": 2993.4,
+      "dmg_taken": 33019.6,
+      "team_dmg_pct": 21.65,
+      "dmg_per_min": 780.01,
+      "cs_per_min": 6.77,
+      "gold_per_min": 479.26,
+      "vision_per_min": 1.22,
+      "control_wards": 2.4
+    },
+    "TOP": {
+      "games": 307,
+      "kills": 4.54,
+      "deaths": 5.66,
+      "assists": 5.5,
+      "solo_kills": 1.79,
+      "kill_participation_pct": 34.25,
+      "first_blood_pct": 8.79,
+      "physical_dmg": 18888.79,
+      "magic_dmg": 3731.7,
+      "dmg_taken": 28669.33,
+      "team_dmg_pct": 22.22,
+      "dmg_per_min": 814.01,
+      "cs_per_min": 7.71,
+      "gold_per_min": 415.03,
+      "vision_per_min": 0.89,
+      "control_wards": 0.92
+    }
+  }
+}

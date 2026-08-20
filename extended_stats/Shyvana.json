@@ -1,0 +1,60 @@
+{
+  "champion": "Shyvana",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 248,
+      "kills": 6.51,
+      "deaths": 5.11,
+      "assists": 7.18,
+      "solo_kills": 0.99,
+      "kill_participation_pct": 50.76,
+      "first_blood_pct": 6.05,
+      "physical_dmg": 8854.75,
+      "magic_dmg": 8276.53,
+      "dmg_taken": 27609.81,
+      "team_dmg_pct": 21.16,
+      "dmg_per_min": 751.69,
+      "cs_per_min": 7.65,
+      "gold_per_min": 469.13,
+      "vision_per_min": 0.97,
+      "control_wards": 1.58
+    },
+    "JUNGLE": {
+      "games": 235,
+      "kills": 6.67,
+      "deaths": 5.0,
+      "assists": 7.22,
+      "solo_kills": 0.97,
+      "kill_participation_pct": 51.48,
+      "first_blood_pct": 5.96,
+      "physical_dmg": 8895.02,
+      "magic_dmg": 8007.54,
+      "dmg_taken": 27364.03,
+      "team_dmg_pct": 20.93,
+      "dmg_per_min": 746.62,
+      "cs_per_min": 7.69,
+      "gold_per_min": 474.69,
+      "vision_per_min": 0.98,
+      "control_wards": 1.64
+    },
+    "TOP": {
+      "games": 13,
+      "kills": 3.62,
+      "deaths": 7.08,
+      "assists": 6.46,
+      "solo_kills": 1.38,
+      "kill_participation_pct": 37.72,
+      "first_blood_pct": 7.69,
+      "physical_dmg": 8126.92,
+      "magic_dmg": 13139.0,
+      "dmg_taken": 32052.69,
+      "team_dmg_pct": 25.34,
+      "dmg_per_min": 843.39,
+      "cs_per_min": 6.94,
+      "gold_per_min": 368.66,
+      "vision_per_min": 0.71,
+      "control_wards": 0.62
+    }
+  }
+}

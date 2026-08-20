@@ -1,0 +1,60 @@
+{
+  "champion": "Amumu",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 57,
+      "kills": 2.89,
+      "deaths": 7.39,
+      "assists": 12.3,
+      "solo_kills": 0.19,
+      "kill_participation_pct": 54.08,
+      "first_blood_pct": 15.79,
+      "physical_dmg": 1362.91,
+      "magic_dmg": 8402.12,
+      "dmg_taken": 24690.61,
+      "team_dmg_pct": 11.53,
+      "dmg_per_min": 417.28,
+      "cs_per_min": 2.63,
+      "gold_per_min": 336.51,
+      "vision_per_min": 2.01,
+      "control_wards": 3.12
+    },
+    "JUNGLE": {
+      "games": 15,
+      "kills": 4.33,
+      "deaths": 5.93,
+      "assists": 11.4,
+      "solo_kills": 0.27,
+      "kill_participation_pct": 52.41,
+      "first_blood_pct": 6.67,
+      "physical_dmg": 1444.6,
+      "magic_dmg": 13918.6,
+      "dmg_taken": 30372.4,
+      "team_dmg_pct": 14.78,
+      "dmg_per_min": 603.24,
+      "cs_per_min": 6.97,
+      "gold_per_min": 418.08,
+      "vision_per_min": 0.87,
+      "control_wards": 1.47
+    },
+    "UTILITY": {
+      "games": 42,
+      "kills": 2.38,
+      "deaths": 7.9,
+      "assists": 12.62,
+      "solo_kills": 0.17,
+      "kill_participation_pct": 54.68,
+      "first_blood_pct": 19.05,
+      "physical_dmg": 1333.74,
+      "magic_dmg": 6431.95,
+      "dmg_taken": 22661.4,
+      "team_dmg_pct": 10.36,
+      "dmg_per_min": 350.87,
+      "cs_per_min": 1.07,
+      "gold_per_min": 307.38,
+      "vision_per_min": 2.42,
+      "control_wards": 3.71
+    }
+  }
+}

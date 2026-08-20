@@ -1,0 +1,60 @@
+{
+  "champion": "Sona",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 452,
+      "kills": 2.36,
+      "deaths": 5.71,
+      "assists": 14.95,
+      "solo_kills": 0.19,
+      "kill_participation_pct": 62.13,
+      "first_blood_pct": 4.2,
+      "physical_dmg": 2789.72,
+      "magic_dmg": 9139.65,
+      "dmg_taken": 20019.62,
+      "team_dmg_pct": 12.94,
+      "dmg_per_min": 448.56,
+      "cs_per_min": 1.04,
+      "gold_per_min": 322.32,
+      "vision_per_min": 2.84,
+      "control_wards": 2.74
+    },
+    "BOTTOM": {
+      "games": 1,
+      "kills": 0.0,
+      "deaths": 5.0,
+      "assists": 4.0,
+      "solo_kills": 0.0,
+      "kill_participation_pct": 57.14,
+      "first_blood_pct": 0.0,
+      "physical_dmg": 1511.0,
+      "magic_dmg": 7332.0,
+      "dmg_taken": 12240.0,
+      "team_dmg_pct": 19.52,
+      "dmg_per_min": 460.47,
+      "cs_per_min": 6.46,
+      "gold_per_min": 335.83,
+      "vision_per_min": 0.56,
+      "control_wards": 0.0
+    },
+    "UTILITY": {
+      "games": 451,
+      "kills": 2.36,
+      "deaths": 5.71,
+      "assists": 14.98,
+      "solo_kills": 0.19,
+      "kill_participation_pct": 62.15,
+      "first_blood_pct": 4.21,
+      "physical_dmg": 2792.56,
+      "magic_dmg": 9143.66,
+      "dmg_taken": 20036.87,
+      "team_dmg_pct": 12.92,
+      "dmg_per_min": 448.54,
+      "cs_per_min": 1.03,
+      "gold_per_min": 322.29,
+      "vision_per_min": 2.84,
+      "control_wards": 2.75
+    }
+  }
+}
