@@ -36,35 +36,34 @@ them, and Pages serves them — the site is just JSON plus vanilla JS.
 
 ## Methodology
 
-The decisions below are the point of the project. Each one changes the numbers.
+These decisions are what determine the numbers a user ends up seeing.
 
-**Sampled by lobby, not by player.** Matches are found through GM+Challenger
-players, but every participant in those matches is counted. Counting only the
-high-elo players themselves would systematically understate pick rate: a
-champion picked by the other nine players in the lobby would be invisible.
+Matches are found through Grandmaster and Challenger players, but all ten
+participants of those games are counted. Counting only the top players
+themselves would make pick rate look unusual, unlike every other tracker.
 
-**Percentages are computed from summed raw counts, never averaged across days.**
-Storage keeps games and wins per day; rates are derived at read time.
+**Percentages are computed from accumulated raw counts and not averaged across
+days.** The database stores games and wins per day; the rates are derived at
+read time.
 
-> Day 1: 10 games, 8 wins (80%). Day 2: 90 games, 45 wins (50%).
-> Averaging the daily rates gives 65%. The correct answer is 53% — 53 wins
-> out of 100 games. Larger days have to carry more weight.
+> Day one: 10 games, 8 wins - that's 80%. Day two: 90 games, 45 wins - 50%.
+> Averaging those two percentages gives 65%. In fact there are 53 wins out of
+> 100 games, so 53%. The day with more games has to weigh more.
 
-**Ban rate divides by matches × 2.** Each match has two ban phases, so the
-denominator is twice the match count, not the match count.
+**Ban rate divides by twice the match count.** Both teams ban separately in
+every game, so the denominator is the match count multiplied by two.
 
-**Bans belong to the champion, not the role.** You ban a champion before roles
-exist. A champion played in two roles still has one ban count, which is why
-bans live in their own table rather than being duplicated per role.
+**A ban applies to the champion, not the role.** Bans happen before anyone
+knows who plays which lane. So a champion played both in the jungle and mid has
+the same overall ban rate.
 
-**Role thresholds are relative to the champion, not the patch.** On a champion
-page, a role gets its own tab if it accounts for more than 5% of *that
-champion's* games. Using total patch matches as the denominator would hide
-secondary roles of anyone who isn't broadly popular.
+**The role threshold is relative to the champion's own games.** On a champion
+page, a role gets its own tab if it accounts for more than 5% of that
+champion's games.
 
-**"/min" metrics average per-match ratios.** Damage per minute is computed
-against each match's own duration and then averaged, which is deliberately not
-the same as total damage over total minutes.
+**"Per minute" metrics are averaged across matches.** Damage per minute is
+computed for each game against its own duration, and only then averaged. That
+is deliberately not the same as dividing all damage by all minutes.
 
 ---
 
@@ -203,17 +202,15 @@ Riot API ──> воркер ──> SQLite ──> експорт JSON ──>
 
 Саме ці рішення й визначають, які цифри побачить користувач.
 
-**Рахуємо всю гру, а не лише топових гравців.** Матчі шукаються через гравців
-Grandmaster і Challenger, але враховуються всі десятеро учасників такої гри.
-Якби рахувалися тільки самі топові гравці, пікрейт виходив би заниженим:
-чемпіон, якого взяли інші девʼятеро в лобі, взагалі не потрапив би до
-статистики.
+Матчі шукаються через гравців Grandmaster і Challenger, але враховуються всі
+десятеро учасників такої гри. Якби рахувалися тільки топові гравці, пікрейт
+відображався би незвично, не так як у всіх трекерах.
 
-**Відсотки рахуються з накопичених сирих чисел і ніколи не усереднюються по
-днях.** База зберігає кількість ігор і перемог за кожну добу, а відсотки
-рахуються вже під час читання.
+**Відсотки рахуються з накопичених сирих чисел і не усереднюються по днях.**
+База зберігає кількість ігор і перемог за кожну добу, а відсотки рахуються вже
+під час читання.
 
-> Перший день: 10 ігор, 8 перемог — це 80%. Другий: 90 ігор, 45 перемог — 50%.
+> Перший день: 10 ігор, 8 перемог - це 80%. Другий: 90 ігор, 45 перемог - 50%.
 > Якщо усереднити ці два відсотки, вийде 65%. Насправді ж перемог 53 зі 100
 > ігор, тобто 53%. День, у якому ігор більше, має важити більше.
 
@@ -221,14 +218,12 @@ Grandmaster і Challenger, але враховуються всі десятер
 банять окремо, тож у знаменнику стоїть кількість матчів, помножена на два.
 
 **Бан стосується чемпіона, а не ролі.** Банять ще до того, як стає відомо, хто
-на якій лінії гратиме. Тому чемпіон, зіграний і в лісі, і на мідлі, має одну
-спільну кількість банів — саме через це бани винесені в окрему таблицю, а не
-дублюються для кожної ролі.
+на якій лінії гратиме. Тому чемпіон, зіграний і в лісі, і на мідлі, має
+однаковий загальний банрейт.
 
-**Поріг для ролі рахується від ігор самого чемпіона.** На сторінці чемпіона роль
-отримує окрему вкладку, якщо на неї припадає більше ніж 5% ігор цього чемпіона.
-Якби знаменником були всі матчі патчу, у не надто популярних чемпіонів другорядні
-ролі просто зникали б із перемикача.
+**Поріг для ролі рахується від ігор самого чемпіона.** На сторінці чемпіона
+роль отримує окрему вкладку, якщо на неї припадає більше ніж 5% ігор цього
+чемпіона.
 
 **Показники «за хвилину» усереднюються по матчах.** Шкода за хвилину рахується
 окремо для кожної гри, з її власною тривалістю, і лише потім усереднюється. Це
