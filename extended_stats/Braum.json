@@ -1,0 +1,42 @@
+{
+  "champion": "Braum",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 332,
+      "kills": 0.92,
+      "deaths": 5.96,
+      "assists": 15.29,
+      "solo_kills": 0.07,
+      "kill_participation_pct": 59.65,
+      "first_blood_pct": 5.12,
+      "physical_dmg": 1430.33,
+      "magic_dmg": 5447.41,
+      "dmg_taken": 24284.99,
+      "team_dmg_pct": 7.75,
+      "dmg_per_min": 262.98,
+      "cs_per_min": 0.89,
+      "gold_per_min": 293.47,
+      "vision_per_min": 2.71,
+      "control_wards": 5.21
+    },
+    "UTILITY": {
+      "games": 332,
+      "kills": 0.92,
+      "deaths": 5.96,
+      "assists": 15.29,
+      "solo_kills": 0.07,
+      "kill_participation_pct": 59.65,
+      "first_blood_pct": 5.12,
+      "physical_dmg": 1430.33,
+      "magic_dmg": 5447.41,
+      "dmg_taken": 24284.99,
+      "team_dmg_pct": 7.75,
+      "dmg_per_min": 262.98,
+      "cs_per_min": 0.89,
+      "gold_per_min": 293.47,
+      "vision_per_min": 2.71,
+      "control_wards": 5.21
+    }
+  }
+}

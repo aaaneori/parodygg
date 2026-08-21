@@ -1,0 +1,42 @@
+{
+  "champion": "Jinx",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 456,
+      "kills": 6.45,
+      "deaths": 6.0,
+      "assists": 6.57,
+      "solo_kills": 0.51,
+      "kill_participation_pct": 48.18,
+      "first_blood_pct": 12.5,
+      "physical_dmg": 21750.56,
+      "magic_dmg": 628.31,
+      "dmg_taken": 18780.52,
+      "team_dmg_pct": 23.79,
+      "dmg_per_min": 836.58,
+      "cs_per_min": 8.41,
+      "gold_per_min": 506.8,
+      "vision_per_min": 0.66,
+      "control_wards": 0.39
+    },
+    "BOTTOM": {
+      "games": 456,
+      "kills": 6.45,
+      "deaths": 6.0,
+      "assists": 6.57,
+      "solo_kills": 0.51,
+      "kill_participation_pct": 48.18,
+      "first_blood_pct": 12.5,
+      "physical_dmg": 21750.56,
+      "magic_dmg": 628.31,
+      "dmg_taken": 18780.52,
+      "team_dmg_pct": 23.79,
+      "dmg_per_min": 836.58,
+      "cs_per_min": 8.41,
+      "gold_per_min": 506.8,
+      "vision_per_min": 0.66,
+      "control_wards": 0.39
+    }
+  }
+}

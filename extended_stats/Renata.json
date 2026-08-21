@@ -1,0 +1,42 @@
+{
+  "champion": "Renata",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 113,
+      "kills": 1.12,
+      "deaths": 5.35,
+      "assists": 14.64,
+      "solo_kills": 0.07,
+      "kill_participation_pct": 58.82,
+      "first_blood_pct": 1.77,
+      "physical_dmg": 1747.49,
+      "magic_dmg": 5198.91,
+      "dmg_taken": 19391.59,
+      "team_dmg_pct": 9.01,
+      "dmg_per_min": 321.48,
+      "cs_per_min": 1.13,
+      "gold_per_min": 303.46,
+      "vision_per_min": 2.89,
+      "control_wards": 5.8
+    },
+    "UTILITY": {
+      "games": 113,
+      "kills": 1.12,
+      "deaths": 5.35,
+      "assists": 14.64,
+      "solo_kills": 0.07,
+      "kill_participation_pct": 58.82,
+      "first_blood_pct": 1.77,
+      "physical_dmg": 1747.49,
+      "magic_dmg": 5198.91,
+      "dmg_taken": 19391.59,
+      "team_dmg_pct": 9.01,
+      "dmg_per_min": 321.48,
+      "cs_per_min": 1.13,
+      "gold_per_min": 303.46,
+      "vision_per_min": 2.89,
+      "control_wards": 5.8
+    }
+  }
+}

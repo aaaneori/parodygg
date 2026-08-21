@@ -1,0 +1,42 @@
+{
+  "champion": "Khazix",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 668,
+      "kills": 7.87,
+      "deaths": 5.07,
+      "assists": 6.22,
+      "solo_kills": 1.49,
+      "kill_participation_pct": 49.55,
+      "first_blood_pct": 9.13,
+      "physical_dmg": 18438.82,
+      "magic_dmg": 1304.5,
+      "dmg_taken": 27819.41,
+      "team_dmg_pct": 20.86,
+      "dmg_per_min": 776.3,
+      "cs_per_min": 7.42,
+      "gold_per_min": 477.63,
+      "vision_per_min": 1.12,
+      "control_wards": 1.42
+    },
+    "JUNGLE": {
+      "games": 668,
+      "kills": 7.87,
+      "deaths": 5.07,
+      "assists": 6.22,
+      "solo_kills": 1.49,
+      "kill_participation_pct": 49.55,
+      "first_blood_pct": 9.13,
+      "physical_dmg": 18438.82,
+      "magic_dmg": 1304.5,
+      "dmg_taken": 27819.41,
+      "team_dmg_pct": 20.86,
+      "dmg_per_min": 776.3,
+      "cs_per_min": 7.42,
+      "gold_per_min": 477.63,
+      "vision_per_min": 1.12,
+      "control_wards": 1.42
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "champion": "Xayah",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 205,
+      "kills": 6.91,
+      "deaths": 5.72,
+      "assists": 6.18,
+      "solo_kills": 0.79,
+      "kill_participation_pct": 45.44,
+      "first_blood_pct": 13.66,
+      "physical_dmg": 24702.31,
+      "magic_dmg": 218.75,
+      "dmg_taken": 20609.8,
+      "team_dmg_pct": 24.8,
+      "dmg_per_min": 901.36,
+      "cs_per_min": 8.68,
+      "gold_per_min": 519.74,
+      "vision_per_min": 0.72,
+      "control_wards": 0.69
+    },
+    "BOTTOM": {
+      "games": 204,
+      "kills": 6.92,
+      "deaths": 5.71,
+      "assists": 6.19,
+      "solo_kills": 0.79,
+      "kill_participation_pct": 45.49,
+      "first_blood_pct": 13.73,
+      "physical_dmg": 24728.24,
+      "magic_dmg": 219.82,
+      "dmg_taken": 20582.73,
+      "team_dmg_pct": 24.8,
+      "dmg_per_min": 901.99,
+      "cs_per_min": 8.68,
+      "gold_per_min": 519.97,
+      "vision_per_min": 0.72,
+      "control_wards": 0.69
+    },
+    "TOP": {
+      "games": 1,
+      "kills": 4.0,
+      "deaths": 9.0,
+      "assists": 5.0,
+      "solo_kills": 0.0,
+      "kill_participation_pct": 36.0,
+      "first_blood_pct": 0.0,
+      "physical_dmg": 19413.0,
+      "magic_dmg": 0.0,
+      "dmg_taken": 26133.0,
+      "team_dmg_pct": 24.6,
+      "dmg_per_min": 773.09,
+      "cs_per_min": 8.89,
+      "gold_per_min": 472.87,
+      "vision_per_min": 0.56,
+      "control_wards": 1.0
+    }
+  }
+}
