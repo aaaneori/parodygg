@@ -53,3 +53,16 @@ def test_values_are_overwritten_not_appended():
     state.mark_day_complete(date(2026, 8, 18))
 
     assert state.get_last_success_date() == date(2026, 8, 18)
+
+
+def test_file_with_a_bom_is_still_readable():
+    """
+    Editing last_run.json by hand on Windows tends to leave a UTF-8 BOM -
+    Notepad adds one, and so does PowerShell's Out-File -Encoding utf8.
+    Plain json.load rejects it, which took down a scheduled run once.
+    """
+    with open(state.LAST_RUN_FILE, 'w', encoding='utf-8-sig') as f:
+        f.write('{"last_success_date": "2026-08-21", "last_known_patch": "16.16"}')
+
+    assert state.get_last_success_date() == date(2026, 8, 21)
+    assert state.get_last_known_patch() == "16.16"

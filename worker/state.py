@@ -18,7 +18,10 @@ def load_state():
     if not os.path.exists(LAST_RUN_FILE):
         return {}
 
-    with open(LAST_RUN_FILE, 'r', encoding='utf-8') as f:
+    # utf-8-sig, not utf-8: editing this file by hand on Windows easily leaves
+    # a BOM behind (Notepad does it, so does PowerShell's Out-File -Encoding
+    # utf8), and json.load chokes on it. utf-8-sig reads both.
+    with open(LAST_RUN_FILE, 'r', encoding='utf-8-sig') as f:
         return json.load(f)
 
 
