@@ -1,0 +1,42 @@
+{
+  "champion": "Hecarim",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 577,
+      "kills": 7.4,
+      "deaths": 4.73,
+      "assists": 7.61,
+      "solo_kills": 1.12,
+      "kill_participation_pct": 52.59,
+      "first_blood_pct": 6.59,
+      "physical_dmg": 16378.1,
+      "magic_dmg": 2940.9,
+      "dmg_taken": 35252.32,
+      "team_dmg_pct": 19.62,
+      "dmg_per_min": 722.86,
+      "cs_per_min": 8.39,
+      "gold_per_min": 486.92,
+      "vision_per_min": 0.78,
+      "control_wards": 0.73
+    },
+    "JUNGLE": {
+      "games": 577,
+      "kills": 7.4,
+      "deaths": 4.73,
+      "assists": 7.61,
+      "solo_kills": 1.12,
+      "kill_participation_pct": 52.59,
+      "first_blood_pct": 6.59,
+      "physical_dmg": 16378.1,
+      "magic_dmg": 2940.9,
+      "dmg_taken": 35252.32,
+      "team_dmg_pct": 19.62,
+      "dmg_per_min": 722.86,
+      "cs_per_min": 8.39,
+      "gold_per_min": 486.92,
+      "vision_per_min": 0.78,
+      "control_wards": 0.73
+    }
+  }
+}

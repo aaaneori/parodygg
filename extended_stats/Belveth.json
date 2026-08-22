@@ -1,0 +1,42 @@
+{
+  "champion": "Belveth",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 200,
+      "kills": 5.96,
+      "deaths": 5.32,
+      "assists": 5.41,
+      "solo_kills": 0.91,
+      "kill_participation_pct": 48.74,
+      "first_blood_pct": 2.0,
+      "physical_dmg": 10498.31,
+      "magic_dmg": 1855.41,
+      "dmg_taken": 27461.06,
+      "team_dmg_pct": 17.1,
+      "dmg_per_min": 588.15,
+      "cs_per_min": 7.58,
+      "gold_per_min": 476.89,
+      "vision_per_min": 0.84,
+      "control_wards": 0.43
+    },
+    "JUNGLE": {
+      "games": 200,
+      "kills": 5.96,
+      "deaths": 5.32,
+      "assists": 5.41,
+      "solo_kills": 0.91,
+      "kill_participation_pct": 48.74,
+      "first_blood_pct": 2.0,
+      "physical_dmg": 10498.31,
+      "magic_dmg": 1855.41,
+      "dmg_taken": 27461.06,
+      "team_dmg_pct": 17.1,
+      "dmg_per_min": 588.15,
+      "cs_per_min": 7.58,
+      "gold_per_min": 476.89,
+      "vision_per_min": 0.84,
+      "control_wards": 0.43
+    }
+  }
+}

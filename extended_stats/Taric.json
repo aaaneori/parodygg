@@ -1,0 +1,60 @@
+{
+  "champion": "Taric",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 322,
+      "kills": 1.19,
+      "deaths": 4.69,
+      "assists": 15.16,
+      "solo_kills": 0.08,
+      "kill_participation_pct": 62.92,
+      "first_blood_pct": 4.66,
+      "physical_dmg": 1731.21,
+      "magic_dmg": 3287.75,
+      "dmg_taken": 20156.8,
+      "team_dmg_pct": 6.4,
+      "dmg_per_min": 204.88,
+      "cs_per_min": 1.33,
+      "gold_per_min": 309.15,
+      "vision_per_min": 2.59,
+      "control_wards": 5.05
+    },
+    "JUNGLE": {
+      "games": 1,
+      "kills": 3.0,
+      "deaths": 5.0,
+      "assists": 13.0,
+      "solo_kills": 0.0,
+      "kill_participation_pct": 76.19,
+      "first_blood_pct": 0.0,
+      "physical_dmg": 3370.0,
+      "magic_dmg": 6679.0,
+      "dmg_taken": 29294.0,
+      "team_dmg_pct": 12.95,
+      "dmg_per_min": 395.59,
+      "cs_per_min": 5.74,
+      "gold_per_min": 411.89,
+      "vision_per_min": 0.61,
+      "control_wards": 0.0
+    },
+    "UTILITY": {
+      "games": 321,
+      "kills": 1.19,
+      "deaths": 4.69,
+      "assists": 15.16,
+      "solo_kills": 0.08,
+      "kill_participation_pct": 62.88,
+      "first_blood_pct": 4.67,
+      "physical_dmg": 1726.1,
+      "magic_dmg": 3277.19,
+      "dmg_taken": 20128.33,
+      "team_dmg_pct": 6.38,
+      "dmg_per_min": 204.28,
+      "cs_per_min": 1.31,
+      "gold_per_min": 308.83,
+      "vision_per_min": 2.6,
+      "control_wards": 5.06
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "champion": "Rakan",
+  "patch": "16.16",
+  "stats_by_role": {
+    "ALL": {
+      "games": 557,
+      "kills": 1.28,
+      "deaths": 4.92,
+      "assists": 15.1,
+      "solo_kills": 0.12,
+      "kill_participation_pct": 59.75,
+      "first_blood_pct": 5.21,
+      "physical_dmg": 1578.06,
+      "magic_dmg": 4646.92,
+      "dmg_taken": 21190.21,
+      "team_dmg_pct": 7.35,
+      "dmg_per_min": 246.82,
+      "cs_per_min": 1.02,
+      "gold_per_min": 300.3,
+      "vision_per_min": 3.04,
+      "control_wards": 6.13
+    },
+    "UTILITY": {
+      "games": 557,
+      "kills": 1.28,
+      "deaths": 4.92,
+      "assists": 15.1,
+      "solo_kills": 0.12,
+      "kill_participation_pct": 59.75,
+      "first_blood_pct": 5.21,
+      "physical_dmg": 1578.06,
+      "magic_dmg": 4646.92,
+      "dmg_taken": 21190.21,
+      "team_dmg_pct": 7.35,
+      "dmg_per_min": 246.82,
+      "cs_per_min": 1.02,
+      "gold_per_min": 300.3,
+      "vision_per_min": 3.04,
+      "control_wards": 6.13
+    }
+  }
+}
