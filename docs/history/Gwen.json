@@ -540,6 +540,51 @@
       "wins": 6,
       "bans": 11,
       "matches_processed": 810
+    },
+    {
+      "date": "2026-08-22",
+      "patch": "16.16",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "bans": 10,
+      "matches_processed": 768
+    },
+    {
+      "date": "2026-08-22",
+      "patch": "16.16",
+      "role": "JUNGLE",
+      "games": 2,
+      "wins": 0,
+      "bans": 10,
+      "matches_processed": 768
+    },
+    {
+      "date": "2026-08-22",
+      "patch": "16.16",
+      "role": "MIDDLE",
+      "games": 4,
+      "wins": 2,
+      "bans": 10,
+      "matches_processed": 768
+    },
+    {
+      "date": "2026-08-22",
+      "patch": "16.16",
+      "role": "TOP",
+      "games": 23,
+      "wins": 10,
+      "bans": 10,
+      "matches_processed": 768
+    },
+    {
+      "date": "2026-08-22",
+      "patch": "16.16",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "bans": 10,
+      "matches_processed": 768
     }
   ]
 }
