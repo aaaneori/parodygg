@@ -612,6 +612,33 @@
       "wins": 11,
       "bans": 8,
       "matches_processed": 774
+    },
+    {
+      "date": "2026-08-24",
+      "patch": "16.16",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "bans": 10,
+      "matches_processed": 787
+    },
+    {
+      "date": "2026-08-24",
+      "patch": "16.16",
+      "role": "MIDDLE",
+      "games": 2,
+      "wins": 0,
+      "bans": 10,
+      "matches_processed": 787
+    },
+    {
+      "date": "2026-08-24",
+      "patch": "16.16",
+      "role": "TOP",
+      "games": 39,
+      "wins": 14,
+      "bans": 10,
+      "matches_processed": 787
     }
   ]
 }
