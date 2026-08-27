@@ -414,6 +414,33 @@
       "wins": 0,
       "bans": 0,
       "matches_processed": 812
+    },
+    {
+      "date": "2026-08-26",
+      "patch": "16.17",
+      "role": "JUNGLE",
+      "games": 5,
+      "wins": 2,
+      "bans": 1,
+      "matches_processed": 625
+    },
+    {
+      "date": "2026-08-26",
+      "patch": "16.17",
+      "role": "UTILITY",
+      "games": 4,
+      "wins": 1,
+      "bans": 1,
+      "matches_processed": 625
+    },
+    {
+      "date": "2026-08-26",
+      "patch": "16.16",
+      "role": "UNPICKED",
+      "games": 0,
+      "wins": 0,
+      "bans": 1,
+      "matches_processed": 125
     }
   ]
 }

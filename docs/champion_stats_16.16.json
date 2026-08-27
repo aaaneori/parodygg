@@ -1,0 +1,6682 @@
+{
+  "region": "EUW1",
+  "patch": "16.16",
+  "available_patches": [
+    "16.15",
+    "16.16"
+  ],
+  "last_updated": "2026-08-25",
+  "total_matches": 11222,
+  "champions": [
+    {
+      "champion": "Aatrox",
+      "role": "BOTTOM",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 293,
+      "banrate": 1.31
+    },
+    {
+      "champion": "Aatrox",
+      "role": "JUNGLE",
+      "games": 442,
+      "wins": 210,
+      "winrate": 47.51,
+      "pickrate": 3.94,
+      "bans": 293,
+      "banrate": 1.31
+    },
+    {
+      "champion": "Aatrox",
+      "role": "MIDDLE",
+      "games": 14,
+      "wins": 5,
+      "winrate": 35.71,
+      "pickrate": 0.12,
+      "bans": 293,
+      "banrate": 1.31
+    },
+    {
+      "champion": "Aatrox",
+      "role": "TOP",
+      "games": 408,
+      "wins": 197,
+      "winrate": 48.28,
+      "pickrate": 3.64,
+      "bans": 293,
+      "banrate": 1.31
+    },
+    {
+      "champion": "Aatrox",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.02,
+      "bans": 293,
+      "banrate": 1.31
+    },
+    {
+      "champion": "Ahri",
+      "role": "BOTTOM",
+      "games": 57,
+      "wins": 29,
+      "winrate": 50.88,
+      "pickrate": 0.51,
+      "bans": 441,
+      "banrate": 1.96
+    },
+    {
+      "champion": "Ahri",
+      "role": "MIDDLE",
+      "games": 1180,
+      "wins": 611,
+      "winrate": 51.78,
+      "pickrate": 10.52,
+      "bans": 441,
+      "banrate": 1.96
+    },
+    {
+      "champion": "Ahri",
+      "role": "TOP",
+      "games": 62,
+      "wins": 36,
+      "winrate": 58.06,
+      "pickrate": 0.55,
+      "bans": 441,
+      "banrate": 1.96
+    },
+    {
+      "champion": "Ahri",
+      "role": "UTILITY",
+      "games": 9,
+      "wins": 2,
+      "winrate": 22.22,
+      "pickrate": 0.08,
+      "bans": 441,
+      "banrate": 1.96
+    },
+    {
+      "champion": "Akali",
+      "role": "BOTTOM",
+      "games": 37,
+      "wins": 19,
+      "winrate": 51.35,
+      "pickrate": 0.33,
+      "bans": 2126,
+      "banrate": 9.47
+    },
+    {
+      "champion": "Akali",
+      "role": "MIDDLE",
+      "games": 763,
+      "wins": 376,
+      "winrate": 49.28,
+      "pickrate": 6.8,
+      "bans": 2126,
+      "banrate": 9.47
+    },
+    {
+      "champion": "Akali",
+      "role": "TOP",
+      "games": 287,
+      "wins": 140,
+      "winrate": 48.78,
+      "pickrate": 2.56,
+      "bans": 2126,
+      "banrate": 9.47
+    },
+    {
+      "champion": "Akali",
+      "role": "UTILITY",
+      "games": 5,
+      "wins": 2,
+      "winrate": 40.0,
+      "pickrate": 0.04,
+      "bans": 2126,
+      "banrate": 9.47
+    },
+    {
+      "champion": "Akshan",
+      "role": "BOTTOM",
+      "games": 46,
+      "wins": 25,
+      "winrate": 54.35,
+      "pickrate": 0.41,
+      "bans": 1546,
+      "banrate": 6.89
+    },
+    {
+      "champion": "Akshan",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 1546,
+      "banrate": 6.89
+    },
+    {
+      "champion": "Akshan",
+      "role": "MIDDLE",
+      "games": 354,
+      "wins": 183,
+      "winrate": 51.69,
+      "pickrate": 3.15,
+      "bans": 1546,
+      "banrate": 6.89
+    },
+    {
+      "champion": "Akshan",
+      "role": "TOP",
+      "games": 58,
+      "wins": 29,
+      "winrate": 50.0,
+      "pickrate": 0.52,
+      "bans": 1546,
+      "banrate": 6.89
+    },
+    {
+      "champion": "Akshan",
+      "role": "UTILITY",
+      "games": 26,
+      "wins": 12,
+      "winrate": 46.15,
+      "pickrate": 0.23,
+      "bans": 1546,
+      "banrate": 6.89
+    },
+    {
+      "champion": "Alistar",
+      "role": "TOP",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 411,
+      "banrate": 1.83
+    },
+    {
+      "champion": "Alistar",
+      "role": "UTILITY",
+      "games": 870,
+      "wins": 434,
+      "winrate": 49.89,
+      "pickrate": 7.75,
+      "bans": 411,
+      "banrate": 1.83
+    },
+    {
+      "champion": "Ambessa",
+      "role": "BOTTOM",
+      "games": 12,
+      "wins": 7,
+      "winrate": 58.33,
+      "pickrate": 0.11,
+      "bans": 1190,
+      "banrate": 5.3
+    },
+    {
+      "champion": "Ambessa",
+      "role": "JUNGLE",
+      "games": 185,
+      "wins": 79,
+      "winrate": 42.7,
+      "pickrate": 1.65,
+      "bans": 1190,
+      "banrate": 5.3
+    },
+    {
+      "champion": "Ambessa",
+      "role": "MIDDLE",
+      "games": 124,
+      "wins": 64,
+      "winrate": 51.61,
+      "pickrate": 1.1,
+      "bans": 1190,
+      "banrate": 5.3
+    },
+    {
+      "champion": "Ambessa",
+      "role": "TOP",
+      "games": 1010,
+      "wins": 494,
+      "winrate": 48.91,
+      "pickrate": 9.0,
+      "bans": 1190,
+      "banrate": 5.3
+    },
+    {
+      "champion": "Ambessa",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 1190,
+      "banrate": 5.3
+    },
+    {
+      "champion": "Amumu",
+      "role": "JUNGLE",
+      "games": 31,
+      "wins": 16,
+      "winrate": 51.61,
+      "pickrate": 0.28,
+      "bans": 11,
+      "banrate": 0.05
+    },
+    {
+      "champion": "Amumu",
+      "role": "TOP",
+      "games": 3,
+      "wins": 2,
+      "winrate": 66.67,
+      "pickrate": 0.03,
+      "bans": 11,
+      "banrate": 0.05
+    },
+    {
+      "champion": "Amumu",
+      "role": "UTILITY",
+      "games": 66,
+      "wins": 31,
+      "winrate": 46.97,
+      "pickrate": 0.59,
+      "bans": 11,
+      "banrate": 0.05
+    },
+    {
+      "champion": "Anivia",
+      "role": "BOTTOM",
+      "games": 26,
+      "wins": 14,
+      "winrate": 53.85,
+      "pickrate": 0.23,
+      "bans": 817,
+      "banrate": 3.64
+    },
+    {
+      "champion": "Anivia",
+      "role": "MIDDLE",
+      "games": 424,
+      "wins": 224,
+      "winrate": 52.83,
+      "pickrate": 3.78,
+      "bans": 817,
+      "banrate": 3.64
+    },
+    {
+      "champion": "Anivia",
+      "role": "TOP",
+      "games": 281,
+      "wins": 138,
+      "winrate": 49.11,
+      "pickrate": 2.5,
+      "bans": 817,
+      "banrate": 3.64
+    },
+    {
+      "champion": "Anivia",
+      "role": "UTILITY",
+      "games": 49,
+      "wins": 22,
+      "winrate": 44.9,
+      "pickrate": 0.44,
+      "bans": 817,
+      "banrate": 3.64
+    },
+    {
+      "champion": "Annie",
+      "role": "BOTTOM",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50.0,
+      "pickrate": 0.04,
+      "bans": 45,
+      "banrate": 0.2
+    },
+    {
+      "champion": "Annie",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 45,
+      "banrate": 0.2
+    },
+    {
+      "champion": "Annie",
+      "role": "MIDDLE",
+      "games": 192,
+      "wins": 111,
+      "winrate": 57.81,
+      "pickrate": 1.71,
+      "bans": 45,
+      "banrate": 0.2
+    },
+    {
+      "champion": "Annie",
+      "role": "TOP",
+      "games": 32,
+      "wins": 16,
+      "winrate": 50.0,
+      "pickrate": 0.29,
+      "bans": 45,
+      "banrate": 0.2
+    },
+    {
+      "champion": "Annie",
+      "role": "UTILITY",
+      "games": 45,
+      "wins": 24,
+      "winrate": 53.33,
+      "pickrate": 0.4,
+      "bans": 45,
+      "banrate": 0.2
+    },
+    {
+      "champion": "Aphelios",
+      "role": "BOTTOM",
+      "games": 320,
+      "wins": 161,
+      "winrate": 50.31,
+      "pickrate": 2.85,
+      "bans": 28,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Aphelios",
+      "role": "JUNGLE",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 28,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Aphelios",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 28,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Aphelios",
+      "role": "TOP",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 28,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Ashe",
+      "role": "BOTTOM",
+      "games": 459,
+      "wins": 230,
+      "winrate": 50.11,
+      "pickrate": 4.09,
+      "bans": 74,
+      "banrate": 0.33
+    },
+    {
+      "champion": "Ashe",
+      "role": "MIDDLE",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 74,
+      "banrate": 0.33
+    },
+    {
+      "champion": "Ashe",
+      "role": "TOP",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50.0,
+      "pickrate": 0.04,
+      "bans": 74,
+      "banrate": 0.33
+    },
+    {
+      "champion": "Ashe",
+      "role": "UTILITY",
+      "games": 13,
+      "wins": 8,
+      "winrate": 61.54,
+      "pickrate": 0.12,
+      "bans": 74,
+      "banrate": 0.33
+    },
+    {
+      "champion": "AurelionSol",
+      "role": "BOTTOM",
+      "games": 227,
+      "wins": 125,
+      "winrate": 55.07,
+      "pickrate": 2.02,
+      "bans": 85,
+      "banrate": 0.38
+    },
+    {
+      "champion": "AurelionSol",
+      "role": "JUNGLE",
+      "games": 6,
+      "wins": 3,
+      "winrate": 50.0,
+      "pickrate": 0.05,
+      "bans": 85,
+      "banrate": 0.38
+    },
+    {
+      "champion": "AurelionSol",
+      "role": "MIDDLE",
+      "games": 152,
+      "wins": 73,
+      "winrate": 48.03,
+      "pickrate": 1.35,
+      "bans": 85,
+      "banrate": 0.38
+    },
+    {
+      "champion": "AurelionSol",
+      "role": "TOP",
+      "games": 36,
+      "wins": 18,
+      "winrate": 50.0,
+      "pickrate": 0.32,
+      "bans": 85,
+      "banrate": 0.38
+    },
+    {
+      "champion": "AurelionSol",
+      "role": "UTILITY",
+      "games": 14,
+      "wins": 3,
+      "winrate": 21.43,
+      "pickrate": 0.12,
+      "bans": 85,
+      "banrate": 0.38
+    },
+    {
+      "champion": "Aurora",
+      "role": "BOTTOM",
+      "games": 29,
+      "wins": 18,
+      "winrate": 62.07,
+      "pickrate": 0.26,
+      "bans": 107,
+      "banrate": 0.48
+    },
+    {
+      "champion": "Aurora",
+      "role": "MIDDLE",
+      "games": 261,
+      "wins": 131,
+      "winrate": 50.19,
+      "pickrate": 2.33,
+      "bans": 107,
+      "banrate": 0.48
+    },
+    {
+      "champion": "Aurora",
+      "role": "TOP",
+      "games": 177,
+      "wins": 74,
+      "winrate": 41.81,
+      "pickrate": 1.58,
+      "bans": 107,
+      "banrate": 0.48
+    },
+    {
+      "champion": "Aurora",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 107,
+      "banrate": 0.48
+    },
+    {
+      "champion": "Azir",
+      "role": "BOTTOM",
+      "games": 7,
+      "wins": 4,
+      "winrate": 57.14,
+      "pickrate": 0.06,
+      "bans": 25,
+      "banrate": 0.11
+    },
+    {
+      "champion": "Azir",
+      "role": "MIDDLE",
+      "games": 293,
+      "wins": 121,
+      "winrate": 41.3,
+      "pickrate": 2.61,
+      "bans": 25,
+      "banrate": 0.11
+    },
+    {
+      "champion": "Azir",
+      "role": "TOP",
+      "games": 17,
+      "wins": 6,
+      "winrate": 35.29,
+      "pickrate": 0.15,
+      "bans": 25,
+      "banrate": 0.11
+    },
+    {
+      "champion": "Azir",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 25,
+      "banrate": 0.11
+    },
+    {
+      "champion": "Bard",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 2189,
+      "banrate": 9.75
+    },
+    {
+      "champion": "Bard",
+      "role": "UTILITY",
+      "games": 1119,
+      "wins": 556,
+      "winrate": 49.69,
+      "pickrate": 9.97,
+      "bans": 2189,
+      "banrate": 9.75
+    },
+    {
+      "champion": "Belveth",
+      "role": "JUNGLE",
+      "games": 241,
+      "wins": 102,
+      "winrate": 42.32,
+      "pickrate": 2.15,
+      "bans": 1228,
+      "banrate": 5.47
+    },
+    {
+      "champion": "Blitzcrank",
+      "role": "UTILITY",
+      "games": 487,
+      "wins": 249,
+      "winrate": 51.13,
+      "pickrate": 4.34,
+      "bans": 342,
+      "banrate": 1.52
+    },
+    {
+      "champion": "Brand",
+      "role": "BOTTOM",
+      "games": 111,
+      "wins": 57,
+      "winrate": 51.35,
+      "pickrate": 0.99,
+      "bans": 17,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Brand",
+      "role": "JUNGLE",
+      "games": 32,
+      "wins": 22,
+      "winrate": 68.75,
+      "pickrate": 0.29,
+      "bans": 17,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Brand",
+      "role": "MIDDLE",
+      "games": 53,
+      "wins": 33,
+      "winrate": 62.26,
+      "pickrate": 0.47,
+      "bans": 17,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Brand",
+      "role": "TOP",
+      "games": 28,
+      "wins": 15,
+      "winrate": 53.57,
+      "pickrate": 0.25,
+      "bans": 17,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Brand",
+      "role": "UTILITY",
+      "games": 29,
+      "wins": 13,
+      "winrate": 44.83,
+      "pickrate": 0.26,
+      "bans": 17,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Braum",
+      "role": "TOP",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 706,
+      "banrate": 3.15
+    },
+    {
+      "champion": "Braum",
+      "role": "UTILITY",
+      "games": 505,
+      "wins": 244,
+      "winrate": 48.32,
+      "pickrate": 4.5,
+      "bans": 706,
+      "banrate": 3.15
+    },
+    {
+      "champion": "Briar",
+      "role": "JUNGLE",
+      "games": 284,
+      "wins": 162,
+      "winrate": 57.04,
+      "pickrate": 2.53,
+      "bans": 117,
+      "banrate": 0.52
+    },
+    {
+      "champion": "Briar",
+      "role": "MIDDLE",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50.0,
+      "pickrate": 0.04,
+      "bans": 117,
+      "banrate": 0.52
+    },
+    {
+      "champion": "Briar",
+      "role": "TOP",
+      "games": 15,
+      "wins": 4,
+      "winrate": 26.67,
+      "pickrate": 0.13,
+      "bans": 117,
+      "banrate": 0.52
+    },
+    {
+      "champion": "Briar",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.02,
+      "bans": 117,
+      "banrate": 0.52
+    },
+    {
+      "champion": "Caitlyn",
+      "role": "BOTTOM",
+      "games": 924,
+      "wins": 452,
+      "winrate": 48.92,
+      "pickrate": 8.23,
+      "bans": 781,
+      "banrate": 3.48
+    },
+    {
+      "champion": "Caitlyn",
+      "role": "MIDDLE",
+      "games": 3,
+      "wins": 2,
+      "winrate": 66.67,
+      "pickrate": 0.03,
+      "bans": 781,
+      "banrate": 3.48
+    },
+    {
+      "champion": "Caitlyn",
+      "role": "TOP",
+      "games": 6,
+      "wins": 4,
+      "winrate": 66.67,
+      "pickrate": 0.05,
+      "bans": 781,
+      "banrate": 3.48
+    },
+    {
+      "champion": "Caitlyn",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 781,
+      "banrate": 3.48
+    },
+    {
+      "champion": "Camille",
+      "role": "JUNGLE",
+      "games": 4,
+      "wins": 1,
+      "winrate": 25.0,
+      "pickrate": 0.04,
+      "bans": 1556,
+      "banrate": 6.93
+    },
+    {
+      "champion": "Camille",
+      "role": "MIDDLE",
+      "games": 38,
+      "wins": 21,
+      "winrate": 55.26,
+      "pickrate": 0.34,
+      "bans": 1556,
+      "banrate": 6.93
+    },
+    {
+      "champion": "Camille",
+      "role": "TOP",
+      "games": 971,
+      "wins": 493,
+      "winrate": 50.77,
+      "pickrate": 8.65,
+      "bans": 1556,
+      "banrate": 6.93
+    },
+    {
+      "champion": "Camille",
+      "role": "UTILITY",
+      "games": 330,
+      "wins": 148,
+      "winrate": 44.85,
+      "pickrate": 2.94,
+      "bans": 1556,
+      "banrate": 6.93
+    },
+    {
+      "champion": "Cassiopeia",
+      "role": "BOTTOM",
+      "games": 230,
+      "wins": 117,
+      "winrate": 50.87,
+      "pickrate": 2.05,
+      "bans": 1306,
+      "banrate": 5.82
+    },
+    {
+      "champion": "Cassiopeia",
+      "role": "MIDDLE",
+      "games": 702,
+      "wins": 371,
+      "winrate": 52.85,
+      "pickrate": 6.26,
+      "bans": 1306,
+      "banrate": 5.82
+    },
+    {
+      "champion": "Cassiopeia",
+      "role": "TOP",
+      "games": 256,
+      "wins": 124,
+      "winrate": 48.44,
+      "pickrate": 2.28,
+      "bans": 1306,
+      "banrate": 5.82
+    },
+    {
+      "champion": "Cassiopeia",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 1306,
+      "banrate": 5.82
+    },
+    {
+      "champion": "Chogath",
+      "role": "BOTTOM",
+      "games": 18,
+      "wins": 7,
+      "winrate": 38.89,
+      "pickrate": 0.16,
+      "bans": 41,
+      "banrate": 0.18
+    },
+    {
+      "champion": "Chogath",
+      "role": "JUNGLE",
+      "games": 74,
+      "wins": 37,
+      "winrate": 50.0,
+      "pickrate": 0.66,
+      "bans": 41,
+      "banrate": 0.18
+    },
+    {
+      "champion": "Chogath",
+      "role": "MIDDLE",
+      "games": 36,
+      "wins": 17,
+      "winrate": 47.22,
+      "pickrate": 0.32,
+      "bans": 41,
+      "banrate": 0.18
+    },
+    {
+      "champion": "Chogath",
+      "role": "TOP",
+      "games": 214,
+      "wins": 111,
+      "winrate": 51.87,
+      "pickrate": 1.91,
+      "bans": 41,
+      "banrate": 0.18
+    },
+    {
+      "champion": "Chogath",
+      "role": "UTILITY",
+      "games": 15,
+      "wins": 9,
+      "winrate": 60.0,
+      "pickrate": 0.13,
+      "bans": 41,
+      "banrate": 0.18
+    },
+    {
+      "champion": "Corki",
+      "role": "BOTTOM",
+      "games": 493,
+      "wins": 234,
+      "winrate": 47.46,
+      "pickrate": 4.39,
+      "bans": 33,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Corki",
+      "role": "MIDDLE",
+      "games": 127,
+      "wins": 59,
+      "winrate": 46.46,
+      "pickrate": 1.13,
+      "bans": 33,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Corki",
+      "role": "TOP",
+      "games": 61,
+      "wins": 24,
+      "winrate": 39.34,
+      "pickrate": 0.54,
+      "bans": 33,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Darius",
+      "role": "BOTTOM",
+      "games": 3,
+      "wins": 2,
+      "winrate": 66.67,
+      "pickrate": 0.03,
+      "bans": 1008,
+      "banrate": 4.49
+    },
+    {
+      "champion": "Darius",
+      "role": "JUNGLE",
+      "games": 137,
+      "wins": 69,
+      "winrate": 50.36,
+      "pickrate": 1.22,
+      "bans": 1008,
+      "banrate": 4.49
+    },
+    {
+      "champion": "Darius",
+      "role": "MIDDLE",
+      "games": 17,
+      "wins": 7,
+      "winrate": 41.18,
+      "pickrate": 0.15,
+      "bans": 1008,
+      "banrate": 4.49
+    },
+    {
+      "champion": "Darius",
+      "role": "TOP",
+      "games": 531,
+      "wins": 285,
+      "winrate": 53.67,
+      "pickrate": 4.73,
+      "bans": 1008,
+      "banrate": 4.49
+    },
+    {
+      "champion": "Diana",
+      "role": "JUNGLE",
+      "games": 277,
+      "wins": 140,
+      "winrate": 50.54,
+      "pickrate": 2.47,
+      "bans": 33,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Diana",
+      "role": "MIDDLE",
+      "games": 90,
+      "wins": 43,
+      "winrate": 47.78,
+      "pickrate": 0.8,
+      "bans": 33,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Diana",
+      "role": "TOP",
+      "games": 7,
+      "wins": 1,
+      "winrate": 14.29,
+      "pickrate": 0.06,
+      "bans": 33,
+      "banrate": 0.15
+    },
+    {
+      "champion": "DrMundo",
+      "role": "BOTTOM",
+      "games": 7,
+      "wins": 2,
+      "winrate": 28.57,
+      "pickrate": 0.06,
+      "bans": 117,
+      "banrate": 0.52
+    },
+    {
+      "champion": "DrMundo",
+      "role": "JUNGLE",
+      "games": 131,
+      "wins": 57,
+      "winrate": 43.51,
+      "pickrate": 1.17,
+      "bans": 117,
+      "banrate": 0.52
+    },
+    {
+      "champion": "DrMundo",
+      "role": "MIDDLE",
+      "games": 18,
+      "wins": 7,
+      "winrate": 38.89,
+      "pickrate": 0.16,
+      "bans": 117,
+      "banrate": 0.52
+    },
+    {
+      "champion": "DrMundo",
+      "role": "TOP",
+      "games": 405,
+      "wins": 197,
+      "winrate": 48.64,
+      "pickrate": 3.61,
+      "bans": 117,
+      "banrate": 0.52
+    },
+    {
+      "champion": "DrMundo",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 117,
+      "banrate": 0.52
+    },
+    {
+      "champion": "Draven",
+      "role": "BOTTOM",
+      "games": 604,
+      "wins": 320,
+      "winrate": 52.98,
+      "pickrate": 5.38,
+      "bans": 4182,
+      "banrate": 18.63
+    },
+    {
+      "champion": "Draven",
+      "role": "JUNGLE",
+      "games": 5,
+      "wins": 2,
+      "winrate": 40.0,
+      "pickrate": 0.04,
+      "bans": 4182,
+      "banrate": 18.63
+    },
+    {
+      "champion": "Draven",
+      "role": "MIDDLE",
+      "games": 7,
+      "wins": 2,
+      "winrate": 28.57,
+      "pickrate": 0.06,
+      "bans": 4182,
+      "banrate": 18.63
+    },
+    {
+      "champion": "Draven",
+      "role": "TOP",
+      "games": 18,
+      "wins": 11,
+      "winrate": 61.11,
+      "pickrate": 0.16,
+      "bans": 4182,
+      "banrate": 18.63
+    },
+    {
+      "champion": "Ekko",
+      "role": "BOTTOM",
+      "games": 54,
+      "wins": 25,
+      "winrate": 46.3,
+      "pickrate": 0.48,
+      "bans": 614,
+      "banrate": 2.74
+    },
+    {
+      "champion": "Ekko",
+      "role": "JUNGLE",
+      "games": 375,
+      "wins": 171,
+      "winrate": 45.6,
+      "pickrate": 3.34,
+      "bans": 614,
+      "banrate": 2.74
+    },
+    {
+      "champion": "Ekko",
+      "role": "MIDDLE",
+      "games": 402,
+      "wins": 209,
+      "winrate": 51.99,
+      "pickrate": 3.58,
+      "bans": 614,
+      "banrate": 2.74
+    },
+    {
+      "champion": "Ekko",
+      "role": "TOP",
+      "games": 40,
+      "wins": 17,
+      "winrate": 42.5,
+      "pickrate": 0.36,
+      "bans": 614,
+      "banrate": 2.74
+    },
+    {
+      "champion": "Ekko",
+      "role": "UTILITY",
+      "games": 18,
+      "wins": 8,
+      "winrate": 44.44,
+      "pickrate": 0.16,
+      "bans": 614,
+      "banrate": 2.74
+    },
+    {
+      "champion": "Elise",
+      "role": "JUNGLE",
+      "games": 259,
+      "wins": 132,
+      "winrate": 50.97,
+      "pickrate": 2.31,
+      "bans": 208,
+      "banrate": 0.93
+    },
+    {
+      "champion": "Elise",
+      "role": "MIDDLE",
+      "games": 8,
+      "wins": 5,
+      "winrate": 62.5,
+      "pickrate": 0.07,
+      "bans": 208,
+      "banrate": 0.93
+    },
+    {
+      "champion": "Elise",
+      "role": "TOP",
+      "games": 75,
+      "wins": 35,
+      "winrate": 46.67,
+      "pickrate": 0.67,
+      "bans": 208,
+      "banrate": 0.93
+    },
+    {
+      "champion": "Elise",
+      "role": "UTILITY",
+      "games": 367,
+      "wins": 191,
+      "winrate": 52.04,
+      "pickrate": 3.27,
+      "bans": 208,
+      "banrate": 0.93
+    },
+    {
+      "champion": "Evelynn",
+      "role": "JUNGLE",
+      "games": 197,
+      "wins": 99,
+      "winrate": 50.25,
+      "pickrate": 1.76,
+      "bans": 301,
+      "banrate": 1.34
+    },
+    {
+      "champion": "Evelynn",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 301,
+      "banrate": 1.34
+    },
+    {
+      "champion": "Evelynn",
+      "role": "TOP",
+      "games": 5,
+      "wins": 2,
+      "winrate": 40.0,
+      "pickrate": 0.04,
+      "bans": 301,
+      "banrate": 1.34
+    },
+    {
+      "champion": "Evelynn",
+      "role": "UTILITY",
+      "games": 3,
+      "wins": 2,
+      "winrate": 66.67,
+      "pickrate": 0.03,
+      "bans": 301,
+      "banrate": 1.34
+    },
+    {
+      "champion": "Ezreal",
+      "role": "BOTTOM",
+      "games": 1415,
+      "wins": 632,
+      "winrate": 44.66,
+      "pickrate": 12.61,
+      "bans": 903,
+      "banrate": 4.02
+    },
+    {
+      "champion": "Ezreal",
+      "role": "MIDDLE",
+      "games": 35,
+      "wins": 17,
+      "winrate": 48.57,
+      "pickrate": 0.31,
+      "bans": 903,
+      "banrate": 4.02
+    },
+    {
+      "champion": "Ezreal",
+      "role": "TOP",
+      "games": 11,
+      "wins": 7,
+      "winrate": 63.64,
+      "pickrate": 0.1,
+      "bans": 903,
+      "banrate": 4.02
+    },
+    {
+      "champion": "Ezreal",
+      "role": "UTILITY",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50.0,
+      "pickrate": 0.04,
+      "bans": 903,
+      "banrate": 4.02
+    },
+    {
+      "champion": "Fiddlesticks",
+      "role": "JUNGLE",
+      "games": 298,
+      "wins": 145,
+      "winrate": 48.66,
+      "pickrate": 2.66,
+      "bans": 223,
+      "banrate": 0.99
+    },
+    {
+      "champion": "Fiddlesticks",
+      "role": "MIDDLE",
+      "games": 7,
+      "wins": 6,
+      "winrate": 85.71,
+      "pickrate": 0.06,
+      "bans": 223,
+      "banrate": 0.99
+    },
+    {
+      "champion": "Fiddlesticks",
+      "role": "TOP",
+      "games": 112,
+      "wins": 64,
+      "winrate": 57.14,
+      "pickrate": 1.0,
+      "bans": 223,
+      "banrate": 0.99
+    },
+    {
+      "champion": "Fiddlesticks",
+      "role": "UTILITY",
+      "games": 42,
+      "wins": 19,
+      "winrate": 45.24,
+      "pickrate": 0.37,
+      "bans": 223,
+      "banrate": 0.99
+    },
+    {
+      "champion": "Fiora",
+      "role": "BOTTOM",
+      "games": 108,
+      "wins": 64,
+      "winrate": 59.26,
+      "pickrate": 0.96,
+      "bans": 1001,
+      "banrate": 4.46
+    },
+    {
+      "champion": "Fiora",
+      "role": "MIDDLE",
+      "games": 11,
+      "wins": 3,
+      "winrate": 27.27,
+      "pickrate": 0.1,
+      "bans": 1001,
+      "banrate": 4.46
+    },
+    {
+      "champion": "Fiora",
+      "role": "TOP",
+      "games": 331,
+      "wins": 191,
+      "winrate": 57.7,
+      "pickrate": 2.95,
+      "bans": 1001,
+      "banrate": 4.46
+    },
+    {
+      "champion": "Fiora",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 1001,
+      "banrate": 4.46
+    },
+    {
+      "champion": "Fizz",
+      "role": "BOTTOM",
+      "games": 10,
+      "wins": 4,
+      "winrate": 40.0,
+      "pickrate": 0.09,
+      "bans": 137,
+      "banrate": 0.61
+    },
+    {
+      "champion": "Fizz",
+      "role": "JUNGLE",
+      "games": 53,
+      "wins": 26,
+      "winrate": 49.06,
+      "pickrate": 0.47,
+      "bans": 137,
+      "banrate": 0.61
+    },
+    {
+      "champion": "Fizz",
+      "role": "MIDDLE",
+      "games": 219,
+      "wins": 116,
+      "winrate": 52.97,
+      "pickrate": 1.95,
+      "bans": 137,
+      "banrate": 0.61
+    },
+    {
+      "champion": "Fizz",
+      "role": "TOP",
+      "games": 20,
+      "wins": 9,
+      "winrate": 45.0,
+      "pickrate": 0.18,
+      "bans": 137,
+      "banrate": 0.61
+    },
+    {
+      "champion": "Fizz",
+      "role": "UTILITY",
+      "games": 4,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.04,
+      "bans": 137,
+      "banrate": 0.61
+    },
+    {
+      "champion": "Galio",
+      "role": "BOTTOM",
+      "games": 11,
+      "wins": 1,
+      "winrate": 9.09,
+      "pickrate": 0.1,
+      "bans": 364,
+      "banrate": 1.62
+    },
+    {
+      "champion": "Galio",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 364,
+      "banrate": 1.62
+    },
+    {
+      "champion": "Galio",
+      "role": "MIDDLE",
+      "games": 529,
+      "wins": 277,
+      "winrate": 52.36,
+      "pickrate": 4.71,
+      "bans": 364,
+      "banrate": 1.62
+    },
+    {
+      "champion": "Galio",
+      "role": "TOP",
+      "games": 33,
+      "wins": 19,
+      "winrate": 57.58,
+      "pickrate": 0.29,
+      "bans": 364,
+      "banrate": 1.62
+    },
+    {
+      "champion": "Galio",
+      "role": "UTILITY",
+      "games": 161,
+      "wins": 88,
+      "winrate": 54.66,
+      "pickrate": 1.43,
+      "bans": 364,
+      "banrate": 1.62
+    },
+    {
+      "champion": "Gangplank",
+      "role": "MIDDLE",
+      "games": 43,
+      "wins": 20,
+      "winrate": 46.51,
+      "pickrate": 0.38,
+      "bans": 92,
+      "banrate": 0.41
+    },
+    {
+      "champion": "Gangplank",
+      "role": "TOP",
+      "games": 415,
+      "wins": 221,
+      "winrate": 53.25,
+      "pickrate": 3.7,
+      "bans": 92,
+      "banrate": 0.41
+    },
+    {
+      "champion": "Gangplank",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 92,
+      "banrate": 0.41
+    },
+    {
+      "champion": "Garen",
+      "role": "BOTTOM",
+      "games": 4,
+      "wins": 1,
+      "winrate": 25.0,
+      "pickrate": 0.04,
+      "bans": 93,
+      "banrate": 0.41
+    },
+    {
+      "champion": "Garen",
+      "role": "MIDDLE",
+      "games": 54,
+      "wins": 36,
+      "winrate": 66.67,
+      "pickrate": 0.48,
+      "bans": 93,
+      "banrate": 0.41
+    },
+    {
+      "champion": "Garen",
+      "role": "TOP",
+      "games": 315,
+      "wins": 152,
+      "winrate": 48.25,
+      "pickrate": 2.81,
+      "bans": 93,
+      "banrate": 0.41
+    },
+    {
+      "champion": "Gnar",
+      "role": "JUNGLE",
+      "games": 5,
+      "wins": 1,
+      "winrate": 20.0,
+      "pickrate": 0.04,
+      "bans": 71,
+      "banrate": 0.32
+    },
+    {
+      "champion": "Gnar",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 71,
+      "banrate": 0.32
+    },
+    {
+      "champion": "Gnar",
+      "role": "TOP",
+      "games": 529,
+      "wins": 247,
+      "winrate": 46.69,
+      "pickrate": 4.71,
+      "bans": 71,
+      "banrate": 0.32
+    },
+    {
+      "champion": "Gragas",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 37,
+      "banrate": 0.16
+    },
+    {
+      "champion": "Gragas",
+      "role": "JUNGLE",
+      "games": 38,
+      "wins": 23,
+      "winrate": 60.53,
+      "pickrate": 0.34,
+      "bans": 37,
+      "banrate": 0.16
+    },
+    {
+      "champion": "Gragas",
+      "role": "MIDDLE",
+      "games": 71,
+      "wins": 39,
+      "winrate": 54.93,
+      "pickrate": 0.63,
+      "bans": 37,
+      "banrate": 0.16
+    },
+    {
+      "champion": "Gragas",
+      "role": "TOP",
+      "games": 306,
+      "wins": 163,
+      "winrate": 53.27,
+      "pickrate": 2.73,
+      "bans": 37,
+      "banrate": 0.16
+    },
+    {
+      "champion": "Gragas",
+      "role": "UTILITY",
+      "games": 25,
+      "wins": 11,
+      "winrate": 44.0,
+      "pickrate": 0.22,
+      "bans": 37,
+      "banrate": 0.16
+    },
+    {
+      "champion": "Graves",
+      "role": "JUNGLE",
+      "games": 1204,
+      "wins": 600,
+      "winrate": 49.83,
+      "pickrate": 10.73,
+      "bans": 1922,
+      "banrate": 8.56
+    },
+    {
+      "champion": "Graves",
+      "role": "MIDDLE",
+      "games": 17,
+      "wins": 10,
+      "winrate": 58.82,
+      "pickrate": 0.15,
+      "bans": 1922,
+      "banrate": 8.56
+    },
+    {
+      "champion": "Graves",
+      "role": "TOP",
+      "games": 11,
+      "wins": 5,
+      "winrate": 45.45,
+      "pickrate": 0.1,
+      "bans": 1922,
+      "banrate": 8.56
+    },
+    {
+      "champion": "Gwen",
+      "role": "BOTTOM",
+      "games": 21,
+      "wins": 9,
+      "winrate": 42.86,
+      "pickrate": 0.19,
+      "bans": 338,
+      "banrate": 1.51
+    },
+    {
+      "champion": "Gwen",
+      "role": "JUNGLE",
+      "games": 63,
+      "wins": 35,
+      "winrate": 55.56,
+      "pickrate": 0.56,
+      "bans": 338,
+      "banrate": 1.51
+    },
+    {
+      "champion": "Gwen",
+      "role": "MIDDLE",
+      "games": 158,
+      "wins": 88,
+      "winrate": 55.7,
+      "pickrate": 1.41,
+      "bans": 338,
+      "banrate": 1.51
+    },
+    {
+      "champion": "Gwen",
+      "role": "TOP",
+      "games": 276,
+      "wins": 136,
+      "winrate": 49.28,
+      "pickrate": 2.46,
+      "bans": 338,
+      "banrate": 1.51
+    },
+    {
+      "champion": "Gwen",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 338,
+      "banrate": 1.51
+    },
+    {
+      "champion": "Hecarim",
+      "role": "JUNGLE",
+      "games": 822,
+      "wins": 419,
+      "winrate": 50.97,
+      "pickrate": 7.32,
+      "bans": 1788,
+      "banrate": 7.97
+    },
+    {
+      "champion": "Heimerdinger",
+      "role": "BOTTOM",
+      "games": 147,
+      "wins": 83,
+      "winrate": 56.46,
+      "pickrate": 1.31,
+      "bans": 38,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Heimerdinger",
+      "role": "MIDDLE",
+      "games": 84,
+      "wins": 42,
+      "winrate": 50.0,
+      "pickrate": 0.75,
+      "bans": 38,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Heimerdinger",
+      "role": "TOP",
+      "games": 85,
+      "wins": 46,
+      "winrate": 54.12,
+      "pickrate": 0.76,
+      "bans": 38,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Heimerdinger",
+      "role": "UTILITY",
+      "games": 11,
+      "wins": 2,
+      "winrate": 18.18,
+      "pickrate": 0.1,
+      "bans": 38,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Hwei",
+      "role": "BOTTOM",
+      "games": 320,
+      "wins": 160,
+      "winrate": 50.0,
+      "pickrate": 2.85,
+      "bans": 201,
+      "banrate": 0.9
+    },
+    {
+      "champion": "Hwei",
+      "role": "MIDDLE",
+      "games": 411,
+      "wins": 202,
+      "winrate": 49.15,
+      "pickrate": 3.66,
+      "bans": 201,
+      "banrate": 0.9
+    },
+    {
+      "champion": "Hwei",
+      "role": "TOP",
+      "games": 25,
+      "wins": 13,
+      "winrate": 52.0,
+      "pickrate": 0.22,
+      "bans": 201,
+      "banrate": 0.9
+    },
+    {
+      "champion": "Hwei",
+      "role": "UTILITY",
+      "games": 33,
+      "wins": 16,
+      "winrate": 48.48,
+      "pickrate": 0.29,
+      "bans": 201,
+      "banrate": 0.9
+    },
+    {
+      "champion": "Illaoi",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 68,
+      "banrate": 0.3
+    },
+    {
+      "champion": "Illaoi",
+      "role": "MIDDLE",
+      "games": 16,
+      "wins": 5,
+      "winrate": 31.25,
+      "pickrate": 0.14,
+      "bans": 68,
+      "banrate": 0.3
+    },
+    {
+      "champion": "Illaoi",
+      "role": "TOP",
+      "games": 150,
+      "wins": 70,
+      "winrate": 46.67,
+      "pickrate": 1.34,
+      "bans": 68,
+      "banrate": 0.3
+    },
+    {
+      "champion": "Irelia",
+      "role": "BOTTOM",
+      "games": 35,
+      "wins": 19,
+      "winrate": 54.29,
+      "pickrate": 0.31,
+      "bans": 967,
+      "banrate": 4.31
+    },
+    {
+      "champion": "Irelia",
+      "role": "MIDDLE",
+      "games": 223,
+      "wins": 93,
+      "winrate": 41.7,
+      "pickrate": 1.99,
+      "bans": 967,
+      "banrate": 4.31
+    },
+    {
+      "champion": "Irelia",
+      "role": "TOP",
+      "games": 358,
+      "wins": 173,
+      "winrate": 48.32,
+      "pickrate": 3.19,
+      "bans": 967,
+      "banrate": 4.31
+    },
+    {
+      "champion": "Irelia",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 967,
+      "banrate": 4.31
+    },
+    {
+      "champion": "Ivern",
+      "role": "JUNGLE",
+      "games": 241,
+      "wins": 122,
+      "winrate": 50.62,
+      "pickrate": 2.15,
+      "bans": 55,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Ivern",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 55,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Ivern",
+      "role": "TOP",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 55,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Ivern",
+      "role": "UTILITY",
+      "games": 5,
+      "wins": 2,
+      "winrate": 40.0,
+      "pickrate": 0.04,
+      "bans": 55,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Janna",
+      "role": "MIDDLE",
+      "games": 3,
+      "wins": 2,
+      "winrate": 66.67,
+      "pickrate": 0.03,
+      "bans": 503,
+      "banrate": 2.24
+    },
+    {
+      "champion": "Janna",
+      "role": "TOP",
+      "games": 8,
+      "wins": 5,
+      "winrate": 62.5,
+      "pickrate": 0.07,
+      "bans": 503,
+      "banrate": 2.24
+    },
+    {
+      "champion": "Janna",
+      "role": "UTILITY",
+      "games": 1310,
+      "wins": 668,
+      "winrate": 50.99,
+      "pickrate": 11.67,
+      "bans": 503,
+      "banrate": 2.24
+    },
+    {
+      "champion": "JarvanIV",
+      "role": "BOTTOM",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 291,
+      "banrate": 1.3
+    },
+    {
+      "champion": "JarvanIV",
+      "role": "JUNGLE",
+      "games": 913,
+      "wins": 452,
+      "winrate": 49.51,
+      "pickrate": 8.14,
+      "bans": 291,
+      "banrate": 1.3
+    },
+    {
+      "champion": "JarvanIV",
+      "role": "MIDDLE",
+      "games": 5,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.04,
+      "bans": 291,
+      "banrate": 1.3
+    },
+    {
+      "champion": "JarvanIV",
+      "role": "TOP",
+      "games": 16,
+      "wins": 7,
+      "winrate": 43.75,
+      "pickrate": 0.14,
+      "bans": 291,
+      "banrate": 1.3
+    },
+    {
+      "champion": "JarvanIV",
+      "role": "UTILITY",
+      "games": 18,
+      "wins": 12,
+      "winrate": 66.67,
+      "pickrate": 0.16,
+      "bans": 291,
+      "banrate": 1.3
+    },
+    {
+      "champion": "Jax",
+      "role": "BOTTOM",
+      "games": 68,
+      "wins": 37,
+      "winrate": 54.41,
+      "pickrate": 0.61,
+      "bans": 1619,
+      "banrate": 7.21
+    },
+    {
+      "champion": "Jax",
+      "role": "JUNGLE",
+      "games": 33,
+      "wins": 13,
+      "winrate": 39.39,
+      "pickrate": 0.29,
+      "bans": 1619,
+      "banrate": 7.21
+    },
+    {
+      "champion": "Jax",
+      "role": "MIDDLE",
+      "games": 34,
+      "wins": 16,
+      "winrate": 47.06,
+      "pickrate": 0.3,
+      "bans": 1619,
+      "banrate": 7.21
+    },
+    {
+      "champion": "Jax",
+      "role": "TOP",
+      "games": 586,
+      "wins": 308,
+      "winrate": 52.56,
+      "pickrate": 5.22,
+      "bans": 1619,
+      "banrate": 7.21
+    },
+    {
+      "champion": "Jax",
+      "role": "UTILITY",
+      "games": 22,
+      "wins": 13,
+      "winrate": 59.09,
+      "pickrate": 0.2,
+      "bans": 1619,
+      "banrate": 7.21
+    },
+    {
+      "champion": "Jayce",
+      "role": "BOTTOM",
+      "games": 25,
+      "wins": 13,
+      "winrate": 52.0,
+      "pickrate": 0.22,
+      "bans": 3396,
+      "banrate": 15.13
+    },
+    {
+      "champion": "Jayce",
+      "role": "JUNGLE",
+      "games": 226,
+      "wins": 101,
+      "winrate": 44.69,
+      "pickrate": 2.01,
+      "bans": 3396,
+      "banrate": 15.13
+    },
+    {
+      "champion": "Jayce",
+      "role": "MIDDLE",
+      "games": 303,
+      "wins": 169,
+      "winrate": 55.78,
+      "pickrate": 2.7,
+      "bans": 3396,
+      "banrate": 15.13
+    },
+    {
+      "champion": "Jayce",
+      "role": "TOP",
+      "games": 1056,
+      "wins": 509,
+      "winrate": 48.2,
+      "pickrate": 9.41,
+      "bans": 3396,
+      "banrate": 15.13
+    },
+    {
+      "champion": "Jayce",
+      "role": "UTILITY",
+      "games": 4,
+      "wins": 1,
+      "winrate": 25.0,
+      "pickrate": 0.04,
+      "bans": 3396,
+      "banrate": 15.13
+    },
+    {
+      "champion": "Jhin",
+      "role": "BOTTOM",
+      "games": 1452,
+      "wins": 704,
+      "winrate": 48.48,
+      "pickrate": 12.94,
+      "bans": 34,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Jhin",
+      "role": "JUNGLE",
+      "games": 21,
+      "wins": 10,
+      "winrate": 47.62,
+      "pickrate": 0.19,
+      "bans": 34,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Jhin",
+      "role": "MIDDLE",
+      "games": 8,
+      "wins": 2,
+      "winrate": 25.0,
+      "pickrate": 0.07,
+      "bans": 34,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Jhin",
+      "role": "TOP",
+      "games": 11,
+      "wins": 5,
+      "winrate": 45.45,
+      "pickrate": 0.1,
+      "bans": 34,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Jhin",
+      "role": "UTILITY",
+      "games": 5,
+      "wins": 1,
+      "winrate": 20.0,
+      "pickrate": 0.04,
+      "bans": 34,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Jinx",
+      "role": "BOTTOM",
+      "games": 711,
+      "wins": 363,
+      "winrate": 51.05,
+      "pickrate": 6.34,
+      "bans": 31,
+      "banrate": 0.14
+    },
+    {
+      "champion": "KSante",
+      "role": "BOTTOM",
+      "games": 5,
+      "wins": 2,
+      "winrate": 40.0,
+      "pickrate": 0.04,
+      "bans": 327,
+      "banrate": 1.46
+    },
+    {
+      "champion": "KSante",
+      "role": "JUNGLE",
+      "games": 4,
+      "wins": 1,
+      "winrate": 25.0,
+      "pickrate": 0.04,
+      "bans": 327,
+      "banrate": 1.46
+    },
+    {
+      "champion": "KSante",
+      "role": "MIDDLE",
+      "games": 21,
+      "wins": 14,
+      "winrate": 66.67,
+      "pickrate": 0.19,
+      "bans": 327,
+      "banrate": 1.46
+    },
+    {
+      "champion": "KSante",
+      "role": "TOP",
+      "games": 512,
+      "wins": 244,
+      "winrate": 47.66,
+      "pickrate": 4.56,
+      "bans": 327,
+      "banrate": 1.46
+    },
+    {
+      "champion": "KSante",
+      "role": "UTILITY",
+      "games": 21,
+      "wins": 11,
+      "winrate": 52.38,
+      "pickrate": 0.19,
+      "bans": 327,
+      "banrate": 1.46
+    },
+    {
+      "champion": "Kaisa",
+      "role": "BOTTOM",
+      "games": 1421,
+      "wins": 688,
+      "winrate": 48.42,
+      "pickrate": 12.66,
+      "bans": 134,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Kaisa",
+      "role": "JUNGLE",
+      "games": 6,
+      "wins": 2,
+      "winrate": 33.33,
+      "pickrate": 0.05,
+      "bans": 134,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Kaisa",
+      "role": "MIDDLE",
+      "games": 16,
+      "wins": 10,
+      "winrate": 62.5,
+      "pickrate": 0.14,
+      "bans": 134,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Kaisa",
+      "role": "TOP",
+      "games": 23,
+      "wins": 8,
+      "winrate": 34.78,
+      "pickrate": 0.2,
+      "bans": 134,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Kalista",
+      "role": "BOTTOM",
+      "games": 657,
+      "wins": 343,
+      "winrate": 52.21,
+      "pickrate": 5.85,
+      "bans": 274,
+      "banrate": 1.22
+    },
+    {
+      "champion": "Kalista",
+      "role": "MIDDLE",
+      "games": 56,
+      "wins": 28,
+      "winrate": 50.0,
+      "pickrate": 0.5,
+      "bans": 274,
+      "banrate": 1.22
+    },
+    {
+      "champion": "Kalista",
+      "role": "TOP",
+      "games": 41,
+      "wins": 23,
+      "winrate": 56.1,
+      "pickrate": 0.37,
+      "bans": 274,
+      "banrate": 1.22
+    },
+    {
+      "champion": "Kalista",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 274,
+      "banrate": 1.22
+    },
+    {
+      "champion": "Karma",
+      "role": "BOTTOM",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50.0,
+      "pickrate": 0.04,
+      "bans": 436,
+      "banrate": 1.94
+    },
+    {
+      "champion": "Karma",
+      "role": "MIDDLE",
+      "games": 30,
+      "wins": 16,
+      "winrate": 53.33,
+      "pickrate": 0.27,
+      "bans": 436,
+      "banrate": 1.94
+    },
+    {
+      "champion": "Karma",
+      "role": "TOP",
+      "games": 41,
+      "wins": 17,
+      "winrate": 41.46,
+      "pickrate": 0.37,
+      "bans": 436,
+      "banrate": 1.94
+    },
+    {
+      "champion": "Karma",
+      "role": "UTILITY",
+      "games": 836,
+      "wins": 395,
+      "winrate": 47.25,
+      "pickrate": 7.45,
+      "bans": 436,
+      "banrate": 1.94
+    },
+    {
+      "champion": "Karthus",
+      "role": "BOTTOM",
+      "games": 240,
+      "wins": 126,
+      "winrate": 52.5,
+      "pickrate": 2.14,
+      "bans": 210,
+      "banrate": 0.94
+    },
+    {
+      "champion": "Karthus",
+      "role": "JUNGLE",
+      "games": 254,
+      "wins": 127,
+      "winrate": 50.0,
+      "pickrate": 2.26,
+      "bans": 210,
+      "banrate": 0.94
+    },
+    {
+      "champion": "Karthus",
+      "role": "MIDDLE",
+      "games": 77,
+      "wins": 46,
+      "winrate": 59.74,
+      "pickrate": 0.69,
+      "bans": 210,
+      "banrate": 0.94
+    },
+    {
+      "champion": "Karthus",
+      "role": "TOP",
+      "games": 25,
+      "wins": 16,
+      "winrate": 64.0,
+      "pickrate": 0.22,
+      "bans": 210,
+      "banrate": 0.94
+    },
+    {
+      "champion": "Karthus",
+      "role": "UTILITY",
+      "games": 8,
+      "wins": 2,
+      "winrate": 25.0,
+      "pickrate": 0.07,
+      "bans": 210,
+      "banrate": 0.94
+    },
+    {
+      "champion": "Kassadin",
+      "role": "BOTTOM",
+      "games": 5,
+      "wins": 2,
+      "winrate": 40.0,
+      "pickrate": 0.04,
+      "bans": 353,
+      "banrate": 1.57
+    },
+    {
+      "champion": "Kassadin",
+      "role": "MIDDLE",
+      "games": 360,
+      "wins": 180,
+      "winrate": 50.0,
+      "pickrate": 3.21,
+      "bans": 353,
+      "banrate": 1.57
+    },
+    {
+      "champion": "Kassadin",
+      "role": "TOP",
+      "games": 22,
+      "wins": 11,
+      "winrate": 50.0,
+      "pickrate": 0.2,
+      "bans": 353,
+      "banrate": 1.57
+    },
+    {
+      "champion": "Katarina",
+      "role": "BOTTOM",
+      "games": 130,
+      "wins": 72,
+      "winrate": 55.38,
+      "pickrate": 1.16,
+      "bans": 2996,
+      "banrate": 13.35
+    },
+    {
+      "champion": "Katarina",
+      "role": "MIDDLE",
+      "games": 578,
+      "wins": 288,
+      "winrate": 49.83,
+      "pickrate": 5.15,
+      "bans": 2996,
+      "banrate": 13.35
+    },
+    {
+      "champion": "Katarina",
+      "role": "TOP",
+      "games": 29,
+      "wins": 11,
+      "winrate": 37.93,
+      "pickrate": 0.26,
+      "bans": 2996,
+      "banrate": 13.35
+    },
+    {
+      "champion": "Katarina",
+      "role": "UTILITY",
+      "games": 5,
+      "wins": 3,
+      "winrate": 60.0,
+      "pickrate": 0.04,
+      "bans": 2996,
+      "banrate": 13.35
+    },
+    {
+      "champion": "Kayle",
+      "role": "BOTTOM",
+      "games": 10,
+      "wins": 3,
+      "winrate": 30.0,
+      "pickrate": 0.09,
+      "bans": 61,
+      "banrate": 0.27
+    },
+    {
+      "champion": "Kayle",
+      "role": "JUNGLE",
+      "games": 7,
+      "wins": 3,
+      "winrate": 42.86,
+      "pickrate": 0.06,
+      "bans": 61,
+      "banrate": 0.27
+    },
+    {
+      "champion": "Kayle",
+      "role": "MIDDLE",
+      "games": 93,
+      "wins": 46,
+      "winrate": 49.46,
+      "pickrate": 0.83,
+      "bans": 61,
+      "banrate": 0.27
+    },
+    {
+      "champion": "Kayle",
+      "role": "TOP",
+      "games": 113,
+      "wins": 53,
+      "winrate": 46.9,
+      "pickrate": 1.01,
+      "bans": 61,
+      "banrate": 0.27
+    },
+    {
+      "champion": "Kayn",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 39,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Kayn",
+      "role": "JUNGLE",
+      "games": 282,
+      "wins": 133,
+      "winrate": 47.16,
+      "pickrate": 2.51,
+      "bans": 39,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Kayn",
+      "role": "TOP",
+      "games": 9,
+      "wins": 1,
+      "winrate": 11.11,
+      "pickrate": 0.08,
+      "bans": 39,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Kayn",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 39,
+      "banrate": 0.17
+    },
+    {
+      "champion": "Kennen",
+      "role": "BOTTOM",
+      "games": 7,
+      "wins": 2,
+      "winrate": 28.57,
+      "pickrate": 0.06,
+      "bans": 89,
+      "banrate": 0.4
+    },
+    {
+      "champion": "Kennen",
+      "role": "MIDDLE",
+      "games": 39,
+      "wins": 18,
+      "winrate": 46.15,
+      "pickrate": 0.35,
+      "bans": 89,
+      "banrate": 0.4
+    },
+    {
+      "champion": "Kennen",
+      "role": "TOP",
+      "games": 219,
+      "wins": 112,
+      "winrate": 51.14,
+      "pickrate": 1.95,
+      "bans": 89,
+      "banrate": 0.4
+    },
+    {
+      "champion": "Kennen",
+      "role": "UTILITY",
+      "games": 5,
+      "wins": 4,
+      "winrate": 80.0,
+      "pickrate": 0.04,
+      "bans": 89,
+      "banrate": 0.4
+    },
+    {
+      "champion": "Khazix",
+      "role": "JUNGLE",
+      "games": 1037,
+      "wins": 507,
+      "winrate": 48.89,
+      "pickrate": 9.24,
+      "bans": 845,
+      "banrate": 3.76
+    },
+    {
+      "champion": "Kindred",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 69,
+      "banrate": 0.31
+    },
+    {
+      "champion": "Kindred",
+      "role": "JUNGLE",
+      "games": 277,
+      "wins": 135,
+      "winrate": 48.74,
+      "pickrate": 2.47,
+      "bans": 69,
+      "banrate": 0.31
+    },
+    {
+      "champion": "Kindred",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 69,
+      "banrate": 0.31
+    },
+    {
+      "champion": "Kled",
+      "role": "BOTTOM",
+      "games": 30,
+      "wins": 17,
+      "winrate": 56.67,
+      "pickrate": 0.27,
+      "bans": 55,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Kled",
+      "role": "MIDDLE",
+      "games": 26,
+      "wins": 11,
+      "winrate": 42.31,
+      "pickrate": 0.23,
+      "bans": 55,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Kled",
+      "role": "TOP",
+      "games": 336,
+      "wins": 175,
+      "winrate": 52.08,
+      "pickrate": 2.99,
+      "bans": 55,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Kled",
+      "role": "UTILITY",
+      "games": 4,
+      "wins": 1,
+      "winrate": 25.0,
+      "pickrate": 0.04,
+      "bans": 55,
+      "banrate": 0.25
+    },
+    {
+      "champion": "KogMaw",
+      "role": "BOTTOM",
+      "games": 248,
+      "wins": 126,
+      "winrate": 50.81,
+      "pickrate": 2.21,
+      "bans": 13,
+      "banrate": 0.06
+    },
+    {
+      "champion": "KogMaw",
+      "role": "MIDDLE",
+      "games": 65,
+      "wins": 34,
+      "winrate": 52.31,
+      "pickrate": 0.58,
+      "bans": 13,
+      "banrate": 0.06
+    },
+    {
+      "champion": "KogMaw",
+      "role": "TOP",
+      "games": 28,
+      "wins": 11,
+      "winrate": 39.29,
+      "pickrate": 0.25,
+      "bans": 13,
+      "banrate": 0.06
+    },
+    {
+      "champion": "KogMaw",
+      "role": "UTILITY",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 13,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Leblanc",
+      "role": "BOTTOM",
+      "games": 9,
+      "wins": 7,
+      "winrate": 77.78,
+      "pickrate": 0.08,
+      "bans": 2248,
+      "banrate": 10.02
+    },
+    {
+      "champion": "Leblanc",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 2248,
+      "banrate": 10.02
+    },
+    {
+      "champion": "Leblanc",
+      "role": "MIDDLE",
+      "games": 505,
+      "wins": 262,
+      "winrate": 51.88,
+      "pickrate": 4.5,
+      "bans": 2248,
+      "banrate": 10.02
+    },
+    {
+      "champion": "Leblanc",
+      "role": "TOP",
+      "games": 40,
+      "wins": 19,
+      "winrate": 47.5,
+      "pickrate": 0.36,
+      "bans": 2248,
+      "banrate": 10.02
+    },
+    {
+      "champion": "Leblanc",
+      "role": "UTILITY",
+      "games": 105,
+      "wins": 53,
+      "winrate": 50.48,
+      "pickrate": 0.94,
+      "bans": 2248,
+      "banrate": 10.02
+    },
+    {
+      "champion": "LeeSin",
+      "role": "BOTTOM",
+      "games": 5,
+      "wins": 2,
+      "winrate": 40.0,
+      "pickrate": 0.04,
+      "bans": 1352,
+      "banrate": 6.02
+    },
+    {
+      "champion": "LeeSin",
+      "role": "JUNGLE",
+      "games": 1589,
+      "wins": 813,
+      "winrate": 51.16,
+      "pickrate": 14.16,
+      "bans": 1352,
+      "banrate": 6.02
+    },
+    {
+      "champion": "LeeSin",
+      "role": "MIDDLE",
+      "games": 30,
+      "wins": 11,
+      "winrate": 36.67,
+      "pickrate": 0.27,
+      "bans": 1352,
+      "banrate": 6.02
+    },
+    {
+      "champion": "LeeSin",
+      "role": "TOP",
+      "games": 36,
+      "wins": 17,
+      "winrate": 47.22,
+      "pickrate": 0.32,
+      "bans": 1352,
+      "banrate": 6.02
+    },
+    {
+      "champion": "LeeSin",
+      "role": "UTILITY",
+      "games": 14,
+      "wins": 8,
+      "winrate": 57.14,
+      "pickrate": 0.12,
+      "bans": 1352,
+      "banrate": 6.02
+    },
+    {
+      "champion": "Leona",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 393,
+      "banrate": 1.75
+    },
+    {
+      "champion": "Leona",
+      "role": "TOP",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 393,
+      "banrate": 1.75
+    },
+    {
+      "champion": "Leona",
+      "role": "UTILITY",
+      "games": 1103,
+      "wins": 560,
+      "winrate": 50.77,
+      "pickrate": 9.83,
+      "bans": 393,
+      "banrate": 1.75
+    },
+    {
+      "champion": "Lillia",
+      "role": "JUNGLE",
+      "games": 198,
+      "wins": 91,
+      "winrate": 45.96,
+      "pickrate": 1.76,
+      "bans": 64,
+      "banrate": 0.29
+    },
+    {
+      "champion": "Lissandra",
+      "role": "BOTTOM",
+      "games": 9,
+      "wins": 4,
+      "winrate": 44.44,
+      "pickrate": 0.08,
+      "bans": 61,
+      "banrate": 0.27
+    },
+    {
+      "champion": "Lissandra",
+      "role": "MIDDLE",
+      "games": 305,
+      "wins": 164,
+      "winrate": 53.77,
+      "pickrate": 2.72,
+      "bans": 61,
+      "banrate": 0.27
+    },
+    {
+      "champion": "Lissandra",
+      "role": "TOP",
+      "games": 49,
+      "wins": 33,
+      "winrate": 67.35,
+      "pickrate": 0.44,
+      "bans": 61,
+      "banrate": 0.27
+    },
+    {
+      "champion": "Lissandra",
+      "role": "UTILITY",
+      "games": 16,
+      "wins": 9,
+      "winrate": 56.25,
+      "pickrate": 0.14,
+      "bans": 61,
+      "banrate": 0.27
+    },
+    {
+      "champion": "Locke",
+      "role": "BOTTOM",
+      "games": 85,
+      "wins": 28,
+      "winrate": 32.94,
+      "pickrate": 0.76,
+      "bans": 7630,
+      "banrate": 34.0
+    },
+    {
+      "champion": "Locke",
+      "role": "JUNGLE",
+      "games": 130,
+      "wins": 57,
+      "winrate": 43.85,
+      "pickrate": 1.16,
+      "bans": 7630,
+      "banrate": 34.0
+    },
+    {
+      "champion": "Locke",
+      "role": "MIDDLE",
+      "games": 959,
+      "wins": 452,
+      "winrate": 47.13,
+      "pickrate": 8.55,
+      "bans": 7630,
+      "banrate": 34.0
+    },
+    {
+      "champion": "Locke",
+      "role": "TOP",
+      "games": 95,
+      "wins": 50,
+      "winrate": 52.63,
+      "pickrate": 0.85,
+      "bans": 7630,
+      "banrate": 34.0
+    },
+    {
+      "champion": "Locke",
+      "role": "UTILITY",
+      "games": 30,
+      "wins": 19,
+      "winrate": 63.33,
+      "pickrate": 0.27,
+      "bans": 7630,
+      "banrate": 34.0
+    },
+    {
+      "champion": "Lucian",
+      "role": "BOTTOM",
+      "games": 667,
+      "wins": 344,
+      "winrate": 51.57,
+      "pickrate": 5.94,
+      "bans": 41,
+      "banrate": 0.18
+    },
+    {
+      "champion": "Lucian",
+      "role": "JUNGLE",
+      "games": 3,
+      "wins": 2,
+      "winrate": 66.67,
+      "pickrate": 0.03,
+      "bans": 41,
+      "banrate": 0.18
+    },
+    {
+      "champion": "Lucian",
+      "role": "MIDDLE",
+      "games": 28,
+      "wins": 11,
+      "winrate": 39.29,
+      "pickrate": 0.25,
+      "bans": 41,
+      "banrate": 0.18
+    },
+    {
+      "champion": "Lucian",
+      "role": "TOP",
+      "games": 18,
+      "wins": 8,
+      "winrate": 44.44,
+      "pickrate": 0.16,
+      "bans": 41,
+      "banrate": 0.18
+    },
+    {
+      "champion": "Lulu",
+      "role": "MIDDLE",
+      "games": 16,
+      "wins": 9,
+      "winrate": 56.25,
+      "pickrate": 0.14,
+      "bans": 395,
+      "banrate": 1.76
+    },
+    {
+      "champion": "Lulu",
+      "role": "TOP",
+      "games": 15,
+      "wins": 8,
+      "winrate": 53.33,
+      "pickrate": 0.13,
+      "bans": 395,
+      "banrate": 1.76
+    },
+    {
+      "champion": "Lulu",
+      "role": "UTILITY",
+      "games": 1066,
+      "wins": 547,
+      "winrate": 51.31,
+      "pickrate": 9.5,
+      "bans": 395,
+      "banrate": 1.76
+    },
+    {
+      "champion": "Lux",
+      "role": "BOTTOM",
+      "games": 172,
+      "wins": 75,
+      "winrate": 43.6,
+      "pickrate": 1.53,
+      "bans": 25,
+      "banrate": 0.11
+    },
+    {
+      "champion": "Lux",
+      "role": "MIDDLE",
+      "games": 170,
+      "wins": 82,
+      "winrate": 48.24,
+      "pickrate": 1.51,
+      "bans": 25,
+      "banrate": 0.11
+    },
+    {
+      "champion": "Lux",
+      "role": "TOP",
+      "games": 7,
+      "wins": 4,
+      "winrate": 57.14,
+      "pickrate": 0.06,
+      "bans": 25,
+      "banrate": 0.11
+    },
+    {
+      "champion": "Lux",
+      "role": "UTILITY",
+      "games": 200,
+      "wins": 102,
+      "winrate": 51.0,
+      "pickrate": 1.78,
+      "bans": 25,
+      "banrate": 0.11
+    },
+    {
+      "champion": "Malphite",
+      "role": "BOTTOM",
+      "games": 10,
+      "wins": 4,
+      "winrate": 40.0,
+      "pickrate": 0.09,
+      "bans": 1212,
+      "banrate": 5.4
+    },
+    {
+      "champion": "Malphite",
+      "role": "JUNGLE",
+      "games": 41,
+      "wins": 16,
+      "winrate": 39.02,
+      "pickrate": 0.37,
+      "bans": 1212,
+      "banrate": 5.4
+    },
+    {
+      "champion": "Malphite",
+      "role": "MIDDLE",
+      "games": 38,
+      "wins": 20,
+      "winrate": 52.63,
+      "pickrate": 0.34,
+      "bans": 1212,
+      "banrate": 5.4
+    },
+    {
+      "champion": "Malphite",
+      "role": "TOP",
+      "games": 493,
+      "wins": 241,
+      "winrate": 48.88,
+      "pickrate": 4.39,
+      "bans": 1212,
+      "banrate": 5.4
+    },
+    {
+      "champion": "Malphite",
+      "role": "UTILITY",
+      "games": 3,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.03,
+      "bans": 1212,
+      "banrate": 5.4
+    },
+    {
+      "champion": "Malzahar",
+      "role": "BOTTOM",
+      "games": 11,
+      "wins": 7,
+      "winrate": 63.64,
+      "pickrate": 0.1,
+      "bans": 49,
+      "banrate": 0.22
+    },
+    {
+      "champion": "Malzahar",
+      "role": "MIDDLE",
+      "games": 115,
+      "wins": 45,
+      "winrate": 39.13,
+      "pickrate": 1.02,
+      "bans": 49,
+      "banrate": 0.22
+    },
+    {
+      "champion": "Malzahar",
+      "role": "TOP",
+      "games": 12,
+      "wins": 8,
+      "winrate": 66.67,
+      "pickrate": 0.11,
+      "bans": 49,
+      "banrate": 0.22
+    },
+    {
+      "champion": "Maokai",
+      "role": "BOTTOM",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 9,
+      "banrate": 0.04
+    },
+    {
+      "champion": "Maokai",
+      "role": "JUNGLE",
+      "games": 85,
+      "wins": 37,
+      "winrate": 43.53,
+      "pickrate": 0.76,
+      "bans": 9,
+      "banrate": 0.04
+    },
+    {
+      "champion": "Maokai",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 9,
+      "banrate": 0.04
+    },
+    {
+      "champion": "Maokai",
+      "role": "TOP",
+      "games": 26,
+      "wins": 15,
+      "winrate": 57.69,
+      "pickrate": 0.23,
+      "bans": 9,
+      "banrate": 0.04
+    },
+    {
+      "champion": "Maokai",
+      "role": "UTILITY",
+      "games": 101,
+      "wins": 55,
+      "winrate": 54.46,
+      "pickrate": 0.9,
+      "bans": 9,
+      "banrate": 0.04
+    },
+    {
+      "champion": "MasterYi",
+      "role": "BOTTOM",
+      "games": 14,
+      "wins": 4,
+      "winrate": 28.57,
+      "pickrate": 0.12,
+      "bans": 199,
+      "banrate": 0.89
+    },
+    {
+      "champion": "MasterYi",
+      "role": "JUNGLE",
+      "games": 139,
+      "wins": 71,
+      "winrate": 51.08,
+      "pickrate": 1.24,
+      "bans": 199,
+      "banrate": 0.89
+    },
+    {
+      "champion": "MasterYi",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 199,
+      "banrate": 0.89
+    },
+    {
+      "champion": "MasterYi",
+      "role": "TOP",
+      "games": 10,
+      "wins": 6,
+      "winrate": 60.0,
+      "pickrate": 0.09,
+      "bans": 199,
+      "banrate": 0.89
+    },
+    {
+      "champion": "Mel",
+      "role": "BOTTOM",
+      "games": 173,
+      "wins": 69,
+      "winrate": 39.88,
+      "pickrate": 1.54,
+      "bans": 1202,
+      "banrate": 5.36
+    },
+    {
+      "champion": "Mel",
+      "role": "MIDDLE",
+      "games": 145,
+      "wins": 72,
+      "winrate": 49.66,
+      "pickrate": 1.29,
+      "bans": 1202,
+      "banrate": 5.36
+    },
+    {
+      "champion": "Mel",
+      "role": "TOP",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50.0,
+      "pickrate": 0.04,
+      "bans": 1202,
+      "banrate": 5.36
+    },
+    {
+      "champion": "Mel",
+      "role": "UTILITY",
+      "games": 18,
+      "wins": 5,
+      "winrate": 27.78,
+      "pickrate": 0.16,
+      "bans": 1202,
+      "banrate": 5.36
+    },
+    {
+      "champion": "Milio",
+      "role": "UTILITY",
+      "games": 367,
+      "wins": 175,
+      "winrate": 47.68,
+      "pickrate": 3.27,
+      "bans": 87,
+      "banrate": 0.39
+    },
+    {
+      "champion": "MissFortune",
+      "role": "BOTTOM",
+      "games": 164,
+      "wins": 78,
+      "winrate": 47.56,
+      "pickrate": 1.46,
+      "bans": 2,
+      "banrate": 0.01
+    },
+    {
+      "champion": "MissFortune",
+      "role": "MIDDLE",
+      "games": 5,
+      "wins": 1,
+      "winrate": 20.0,
+      "pickrate": 0.04,
+      "bans": 2,
+      "banrate": 0.01
+    },
+    {
+      "champion": "MissFortune",
+      "role": "UTILITY",
+      "games": 3,
+      "wins": 2,
+      "winrate": 66.67,
+      "pickrate": 0.03,
+      "bans": 2,
+      "banrate": 0.01
+    },
+    {
+      "champion": "MonkeyKing",
+      "role": "JUNGLE",
+      "games": 608,
+      "wins": 312,
+      "winrate": 51.32,
+      "pickrate": 5.42,
+      "bans": 201,
+      "banrate": 0.9
+    },
+    {
+      "champion": "MonkeyKing",
+      "role": "MIDDLE",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50.0,
+      "pickrate": 0.04,
+      "bans": 201,
+      "banrate": 0.9
+    },
+    {
+      "champion": "MonkeyKing",
+      "role": "TOP",
+      "games": 50,
+      "wins": 25,
+      "winrate": 50.0,
+      "pickrate": 0.45,
+      "bans": 201,
+      "banrate": 0.9
+    },
+    {
+      "champion": "MonkeyKing",
+      "role": "UTILITY",
+      "games": 4,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.04,
+      "bans": 201,
+      "banrate": 0.9
+    },
+    {
+      "champion": "Mordekaiser",
+      "role": "BOTTOM",
+      "games": 3,
+      "wins": 3,
+      "winrate": 100.0,
+      "pickrate": 0.03,
+      "bans": 42,
+      "banrate": 0.19
+    },
+    {
+      "champion": "Mordekaiser",
+      "role": "JUNGLE",
+      "games": 51,
+      "wins": 26,
+      "winrate": 50.98,
+      "pickrate": 0.45,
+      "bans": 42,
+      "banrate": 0.19
+    },
+    {
+      "champion": "Mordekaiser",
+      "role": "MIDDLE",
+      "games": 31,
+      "wins": 14,
+      "winrate": 45.16,
+      "pickrate": 0.28,
+      "bans": 42,
+      "banrate": 0.19
+    },
+    {
+      "champion": "Mordekaiser",
+      "role": "TOP",
+      "games": 103,
+      "wins": 42,
+      "winrate": 40.78,
+      "pickrate": 0.92,
+      "bans": 42,
+      "banrate": 0.19
+    },
+    {
+      "champion": "Mordekaiser",
+      "role": "UTILITY",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 42,
+      "banrate": 0.19
+    },
+    {
+      "champion": "Morgana",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 46,
+      "banrate": 0.2
+    },
+    {
+      "champion": "Morgana",
+      "role": "JUNGLE",
+      "games": 65,
+      "wins": 36,
+      "winrate": 55.38,
+      "pickrate": 0.58,
+      "bans": 46,
+      "banrate": 0.2
+    },
+    {
+      "champion": "Morgana",
+      "role": "MIDDLE",
+      "games": 28,
+      "wins": 12,
+      "winrate": 42.86,
+      "pickrate": 0.25,
+      "bans": 46,
+      "banrate": 0.2
+    },
+    {
+      "champion": "Morgana",
+      "role": "TOP",
+      "games": 10,
+      "wins": 4,
+      "winrate": 40.0,
+      "pickrate": 0.09,
+      "bans": 46,
+      "banrate": 0.2
+    },
+    {
+      "champion": "Morgana",
+      "role": "UTILITY",
+      "games": 112,
+      "wins": 50,
+      "winrate": 44.64,
+      "pickrate": 1.0,
+      "bans": 46,
+      "banrate": 0.2
+    },
+    {
+      "champion": "Naafiri",
+      "role": "BOTTOM",
+      "games": 14,
+      "wins": 6,
+      "winrate": 42.86,
+      "pickrate": 0.12,
+      "bans": 1271,
+      "banrate": 5.66
+    },
+    {
+      "champion": "Naafiri",
+      "role": "JUNGLE",
+      "games": 540,
+      "wins": 265,
+      "winrate": 49.07,
+      "pickrate": 4.81,
+      "bans": 1271,
+      "banrate": 5.66
+    },
+    {
+      "champion": "Naafiri",
+      "role": "MIDDLE",
+      "games": 71,
+      "wins": 31,
+      "winrate": 43.66,
+      "pickrate": 0.63,
+      "bans": 1271,
+      "banrate": 5.66
+    },
+    {
+      "champion": "Naafiri",
+      "role": "TOP",
+      "games": 18,
+      "wins": 9,
+      "winrate": 50.0,
+      "pickrate": 0.16,
+      "bans": 1271,
+      "banrate": 5.66
+    },
+    {
+      "champion": "Naafiri",
+      "role": "UTILITY",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50.0,
+      "pickrate": 0.04,
+      "bans": 1271,
+      "banrate": 5.66
+    },
+    {
+      "champion": "Nami",
+      "role": "UTILITY",
+      "games": 654,
+      "wins": 330,
+      "winrate": 50.46,
+      "pickrate": 5.83,
+      "bans": 23,
+      "banrate": 0.1
+    },
+    {
+      "champion": "Nasus",
+      "role": "BOTTOM",
+      "games": 25,
+      "wins": 15,
+      "winrate": 60.0,
+      "pickrate": 0.22,
+      "bans": 2392,
+      "banrate": 10.66
+    },
+    {
+      "champion": "Nasus",
+      "role": "JUNGLE",
+      "games": 44,
+      "wins": 18,
+      "winrate": 40.91,
+      "pickrate": 0.39,
+      "bans": 2392,
+      "banrate": 10.66
+    },
+    {
+      "champion": "Nasus",
+      "role": "MIDDLE",
+      "games": 411,
+      "wins": 191,
+      "winrate": 46.47,
+      "pickrate": 3.66,
+      "bans": 2392,
+      "banrate": 10.66
+    },
+    {
+      "champion": "Nasus",
+      "role": "TOP",
+      "games": 861,
+      "wins": 444,
+      "winrate": 51.57,
+      "pickrate": 7.67,
+      "bans": 2392,
+      "banrate": 10.66
+    },
+    {
+      "champion": "Nasus",
+      "role": "UTILITY",
+      "games": 11,
+      "wins": 6,
+      "winrate": 54.55,
+      "pickrate": 0.1,
+      "bans": 2392,
+      "banrate": 10.66
+    },
+    {
+      "champion": "Nautilus",
+      "role": "JUNGLE",
+      "games": 16,
+      "wins": 13,
+      "winrate": 81.25,
+      "pickrate": 0.14,
+      "bans": 1023,
+      "banrate": 4.56
+    },
+    {
+      "champion": "Nautilus",
+      "role": "MIDDLE",
+      "games": 2,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.02,
+      "bans": 1023,
+      "banrate": 4.56
+    },
+    {
+      "champion": "Nautilus",
+      "role": "TOP",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 1023,
+      "banrate": 4.56
+    },
+    {
+      "champion": "Nautilus",
+      "role": "UTILITY",
+      "games": 1982,
+      "wins": 1022,
+      "winrate": 51.56,
+      "pickrate": 17.66,
+      "bans": 1023,
+      "banrate": 4.56
+    },
+    {
+      "champion": "Neeko",
+      "role": "BOTTOM",
+      "games": 29,
+      "wins": 22,
+      "winrate": 75.86,
+      "pickrate": 0.26,
+      "bans": 23,
+      "banrate": 0.1
+    },
+    {
+      "champion": "Neeko",
+      "role": "JUNGLE",
+      "games": 9,
+      "wins": 3,
+      "winrate": 33.33,
+      "pickrate": 0.08,
+      "bans": 23,
+      "banrate": 0.1
+    },
+    {
+      "champion": "Neeko",
+      "role": "MIDDLE",
+      "games": 101,
+      "wins": 45,
+      "winrate": 44.55,
+      "pickrate": 0.9,
+      "bans": 23,
+      "banrate": 0.1
+    },
+    {
+      "champion": "Neeko",
+      "role": "TOP",
+      "games": 19,
+      "wins": 11,
+      "winrate": 57.89,
+      "pickrate": 0.17,
+      "bans": 23,
+      "banrate": 0.1
+    },
+    {
+      "champion": "Neeko",
+      "role": "UTILITY",
+      "games": 189,
+      "wins": 91,
+      "winrate": 48.15,
+      "pickrate": 1.68,
+      "bans": 23,
+      "banrate": 0.1
+    },
+    {
+      "champion": "Nidalee",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 339,
+      "banrate": 1.51
+    },
+    {
+      "champion": "Nidalee",
+      "role": "JUNGLE",
+      "games": 802,
+      "wins": 440,
+      "winrate": 54.86,
+      "pickrate": 7.15,
+      "bans": 339,
+      "banrate": 1.51
+    },
+    {
+      "champion": "Nidalee",
+      "role": "MIDDLE",
+      "games": 23,
+      "wins": 11,
+      "winrate": 47.83,
+      "pickrate": 0.2,
+      "bans": 339,
+      "banrate": 1.51
+    },
+    {
+      "champion": "Nidalee",
+      "role": "TOP",
+      "games": 32,
+      "wins": 19,
+      "winrate": 59.38,
+      "pickrate": 0.29,
+      "bans": 339,
+      "banrate": 1.51
+    },
+    {
+      "champion": "Nidalee",
+      "role": "UTILITY",
+      "games": 27,
+      "wins": 11,
+      "winrate": 40.74,
+      "pickrate": 0.24,
+      "bans": 339,
+      "banrate": 1.51
+    },
+    {
+      "champion": "Nilah",
+      "role": "BOTTOM",
+      "games": 97,
+      "wins": 39,
+      "winrate": 40.21,
+      "pickrate": 0.86,
+      "bans": 57,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Nocturne",
+      "role": "JUNGLE",
+      "games": 478,
+      "wins": 234,
+      "winrate": 48.95,
+      "pickrate": 4.26,
+      "bans": 320,
+      "banrate": 1.43
+    },
+    {
+      "champion": "Nocturne",
+      "role": "MIDDLE",
+      "games": 5,
+      "wins": 4,
+      "winrate": 80.0,
+      "pickrate": 0.04,
+      "bans": 320,
+      "banrate": 1.43
+    },
+    {
+      "champion": "Nocturne",
+      "role": "TOP",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 320,
+      "banrate": 1.43
+    },
+    {
+      "champion": "Nunu",
+      "role": "JUNGLE",
+      "games": 406,
+      "wins": 215,
+      "winrate": 52.96,
+      "pickrate": 3.62,
+      "bans": 113,
+      "banrate": 0.5
+    },
+    {
+      "champion": "Nunu",
+      "role": "MIDDLE",
+      "games": 15,
+      "wins": 6,
+      "winrate": 40.0,
+      "pickrate": 0.13,
+      "bans": 113,
+      "banrate": 0.5
+    },
+    {
+      "champion": "Nunu",
+      "role": "TOP",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 113,
+      "banrate": 0.5
+    },
+    {
+      "champion": "Nunu",
+      "role": "UTILITY",
+      "games": 3,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.03,
+      "bans": 113,
+      "banrate": 0.5
+    },
+    {
+      "champion": "Olaf",
+      "role": "BOTTOM",
+      "games": 69,
+      "wins": 42,
+      "winrate": 60.87,
+      "pickrate": 0.61,
+      "bans": 623,
+      "banrate": 2.78
+    },
+    {
+      "champion": "Olaf",
+      "role": "JUNGLE",
+      "games": 101,
+      "wins": 39,
+      "winrate": 38.61,
+      "pickrate": 0.9,
+      "bans": 623,
+      "banrate": 2.78
+    },
+    {
+      "champion": "Olaf",
+      "role": "MIDDLE",
+      "games": 12,
+      "wins": 9,
+      "winrate": 75.0,
+      "pickrate": 0.11,
+      "bans": 623,
+      "banrate": 2.78
+    },
+    {
+      "champion": "Olaf",
+      "role": "TOP",
+      "games": 788,
+      "wins": 408,
+      "winrate": 51.78,
+      "pickrate": 7.02,
+      "bans": 623,
+      "banrate": 2.78
+    },
+    {
+      "champion": "Orianna",
+      "role": "BOTTOM",
+      "games": 8,
+      "wins": 4,
+      "winrate": 50.0,
+      "pickrate": 0.07,
+      "bans": 229,
+      "banrate": 1.02
+    },
+    {
+      "champion": "Orianna",
+      "role": "MIDDLE",
+      "games": 513,
+      "wins": 283,
+      "winrate": 55.17,
+      "pickrate": 4.57,
+      "bans": 229,
+      "banrate": 1.02
+    },
+    {
+      "champion": "Orianna",
+      "role": "TOP",
+      "games": 15,
+      "wins": 7,
+      "winrate": 46.67,
+      "pickrate": 0.13,
+      "bans": 229,
+      "banrate": 1.02
+    },
+    {
+      "champion": "Orianna",
+      "role": "UTILITY",
+      "games": 4,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.04,
+      "bans": 229,
+      "banrate": 1.02
+    },
+    {
+      "champion": "Ornn",
+      "role": "BOTTOM",
+      "games": 5,
+      "wins": 2,
+      "winrate": 40.0,
+      "pickrate": 0.04,
+      "bans": 19,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Ornn",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 19,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Ornn",
+      "role": "MIDDLE",
+      "games": 23,
+      "wins": 10,
+      "winrate": 43.48,
+      "pickrate": 0.2,
+      "bans": 19,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Ornn",
+      "role": "TOP",
+      "games": 464,
+      "wins": 230,
+      "winrate": 49.57,
+      "pickrate": 4.13,
+      "bans": 19,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Ornn",
+      "role": "UTILITY",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 19,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Pantheon",
+      "role": "BOTTOM",
+      "games": 18,
+      "wins": 7,
+      "winrate": 38.89,
+      "pickrate": 0.16,
+      "bans": 142,
+      "banrate": 0.63
+    },
+    {
+      "champion": "Pantheon",
+      "role": "JUNGLE",
+      "games": 226,
+      "wins": 110,
+      "winrate": 48.67,
+      "pickrate": 2.01,
+      "bans": 142,
+      "banrate": 0.63
+    },
+    {
+      "champion": "Pantheon",
+      "role": "MIDDLE",
+      "games": 56,
+      "wins": 23,
+      "winrate": 41.07,
+      "pickrate": 0.5,
+      "bans": 142,
+      "banrate": 0.63
+    },
+    {
+      "champion": "Pantheon",
+      "role": "TOP",
+      "games": 164,
+      "wins": 73,
+      "winrate": 44.51,
+      "pickrate": 1.46,
+      "bans": 142,
+      "banrate": 0.63
+    },
+    {
+      "champion": "Pantheon",
+      "role": "UTILITY",
+      "games": 416,
+      "wins": 183,
+      "winrate": 43.99,
+      "pickrate": 3.71,
+      "bans": 142,
+      "banrate": 0.63
+    },
+    {
+      "champion": "Poppy",
+      "role": "JUNGLE",
+      "games": 50,
+      "wins": 25,
+      "winrate": 50.0,
+      "pickrate": 0.45,
+      "bans": 1266,
+      "banrate": 5.64
+    },
+    {
+      "champion": "Poppy",
+      "role": "MIDDLE",
+      "games": 3,
+      "wins": 2,
+      "winrate": 66.67,
+      "pickrate": 0.03,
+      "bans": 1266,
+      "banrate": 5.64
+    },
+    {
+      "champion": "Poppy",
+      "role": "TOP",
+      "games": 64,
+      "wins": 32,
+      "winrate": 50.0,
+      "pickrate": 0.57,
+      "bans": 1266,
+      "banrate": 5.64
+    },
+    {
+      "champion": "Poppy",
+      "role": "UTILITY",
+      "games": 387,
+      "wins": 199,
+      "winrate": 51.42,
+      "pickrate": 3.45,
+      "bans": 1266,
+      "banrate": 5.64
+    },
+    {
+      "champion": "Pyke",
+      "role": "BOTTOM",
+      "games": 3,
+      "wins": 2,
+      "winrate": 66.67,
+      "pickrate": 0.03,
+      "bans": 5436,
+      "banrate": 24.22
+    },
+    {
+      "champion": "Pyke",
+      "role": "MIDDLE",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 5436,
+      "banrate": 24.22
+    },
+    {
+      "champion": "Pyke",
+      "role": "TOP",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 5436,
+      "banrate": 24.22
+    },
+    {
+      "champion": "Pyke",
+      "role": "UTILITY",
+      "games": 923,
+      "wins": 442,
+      "winrate": 47.89,
+      "pickrate": 8.22,
+      "bans": 5436,
+      "banrate": 24.22
+    },
+    {
+      "champion": "Qiyana",
+      "role": "BOTTOM",
+      "games": 46,
+      "wins": 25,
+      "winrate": 54.35,
+      "pickrate": 0.41,
+      "bans": 1431,
+      "banrate": 6.38
+    },
+    {
+      "champion": "Qiyana",
+      "role": "JUNGLE",
+      "games": 754,
+      "wins": 398,
+      "winrate": 52.79,
+      "pickrate": 6.72,
+      "bans": 1431,
+      "banrate": 6.38
+    },
+    {
+      "champion": "Qiyana",
+      "role": "MIDDLE",
+      "games": 297,
+      "wins": 145,
+      "winrate": 48.82,
+      "pickrate": 2.65,
+      "bans": 1431,
+      "banrate": 6.38
+    },
+    {
+      "champion": "Qiyana",
+      "role": "TOP",
+      "games": 63,
+      "wins": 34,
+      "winrate": 53.97,
+      "pickrate": 0.56,
+      "bans": 1431,
+      "banrate": 6.38
+    },
+    {
+      "champion": "Qiyana",
+      "role": "UTILITY",
+      "games": 18,
+      "wins": 9,
+      "winrate": 50.0,
+      "pickrate": 0.16,
+      "bans": 1431,
+      "banrate": 6.38
+    },
+    {
+      "champion": "Quinn",
+      "role": "BOTTOM",
+      "games": 11,
+      "wins": 7,
+      "winrate": 63.64,
+      "pickrate": 0.1,
+      "bans": 142,
+      "banrate": 0.63
+    },
+    {
+      "champion": "Quinn",
+      "role": "JUNGLE",
+      "games": 202,
+      "wins": 92,
+      "winrate": 45.54,
+      "pickrate": 1.8,
+      "bans": 142,
+      "banrate": 0.63
+    },
+    {
+      "champion": "Quinn",
+      "role": "MIDDLE",
+      "games": 84,
+      "wins": 46,
+      "winrate": 54.76,
+      "pickrate": 0.75,
+      "bans": 142,
+      "banrate": 0.63
+    },
+    {
+      "champion": "Quinn",
+      "role": "TOP",
+      "games": 141,
+      "wins": 81,
+      "winrate": 57.45,
+      "pickrate": 1.26,
+      "bans": 142,
+      "banrate": 0.63
+    },
+    {
+      "champion": "Quinn",
+      "role": "UTILITY",
+      "games": 14,
+      "wins": 8,
+      "winrate": 57.14,
+      "pickrate": 0.12,
+      "bans": 142,
+      "banrate": 0.63
+    },
+    {
+      "champion": "Rakan",
+      "role": "UTILITY",
+      "games": 768,
+      "wins": 376,
+      "winrate": 48.96,
+      "pickrate": 6.84,
+      "bans": 130,
+      "banrate": 0.58
+    },
+    {
+      "champion": "Rammus",
+      "role": "JUNGLE",
+      "games": 42,
+      "wins": 18,
+      "winrate": 42.86,
+      "pickrate": 0.37,
+      "bans": 9,
+      "banrate": 0.04
+    },
+    {
+      "champion": "Rammus",
+      "role": "TOP",
+      "games": 8,
+      "wins": 4,
+      "winrate": 50.0,
+      "pickrate": 0.07,
+      "bans": 9,
+      "banrate": 0.04
+    },
+    {
+      "champion": "Rammus",
+      "role": "UTILITY",
+      "games": 3,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.03,
+      "bans": 9,
+      "banrate": 0.04
+    },
+    {
+      "champion": "RekSai",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 99,
+      "banrate": 0.44
+    },
+    {
+      "champion": "RekSai",
+      "role": "JUNGLE",
+      "games": 336,
+      "wins": 176,
+      "winrate": 52.38,
+      "pickrate": 2.99,
+      "bans": 99,
+      "banrate": 0.44
+    },
+    {
+      "champion": "RekSai",
+      "role": "MIDDLE",
+      "games": 5,
+      "wins": 2,
+      "winrate": 40.0,
+      "pickrate": 0.04,
+      "bans": 99,
+      "banrate": 0.44
+    },
+    {
+      "champion": "RekSai",
+      "role": "TOP",
+      "games": 85,
+      "wins": 47,
+      "winrate": 55.29,
+      "pickrate": 0.76,
+      "bans": 99,
+      "banrate": 0.44
+    },
+    {
+      "champion": "RekSai",
+      "role": "UTILITY",
+      "games": 9,
+      "wins": 4,
+      "winrate": 44.44,
+      "pickrate": 0.08,
+      "bans": 99,
+      "banrate": 0.44
+    },
+    {
+      "champion": "Rell",
+      "role": "TOP",
+      "games": 2,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.02,
+      "bans": 188,
+      "banrate": 0.84
+    },
+    {
+      "champion": "Rell",
+      "role": "UTILITY",
+      "games": 1149,
+      "wins": 613,
+      "winrate": 53.35,
+      "pickrate": 10.24,
+      "bans": 188,
+      "banrate": 0.84
+    },
+    {
+      "champion": "Renata",
+      "role": "UTILITY",
+      "games": 175,
+      "wins": 86,
+      "winrate": 49.14,
+      "pickrate": 1.56,
+      "bans": 29,
+      "banrate": 0.13
+    },
+    {
+      "champion": "Renekton",
+      "role": "BOTTOM",
+      "games": 11,
+      "wins": 9,
+      "winrate": 81.82,
+      "pickrate": 0.1,
+      "bans": 472,
+      "banrate": 2.1
+    },
+    {
+      "champion": "Renekton",
+      "role": "MIDDLE",
+      "games": 34,
+      "wins": 9,
+      "winrate": 26.47,
+      "pickrate": 0.3,
+      "bans": 472,
+      "banrate": 2.1
+    },
+    {
+      "champion": "Renekton",
+      "role": "TOP",
+      "games": 685,
+      "wins": 357,
+      "winrate": 52.12,
+      "pickrate": 6.1,
+      "bans": 472,
+      "banrate": 2.1
+    },
+    {
+      "champion": "Renekton",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 472,
+      "banrate": 2.1
+    },
+    {
+      "champion": "Rengar",
+      "role": "BOTTOM",
+      "games": 2,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.02,
+      "bans": 3220,
+      "banrate": 14.35
+    },
+    {
+      "champion": "Rengar",
+      "role": "JUNGLE",
+      "games": 498,
+      "wins": 251,
+      "winrate": 50.4,
+      "pickrate": 4.44,
+      "bans": 3220,
+      "banrate": 14.35
+    },
+    {
+      "champion": "Rengar",
+      "role": "TOP",
+      "games": 16,
+      "wins": 9,
+      "winrate": 56.25,
+      "pickrate": 0.14,
+      "bans": 3220,
+      "banrate": 14.35
+    },
+    {
+      "champion": "Rengar",
+      "role": "UTILITY",
+      "games": 33,
+      "wins": 13,
+      "winrate": 39.39,
+      "pickrate": 0.29,
+      "bans": 3220,
+      "banrate": 14.35
+    },
+    {
+      "champion": "Riven",
+      "role": "BOTTOM",
+      "games": 39,
+      "wins": 19,
+      "winrate": 48.72,
+      "pickrate": 0.35,
+      "bans": 1241,
+      "banrate": 5.53
+    },
+    {
+      "champion": "Riven",
+      "role": "JUNGLE",
+      "games": 39,
+      "wins": 20,
+      "winrate": 51.28,
+      "pickrate": 0.35,
+      "bans": 1241,
+      "banrate": 5.53
+    },
+    {
+      "champion": "Riven",
+      "role": "MIDDLE",
+      "games": 183,
+      "wins": 87,
+      "winrate": 47.54,
+      "pickrate": 1.63,
+      "bans": 1241,
+      "banrate": 5.53
+    },
+    {
+      "champion": "Riven",
+      "role": "TOP",
+      "games": 256,
+      "wins": 130,
+      "winrate": 50.78,
+      "pickrate": 2.28,
+      "bans": 1241,
+      "banrate": 5.53
+    },
+    {
+      "champion": "Riven",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 1241,
+      "banrate": 5.53
+    },
+    {
+      "champion": "Rumble",
+      "role": "BOTTOM",
+      "games": 5,
+      "wins": 3,
+      "winrate": 60.0,
+      "pickrate": 0.04,
+      "bans": 151,
+      "banrate": 0.67
+    },
+    {
+      "champion": "Rumble",
+      "role": "JUNGLE",
+      "games": 18,
+      "wins": 5,
+      "winrate": 27.78,
+      "pickrate": 0.16,
+      "bans": 151,
+      "banrate": 0.67
+    },
+    {
+      "champion": "Rumble",
+      "role": "MIDDLE",
+      "games": 54,
+      "wins": 25,
+      "winrate": 46.3,
+      "pickrate": 0.48,
+      "bans": 151,
+      "banrate": 0.67
+    },
+    {
+      "champion": "Rumble",
+      "role": "TOP",
+      "games": 335,
+      "wins": 181,
+      "winrate": 54.03,
+      "pickrate": 2.99,
+      "bans": 151,
+      "banrate": 0.67
+    },
+    {
+      "champion": "Rumble",
+      "role": "UTILITY",
+      "games": 7,
+      "wins": 4,
+      "winrate": 57.14,
+      "pickrate": 0.06,
+      "bans": 151,
+      "banrate": 0.67
+    },
+    {
+      "champion": "Ryze",
+      "role": "BOTTOM",
+      "games": 4,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.04,
+      "bans": 74,
+      "banrate": 0.33
+    },
+    {
+      "champion": "Ryze",
+      "role": "MIDDLE",
+      "games": 607,
+      "wins": 291,
+      "winrate": 47.94,
+      "pickrate": 5.41,
+      "bans": 74,
+      "banrate": 0.33
+    },
+    {
+      "champion": "Ryze",
+      "role": "TOP",
+      "games": 90,
+      "wins": 40,
+      "winrate": 44.44,
+      "pickrate": 0.8,
+      "bans": 74,
+      "banrate": 0.33
+    },
+    {
+      "champion": "Samira",
+      "role": "BOTTOM",
+      "games": 299,
+      "wins": 136,
+      "winrate": 45.48,
+      "pickrate": 2.66,
+      "bans": 67,
+      "banrate": 0.3
+    },
+    {
+      "champion": "Samira",
+      "role": "MIDDLE",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 67,
+      "banrate": 0.3
+    },
+    {
+      "champion": "Samira",
+      "role": "TOP",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 67,
+      "banrate": 0.3
+    },
+    {
+      "champion": "Samira",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 67,
+      "banrate": 0.3
+    },
+    {
+      "champion": "Sejuani",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 3,
+      "banrate": 0.01
+    },
+    {
+      "champion": "Sejuani",
+      "role": "JUNGLE",
+      "games": 94,
+      "wins": 45,
+      "winrate": 47.87,
+      "pickrate": 0.84,
+      "bans": 3,
+      "banrate": 0.01
+    },
+    {
+      "champion": "Sejuani",
+      "role": "MIDDLE",
+      "games": 5,
+      "wins": 3,
+      "winrate": 60.0,
+      "pickrate": 0.04,
+      "bans": 3,
+      "banrate": 0.01
+    },
+    {
+      "champion": "Sejuani",
+      "role": "TOP",
+      "games": 21,
+      "wins": 9,
+      "winrate": 42.86,
+      "pickrate": 0.19,
+      "bans": 3,
+      "banrate": 0.01
+    },
+    {
+      "champion": "Sejuani",
+      "role": "UTILITY",
+      "games": 10,
+      "wins": 5,
+      "winrate": 50.0,
+      "pickrate": 0.09,
+      "bans": 3,
+      "banrate": 0.01
+    },
+    {
+      "champion": "Senna",
+      "role": "BOTTOM",
+      "games": 64,
+      "wins": 25,
+      "winrate": 39.06,
+      "pickrate": 0.57,
+      "bans": 160,
+      "banrate": 0.71
+    },
+    {
+      "champion": "Senna",
+      "role": "TOP",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 160,
+      "banrate": 0.71
+    },
+    {
+      "champion": "Senna",
+      "role": "UTILITY",
+      "games": 727,
+      "wins": 367,
+      "winrate": 50.48,
+      "pickrate": 6.48,
+      "bans": 160,
+      "banrate": 0.71
+    },
+    {
+      "champion": "Seraphine",
+      "role": "BOTTOM",
+      "games": 332,
+      "wins": 166,
+      "winrate": 50.0,
+      "pickrate": 2.96,
+      "bans": 135,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Seraphine",
+      "role": "MIDDLE",
+      "games": 23,
+      "wins": 14,
+      "winrate": 60.87,
+      "pickrate": 0.2,
+      "bans": 135,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Seraphine",
+      "role": "TOP",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 135,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Seraphine",
+      "role": "UTILITY",
+      "games": 365,
+      "wins": 183,
+      "winrate": 50.14,
+      "pickrate": 3.25,
+      "bans": 135,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Sett",
+      "role": "BOTTOM",
+      "games": 19,
+      "wins": 7,
+      "winrate": 36.84,
+      "pickrate": 0.17,
+      "bans": 20,
+      "banrate": 0.09
+    },
+    {
+      "champion": "Sett",
+      "role": "JUNGLE",
+      "games": 9,
+      "wins": 5,
+      "winrate": 55.56,
+      "pickrate": 0.08,
+      "bans": 20,
+      "banrate": 0.09
+    },
+    {
+      "champion": "Sett",
+      "role": "MIDDLE",
+      "games": 10,
+      "wins": 4,
+      "winrate": 40.0,
+      "pickrate": 0.09,
+      "bans": 20,
+      "banrate": 0.09
+    },
+    {
+      "champion": "Sett",
+      "role": "TOP",
+      "games": 191,
+      "wins": 77,
+      "winrate": 40.31,
+      "pickrate": 1.7,
+      "bans": 20,
+      "banrate": 0.09
+    },
+    {
+      "champion": "Sett",
+      "role": "UTILITY",
+      "games": 12,
+      "wins": 8,
+      "winrate": 66.67,
+      "pickrate": 0.11,
+      "bans": 20,
+      "banrate": 0.09
+    },
+    {
+      "champion": "Shaco",
+      "role": "JUNGLE",
+      "games": 538,
+      "wins": 285,
+      "winrate": 52.97,
+      "pickrate": 4.79,
+      "bans": 2484,
+      "banrate": 11.07
+    },
+    {
+      "champion": "Shaco",
+      "role": "MIDDLE",
+      "games": 5,
+      "wins": 3,
+      "winrate": 60.0,
+      "pickrate": 0.04,
+      "bans": 2484,
+      "banrate": 11.07
+    },
+    {
+      "champion": "Shaco",
+      "role": "TOP",
+      "games": 7,
+      "wins": 4,
+      "winrate": 57.14,
+      "pickrate": 0.06,
+      "bans": 2484,
+      "banrate": 11.07
+    },
+    {
+      "champion": "Shaco",
+      "role": "UTILITY",
+      "games": 99,
+      "wins": 43,
+      "winrate": 43.43,
+      "pickrate": 0.88,
+      "bans": 2484,
+      "banrate": 11.07
+    },
+    {
+      "champion": "Shen",
+      "role": "BOTTOM",
+      "games": 7,
+      "wins": 3,
+      "winrate": 42.86,
+      "pickrate": 0.06,
+      "bans": 258,
+      "banrate": 1.15
+    },
+    {
+      "champion": "Shen",
+      "role": "JUNGLE",
+      "games": 14,
+      "wins": 9,
+      "winrate": 64.29,
+      "pickrate": 0.12,
+      "bans": 258,
+      "banrate": 1.15
+    },
+    {
+      "champion": "Shen",
+      "role": "MIDDLE",
+      "games": 17,
+      "wins": 13,
+      "winrate": 76.47,
+      "pickrate": 0.15,
+      "bans": 258,
+      "banrate": 1.15
+    },
+    {
+      "champion": "Shen",
+      "role": "TOP",
+      "games": 293,
+      "wins": 136,
+      "winrate": 46.42,
+      "pickrate": 2.61,
+      "bans": 258,
+      "banrate": 1.15
+    },
+    {
+      "champion": "Shen",
+      "role": "UTILITY",
+      "games": 341,
+      "wins": 178,
+      "winrate": 52.2,
+      "pickrate": 3.04,
+      "bans": 258,
+      "banrate": 1.15
+    },
+    {
+      "champion": "Shyvana",
+      "role": "JUNGLE",
+      "games": 404,
+      "wins": 193,
+      "winrate": 47.77,
+      "pickrate": 3.6,
+      "bans": 160,
+      "banrate": 0.71
+    },
+    {
+      "champion": "Shyvana",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 160,
+      "banrate": 0.71
+    },
+    {
+      "champion": "Shyvana",
+      "role": "TOP",
+      "games": 26,
+      "wins": 11,
+      "winrate": 42.31,
+      "pickrate": 0.23,
+      "bans": 160,
+      "banrate": 0.71
+    },
+    {
+      "champion": "Singed",
+      "role": "BOTTOM",
+      "games": 31,
+      "wins": 23,
+      "winrate": 74.19,
+      "pickrate": 0.28,
+      "bans": 964,
+      "banrate": 4.3
+    },
+    {
+      "champion": "Singed",
+      "role": "JUNGLE",
+      "games": 8,
+      "wins": 1,
+      "winrate": 12.5,
+      "pickrate": 0.07,
+      "bans": 964,
+      "banrate": 4.3
+    },
+    {
+      "champion": "Singed",
+      "role": "MIDDLE",
+      "games": 92,
+      "wins": 43,
+      "winrate": 46.74,
+      "pickrate": 0.82,
+      "bans": 964,
+      "banrate": 4.3
+    },
+    {
+      "champion": "Singed",
+      "role": "TOP",
+      "games": 323,
+      "wins": 158,
+      "winrate": 48.92,
+      "pickrate": 2.88,
+      "bans": 964,
+      "banrate": 4.3
+    },
+    {
+      "champion": "Singed",
+      "role": "UTILITY",
+      "games": 7,
+      "wins": 3,
+      "winrate": 42.86,
+      "pickrate": 0.06,
+      "bans": 964,
+      "banrate": 4.3
+    },
+    {
+      "champion": "Sion",
+      "role": "BOTTOM",
+      "games": 12,
+      "wins": 5,
+      "winrate": 41.67,
+      "pickrate": 0.11,
+      "bans": 183,
+      "banrate": 0.82
+    },
+    {
+      "champion": "Sion",
+      "role": "JUNGLE",
+      "games": 12,
+      "wins": 6,
+      "winrate": 50.0,
+      "pickrate": 0.11,
+      "bans": 183,
+      "banrate": 0.82
+    },
+    {
+      "champion": "Sion",
+      "role": "MIDDLE",
+      "games": 70,
+      "wins": 30,
+      "winrate": 42.86,
+      "pickrate": 0.62,
+      "bans": 183,
+      "banrate": 0.82
+    },
+    {
+      "champion": "Sion",
+      "role": "TOP",
+      "games": 432,
+      "wins": 185,
+      "winrate": 42.82,
+      "pickrate": 3.85,
+      "bans": 183,
+      "banrate": 0.82
+    },
+    {
+      "champion": "Sion",
+      "role": "UTILITY",
+      "games": 16,
+      "wins": 8,
+      "winrate": 50.0,
+      "pickrate": 0.14,
+      "bans": 183,
+      "banrate": 0.82
+    },
+    {
+      "champion": "Sivir",
+      "role": "BOTTOM",
+      "games": 512,
+      "wins": 258,
+      "winrate": 50.39,
+      "pickrate": 4.56,
+      "bans": 150,
+      "banrate": 0.67
+    },
+    {
+      "champion": "Sivir",
+      "role": "MIDDLE",
+      "games": 9,
+      "wins": 3,
+      "winrate": 33.33,
+      "pickrate": 0.08,
+      "bans": 150,
+      "banrate": 0.67
+    },
+    {
+      "champion": "Skarner",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 194,
+      "banrate": 0.86
+    },
+    {
+      "champion": "Skarner",
+      "role": "JUNGLE",
+      "games": 446,
+      "wins": 235,
+      "winrate": 52.69,
+      "pickrate": 3.97,
+      "bans": 194,
+      "banrate": 0.86
+    },
+    {
+      "champion": "Skarner",
+      "role": "MIDDLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 194,
+      "banrate": 0.86
+    },
+    {
+      "champion": "Skarner",
+      "role": "TOP",
+      "games": 21,
+      "wins": 8,
+      "winrate": 38.1,
+      "pickrate": 0.19,
+      "bans": 194,
+      "banrate": 0.86
+    },
+    {
+      "champion": "Skarner",
+      "role": "UTILITY",
+      "games": 54,
+      "wins": 24,
+      "winrate": 44.44,
+      "pickrate": 0.48,
+      "bans": 194,
+      "banrate": 0.86
+    },
+    {
+      "champion": "Smolder",
+      "role": "BOTTOM",
+      "games": 60,
+      "wins": 31,
+      "winrate": 51.67,
+      "pickrate": 0.53,
+      "bans": 7,
+      "banrate": 0.03
+    },
+    {
+      "champion": "Smolder",
+      "role": "MIDDLE",
+      "games": 43,
+      "wins": 16,
+      "winrate": 37.21,
+      "pickrate": 0.38,
+      "bans": 7,
+      "banrate": 0.03
+    },
+    {
+      "champion": "Smolder",
+      "role": "TOP",
+      "games": 7,
+      "wins": 3,
+      "winrate": 42.86,
+      "pickrate": 0.06,
+      "bans": 7,
+      "banrate": 0.03
+    },
+    {
+      "champion": "Sona",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 69,
+      "banrate": 0.31
+    },
+    {
+      "champion": "Sona",
+      "role": "UTILITY",
+      "games": 752,
+      "wins": 364,
+      "winrate": 48.4,
+      "pickrate": 6.7,
+      "bans": 69,
+      "banrate": 0.31
+    },
+    {
+      "champion": "Soraka",
+      "role": "BOTTOM",
+      "games": 10,
+      "wins": 6,
+      "winrate": 60.0,
+      "pickrate": 0.09,
+      "bans": 14,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Soraka",
+      "role": "TOP",
+      "games": 2,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.02,
+      "bans": 14,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Soraka",
+      "role": "UTILITY",
+      "games": 339,
+      "wins": 174,
+      "winrate": 51.33,
+      "pickrate": 3.02,
+      "bans": 14,
+      "banrate": 0.06
+    },
+    {
+      "champion": "Swain",
+      "role": "BOTTOM",
+      "games": 207,
+      "wins": 107,
+      "winrate": 51.69,
+      "pickrate": 1.84,
+      "bans": 27,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Swain",
+      "role": "MIDDLE",
+      "games": 48,
+      "wins": 17,
+      "winrate": 35.42,
+      "pickrate": 0.43,
+      "bans": 27,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Swain",
+      "role": "TOP",
+      "games": 61,
+      "wins": 30,
+      "winrate": 49.18,
+      "pickrate": 0.54,
+      "bans": 27,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Swain",
+      "role": "UTILITY",
+      "games": 45,
+      "wins": 22,
+      "winrate": 48.89,
+      "pickrate": 0.4,
+      "bans": 27,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Sylas",
+      "role": "BOTTOM",
+      "games": 49,
+      "wins": 26,
+      "winrate": 53.06,
+      "pickrate": 0.44,
+      "bans": 2410,
+      "banrate": 10.74
+    },
+    {
+      "champion": "Sylas",
+      "role": "JUNGLE",
+      "games": 769,
+      "wins": 409,
+      "winrate": 53.19,
+      "pickrate": 6.85,
+      "bans": 2410,
+      "banrate": 10.74
+    },
+    {
+      "champion": "Sylas",
+      "role": "MIDDLE",
+      "games": 716,
+      "wins": 352,
+      "winrate": 49.16,
+      "pickrate": 6.38,
+      "bans": 2410,
+      "banrate": 10.74
+    },
+    {
+      "champion": "Sylas",
+      "role": "TOP",
+      "games": 145,
+      "wins": 73,
+      "winrate": 50.34,
+      "pickrate": 1.29,
+      "bans": 2410,
+      "banrate": 10.74
+    },
+    {
+      "champion": "Sylas",
+      "role": "UTILITY",
+      "games": 185,
+      "wins": 90,
+      "winrate": 48.65,
+      "pickrate": 1.65,
+      "bans": 2410,
+      "banrate": 10.74
+    },
+    {
+      "champion": "Syndra",
+      "role": "BOTTOM",
+      "games": 716,
+      "wins": 372,
+      "winrate": 51.96,
+      "pickrate": 6.38,
+      "bans": 4556,
+      "banrate": 20.3
+    },
+    {
+      "champion": "Syndra",
+      "role": "MIDDLE",
+      "games": 1304,
+      "wins": 669,
+      "winrate": 51.3,
+      "pickrate": 11.62,
+      "bans": 4556,
+      "banrate": 20.3
+    },
+    {
+      "champion": "Syndra",
+      "role": "TOP",
+      "games": 28,
+      "wins": 15,
+      "winrate": 53.57,
+      "pickrate": 0.25,
+      "bans": 4556,
+      "banrate": 20.3
+    },
+    {
+      "champion": "Syndra",
+      "role": "UTILITY",
+      "games": 14,
+      "wins": 5,
+      "winrate": 35.71,
+      "pickrate": 0.12,
+      "bans": 4556,
+      "banrate": 20.3
+    },
+    {
+      "champion": "TahmKench",
+      "role": "BOTTOM",
+      "games": 47,
+      "wins": 21,
+      "winrate": 44.68,
+      "pickrate": 0.42,
+      "bans": 10,
+      "banrate": 0.04
+    },
+    {
+      "champion": "TahmKench",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 10,
+      "banrate": 0.04
+    },
+    {
+      "champion": "TahmKench",
+      "role": "MIDDLE",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 10,
+      "banrate": 0.04
+    },
+    {
+      "champion": "TahmKench",
+      "role": "TOP",
+      "games": 17,
+      "wins": 6,
+      "winrate": 35.29,
+      "pickrate": 0.15,
+      "bans": 10,
+      "banrate": 0.04
+    },
+    {
+      "champion": "TahmKench",
+      "role": "UTILITY",
+      "games": 52,
+      "wins": 27,
+      "winrate": 51.92,
+      "pickrate": 0.46,
+      "bans": 10,
+      "banrate": 0.04
+    },
+    {
+      "champion": "Taliyah",
+      "role": "BOTTOM",
+      "games": 59,
+      "wins": 29,
+      "winrate": 49.15,
+      "pickrate": 0.53,
+      "bans": 123,
+      "banrate": 0.55
+    },
+    {
+      "champion": "Taliyah",
+      "role": "JUNGLE",
+      "games": 260,
+      "wins": 128,
+      "winrate": 49.23,
+      "pickrate": 2.32,
+      "bans": 123,
+      "banrate": 0.55
+    },
+    {
+      "champion": "Taliyah",
+      "role": "MIDDLE",
+      "games": 282,
+      "wins": 130,
+      "winrate": 46.1,
+      "pickrate": 2.51,
+      "bans": 123,
+      "banrate": 0.55
+    },
+    {
+      "champion": "Taliyah",
+      "role": "TOP",
+      "games": 38,
+      "wins": 21,
+      "winrate": 55.26,
+      "pickrate": 0.34,
+      "bans": 123,
+      "banrate": 0.55
+    },
+    {
+      "champion": "Taliyah",
+      "role": "UTILITY",
+      "games": 23,
+      "wins": 10,
+      "winrate": 43.48,
+      "pickrate": 0.2,
+      "bans": 123,
+      "banrate": 0.55
+    },
+    {
+      "champion": "Talon",
+      "role": "BOTTOM",
+      "games": 2,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.02,
+      "bans": 4608,
+      "banrate": 20.53
+    },
+    {
+      "champion": "Talon",
+      "role": "JUNGLE",
+      "games": 914,
+      "wins": 460,
+      "winrate": 50.33,
+      "pickrate": 8.14,
+      "bans": 4608,
+      "banrate": 20.53
+    },
+    {
+      "champion": "Talon",
+      "role": "MIDDLE",
+      "games": 129,
+      "wins": 63,
+      "winrate": 48.84,
+      "pickrate": 1.15,
+      "bans": 4608,
+      "banrate": 20.53
+    },
+    {
+      "champion": "Talon",
+      "role": "TOP",
+      "games": 14,
+      "wins": 7,
+      "winrate": 50.0,
+      "pickrate": 0.12,
+      "bans": 4608,
+      "banrate": 20.53
+    },
+    {
+      "champion": "Taric",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 63,
+      "banrate": 0.28
+    },
+    {
+      "champion": "Taric",
+      "role": "TOP",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 63,
+      "banrate": 0.28
+    },
+    {
+      "champion": "Taric",
+      "role": "UTILITY",
+      "games": 391,
+      "wins": 196,
+      "winrate": 50.13,
+      "pickrate": 3.48,
+      "bans": 63,
+      "banrate": 0.28
+    },
+    {
+      "champion": "Teemo",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 128,
+      "banrate": 0.57
+    },
+    {
+      "champion": "Teemo",
+      "role": "JUNGLE",
+      "games": 49,
+      "wins": 25,
+      "winrate": 51.02,
+      "pickrate": 0.44,
+      "bans": 128,
+      "banrate": 0.57
+    },
+    {
+      "champion": "Teemo",
+      "role": "MIDDLE",
+      "games": 5,
+      "wins": 4,
+      "winrate": 80.0,
+      "pickrate": 0.04,
+      "bans": 128,
+      "banrate": 0.57
+    },
+    {
+      "champion": "Teemo",
+      "role": "TOP",
+      "games": 264,
+      "wins": 150,
+      "winrate": 56.82,
+      "pickrate": 2.35,
+      "bans": 128,
+      "banrate": 0.57
+    },
+    {
+      "champion": "Teemo",
+      "role": "UTILITY",
+      "games": 6,
+      "wins": 4,
+      "winrate": 66.67,
+      "pickrate": 0.05,
+      "bans": 128,
+      "banrate": 0.57
+    },
+    {
+      "champion": "Thresh",
+      "role": "UTILITY",
+      "games": 1270,
+      "wins": 666,
+      "winrate": 52.44,
+      "pickrate": 11.32,
+      "bans": 855,
+      "banrate": 3.81
+    },
+    {
+      "champion": "Tristana",
+      "role": "BOTTOM",
+      "games": 1346,
+      "wins": 687,
+      "winrate": 51.04,
+      "pickrate": 11.99,
+      "bans": 1225,
+      "banrate": 5.46
+    },
+    {
+      "champion": "Tristana",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 1225,
+      "banrate": 5.46
+    },
+    {
+      "champion": "Tristana",
+      "role": "MIDDLE",
+      "games": 554,
+      "wins": 262,
+      "winrate": 47.29,
+      "pickrate": 4.94,
+      "bans": 1225,
+      "banrate": 5.46
+    },
+    {
+      "champion": "Tristana",
+      "role": "TOP",
+      "games": 75,
+      "wins": 36,
+      "winrate": 48.0,
+      "pickrate": 0.67,
+      "bans": 1225,
+      "banrate": 5.46
+    },
+    {
+      "champion": "Trundle",
+      "role": "BOTTOM",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50.0,
+      "pickrate": 0.04,
+      "bans": 80,
+      "banrate": 0.36
+    },
+    {
+      "champion": "Trundle",
+      "role": "JUNGLE",
+      "games": 57,
+      "wins": 38,
+      "winrate": 66.67,
+      "pickrate": 0.51,
+      "bans": 80,
+      "banrate": 0.36
+    },
+    {
+      "champion": "Trundle",
+      "role": "MIDDLE",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 80,
+      "banrate": 0.36
+    },
+    {
+      "champion": "Trundle",
+      "role": "TOP",
+      "games": 183,
+      "wins": 98,
+      "winrate": 53.55,
+      "pickrate": 1.63,
+      "bans": 80,
+      "banrate": 0.36
+    },
+    {
+      "champion": "Trundle",
+      "role": "UTILITY",
+      "games": 21,
+      "wins": 12,
+      "winrate": 57.14,
+      "pickrate": 0.19,
+      "bans": 80,
+      "banrate": 0.36
+    },
+    {
+      "champion": "Tryndamere",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 112,
+      "banrate": 0.5
+    },
+    {
+      "champion": "Tryndamere",
+      "role": "JUNGLE",
+      "games": 12,
+      "wins": 5,
+      "winrate": 41.67,
+      "pickrate": 0.11,
+      "bans": 112,
+      "banrate": 0.5
+    },
+    {
+      "champion": "Tryndamere",
+      "role": "MIDDLE",
+      "games": 70,
+      "wins": 34,
+      "winrate": 48.57,
+      "pickrate": 0.62,
+      "bans": 112,
+      "banrate": 0.5
+    },
+    {
+      "champion": "Tryndamere",
+      "role": "TOP",
+      "games": 348,
+      "wins": 184,
+      "winrate": 52.87,
+      "pickrate": 3.1,
+      "bans": 112,
+      "banrate": 0.5
+    },
+    {
+      "champion": "TwistedFate",
+      "role": "BOTTOM",
+      "games": 28,
+      "wins": 14,
+      "winrate": 50.0,
+      "pickrate": 0.25,
+      "bans": 35,
+      "banrate": 0.16
+    },
+    {
+      "champion": "TwistedFate",
+      "role": "JUNGLE",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 35,
+      "banrate": 0.16
+    },
+    {
+      "champion": "TwistedFate",
+      "role": "MIDDLE",
+      "games": 560,
+      "wins": 296,
+      "winrate": 52.86,
+      "pickrate": 4.99,
+      "bans": 35,
+      "banrate": 0.16
+    },
+    {
+      "champion": "TwistedFate",
+      "role": "TOP",
+      "games": 168,
+      "wins": 87,
+      "winrate": 51.79,
+      "pickrate": 1.5,
+      "bans": 35,
+      "banrate": 0.16
+    },
+    {
+      "champion": "TwistedFate",
+      "role": "UTILITY",
+      "games": 49,
+      "wins": 23,
+      "winrate": 46.94,
+      "pickrate": 0.44,
+      "bans": 35,
+      "banrate": 0.16
+    },
+    {
+      "champion": "Twitch",
+      "role": "BOTTOM",
+      "games": 335,
+      "wins": 166,
+      "winrate": 49.55,
+      "pickrate": 2.99,
+      "bans": 157,
+      "banrate": 0.7
+    },
+    {
+      "champion": "Twitch",
+      "role": "JUNGLE",
+      "games": 4,
+      "wins": 1,
+      "winrate": 25.0,
+      "pickrate": 0.04,
+      "bans": 157,
+      "banrate": 0.7
+    },
+    {
+      "champion": "Twitch",
+      "role": "MIDDLE",
+      "games": 40,
+      "wins": 23,
+      "winrate": 57.5,
+      "pickrate": 0.36,
+      "bans": 157,
+      "banrate": 0.7
+    },
+    {
+      "champion": "Twitch",
+      "role": "TOP",
+      "games": 4,
+      "wins": 3,
+      "winrate": 75.0,
+      "pickrate": 0.04,
+      "bans": 157,
+      "banrate": 0.7
+    },
+    {
+      "champion": "Twitch",
+      "role": "UTILITY",
+      "games": 9,
+      "wins": 5,
+      "winrate": 55.56,
+      "pickrate": 0.08,
+      "bans": 157,
+      "banrate": 0.7
+    },
+    {
+      "champion": "Udyr",
+      "role": "JUNGLE",
+      "games": 219,
+      "wins": 105,
+      "winrate": 47.95,
+      "pickrate": 1.95,
+      "bans": 79,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Udyr",
+      "role": "MIDDLE",
+      "games": 4,
+      "wins": 2,
+      "winrate": 50.0,
+      "pickrate": 0.04,
+      "bans": 79,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Udyr",
+      "role": "TOP",
+      "games": 103,
+      "wins": 48,
+      "winrate": 46.6,
+      "pickrate": 0.92,
+      "bans": 79,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Udyr",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.02,
+      "bans": 79,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Urgot",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 33,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Urgot",
+      "role": "MIDDLE",
+      "games": 7,
+      "wins": 4,
+      "winrate": 57.14,
+      "pickrate": 0.06,
+      "bans": 33,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Urgot",
+      "role": "TOP",
+      "games": 204,
+      "wins": 90,
+      "winrate": 44.12,
+      "pickrate": 1.82,
+      "bans": 33,
+      "banrate": 0.15
+    },
+    {
+      "champion": "Varus",
+      "role": "BOTTOM",
+      "games": 355,
+      "wins": 176,
+      "winrate": 49.58,
+      "pickrate": 3.16,
+      "bans": 324,
+      "banrate": 1.44
+    },
+    {
+      "champion": "Varus",
+      "role": "MIDDLE",
+      "games": 12,
+      "wins": 4,
+      "winrate": 33.33,
+      "pickrate": 0.11,
+      "bans": 324,
+      "banrate": 1.44
+    },
+    {
+      "champion": "Varus",
+      "role": "TOP",
+      "games": 232,
+      "wins": 107,
+      "winrate": 46.12,
+      "pickrate": 2.07,
+      "bans": 324,
+      "banrate": 1.44
+    },
+    {
+      "champion": "Varus",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 324,
+      "banrate": 1.44
+    },
+    {
+      "champion": "Vayne",
+      "role": "BOTTOM",
+      "games": 190,
+      "wins": 99,
+      "winrate": 52.11,
+      "pickrate": 1.69,
+      "bans": 1775,
+      "banrate": 7.91
+    },
+    {
+      "champion": "Vayne",
+      "role": "JUNGLE",
+      "games": 7,
+      "wins": 2,
+      "winrate": 28.57,
+      "pickrate": 0.06,
+      "bans": 1775,
+      "banrate": 7.91
+    },
+    {
+      "champion": "Vayne",
+      "role": "MIDDLE",
+      "games": 37,
+      "wins": 19,
+      "winrate": 51.35,
+      "pickrate": 0.33,
+      "bans": 1775,
+      "banrate": 7.91
+    },
+    {
+      "champion": "Vayne",
+      "role": "TOP",
+      "games": 527,
+      "wins": 263,
+      "winrate": 49.91,
+      "pickrate": 4.7,
+      "bans": 1775,
+      "banrate": 7.91
+    },
+    {
+      "champion": "Vayne",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 1775,
+      "banrate": 7.91
+    },
+    {
+      "champion": "Veigar",
+      "role": "BOTTOM",
+      "games": 195,
+      "wins": 110,
+      "winrate": 56.41,
+      "pickrate": 1.74,
+      "bans": 28,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Veigar",
+      "role": "MIDDLE",
+      "games": 200,
+      "wins": 94,
+      "winrate": 47.0,
+      "pickrate": 1.78,
+      "bans": 28,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Veigar",
+      "role": "TOP",
+      "games": 34,
+      "wins": 16,
+      "winrate": 47.06,
+      "pickrate": 0.3,
+      "bans": 28,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Veigar",
+      "role": "UTILITY",
+      "games": 34,
+      "wins": 19,
+      "winrate": 55.88,
+      "pickrate": 0.3,
+      "bans": 28,
+      "banrate": 0.12
+    },
+    {
+      "champion": "Velkoz",
+      "role": "BOTTOM",
+      "games": 309,
+      "wins": 172,
+      "winrate": 55.66,
+      "pickrate": 2.75,
+      "bans": 85,
+      "banrate": 0.38
+    },
+    {
+      "champion": "Velkoz",
+      "role": "MIDDLE",
+      "games": 167,
+      "wins": 76,
+      "winrate": 45.51,
+      "pickrate": 1.49,
+      "bans": 85,
+      "banrate": 0.38
+    },
+    {
+      "champion": "Velkoz",
+      "role": "TOP",
+      "games": 70,
+      "wins": 35,
+      "winrate": 50.0,
+      "pickrate": 0.62,
+      "bans": 85,
+      "banrate": 0.38
+    },
+    {
+      "champion": "Velkoz",
+      "role": "UTILITY",
+      "games": 119,
+      "wins": 52,
+      "winrate": 43.7,
+      "pickrate": 1.06,
+      "bans": 85,
+      "banrate": 0.38
+    },
+    {
+      "champion": "Vex",
+      "role": "BOTTOM",
+      "games": 7,
+      "wins": 3,
+      "winrate": 42.86,
+      "pickrate": 0.06,
+      "bans": 130,
+      "banrate": 0.58
+    },
+    {
+      "champion": "Vex",
+      "role": "MIDDLE",
+      "games": 112,
+      "wins": 64,
+      "winrate": 57.14,
+      "pickrate": 1.0,
+      "bans": 130,
+      "banrate": 0.58
+    },
+    {
+      "champion": "Vex",
+      "role": "TOP",
+      "games": 7,
+      "wins": 5,
+      "winrate": 71.43,
+      "pickrate": 0.06,
+      "bans": 130,
+      "banrate": 0.58
+    },
+    {
+      "champion": "Vex",
+      "role": "UTILITY",
+      "games": 10,
+      "wins": 3,
+      "winrate": 30.0,
+      "pickrate": 0.09,
+      "bans": 130,
+      "banrate": 0.58
+    },
+    {
+      "champion": "Vi",
+      "role": "JUNGLE",
+      "games": 759,
+      "wins": 407,
+      "winrate": 53.62,
+      "pickrate": 6.76,
+      "bans": 56,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Vi",
+      "role": "MIDDLE",
+      "games": 7,
+      "wins": 4,
+      "winrate": 57.14,
+      "pickrate": 0.06,
+      "bans": 56,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Vi",
+      "role": "TOP",
+      "games": 18,
+      "wins": 12,
+      "winrate": 66.67,
+      "pickrate": 0.16,
+      "bans": 56,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Vi",
+      "role": "UTILITY",
+      "games": 11,
+      "wins": 6,
+      "winrate": 54.55,
+      "pickrate": 0.1,
+      "bans": 56,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Viego",
+      "role": "BOTTOM",
+      "games": 4,
+      "wins": 1,
+      "winrate": 25.0,
+      "pickrate": 0.04,
+      "bans": 135,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Viego",
+      "role": "JUNGLE",
+      "games": 775,
+      "wins": 347,
+      "winrate": 44.77,
+      "pickrate": 6.91,
+      "bans": 135,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Viego",
+      "role": "MIDDLE",
+      "games": 46,
+      "wins": 25,
+      "winrate": 54.35,
+      "pickrate": 0.41,
+      "bans": 135,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Viego",
+      "role": "TOP",
+      "games": 22,
+      "wins": 9,
+      "winrate": 40.91,
+      "pickrate": 0.2,
+      "bans": 135,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Viego",
+      "role": "UTILITY",
+      "games": 6,
+      "wins": 3,
+      "winrate": 50.0,
+      "pickrate": 0.05,
+      "bans": 135,
+      "banrate": 0.6
+    },
+    {
+      "champion": "Viktor",
+      "role": "BOTTOM",
+      "games": 810,
+      "wins": 404,
+      "winrate": 49.88,
+      "pickrate": 7.22,
+      "bans": 1603,
+      "banrate": 7.14
+    },
+    {
+      "champion": "Viktor",
+      "role": "MIDDLE",
+      "games": 915,
+      "wins": 446,
+      "winrate": 48.74,
+      "pickrate": 8.15,
+      "bans": 1603,
+      "banrate": 7.14
+    },
+    {
+      "champion": "Viktor",
+      "role": "TOP",
+      "games": 74,
+      "wins": 36,
+      "winrate": 48.65,
+      "pickrate": 0.66,
+      "bans": 1603,
+      "banrate": 7.14
+    },
+    {
+      "champion": "Vladimir",
+      "role": "BOTTOM",
+      "games": 129,
+      "wins": 54,
+      "winrate": 41.86,
+      "pickrate": 1.15,
+      "bans": 683,
+      "banrate": 3.04
+    },
+    {
+      "champion": "Vladimir",
+      "role": "MIDDLE",
+      "games": 264,
+      "wins": 130,
+      "winrate": 49.24,
+      "pickrate": 2.35,
+      "bans": 683,
+      "banrate": 3.04
+    },
+    {
+      "champion": "Vladimir",
+      "role": "TOP",
+      "games": 209,
+      "wins": 102,
+      "winrate": 48.8,
+      "pickrate": 1.86,
+      "bans": 683,
+      "banrate": 3.04
+    },
+    {
+      "champion": "Volibear",
+      "role": "JUNGLE",
+      "games": 21,
+      "wins": 7,
+      "winrate": 33.33,
+      "pickrate": 0.19,
+      "bans": 6,
+      "banrate": 0.03
+    },
+    {
+      "champion": "Volibear",
+      "role": "MIDDLE",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 6,
+      "banrate": 0.03
+    },
+    {
+      "champion": "Volibear",
+      "role": "TOP",
+      "games": 104,
+      "wins": 52,
+      "winrate": 50.0,
+      "pickrate": 0.93,
+      "bans": 6,
+      "banrate": 0.03
+    },
+    {
+      "champion": "Warwick",
+      "role": "BOTTOM",
+      "games": 14,
+      "wins": 5,
+      "winrate": 35.71,
+      "pickrate": 0.12,
+      "bans": 32,
+      "banrate": 0.14
+    },
+    {
+      "champion": "Warwick",
+      "role": "JUNGLE",
+      "games": 76,
+      "wins": 35,
+      "winrate": 46.05,
+      "pickrate": 0.68,
+      "bans": 32,
+      "banrate": 0.14
+    },
+    {
+      "champion": "Warwick",
+      "role": "MIDDLE",
+      "games": 19,
+      "wins": 9,
+      "winrate": 47.37,
+      "pickrate": 0.17,
+      "bans": 32,
+      "banrate": 0.14
+    },
+    {
+      "champion": "Warwick",
+      "role": "TOP",
+      "games": 233,
+      "wins": 118,
+      "winrate": 50.64,
+      "pickrate": 2.08,
+      "bans": 32,
+      "banrate": 0.14
+    },
+    {
+      "champion": "Warwick",
+      "role": "UTILITY",
+      "games": 3,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.03,
+      "bans": 32,
+      "banrate": 0.14
+    },
+    {
+      "champion": "Xayah",
+      "role": "BOTTOM",
+      "games": 316,
+      "wins": 165,
+      "winrate": 52.22,
+      "pickrate": 2.82,
+      "bans": 17,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Xayah",
+      "role": "TOP",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 17,
+      "banrate": 0.08
+    },
+    {
+      "champion": "Xerath",
+      "role": "BOTTOM",
+      "games": 342,
+      "wins": 172,
+      "winrate": 50.29,
+      "pickrate": 3.05,
+      "bans": 110,
+      "banrate": 0.49
+    },
+    {
+      "champion": "Xerath",
+      "role": "MIDDLE",
+      "games": 348,
+      "wins": 188,
+      "winrate": 54.02,
+      "pickrate": 3.1,
+      "bans": 110,
+      "banrate": 0.49
+    },
+    {
+      "champion": "Xerath",
+      "role": "TOP",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 110,
+      "banrate": 0.49
+    },
+    {
+      "champion": "Xerath",
+      "role": "UTILITY",
+      "games": 45,
+      "wins": 21,
+      "winrate": 46.67,
+      "pickrate": 0.4,
+      "bans": 110,
+      "banrate": 0.49
+    },
+    {
+      "champion": "XinZhao",
+      "role": "BOTTOM",
+      "games": 6,
+      "wins": 2,
+      "winrate": 33.33,
+      "pickrate": 0.05,
+      "bans": 67,
+      "banrate": 0.3
+    },
+    {
+      "champion": "XinZhao",
+      "role": "JUNGLE",
+      "games": 343,
+      "wins": 163,
+      "winrate": 47.52,
+      "pickrate": 3.06,
+      "bans": 67,
+      "banrate": 0.3
+    },
+    {
+      "champion": "XinZhao",
+      "role": "MIDDLE",
+      "games": 26,
+      "wins": 13,
+      "winrate": 50.0,
+      "pickrate": 0.23,
+      "bans": 67,
+      "banrate": 0.3
+    },
+    {
+      "champion": "XinZhao",
+      "role": "TOP",
+      "games": 33,
+      "wins": 14,
+      "winrate": 42.42,
+      "pickrate": 0.29,
+      "bans": 67,
+      "banrate": 0.3
+    },
+    {
+      "champion": "XinZhao",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 2,
+      "winrate": 100.0,
+      "pickrate": 0.02,
+      "bans": 67,
+      "banrate": 0.3
+    },
+    {
+      "champion": "Yasuo",
+      "role": "BOTTOM",
+      "games": 318,
+      "wins": 166,
+      "winrate": 52.2,
+      "pickrate": 2.83,
+      "bans": 1680,
+      "banrate": 7.49
+    },
+    {
+      "champion": "Yasuo",
+      "role": "MIDDLE",
+      "games": 558,
+      "wins": 269,
+      "winrate": 48.21,
+      "pickrate": 4.97,
+      "bans": 1680,
+      "banrate": 7.49
+    },
+    {
+      "champion": "Yasuo",
+      "role": "TOP",
+      "games": 281,
+      "wins": 145,
+      "winrate": 51.6,
+      "pickrate": 2.5,
+      "bans": 1680,
+      "banrate": 7.49
+    },
+    {
+      "champion": "Yasuo",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.02,
+      "bans": 1680,
+      "banrate": 7.49
+    },
+    {
+      "champion": "Yone",
+      "role": "BOTTOM",
+      "games": 81,
+      "wins": 38,
+      "winrate": 46.91,
+      "pickrate": 0.72,
+      "bans": 250,
+      "banrate": 1.11
+    },
+    {
+      "champion": "Yone",
+      "role": "JUNGLE",
+      "games": 6,
+      "wins": 3,
+      "winrate": 50.0,
+      "pickrate": 0.05,
+      "bans": 250,
+      "banrate": 1.11
+    },
+    {
+      "champion": "Yone",
+      "role": "MIDDLE",
+      "games": 782,
+      "wins": 400,
+      "winrate": 51.15,
+      "pickrate": 6.97,
+      "bans": 250,
+      "banrate": 1.11
+    },
+    {
+      "champion": "Yone",
+      "role": "TOP",
+      "games": 620,
+      "wins": 297,
+      "winrate": 47.9,
+      "pickrate": 5.52,
+      "bans": 250,
+      "banrate": 1.11
+    },
+    {
+      "champion": "Yorick",
+      "role": "MIDDLE",
+      "games": 7,
+      "wins": 2,
+      "winrate": 28.57,
+      "pickrate": 0.06,
+      "bans": 313,
+      "banrate": 1.39
+    },
+    {
+      "champion": "Yorick",
+      "role": "TOP",
+      "games": 222,
+      "wins": 105,
+      "winrate": 47.3,
+      "pickrate": 1.98,
+      "bans": 313,
+      "banrate": 1.39
+    },
+    {
+      "champion": "Yorick",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 1,
+      "winrate": 100.0,
+      "pickrate": 0.01,
+      "bans": 313,
+      "banrate": 1.39
+    },
+    {
+      "champion": "Yunara",
+      "role": "BOTTOM",
+      "games": 1298,
+      "wins": 670,
+      "winrate": 51.62,
+      "pickrate": 11.57,
+      "bans": 169,
+      "banrate": 0.75
+    },
+    {
+      "champion": "Yunara",
+      "role": "MIDDLE",
+      "games": 3,
+      "wins": 1,
+      "winrate": 33.33,
+      "pickrate": 0.03,
+      "bans": 169,
+      "banrate": 0.75
+    },
+    {
+      "champion": "Yunara",
+      "role": "TOP",
+      "games": 7,
+      "wins": 5,
+      "winrate": 71.43,
+      "pickrate": 0.06,
+      "bans": 169,
+      "banrate": 0.75
+    },
+    {
+      "champion": "Yuumi",
+      "role": "UTILITY",
+      "games": 213,
+      "wins": 98,
+      "winrate": 46.01,
+      "pickrate": 1.9,
+      "bans": 86,
+      "banrate": 0.38
+    },
+    {
+      "champion": "Zaahen",
+      "role": "BOTTOM",
+      "games": 21,
+      "wins": 12,
+      "winrate": 57.14,
+      "pickrate": 0.19,
+      "bans": 53,
+      "banrate": 0.24
+    },
+    {
+      "champion": "Zaahen",
+      "role": "JUNGLE",
+      "games": 64,
+      "wins": 26,
+      "winrate": 40.62,
+      "pickrate": 0.57,
+      "bans": 53,
+      "banrate": 0.24
+    },
+    {
+      "champion": "Zaahen",
+      "role": "MIDDLE",
+      "games": 15,
+      "wins": 6,
+      "winrate": 40.0,
+      "pickrate": 0.13,
+      "bans": 53,
+      "banrate": 0.24
+    },
+    {
+      "champion": "Zaahen",
+      "role": "TOP",
+      "games": 254,
+      "wins": 143,
+      "winrate": 56.3,
+      "pickrate": 2.26,
+      "bans": 53,
+      "banrate": 0.24
+    },
+    {
+      "champion": "Zac",
+      "role": "BOTTOM",
+      "games": 6,
+      "wins": 1,
+      "winrate": 16.67,
+      "pickrate": 0.05,
+      "bans": 79,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Zac",
+      "role": "JUNGLE",
+      "games": 175,
+      "wins": 86,
+      "winrate": 49.14,
+      "pickrate": 1.56,
+      "bans": 79,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Zac",
+      "role": "MIDDLE",
+      "games": 17,
+      "wins": 6,
+      "winrate": 35.29,
+      "pickrate": 0.15,
+      "bans": 79,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Zac",
+      "role": "TOP",
+      "games": 55,
+      "wins": 30,
+      "winrate": 54.55,
+      "pickrate": 0.49,
+      "bans": 79,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Zac",
+      "role": "UTILITY",
+      "games": 14,
+      "wins": 6,
+      "winrate": 42.86,
+      "pickrate": 0.12,
+      "bans": 79,
+      "banrate": 0.35
+    },
+    {
+      "champion": "Zed",
+      "role": "BOTTOM",
+      "games": 32,
+      "wins": 16,
+      "winrate": 50.0,
+      "pickrate": 0.29,
+      "bans": 2167,
+      "banrate": 9.66
+    },
+    {
+      "champion": "Zed",
+      "role": "JUNGLE",
+      "games": 171,
+      "wins": 81,
+      "winrate": 47.37,
+      "pickrate": 1.52,
+      "bans": 2167,
+      "banrate": 9.66
+    },
+    {
+      "champion": "Zed",
+      "role": "MIDDLE",
+      "games": 693,
+      "wins": 343,
+      "winrate": 49.49,
+      "pickrate": 6.18,
+      "bans": 2167,
+      "banrate": 9.66
+    },
+    {
+      "champion": "Zed",
+      "role": "TOP",
+      "games": 121,
+      "wins": 69,
+      "winrate": 57.02,
+      "pickrate": 1.08,
+      "bans": 2167,
+      "banrate": 9.66
+    },
+    {
+      "champion": "Zed",
+      "role": "UTILITY",
+      "games": 7,
+      "wins": 4,
+      "winrate": 57.14,
+      "pickrate": 0.06,
+      "bans": 2167,
+      "banrate": 9.66
+    },
+    {
+      "champion": "Zeri",
+      "role": "BOTTOM",
+      "games": 1031,
+      "wins": 552,
+      "winrate": 53.54,
+      "pickrate": 9.19,
+      "bans": 106,
+      "banrate": 0.47
+    },
+    {
+      "champion": "Zeri",
+      "role": "JUNGLE",
+      "games": 7,
+      "wins": 3,
+      "winrate": 42.86,
+      "pickrate": 0.06,
+      "bans": 106,
+      "banrate": 0.47
+    },
+    {
+      "champion": "Zeri",
+      "role": "MIDDLE",
+      "games": 25,
+      "wins": 16,
+      "winrate": 64.0,
+      "pickrate": 0.22,
+      "bans": 106,
+      "banrate": 0.47
+    },
+    {
+      "champion": "Zeri",
+      "role": "TOP",
+      "games": 29,
+      "wins": 16,
+      "winrate": 55.17,
+      "pickrate": 0.26,
+      "bans": 106,
+      "banrate": 0.47
+    },
+    {
+      "champion": "Zeri",
+      "role": "UTILITY",
+      "games": 1,
+      "wins": 0,
+      "winrate": 0.0,
+      "pickrate": 0.01,
+      "bans": 106,
+      "banrate": 0.47
+    },
+    {
+      "champion": "Ziggs",
+      "role": "BOTTOM",
+      "games": 268,
+      "wins": 115,
+      "winrate": 42.91,
+      "pickrate": 2.39,
+      "bans": 126,
+      "banrate": 0.56
+    },
+    {
+      "champion": "Ziggs",
+      "role": "MIDDLE",
+      "games": 41,
+      "wins": 14,
+      "winrate": 34.15,
+      "pickrate": 0.37,
+      "bans": 126,
+      "banrate": 0.56
+    },
+    {
+      "champion": "Ziggs",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 126,
+      "banrate": 0.56
+    },
+    {
+      "champion": "Zilean",
+      "role": "BOTTOM",
+      "games": 18,
+      "wins": 8,
+      "winrate": 44.44,
+      "pickrate": 0.16,
+      "bans": 251,
+      "banrate": 1.12
+    },
+    {
+      "champion": "Zilean",
+      "role": "MIDDLE",
+      "games": 64,
+      "wins": 36,
+      "winrate": 56.25,
+      "pickrate": 0.57,
+      "bans": 251,
+      "banrate": 1.12
+    },
+    {
+      "champion": "Zilean",
+      "role": "TOP",
+      "games": 101,
+      "wins": 54,
+      "winrate": 53.47,
+      "pickrate": 0.9,
+      "bans": 251,
+      "banrate": 1.12
+    },
+    {
+      "champion": "Zilean",
+      "role": "UTILITY",
+      "games": 539,
+      "wins": 285,
+      "winrate": 52.88,
+      "pickrate": 4.8,
+      "bans": 251,
+      "banrate": 1.12
+    },
+    {
+      "champion": "Zoe",
+      "role": "BOTTOM",
+      "games": 55,
+      "wins": 29,
+      "winrate": 52.73,
+      "pickrate": 0.49,
+      "bans": 206,
+      "banrate": 0.92
+    },
+    {
+      "champion": "Zoe",
+      "role": "MIDDLE",
+      "games": 325,
+      "wins": 167,
+      "winrate": 51.38,
+      "pickrate": 2.9,
+      "bans": 206,
+      "banrate": 0.92
+    },
+    {
+      "champion": "Zoe",
+      "role": "TOP",
+      "games": 46,
+      "wins": 28,
+      "winrate": 60.87,
+      "pickrate": 0.41,
+      "bans": 206,
+      "banrate": 0.92
+    },
+    {
+      "champion": "Zoe",
+      "role": "UTILITY",
+      "games": 157,
+      "wins": 76,
+      "winrate": 48.41,
+      "pickrate": 1.4,
+      "bans": 206,
+      "banrate": 0.92
+    },
+    {
+      "champion": "Zyra",
+      "role": "BOTTOM",
+      "games": 21,
+      "wins": 10,
+      "winrate": 47.62,
+      "pickrate": 0.19,
+      "bans": 56,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Zyra",
+      "role": "JUNGLE",
+      "games": 283,
+      "wins": 166,
+      "winrate": 58.66,
+      "pickrate": 2.52,
+      "bans": 56,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Zyra",
+      "role": "MIDDLE",
+      "games": 10,
+      "wins": 3,
+      "winrate": 30.0,
+      "pickrate": 0.09,
+      "bans": 56,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Zyra",
+      "role": "TOP",
+      "games": 2,
+      "wins": 1,
+      "winrate": 50.0,
+      "pickrate": 0.02,
+      "bans": 56,
+      "banrate": 0.25
+    },
+    {
+      "champion": "Zyra",
+      "role": "UTILITY",
+      "games": 39,
+      "wins": 19,
+      "winrate": 48.72,
+      "pickrate": 0.35,
+      "bans": 56,
+      "banrate": 0.25
+    }
+  ]
+}
