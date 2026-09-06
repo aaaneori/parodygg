@@ -666,6 +666,33 @@
       "wins": 0,
       "bans": 4,
       "matches_processed": 685
+    },
+    {
+      "date": "2026-09-05",
+      "patch": "16.17",
+      "role": "BOTTOM",
+      "games": 1,
+      "wins": 1,
+      "bans": 7,
+      "matches_processed": 705
+    },
+    {
+      "date": "2026-09-05",
+      "patch": "16.17",
+      "role": "JUNGLE",
+      "games": 19,
+      "wins": 8,
+      "bans": 7,
+      "matches_processed": 705
+    },
+    {
+      "date": "2026-09-05",
+      "patch": "16.17",
+      "role": "MIDDLE",
+      "games": 8,
+      "wins": 2,
+      "bans": 7,
+      "matches_processed": 705
     }
   ]
 }
