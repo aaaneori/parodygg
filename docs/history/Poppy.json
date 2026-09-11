@@ -1026,6 +1026,42 @@
       "wins": 15,
       "bans": 64,
       "matches_processed": 736
+    },
+    {
+      "date": "2026-09-10",
+      "patch": "16.17",
+      "role": "UTILITY",
+      "games": 2,
+      "wins": 1,
+      "bans": 8,
+      "matches_processed": 104
+    },
+    {
+      "date": "2026-09-10",
+      "patch": "16.18",
+      "role": "JUNGLE",
+      "games": 3,
+      "wins": 1,
+      "bans": 30,
+      "matches_processed": 594
+    },
+    {
+      "date": "2026-09-10",
+      "patch": "16.18",
+      "role": "TOP",
+      "games": 2,
+      "wins": 1,
+      "bans": 30,
+      "matches_processed": 594
+    },
+    {
+      "date": "2026-09-10",
+      "patch": "16.18",
+      "role": "UTILITY",
+      "games": 23,
+      "wins": 11,
+      "bans": 30,
+      "matches_processed": 594
     }
   ]
 }

@@ -531,6 +531,33 @@
       "wins": 23,
       "bans": 49,
       "matches_processed": 736
+    },
+    {
+      "date": "2026-09-10",
+      "patch": "16.17",
+      "role": "BOTTOM",
+      "games": 8,
+      "wins": 4,
+      "bans": 5,
+      "matches_processed": 104
+    },
+    {
+      "date": "2026-09-10",
+      "patch": "16.18",
+      "role": "BOTTOM",
+      "games": 59,
+      "wins": 22,
+      "bans": 46,
+      "matches_processed": 594
+    },
+    {
+      "date": "2026-09-10",
+      "patch": "16.18",
+      "role": "TOP",
+      "games": 1,
+      "wins": 0,
+      "bans": 46,
+      "matches_processed": 594
     }
   ]
 }
