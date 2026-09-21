@@ -1521,6 +1521,60 @@
       "wins": 0,
       "bans": 1,
       "matches_processed": 673
+    },
+    {
+      "date": "2026-09-19",
+      "patch": "16.18",
+      "role": "BOTTOM",
+      "games": 7,
+      "wins": 3,
+      "bans": 1,
+      "matches_processed": 685
+    },
+    {
+      "date": "2026-09-19",
+      "patch": "16.18",
+      "role": "MIDDLE",
+      "games": 11,
+      "wins": 6,
+      "bans": 1,
+      "matches_processed": 685
+    },
+    {
+      "date": "2026-09-19",
+      "patch": "16.18",
+      "role": "TOP",
+      "games": 4,
+      "wins": 4,
+      "bans": 1,
+      "matches_processed": 685
+    },
+    {
+      "date": "2026-09-20",
+      "patch": "16.18",
+      "role": "BOTTOM",
+      "games": 7,
+      "wins": 6,
+      "bans": 0,
+      "matches_processed": 712
+    },
+    {
+      "date": "2026-09-20",
+      "patch": "16.18",
+      "role": "MIDDLE",
+      "games": 6,
+      "wins": 4,
+      "bans": 0,
+      "matches_processed": 712
+    },
+    {
+      "date": "2026-09-20",
+      "patch": "16.18",
+      "role": "TOP",
+      "games": 4,
+      "wins": 2,
+      "bans": 0,
+      "matches_processed": 712
     }
   ]
 }
