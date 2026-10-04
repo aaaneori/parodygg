@@ -3,22 +3,22 @@
   "patch": "16.19",
   "stats_by_role": {
     "ALL": {
-      "games": 260,
+      "games": 284,
       "kills": 3.51,
-      "deaths": 4.64,
-      "assists": 5.08,
-      "solo_kills": 1.06,
-      "kill_participation_pct": 32.02,
-      "first_blood_pct": 2.69,
-      "physical_dmg": 9435.04,
-      "magic_dmg": 11673.94,
-      "dmg_taken": 53589.15,
-      "team_dmg_pct": 21.66,
-      "dmg_per_min": 793.43,
-      "cs_per_min": 7.82,
-      "gold_per_min": 415.35,
+      "deaths": 4.66,
+      "assists": 5.15,
+      "solo_kills": 1.05,
+      "kill_participation_pct": 31.91,
+      "first_blood_pct": 2.82,
+      "physical_dmg": 9577.75,
+      "magic_dmg": 11851.32,
+      "dmg_taken": 54026.96,
+      "team_dmg_pct": 21.74,
+      "dmg_per_min": 798.73,
+      "cs_per_min": 7.83,
+      "gold_per_min": 416.11,
       "vision_per_min": 0.78,
-      "control_wards": 0.43
+      "control_wards": 0.42
     },
     "BOTTOM": {
       "games": 4,
@@ -75,22 +75,22 @@
       "control_wards": 0.0
     },
     "TOP": {
-      "games": 206,
-      "kills": 3.21,
+      "games": 230,
+      "kills": 3.25,
       "deaths": 4.83,
-      "assists": 4.52,
-      "solo_kills": 1.19,
-      "kill_participation_pct": 28.36,
-      "first_blood_pct": 3.4,
-      "physical_dmg": 9499.13,
-      "magic_dmg": 11911.89,
-      "dmg_taken": 54536.21,
-      "team_dmg_pct": 21.84,
-      "dmg_per_min": 797.95,
+      "assists": 4.66,
+      "solo_kills": 1.17,
+      "kill_participation_pct": 28.6,
+      "first_blood_pct": 3.48,
+      "physical_dmg": 9668.67,
+      "magic_dmg": 12106.09,
+      "dmg_taken": 54977.98,
+      "team_dmg_pct": 21.92,
+      "dmg_per_min": 804.02,
       "cs_per_min": 7.91,
-      "gold_per_min": 409.57,
-      "vision_per_min": 0.75,
-      "control_wards": 0.25
+      "gold_per_min": 411.11,
+      "vision_per_min": 0.76,
+      "control_wards": 0.27
     }
   }
 }
